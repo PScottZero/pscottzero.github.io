@@ -1,0 +1,153 @@
+/* reset browser defaults */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+/* body of webpage */
+body {
+	height: 100%;
+	width: 100%;
+	background: #DFDFDF;
+	font-family: "Raleway", "Segoe UI", "Sans-Serif";
+	font-size: 18px;
+}
+
+/* link */
+a {
+	text-decoration: none;
+}
+
+/* address */
+address {
+	text-align: center;
+}
+
+/* button */
+input {
+	border-radius: 2em;
+	background: #DFDFDF;
+	box-shadow: 3px 3px 3px #888888;
+	padding: 0.3em 0.5em;
+	font-size: 20px;
+}
+
+/* text */
+p {
+	text-align: justify;
+}
+
+/* unordered list */
+ul {
+	padding-left: 1em;
+}
+
+/* webpage header */
+#header {
+	position: fixed;
+	width: 100%;
+	height: 4em;
+	top: 0;
+	background: #FFFFFF;
+	box-shadow: 0 3px 3px #888888;
+	z-index: 2;
+}
+
+/* information on webpage */
+#info_block {
+	height: auto;
+	margin-bottom: 2em;
+	padding: 4em 8em 4em 8em;
+	border-radius: 1em;
+	box-shadow: 3px 3px 3px #888888;
+	background: #FFFFFF;
+	line-height: 2;
+}
+
+/* project information on webpage */
+#info_block_proj {
+	height: auto;
+	margin-bottom: 2em;
+	padding: 2em 4em 2em 4em;
+	border-radius: 1em;
+	box-shadow: 3px 3px 3px #888888;
+	background: #FFFFFF;
+	line-height: 2;
+}
+
+/* information title */
+#info_title {
+	text-align: center;
+	font-size: 2em;
+	color: #3e70c1;
+}
+
+/* oval that holds links to other pages */
+#link_oval {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background: #3e70c1;
+	width: 20em;
+	height: 2em;
+	border-radius: 1.5em;
+	margin-top: 2.9em;
+}
+
+/* links to other pages */
+#link_oval a {
+	display: inline-block;
+	color: white;
+	margin: 0.4em 1em 0 1em;
+}
+
+/* website logo */
+#logo {
+	float: left;
+	height: 3em;
+	margin: 0.5em 0 0 0.5em;
+}
+
+/* main body of webpage below header */
+#middle {
+	position: relative;
+	height: auto;
+	margin: 7em auto 2em auto;
+	width: 80%;
+	z-index: 0;
+}
+
+/* main body of webpage below 
+header with left float */
+#middle_left {
+	float: left;
+	height: auto;
+	width: 49%;
+	z-index: 0;
+}
+
+/* main body of webpage below 
+header with right float */
+#middle_right {
+	float: right;
+	height: auto;
+	width: 49%;
+	z-index: 0;
+}
+
+/* profile image */
+#profile_img {
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+}
+
+/* penn state engineering logo */
+#psu_logo {
+	float: right;
+	height: 3em;
+	margin-right: 0.5em;
+	margin-top: 0.5em;
+}
