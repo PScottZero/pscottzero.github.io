@@ -75,15 +75,12 @@ ul {
 	line-height: 2;
 }
 
-/* project information on webpage */
-#info_block_proj {
-	height: auto;
-	margin-bottom: 2em;
-	padding: 2em 4em 2em 4em;
-	border-radius: 1em;
-	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
-	background: #FFFFFF;
-	line-height: 2;
+#info_block div {
+	text-align: center;
+}
+
+#info_block img {
+	width: 100%;
 }
 
 /* information title */
@@ -125,34 +122,9 @@ ul {
 	position: relative;
 	height: auto;
 	margin: 5em auto 2em auto;
-	width: 90%;
-	max-width: 90em;
+	width: 80%;
+	max-width: 80em;
 	z-index: 0;
-}
-
-/* main body of webpage below 
-header with left float */
-#middle_left {
-	float: left;
-	height: auto;
-	width: 49%;
-	z-index: 0;
-}
-
-/* main body of webpage below 
-header with right float */
-#middle_right {
-	float: right;
-	height: auto;
-	width: 49%;
-	z-index: 0;
-}
-
-/* profile image */
-#profile_img {
-	display: block;
-	width: 70%;
-	margin: 0 auto;
 }
 
 /* previously used color 3e70c1 */

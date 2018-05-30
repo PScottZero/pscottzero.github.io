@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-	<!-- mobile redirect -->
-	<script type="text/javascript">
-		<!--
-		if (screen.width <= 699) {
-		document.location = "about_mobile.html";
-		}
-		//-->
-	</script>
-
 	<!-- device scale -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<!-- webpage head -->
 	<head>
 		<title>Paul J Scott</title>
-		<link rel="stylesheet" href="styles.css">
+		
+		<link rel="stylesheet" media="screen and (min-width: 700px)" href="styles.css">
+		<link rel="stylesheet" media="screen and (max-width: 700px)" href="styles_mobile.css">
+
 		<link rel="icon" href="img\favicon.png">
 
 		<!-- google font link -->
@@ -36,9 +30,24 @@
 
 			<!-- links to other pages -->
 			<div id="link_container">
-				<a href="index.html"><img src="img\icon_resume.png" alt="Resume"></a>
-				<a href="projects.html"><img src="img\icon_projects.png" alt="Projects"></a>
-				<a href="about.html"><img src="img\icon_about.png" alt="About"></a>
+				<a href="index.html">
+					<picture>
+						<source media="screen and (max-width: 700px)" srcset="img\icon_resume_mobile.png" alt="Resume">
+						<img src="img\icon_resume.png" alt="Resume">
+					</picture>
+				</a>
+				<a href="projects.html">
+					<picture>
+						<source media="screen and (max-width: 700px)" srcset="img\icon_projects_mobile.png" alt="Projects">
+						<img src="img\icon_projects.png" alt="Projects">
+					</picture>
+				</a>
+				<a href="about.html">
+					<picture>
+						<source media="screen and (max-width: 700px)" srcset="img\icon_about_mobile.png" alt="About">
+						<img src="img\icon_about.png" alt="About">
+					</picture>
+				</a>
 			</div>
 		</div>
 
@@ -50,7 +59,10 @@
 				<p id="info_title"> About Me <br><br></p>
 
 				<!-- profile image -->
-				<img id="profile_img" src="img\me.png" draggable="false" alt="This is me :)">
+				<picture>
+					<source id="profile_image" media="screen and (max-width: 700px)" srcset="img\me.jpg" alt="This is me :)">
+					<img id="profile_image" src="img\me.png" draggable="false" alt="This is me :)">
+				</picture>
 
 				<!-- bibliography -->
 				<p>
