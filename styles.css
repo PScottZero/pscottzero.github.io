@@ -55,6 +55,7 @@ ul {
 	z-index: 2;
 }
 
+/* website logo */
 #header img {
 	position: absolute;
 	top: 0;
@@ -66,7 +67,6 @@ ul {
 
 /* information on webpage */
 #info_block {
-	height: auto;
 	margin-bottom: 2em;
 	padding: 4em 8em 4em 8em;
 	border-radius: 1em;
@@ -75,12 +75,27 @@ ul {
 	line-height: 2;
 }
 
-#info_block div {
+/* info block button alignment */
+#info_block div, #info_block_proj div {
 	text-align: center;
 }
 
-#info_block img {
+/* info block image width */
+#info_block img, #info_block_proj img {
 	width: 100%;
+}
+
+/* project information */
+#info_block_proj {
+	display: inline-block;
+	padding: 3em;
+	margin: 0 0 2em;
+	background: #FFFFFF;
+	border-radius: 1em;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+	width: 100%;
+	line-height: 2;
+	box-sizing:  border-box;
 }
 
 /* information title */
@@ -118,13 +133,19 @@ ul {
 }
 
 /* main body of webpage below header */
-#middle {
+#middle, #middle_proj {
 	position: relative;
 	height: auto;
 	margin: 5em auto 2em auto;
 	width: 80%;
 	max-width: 80em;
 	z-index: 0;
+}
+
+/* main body of projects webpage below header */
+#middle_proj {
+	column-count: 2;
+	column-gap: 2em;
 }
 
 /* previously used color 3e70c1 */
