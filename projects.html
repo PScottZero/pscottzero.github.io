@@ -4,12 +4,16 @@
 	<!-- device scale -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!-- javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js\scripts.js"></script>
+
 	<!-- webpage head -->
 	<head>
 		<title>Paul J Scott</title>
 
-		<link rel="stylesheet" media="screen and (min-width: 700px)" href="styles.css">
-		<link rel="stylesheet" media="screen and (max-width: 700px)" href="styles_mobile.css">
+		<link rel="stylesheet" media="screen and (min-width: 700px)" href="css\styles.css">
+		<link rel="stylesheet" media="screen and (max-width: 700px)" href="css\styles_mobile.css">
 
 		<link rel="icon" href="img\favicon.png">
 
@@ -53,10 +57,10 @@
 		
 		<!-- webpage main body -->
 		<div id="middle_proj">
-			
+
 			<!-- apogee artist -->
-			<div id="info_block_proj">
-				<p id="info_title"> Apogee Artist <br><br></p>
+			<div class="info_block_proj">
+				<p class="info_title"> Apogee Artist <br><br></p>
 
 				<!-- project image -->
 				<img src="img\apogee.png" draggable="false" alt="Bitwise Game Maker">
@@ -70,13 +74,13 @@
 
 				<!-- github link -->
 				<div>
-					<input type="button" value="View On Github" onCLick="window.open('https://github.com/PScottZero/Apogee-Artist')"/>
+					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/Apogee-Artist')"/>
 				</div>
 			</div>
 			
 			<!-- bitwise game maker -->
-			<div id="info_block_proj">
-				<p id="info_title"> Bitwise Game Maker <br><br></p>
+			<div class="info_block_proj">
+				<p class="info_title"> Bitwise Game Maker <br><br></p>
 
 				<!-- project image -->
 				<img src="img\bitwise.png" draggable="false">
@@ -90,13 +94,13 @@
 
 				<!-- github link -->
 				<div>
-					<input type="button" value="View On Github" onCLick="window.open('https://github.com/PScottZero/Bitwise-Game-Maker')"/>
+					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/Bitwise-Game-Maker')"/>
 				</div>
 			</div>
 
 			<!-- conway's game of life -->
-			<div id="info_block_proj">
-				<p id="info_title"> Conway's Game of Life <br><br></p>
+			<div class="info_block_proj">
+				<p class="info_title"> Conway's Game of Life <br><br></p>
 
 				<!-- project image -->
 				<img src="img\conway.png" draggable="false">
@@ -110,13 +114,13 @@
 
 				<!-- github link -->
 				<div>
-					<input type="button" value="View On Github" onCLick="window.open('https://github.com/PScottZero/Conways-Game-of-Life')"/>
+					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/Conways-Game-of-Life')"/>
 				</div>
 			</div>
 
 			<!-- exgraph -->
-			<div id="info_block_proj">
-				<p id="info_title"> ExGraph <br><br></p>
+			<div class="info_block_proj">
+				<p class="info_title"> ExGraph <br><br></p>
 
 				<!-- project image -->
 				<img src="img\exgraph.png" draggable="false">
@@ -130,13 +134,13 @@
 
 				<!-- github link -->
 				<div>
-					<input type="button" value="View On Github" onCLick="window.open('https://github.com/PScottZero/ExGraph')"/>
+					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/ExGraph')"/>
 				</div>
 			</div>
 
 			<!-- the hypothetical computer -->
-			<div id="info_block_proj">
-				<p id="info_title"> The Hypothetical Computer <br><br></p>
+			<div class="info_block_proj">
+				<p class="info_title"> The Hypothetical Computer <br><br></p>
 
 				<!-- project image -->
 				<img src="img\hc.png" draggable="false">
@@ -150,13 +154,13 @@
 
 				<!-- github link -->
 				<div>
-					<input type="button" value="View On Github" onCLick="window.open('https://github.com/PScottZero/The-Hypothetical-Computer')"/>
+					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/The-Hypothetical-Computer')"/>
 				</div>
 			</div>
 			
 			<!-- java paint -->
-			<div id="info_block_proj">
-				<p id="info_title"> Java Paint <br><br></p>
+			<div class="info_block_proj">
+				<p class="info_title"> Java Paint <br><br></p>
 
 				<!-- project image -->
 				<img src="img\javapaint.png" draggable="false">
@@ -170,13 +174,13 @@
 
 				<!-- github link -->
 				<div>
-					<input type="button" value="View On Github" onCLick="window.open('https://github.com/PScottZero/JavaPaint')"/>
+					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/JavaPaint')"/>
 				</div>
 			</div>
 
 			<!-- lucas-lehmer primality test -->
-			<div id="info_block_proj">
-				<p id="info_title"> Lucas-Lehmer Primality Test <br><br></p>
+			<div class="info_block_proj">
+				<p class="info_title"> Lucas-Lehmer Primality Test <br><br></p>
 
 				<!-- project image -->
 				<img src="img\lucas.png" draggable="false">
@@ -190,13 +194,13 @@
 
 				<!-- github link -->
 				<div>
-					<input type="button" value="View On Github" onCLick="window.open('https://github.com/PScottZero/Lucas-Lehmer-Test-Kotlin')"/>
+					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/Lucas-Lehmer-Test-Kotlin')"/>
 				</div>
 			</div>
 
 			<!-- metar decoder -->
-			<div id="info_block_proj">
-				<p id="info_title"> METAR Decoder <br><br></p>
+			<div class="info_block_proj">
+				<p class="info_title"> METAR Decoder <br><br></p>
 
 				<!-- project image -->
 				<img src="img\metar.png" draggable="false">
@@ -210,13 +214,13 @@
 
 				<!-- github link -->
 				<div>
-					<input type="button" value="View On Github" onCLick="window.open('https://github.com/PScottZero/METAR-Decoder')"/>
+					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/METAR-Decoder')"/>
 				</div>
 			</div>
 			
 			<!-- stp ground -->
-			<div id="info_block_proj">
-				<p id="info_title"> STP Ground <br><br></p>
+			<div class="info_block_proj">
+				<p class="info_title"> STP Ground <br><br></p>
 
 				<!-- project image -->
 				<img src="img\stp.png" draggable="false">
@@ -230,13 +234,13 @@
 
 				<!-- github link -->
 				<div>
-					<input type="button" value="View On Github" onCLick="window.open('https://github.com/PScottZero/STP-Ground')"/>
+					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/STP-Ground')"/>
 				</div>
 			</div>
 
 			<!-- terminal enigma -->
-			<div id="info_block_proj">
-				<p id="info_title"> Terminal Enigma <br><br></p>
+			<div class="info_block_proj">
+				<p class="info_title"> Terminal Enigma <br><br></p>
 
 				<!-- project image -->
 				<img src="img\enigma.png" draggable="false">
@@ -250,7 +254,7 @@
 
 				<!-- github link -->
 				<div>
-					<input type="button" value="View On Github" onCLick="window.open('https://github.com/PScottZero/TerminalEnigma')"/>
+					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/TerminalEnigma')"/>
 				</div>
 			</div>
 		</div>

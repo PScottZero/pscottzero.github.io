@@ -58,7 +58,7 @@ ul {
 }
 
 /* information on webpage */
-#info_block, #info_block_proj {
+#info_block, .info_block_proj {
 	height: auto;
 	margin-bottom: 1em;
 	padding: 3em 1.5em;
@@ -67,16 +67,16 @@ ul {
 	line-height: 1.7;
 }
 
-#info_block div, #info_block_proj div {
+#info_block div, .info_block_proj div {
 	text-align: center;
 }
 
-#info_block img, #info_block_proj img {
+#info_block img, .info_block_proj img {
 	width: 100%;
 }
 
 /* information title */
-#info_title {
+.info_title {
 	text-align: center;
 	font-size: 2em;
 	color: #0e65e5;
