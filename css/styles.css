@@ -149,3 +149,10 @@ ul {
 	column-count: 2;
 	column-gap: 2em;
 }
+
+@media screen and (max-width: 1300px) {
+	#middle_proj {
+		column-count: 1;
+		column-gap: 2em;
+	}
+}
