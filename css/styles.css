@@ -53,6 +53,11 @@ ul {
 	font-size: 20px;
 }
 
+/* contact info on resume page */
+#contact p {
+	text-align: center;
+}
+
 /* webpage header */
 #header {
 	position: fixed;
@@ -149,13 +154,5 @@ ul {
 }
 
 #middle_proj {
-	column-count: 2;
-	column-gap: 2em;
-}
-
-@media screen and (max-width: 1300px) {
-	#middle_proj {
-		column-count: 1;
-		column-gap: 2em;
-	}
+	width: 50%;
 }

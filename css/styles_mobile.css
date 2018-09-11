@@ -46,6 +46,11 @@ ul {
 	padding-left: 1em;
 }
 
+/* contact info on resume page */
+#contact p {
+	text-align: center;
+}
+
 /* webpage header */
 #header {
 	position: fixed;
