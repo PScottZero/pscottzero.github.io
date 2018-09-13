@@ -10,7 +10,7 @@
 body {
 	height: 100%;
 	width: 100%;
-	background: #DFDFDF;
+	background: #EAEAEA;
 	font-family: "Raleway", "Segoe UI", "Sans-Serif";
 	font-size: 18px;
 }
@@ -39,7 +39,7 @@ ul {
 /* button */
 .button {
 	border-radius: 2em;
-	background: #DFDFDF;
+	background: #EAEAEA;
 	padding: 0.3em 0.5em;
 	font-size: 20px;
 }
@@ -47,7 +47,6 @@ ul {
 /* hovered button */
 .buttonSelected {
 	border-radius: 2em;
-	background: #DFDFDF;
 	box-shadow: 0 3px 3px #888888;
 	padding: 0.3em 0.5em;
 	font-size: 20px;
@@ -147,12 +146,13 @@ ul {
 }
 
 /* main body of webpage below header */
-#middle, #middle_proj {
+#middle {
 	margin: 5em auto 2em auto;
 	width: 80%;
 	max-width: 80em;
 }
 
 #middle_proj {
-	width: 50%;
+	margin: 5em auto 2em auto;
+	width: 45em;
 }

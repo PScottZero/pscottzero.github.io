@@ -17,15 +17,12 @@ $(document).ready(function(){
 		});
 
 		// adds drop shadow to header if not at top
-		// also changes background color as you scroll down
 		$(window).scroll(function() {
 			if ($(document).scrollTop() == 0) {
 				$("#header").css({boxShadow: 'none'})
 			} else {
 				$("#header").css({boxShadow: '0 2px 10px rgba(0, 0, 0, 0.25)'})
 			}
-			var rgb = Math.max(223 - ($(this).scrollTop() / 30), 100);
-	        $("body").css('background-color', 'rgb(' + rgb + ',' + rgb + ',' + rgb + ')');
 		});
 	}
 });
