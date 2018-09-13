@@ -63,7 +63,7 @@ ul {
 }
 
 /* information on webpage */
-#info_block, .info_block_alt {
+#info_block, .info_block_proj {
 	height: auto;
 	margin-bottom: 1em;
 	padding: 3em 1.5em;
@@ -72,11 +72,11 @@ ul {
 	line-height: 1.7;
 }
 
-#info_block div, .info_block_alt div {
+#info_block div, .info_block_proj div {
 	text-align: center;
 }
 
-#info_block img, .info_block_alt img {
+#info_block img, .info_block_proj img {
 	width: 100%;
 }
 
@@ -121,7 +121,7 @@ ul {
 }
 
 /* main body of webpage below header */
-#middle, #middle_alt {
+#middle, #middle_proj {
 	position: relative;
 	margin: 2.2em auto;
 	height: auto;
