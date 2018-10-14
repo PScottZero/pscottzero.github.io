@@ -1,304 +1,184 @@
 <!DOCTYPE html>
-<html>
-
-	<!-- device scale -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- javascript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js\scripts.js"></script>
-
-	<!-- webpage head -->
-	<head>
-		<title>Paul J Scott</title>
-
-		<link rel="stylesheet" media="screen and (min-width: 700px)" href="css\styles.css">
-		<link rel="stylesheet" media="screen and (max-width: 700px)" href="css\styles_mobile.css">
-
-		<link rel="icon" href="img\favicon.png">
-
-		<!-- google font link -->
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	</head>	
-
-	<!-- webpage body -->
-	<body>
-		
-		<!-- webpage header -->
-		<div id="header">
-
-			<!-- logo -->
-			<a href="index.html">
-				<img id="logo" src="img\logo.png" alt="Website Logo">
-			</a>
-
-			<!-- links to other pages -->
-			<div id="link_container">
-				<a href="index.html">
-					<picture>
-						<source media="screen and (max-width: 700px)" srcset="img\icon_resume_mobile.png" alt="Resume">
-						<img src="img\icon_resume.png" alt="Resume">
-					</picture>
-				</a>
-				<a href="projects.html">
-					<picture>
-						<source media="screen and (max-width: 700px)" srcset="img\icon_projects_mobile.png" alt="Projects">
-						<img src="img\icon_projects.png" alt="Projects">
-					</picture>
-				</a>
-				<a href="about.html">
-					<picture>
-						<source media="screen and (max-width: 700px)" srcset="img\icon_about_mobile.png" alt="About">
-						<img src="img\icon_about.png" alt="About">
-					</picture>
-				</a>
-			</div>
-		</div>
-		
-		<!-- webpage main body -->
-		<div id="middle_proj">
-
-			<!-- apogee artist -->
-			<div class="info_block_proj">
-				<p class="info_title"> Apogee Artist <br><br></p>
-
-				<!-- project image -->
-				<img src="img\apogee.png" draggable="false" alt="Bitwise Game Maker">
-
-				<!-- project description-->
-				<p><br> 
-					The spiritual successor to my previous program, Java Paint. I decided to take my ideas from Java Paint and make a new and heavily improved program. The program is entirely rewritten and now uses Kotlin. Also, the user interface is now completely resizable unlike in Java Paint. With a wide variety of advanced tools and features, I feel that this is the closest I have come to making a passable piece of illustration software. I'm not saying that this program is going to compete with Adobe or anything, but at least the program is exciting to use!<br><br>
-
-					[Programmed in Koltin]<br><br><br>
-				</p>
-
-				<!-- github link -->
-				<div>
-					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/Apogee-Artist')"/>
-				</div>
-			</div>
-			
-			<!-- bitwise game maker -->
-			<div class="info_block_proj">
-				<p class="info_title"> Bitwise Game Maker <br><br></p>
-
-				<!-- project image -->
-				<img src="img\bitwise.png" draggable="false">
-
-				<!-- project description -->
-				<p><br> 
-					I originally created this project for the Spring of 2018 Hack PSU. I decided after the Hackathon to refine its design and make it work better. Bitwise Game Maker allows you to customize the blocks in the level and your character. Each block can either be a, and background block (does not interact with the player), platform block (the player can stand on it), or enemy block (makes the player lose a life). The main "goal" of the game is to get to the other side of the level. However, since you are in control of the level design, you can make this goal harder or easier to achieve.<br><br>
-
-					[Programmed in Java]<br><br><br>
-				</p>
-
-				<!-- github link -->
-				<div>
-					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/Bitwise-Game-Maker')"/>
-				</div>
-			</div>
-
-			<!-- conway's game of life -->
-			<div class="info_block_proj">
-				<p class="info_title"> Conway's Game of Life <br><br></p>
-
-				<!-- project image -->
-				<img src="img\conway.png" draggable="false">
-
-				<!-- project description -->
-				<p><br> 
-					Need I say more? It's Conway's Game of Life!!! <br><br>
-
-					[Programmed in Kotlin]<br><br><br>
-				</p>
-
-				<!-- github link -->
-				<div>
-					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/Conways-Game-of-Life')"/>
-				</div>
-			</div>
-
-			<!-- easton coach driver report -->
-			<div class="info_block_proj">
-				<p class="info_title"> Easton Coach Driver Report <br><br></p>
-
-				<!-- project image -->
-				<img src="img\easton.png" draggable="false">
-
-				<!-- project description -->
-				<p><br> 
-					This program generates a weekly driver report for drivers of Easton Coach Company. The program calculates the first login and last logout of the day, and first motion start and last motion stop for each driver. <br><br>
-
-					[Programmed in Kotlin]<br><br><br>
-				</p>
-
-				<!-- github link -->
-				<div>
-					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/Easton-Coach-Driver-Report')"/>
-				</div>
-			</div>
-
-
-			<!-- exgraph -->
-			<div class="info_block_proj">
-				<p class="info_title"> ExGraph <br><br></p>
-
-				<!-- project image -->
-				<img src="img\exgraph.png" draggable="false">
-
-				<!-- project description -->
-				<p><br> 
-					Watching my trusty TI-84 drawing beautiful graphs always made me think "could I make a program that also does this?" The result is a program that takes in Reverse Polish Notation equations and spits out either cartesian, polar, or parametric graphs.<br><br>
-
-					[Programmed in Java]<br><br><br>
-				</p>
-
-				<!-- github link -->
-				<div>
-					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/ExGraph')"/>
-				</div>
-			</div>
-
-			<!-- the hypothetical computer -->
-			<div class="info_block_proj">
-				<p class="info_title"> The Hypothetical Computer <br><br></p>
-
-				<!-- project image -->
-				<img src="img\hc.png" draggable="false">
-
-				<!-- project description -->
-				<p><br> 
-					I have always been interested in older computers and technology. One of the fascinating pieces of early personal computing history is the Altair 8800, which you programmed using assembly and a switchboard. I wanted to recreate this experience with my own fictitious computer and assembly code, and the results are quite interesting.<br><br>
-
-					[Programmed in Java]<br><br><br>
-				</p>
-
-				<!-- github link -->
-				<div>
-					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/The-Hypothetical-Computer')"/>
-				</div>
-			</div>
-			
-			<!-- java paint -->
-			<div class="info_block_proj">
-				<p class="info_title"> Java Paint <br><br></p>
-
-				<!-- project image -->
-				<img src="img\javapaint.png" draggable="false">
-
-				<!-- project description -->
-				<p><br> 
-					Java Paint is designed to be a simple to use painting program. It has a few simple tools that allow for users to draw shapes like rectangles, ovals, and triangles. It also features the ability to open and save images.<br><br>
-
-					[Programmed in Java]<br><br><br>
-				</p>
-
-				<!-- github link -->
-				<div>
-					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/JavaPaint')"/>
-				</div>
-			</div>
-
-			<!-- lucas-lehmer primality test -->
-			<div class="info_block_proj">
-				<p class="info_title"> Lucas-Lehmer Primality Test <br><br></p>
-
-				<!-- project image -->
-				<img src="img\lucas.png" draggable="false">
-
-				<!-- project description -->
-				<p><br> 
-					Want to see how well your computer can handle calculated Mersenne Primes?!? (Large Prime in form 2&#8319;-1) Then look no further. Using the Lucas-Lehmer primality test, this program is able to calculate exceedingly large prime numbers.<br><br>
-
-					[Programmed in Kotlin]<br><br><br>
-				</p>
-
-				<!-- github link -->
-				<div>
-					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/Lucas-Lehmer-Test-Kotlin')"/>
-				</div>
-			</div>
-
-			<!-- metar decoder -->
-			<div class="info_block_proj">
-				<p class="info_title"> METAR Decoder <br><br></p>
-
-				<!-- project image -->
-				<img src="img\metar.png" draggable="false">
-
-				<!-- project description -->
-				<p><br> 
-					This program decodes airport weather information that is in METAR form. Just a fun project, since I am also an aspiring aviator. However, I would not recommend any real pilots use this!<br><br>
-
-					[Programmed in Java]<br><br><br>
-				</p>
-
-				<!-- github link -->
-				<div>
-					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/METAR-Decoder')"/>
-				</div>
-			</div>
-
-			<!-- recaman sequence visualizer -->
-			<div class="info_block_proj">
-				<p class="info_title"> Recam&aacuten Sequence Visualizer <br><br></p>
-
-				<!-- project image -->
-				<img src="img\recaman.png" draggable="false">
-
-				<!-- project description -->
-				<p><br> 
-					This program creates a visual representation of the Recam&aacuten Sequence. The sequence is best explained by the 
-					<a href="https://youtu.be/FGC5TdIiT9U">video</a> that inspired me to write this program.</a><br><br>
-
-					[Programmed in Kotlin]<br><br><br>
-				</p>
-
-				<!-- github link -->
-				<div>
-					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/Recaman-Sequence-Visualizer')"/>
-				</div>
-			</div>
-			
-			<!-- stp ground -->
-			<div class="info_block_proj">
-				<p class="info_title"> STP Ground <br><br></p>
-
-				<!-- project image -->
-				<img src="img\stp.png" draggable="false">
-
-				<!-- project description -->
-				<p><br> 
-					During my fall semester of 2017, I was part of the Student Space Program Laboratory's student training program (STP). There were three subgroups in this program. Two of which built small rockets that would contain a payload. This payload would send data to the last group, the ground station. I found myself in that group, and ended up designing the GUI used to display the information received from the payload. Due to communication errors on the day of launch, I was never actually able to see this program run for real. However, it should theoretically work.<br><br>
-
-					[Programmed in Python]<br><br><br>
-				</p>
-
-				<!-- github link -->
-				<div>
-					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/STP-Ground')"/>
-				</div>
-			</div>
-
-			<!-- terminal enigma -->
-			<div class="info_block_proj">
-				<p class="info_title"> Terminal Enigma <br><br></p>
-
-				<!-- project image -->
-				<img src="img\enigma.png" draggable="false">
-
-				<!-- project description -->
-				<p><br> 
-					Being someone who loves ciphers, it is no surprise that the Enigma machine fascinates me. It seemed only reasonable that I would make a simulator of the infamous WWII code machine.<br><br>
-
-					[Programmed in Python]<br><br><br>
-				</p>
-
-				<!-- github link -->
-				<div>
-					<input type="button" value="View On Github" class="button" onCLick="window.open('https://github.com/PScottZero/TerminalEnigma')"/>
-				</div>
-			</div>
-		</div>
-	</body>
+<html lang="en">
+
+    <!-- javascript / jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/conway.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- head -->
+    <head>
+
+        <!-- title and text encoding -->
+        <meta charset="UTF-8">
+        <title>Paul J Scott</title>
+
+        <!-- link to css -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- google font link -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+        <!-- website icon -->
+        <link rel="icon" href="img/icons/favicon.png">
+    </head>
+
+    <!-- body -->
+    <body bgcolor="#666">
+
+        <!-- header containing conway's game of life and website title -->
+        <div id="canvas_container">
+            <canvas id="conway"></canvas>
+            <p id="title"><b>Paul Joseph Scott IV</b></p>
+        </div>
+
+        <!-- header containing links to other pages -->
+        <div class="header" id="header">
+
+            <!-- container that holds links to other pages -->
+            <div id="link_container">
+
+                <!-- link to about page -->
+                <div class="image_container">
+                    <a href="index.html">
+                        <img src="img/icons/icon_about.png">
+                    </a>
+                </div>
+
+                <!-- link to projects page -->
+                <div class="image_container">
+                    <a href="projects.html">
+                        <img src="img/icons/icon_projects.png">
+                    </a>
+                </div>
+
+                <!-- link to resume [External: Google Drive] -->
+                <div class="image_container">
+                    <a href="https://drive.google.com/file/d/1zDxcunVwYQK74Bv3SwEG3ePQrxsx8Bdu/view?usp=sharing" target="_blank">
+                        <img src="img/icons/icon_resume.png">
+                    </a>
+                </div>
+
+                <!-- link to linkedin [External: LinkedIn] -->
+                <div class="image_container">
+                    <a href="https://www.linkedin.com/in/paul-scott-047858140/" target="_blank">
+                        <img src="img/icons/icon_linkedin.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- main body of website -->
+        <div id="main_body">
+            <p class="section_title" style="padding-top: 2.5em"> Projects: <br><br></p>
+            <div class="row">
+                    <a class="project_div" href="https://github.com/PScottZero/Apogee-Artist"
+                       target="_blank" style="background: url('img/projects/apogee.png');
+                       background-size: cover">
+                        <div class="surround_text">
+                            <p> Apogee Artist </p>
+                        </div>
+                    </a>
+                <a class="project_div" href="https://github.com/PScottZero/Bitwise-Game-Maker"
+                   target="_blank" style="background: url('img/projects/bitwise.png');
+                   background-size: cover">
+                    <div class="surround_text">
+                        <p> Bitwise Game Maker </p>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a class="project_div" href="https://github.com/PScottZero/Conways-Game-of-Life"
+                   target="_blank" style="background: url('img/projects/conway.png');
+                   background-size: cover">
+                    <div class="surround_text">
+                        <p> Conway's Game of Life </p>
+                    </div>
+                </a>
+                <a class="project_div" href="https://github.com/PScottZero/Easton-Coach-Driver-Report"
+                   target="_blank" style="background: url('img/projects/easton.png');
+                   background-size: cover">
+                    <div class="surround_text">
+                        <p> Easton Coach Driver Report </p>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a class="project_div" href="https://github.com/PScottZero/ExGraph"
+                   target="_blank" style="background: url('img/projects/exgraph.png');
+                   background-size: cover">
+                    <div class="surround_text">
+                        <p> ExGraph </p>
+                    </div>
+                </a>
+                <a class="project_div" href="https://github.com/PScottZero/The-Hypothetical-Computer"
+                   target="_blank" style="background: url('img/projects/hc.png');
+                   background-size: cover">
+                    <div class="surround_text">
+                        <p> The Hypothetical Computer </p>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a class="project_div" href="https://github.com/PScottZero/JavaPaint"
+                   target="_blank" style="background: url('img/projects/javapaint.png');
+                   background-size: cover">
+                    <div class="surround_text">
+                        <p> Java Paint </p>
+                    </div>
+                </a>
+                <a class="project_div" href="https://github.com/PScottZero/Lucas-Lehmer-Test-Kotlin"
+                   target="_blank" style="background: url('img/projects/lucas.png');
+                   background-size: cover">
+                    <div class="surround_text">
+                        <p> Lucas-Lehmer Primality Test </p>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a class="project_div" href="https://github.com/PScottZero/METAR-Decoder"
+                   target="_blank" style="background: url('img/projects/metar.png');
+                   background-size: cover">
+                    <div class="surround_text">
+                        <p> METAR Decoder </p>
+                    </div>
+                </a>
+                <a class="project_div" href="https://github.com/PScottZero/Recaman-Sequence-Visualizer"
+                   target="_blank" style="background: url('img/projects/recaman.png');
+                   background-size: cover">
+                    <div class="surround_text">
+                        <p> Recam&aacuten Series Visualizer </p>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a class="project_div" href="https://github.com/PScottZero/STP-Ground"
+                   target="_blank" style="background: url('img/projects/stp.png');
+                   background-size: cover">
+                    <div class="surround_text">
+                        <p> STP Ground </p>
+                    </div>
+                </a>
+                <a class="project_div" href="https://github.com/PScottZero/TerminalEnigma"
+                   target="_blank" style="background: url('img/projects/enigma.png');
+                   background-size: cover">
+                    <div class="surround_text">
+                        <p> Terminal Enigma </p>
+                    </div>
+                </a>
+            </div>
+            <div class="row">
+                <a class="project_div" href="https://github.com/PScottZero/Toxicity-HackPSU-Fall2018"
+                   target="_blank" style="background: url('img/projects/toxicity.png');
+                       background-size: cover">
+                    <div class="surround_text">
+                        <p> Toxicity </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="footer">
+            <p> Created by Paul Scott with HTML, CSS, and JavaScript </p>
+        </div>
+    </body>
 </html>
