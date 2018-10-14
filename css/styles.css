@@ -54,6 +54,7 @@ canvas {
 }
 
 .project_div {
+    display: block;
     flex: 50%;
     font-size: 28px;
     height: 15em;
