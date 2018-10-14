@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+    <!-- device scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- javascript / jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/conway.js"></script>
@@ -14,7 +17,8 @@
         <title>Paul J Scott</title>
 
         <!-- link to css -->
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" media="screen and (min-width: 700px)" href="css/styles.css">
+        <link rel="stylesheet" media="screen and (max-width: 700px)" href="css/styles_mobile.css">
 
         <!-- google font link -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -72,13 +76,13 @@
         <div id="main_body">
             <p class="section_title" style="padding-top: 2.5em"> Projects: <br><br></p>
             <div class="row">
-                    <a class="project_div" href="https://github.com/PScottZero/Apogee-Artist"
-                       target="_blank" style="background: url('img/projects/apogee.png');
-                       background-size: cover">
-                        <div class="surround_text">
-                            <p> Apogee Artist </p>
-                        </div>
-                    </a>
+                <a class="project_div" href="https://github.com/PScottZero/Apogee-Artist"
+                   target="_blank" style="background: url('img/projects/apogee.png');
+                   background-size: cover">
+                    <div class="surround_text">
+                        <p> Apogee Artist </p>
+                    </div>
+                </a>
                 <a class="project_div" href="https://github.com/PScottZero/Bitwise-Game-Maker"
                    target="_blank" style="background: url('img/projects/bitwise.png');
                    background-size: cover">
