@@ -4,7 +4,6 @@ $(document).ready(function(){
 
         let canvas = document.getElementById("conway");
         canvas.width = screen.width;
-        console.log(screen.width);
         canvas.height = Math.floor(canvas.width / 4);
 
         conway.draw();
