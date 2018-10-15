@@ -1,9 +1,9 @@
 class Conway {
 
     constructor() {
-        this.c = 240;
-        this.r = this.c / 4;
-        this.size = 10;
+        this.c = 120;
+        this.r = this.c / 6;
+        this.size = 16;
 
         this.cells = Array(this.r * this.c);
         for (let i = 0; i < this.cells.length; i++) {
@@ -43,8 +43,8 @@ class Conway {
         let ctx = canvas.getContext("2d");
         ctx.beginPath();
         for (let i = 0; i < this.cells.length; i++) {
-            if (this.cells[i] === 1) ctx.fillStyle = "#424242";
-            else ctx.fillStyle = "#666666";
+            if (this.cells[i] === 1) ctx.fillStyle = "#267ca0";
+            else ctx.fillStyle = "#25a7ce";
             ctx.fillRect((i % this.c) * this.size, Math.floor(i / this.c) * this.size, this.size, this.size);
         }
     }

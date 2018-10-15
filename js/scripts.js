@@ -4,7 +4,7 @@ $(document).ready(function(){
 
         let canvas = document.getElementById("conway");
         let width = document.body.offsetWidth;
-        let height = Math.floor(width / 3);
+        let height = Math.floor(width / 6);
         canvas.width = width;
         canvas.height = height;
 
