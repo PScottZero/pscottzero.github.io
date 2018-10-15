@@ -3,10 +3,9 @@ $(document).ready(function(){
         let conway = new Conway();
 
         let canvas = document.getElementById("conway");
-        let width = document.body.offsetWidth;
-        let height = Math.floor(width / 6);
-        canvas.width = width;
-        canvas.height = height;
+        canvas.width = screen.width;
+        console.log(screen.width);
+        canvas.height = Math.floor(canvas.width / 4);
 
         conway.draw();
 
@@ -39,7 +38,7 @@ $(document).ready(function(){
         // Get the header
         let header = document.getElementById("header");
 
-        // Get the offset position of the navbar
+        // Get the offset position of the header
         let sticky = header.offsetTop;
 
         // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position

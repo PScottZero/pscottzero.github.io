@@ -1,9 +1,9 @@
 class Conway {
 
     constructor() {
-        this.c = 120;
-        this.r = this.c / 6;
-        this.size = 16;
+        this.c = 80;
+        this.r = this.c / 4;
+        this.size = Math.ceil(screen.width / this.c);
 
         this.cells = Array(this.r * this.c);
         for (let i = 0; i < this.cells.length; i++) {

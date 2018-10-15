@@ -1,26 +1,27 @@
+/* reset browser defaults */
 * {
     padding: 0;
     margin: 0;
     border: 0;
 }
 
+/* configure links */
 a, a:visited, a:hover {
     color: black;
     text-decoration: none;
 }
 
-a:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
+/* set parameters for website body */
 body {
     width: 100%;
     height: 100%;
     font-family: Montserrat, Arial, serif;
     font-size: 18px;
     text-align: center;
+    background-color: #25a7ce;
 }
 
+/* canvas that contains conway's game of life */
 canvas {
     position: fixed;
     top: 0;
@@ -29,17 +30,43 @@ canvas {
     overflow: hidden;
 }
 
+/* div that holds about page information */
+.content_div {
+    flex: 33.33%;
+    float: left;
+    padding: 1.5em;
+    line-height: 1.5;
+    border-radius: 1em;
+    margin: 0.5em;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* content div text */
+.content_div p {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* content div images */
+.content_div img {
+    float: top;
+    height: 3em;
+}
+
+/* website header */
 .header {
     position: relative;
     z-index: 2;
     max-width: 100%;
-    min-width: 60em;
+    min-width: 50em;
     top: 3em;
     height: 3em;
     background: #00596b;
     overflow: hidden;
 }
 
+/* website header when at top of page */
+/*noinspection CssUnusedSymbol*/
 .header_sticky {
     position: sticky;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
@@ -47,12 +74,19 @@ canvas {
     width: 100%;
 }
 
+/* container that holds images used by links on header */
 .image_container {
     flex: 25%;
     float: left;
     padding: 0.25em;
 }
 
+/* sets header link image size */
+.image_container img {
+    height: 2.5em;
+}
+
+/* container that holds project information */
 .project_div {
     display: block;
     flex: 50%;
@@ -66,28 +100,14 @@ canvas {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
 }
 
-.project_div img {
-    float: bottom;
-    margin-top: 0.5em;
-    width: 100%;
+/* adds box shadow when project div is hovered over */
+.project_div:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    color: #267ca0;
 }
 
-.row {
-    display: flex;
-    width: 60em;
-    margin: auto;
-    padding-top: 1em;
-}
-
-/* information title */
-.section_title {
-    text-align: center;
-    padding-top: 1.5em;
-    font-size: 2em;
-    color: #555555;
-}
-
-.surround_text {
+/* text that is located on project divs */
+.project_text {
     width: 80%;
     border-radius: 0 0 1em 1em;
     border: 2px solid black;
@@ -96,38 +116,37 @@ canvas {
     background: white;
 }
 
-.content_div {
-    flex: 33.33%;
-    float: left;
-    padding: 2em;
-    line-height: 1.5;
-    border-radius: 1em;
-    margin: 0.5em;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+/* defines div rows used on all pages */
+.row {
+    display: flex;
+    max-width: 70%;
+    min-width: 50em;
+    margin: auto;
+    padding-top: 1em;
 }
 
-.content_div p {
-    font-size: 24px;
+/* title for each section of website */
+.section_title {
     text-align: center;
+    padding-top: 1.5em;
+    font-size: 2em;
+    color: #555555;
 }
 
-.content_div img {
-    float: top;
-    height: 3em;
-}
-
+/* container that contains conway canvas */
 #canvas_container {
     width: 100%;
     height: 5em;
-    background: #666;
 }
 
+/* footer of website */
 #footer {
     padding: 2em;
     line-height: 1.5;
     background: #CCC;
 }
 
+/* contains all header links */
 #link_container {
     display: flex;
     width: 40em;
@@ -135,27 +154,19 @@ canvas {
     margin: auto;
 }
 
-#link_container img {
-    height: 2.5em;
-}
-
+/* main body of website where most text lies */
 #main_body {
     position: relative;
     z-index: 1;
     max-width: 100%;
-    min-width: 60em;
+    min-width: 50em;
     margin: 1em auto auto auto;
     height: auto;
     background: #FFFFFF;
     padding-bottom: 2em;
 }
 
-#projects {
-    margin: auto;
-    padding-top: 5em;
-    max-width: 45em;
-}
-
+/* title of website */
 #title {
     position: relative;
     top: 0;

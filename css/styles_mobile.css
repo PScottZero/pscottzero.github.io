@@ -1,18 +1,17 @@
+/* reset browser defaults */
 * {
     padding: 0;
     margin: 0;
     border: 0;
 }
 
+/* configure links */
 a, a:visited, a:hover {
     color: black;
     text-decoration: none;
 }
 
-a:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
+/* set parameters for website body */
 body {
     width: 100%;
     height: 100%;
@@ -21,6 +20,33 @@ body {
     text-align: center;
 }
 
+/* hide elements not needed for mobile version of website */
+canvas, #canvas_container, #footer {
+    display: none;
+}
+
+/* div that holds about page information */
+.content_div {
+    padding: 2em;
+    line-height: 1.5;
+    border-radius: 1em;
+    margin: 0.5em;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* content div text */
+.content_div p {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* content div images */
+.content_div img {
+    float: top;
+    height: 3em;
+}
+
+/* website header */
 .header {
     position: fixed;
     z-index: 2;
@@ -31,12 +57,19 @@ body {
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.25);
 }
 
+/* container that holds images used by links on header */
 .image_container {
     flex: 25%;
     float: left;
     padding: 0.25em;
 }
 
+/* sets header link image size */
+.image_container img {
+    height: 2.5em;
+}
+
+/* container that holds project information */
 .project_div {
     display: block;
     font-size: 24px;
@@ -49,15 +82,8 @@ body {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
 }
 
-/* information title */
-.section_title {
-    text-align: center;
-    padding-top: 1.5em;
-    font-size: 2em;
-    color: #555555;
-}
-
-.surround_text {
+/* text that is located on project divs */
+.project_text {
     width: 70%;
     border-radius: 0 0 1em 1em;
     border: 2px solid black;
@@ -66,41 +92,15 @@ body {
     background: white;
 }
 
-.content_div {
-    padding: 2em;
-    line-height: 1.5;
-    border-radius: 1em;
-    margin: 0.5em;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
-}
-
-.content_div p {
-    font-size: 24px;
+/* title for each section of website */
+.section_title {
     text-align: center;
+    padding-top: 1.5em;
+    font-size: 2em;
+    color: #555555;
 }
 
-.content_div img {
-    float: top;
-    height: 3em;
-}
-
-#canvas_container {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
-    top: 0;
-    width: 100%;
-    height: 3em;
-    background: white;
-    border-bottom: 1px solid grey;
-}
-
-canvas, #footer {
-    display: none;
-}
-
+/* contains all header links */
 #link_container {
     display: flex;
     width: 100%;
@@ -108,10 +108,7 @@ canvas, #footer {
     margin: auto;
 }
 
-#link_container img {
-    height: 2.5em;
-}
-
+/* main body of website where most text lies */
 #main_body {
     z-index: 1;
     width: 100%;
@@ -121,12 +118,7 @@ canvas, #footer {
     padding-bottom: 3em;
 }
 
-#projects {
-    margin: auto;
-    padding-top: 5em;
-    width: 100%;
-}
-
+/* title of website */
 #title {
     color: black;
     font-size: 8vw;
