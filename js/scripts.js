@@ -54,6 +54,6 @@ $(document).ready(function(){
         // Adds last updated date to footers on all pages
         let footer = document.getElementById("footer");
 
-        footer.innerHTML += "Last Updated 14 October 2018"
+        footer.innerHTML += "Last Updated 15 October 2018"
     }
 });
