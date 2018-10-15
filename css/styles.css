@@ -166,6 +166,11 @@ canvas {
     padding-bottom: 2em;
 }
 
+/* hides logo that's meant only for mobile */
+#mobile_logo {
+    display: none;
+}
+
 /* title of website */
 #title {
     position: relative;
