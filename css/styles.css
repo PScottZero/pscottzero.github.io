@@ -3,6 +3,13 @@
     padding: 0;
     margin: 0;
     border: 0;
+
+    /* variables */
+    --font-stack: Montserrat, Arial, serif;
+    --canvas-color: #3b94c6;
+    --header-color: #317ba5;
+    --drop-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    --min-screen-size: 720px;
 }
 
 /* configure links */
@@ -15,30 +22,10 @@ a, a:visited, a:hover {
 body {
     width: 100%;
     height: 100%;
-    font-family: Montserrat, Arial, serif;
+    font-family: var(--font-stack);
     font-size: 18px;
     text-align: center;
-    background-color: #25a7ce;
-}
-
-/* canvas that contains conway's game of life */
-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    overflow: hidden;
-}
-
-/* div that holds about page information */
-.content_div {
-    flex: 33.33%;
-    float: left;
-    padding: 1.5em;
-    line-height: 1.5;
-    border-radius: 1em;
-    margin: 0.5em;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    background-color: var(--canvas-color);
 }
 
 /* content div text */
@@ -53,27 +40,6 @@ canvas {
     height: 3em;
 }
 
-/* website header */
-.header {
-    position: relative;
-    z-index: 2;
-    max-width: 100%;
-    min-width: 50em;
-    top: 3em;
-    height: 3em;
-    background: #00596b;
-    overflow: hidden;
-}
-
-/* website header when at top of page */
-/*noinspection CssUnusedSymbol*/
-.header_sticky {
-    position: sticky;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
-    top: 0;
-    width: 100%;
-}
-
 /* container that holds images used by links on header */
 .image_container {
     flex: 25%;
@@ -86,43 +52,14 @@ canvas {
     height: 2.5em;
 }
 
-/* container that holds project information */
-.project_div {
-    display: block;
-    flex: 50%;
-    font-size: 28px;
-    height: 15em;
-    padding: 0;
-    border: 2px solid black;
-    line-height: 1.5;
-    border-radius: 1em;
-    margin: 0.5em;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
-}
-
-/* adds box shadow when project div is hovered over */
-.project_div:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    color: #267ca0;
-}
-
 /* text that is located on project divs */
 .project_text {
-    width: 80%;
+    width: 70%;
     border-radius: 0 0 1em 1em;
     border: 2px solid black;
     margin: auto;
     padding: 0.2em;
     background: white;
-}
-
-/* defines div rows used on all pages */
-.row {
-    display: flex;
-    max-width: 65em;
-    min-width: 50em;
-    margin: auto;
-    padding-top: 1em;
 }
 
 /* title for each section of website */
@@ -133,50 +70,194 @@ canvas {
     color: #555555;
 }
 
-/* container that contains conway canvas */
-#canvas_container {
-    width: 100%;
-    height: 5em;
+/* styling for desktop website */
+@media (min-width: 720px) {
+
+    /* canvas that contains conway's game of life */
+    canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    /* div that holds about page information */
+    .content_div {
+        flex: 33.33%;
+        float: left;
+        padding: 1.5em;
+        line-height: 1.5;
+        border-radius: 1em;
+        margin: 0.5em;
+        box-shadow: var(--drop-shadow);
+    }
+
+    /* website header */
+    .header {
+        position: sticky;
+        height: 3em;
+        max-width: 100%;
+        min-width: 50em;
+        margin-top: 2.4em;
+        top: 0;
+        z-index: 2;
+        background: var(--header-color);
+    }
+
+    /* container that holds project information */
+    .project_div {
+        display: block;
+        flex: 50%;
+        font-size: 28px;
+        height: 15em;
+        padding: 0;
+        border: 2px solid black;
+        line-height: 1.5;
+        border-radius: 1em;
+        margin: 0.5em;
+        box-shadow: var(--drop-shadow);
+    }
+
+    /* adds box shadow when project div is hovered over */
+    .project_div:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        color: var(--header-color);
+    }
+
+    /* defines div rows used on all pages */
+    .row {
+        display: flex;
+        max-width: 65em;
+        min-width: 50em;
+        margin: auto;
+        padding-top: 1em;
+    }
+
+    /* container that contains conway canvas */
+    #canvas_container {
+        width: 100%;
+        height: 5em;
+    }
+
+    /* footer of website */
+    #footer {
+        padding: 2em;
+        line-height: 1.5;
+        background: #CCC;
+    }
+
+    /* contains all header links */
+    #link_container {
+        display: flex;
+        width: 40em;
+        height: 100%;
+        margin: auto;
+    }
+
+    /* main body of website where most text lies */
+    #main_body {
+        position: relative;
+        z-index: 1;
+        max-width: 100%;
+        min-width: 50em;
+        margin: auto;
+        height: auto;
+        background: #FFFFFF;
+        padding-bottom: 2em;
+    }
+
+    /* hides logo that's meant only for mobile */
+    #mobile_logo {
+        display: none;
+    }
+
+    /* title of website */
+    #title {
+        position: relative;
+        top: 0;
+        margin-top: 1.2em;
+        color: #FFFFFF;
+        font-size: 3em;
+        z-index: 1;
+    }
 }
 
-/* footer of website */
-#footer {
-    padding: 2em;
-    line-height: 1.5;
-    background: #CCC;
-}
+/* styling for mobile website */
+@media (max-width: 720px) {
 
-/* contains all header links */
-#link_container {
-    display: flex;
-    width: 40em;
-    height: 100%;
-    margin: auto;
-}
+    /* hide elements not needed for mobile version of website */
+    canvas, #canvas_container, #footer, #title {
+        display: none;
+    }
 
-/* main body of website where most text lies */
-#main_body {
-    position: relative;
-    z-index: 1;
-    max-width: 100%;
-    min-width: 50em;
-    margin: 1em auto auto auto;
-    height: auto;
-    background: #FFFFFF;
-    padding-bottom: 2em;
-}
+    /* div that holds about page information */
+    .content_div {
+        padding: 2em;
+        line-height: 1.5;
+        border-radius: 1em;
+        margin: 0.5em;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    }
 
-/* hides logo that's meant only for mobile */
-#mobile_logo {
-    display: none;
-}
+    /* website header (acts like footer on mobile) */
+    .header {
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        bottom: 0;
+        height: 3em;
+        background: var(--header-color);
+        box-shadow: var(--drop-shadow);
+    }
 
-/* title of website */
-#title {
-    position: relative;
-    top: 0;
-    margin-top: 1.2em;
-    color: #FFFFFF;
-    font-size: 3em;
-    z-index: 1;
+    /* container that holds project information */
+    .project_div {
+        display: block;
+        font-size: 24px;
+        height: 15em;
+        padding: 0;
+        border: 2px solid black;
+        line-height: 1.5;
+        border-radius: 1em;
+        margin: 0.5em;
+        box-shadow: var(--drop-shadow)
+    }
+
+    /* new 'header' for mobile website */
+    #canvas_container {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        top: 0;
+        width: 100%;
+        height: 3em;
+        background: white;
+        border-bottom: 1px solid grey;
+    }
+
+    /* contains all header links */
+    #link_container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    /* main body of website where most text lies */
+    #main_body {
+        z-index: 1;
+        width: 100%;
+        margin: auto;
+        height: auto;
+        background: #FFFFFF;
+        padding-bottom: 3em;
+    }
+
+    /* logo for mobile site */
+    #mobile_logo {
+        height: 2.5em;
+    }
 }
