@@ -250,7 +250,7 @@ body {
     #main_body {
         z-index: 1;
         width: 100%;
-        margin: auto;
+        margin: 2em auto auto auto;
         height: auto;
         background: #FFFFFF;
         padding-bottom: 3em;
