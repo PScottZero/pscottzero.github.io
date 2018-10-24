@@ -38,6 +38,12 @@ body {
 .content_div img {
     float: top;
     height: 3em;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 /* container that holds images used by links on header */
@@ -50,6 +56,12 @@ body {
 /* sets header link image size */
 .image_container img {
     height: 2.5em;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 /* text that is located on project divs */
