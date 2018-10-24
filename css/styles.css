@@ -28,6 +28,24 @@ body {
     background-color: var(--canvas-color);
 }
 
+/* makes all images non-draggable */
+img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+/* makes all text non-selectable */
+p {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 /* content div text */
 .content_div p {
     font-size: 24px;
@@ -38,12 +56,6 @@ body {
 .content_div img {
     float: top;
     height: 3em;
-    user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
 }
 
 /* container that holds images used by links on header */
@@ -56,20 +68,16 @@ body {
 /* sets header link image size */
 .image_container img {
     height: 2.5em;
-    user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
 }
 
 /* text that is located on project divs */
 .project_text {
     width: 70%;
     border-radius: 0 0 1em 1em;
-    border: 2px solid black;
-    margin: -2px auto auto auto;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin: auto;
     padding: 0.2em;
     background: white;
 }

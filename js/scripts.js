@@ -28,3 +28,8 @@ $(document).ready(function(){
         footer.innerHTML += "Last Updated 22 October 2018"
     }
 });
+
+// prevents image dragging
+$(document).on("dragstart", function() {
+    return false;
+});
