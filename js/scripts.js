@@ -25,7 +25,7 @@ $(document).ready(function(){
         // Adds last updated date to footers on all pages
         let footer = document.getElementById("footer");
 
-        footer.innerHTML += "Last Updated 22 October 2018"
+        footer.innerHTML += "<p>Last Updated 24 October 2018</p>"
     }
 });
 
