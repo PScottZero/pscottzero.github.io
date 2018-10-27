@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5e337a4-a0d2-4924-b0e5-597bf02fa065" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/exp_icons/acm.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -101,7 +104,7 @@
     <session id="-890309785">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
@@ -110,22 +113,22 @@
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="2860" />
-          <entry key="html" value="841" />
-          <entry key="js" value="1221" />
+          <entry key="html" value="1074" />
+          <entry key="js" value="1223" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="2860" />
-          <entry key="HTML" value="841" />
-          <entry key="JavaScript" value="1221" />
+          <entry key="HTML" value="1074" />
+          <entry key="JavaScript" value="1223" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -146,11 +149,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="-534">
+              <caret line="147" column="40" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -170,6 +173,7 @@
                 <element signature="n#style#0;n#div#2;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#2;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#2;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#6;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#7;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#7;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#7;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -212,11 +216,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+            <state relative-caret-position="588">
+              <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -264,11 +268,11 @@
         <option value="$PROJECT_DIR$/website_old/projects.html" />
         <option value="$PROJECT_DIR$/css/styles_mobile.css" />
         <option value="$PROJECT_DIR$/js/conway.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/projects.html" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -299,17 +303,6 @@
               <item name="Personal Website" type="b2602c69:ProjectViewProjectNode" />
               <item name="pscottzero.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Personal Website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pscottzero.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Personal Website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pscottzero.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -327,19 +320,19 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\exp_icons" />
+      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\icons" />
+      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\hob_icons" />
+      <recent name="C:\Users\8psco\WebstormProjects\Personal Website\img\hob_icons" />
+      <recent name="C:\Users\8psco\WebstormProjects\Personal Website\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\8psco\WebstormProjects\Personal Website\img\projects" />
       <recent name="C:\Users\8psco\WebstormProjects\Personal Website\img\hob_icons" />
       <recent name="C:\Users\8psco\WebstormProjects\Personal Website\img\hack_icons" />
       <recent name="C:\Users\8psco\WebstormProjects\Personal Website\img\icons" />
       <recent name="C:\Users\8psco\WebstormProjects\Personal Website\img\favicon" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\icons" />
-      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\hob_icons" />
-      <recent name="C:\Users\8psco\WebstormProjects\Personal Website\img\hob_icons" />
-      <recent name="C:\Users\8psco\WebstormProjects\Personal Website\css" />
-      <recent name="C:\Users\8psco\WebstormProjects\Personal Website" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -398,12 +391,13 @@
       <workItem from="1540412570844" duration="710000" />
       <workItem from="1540418143261" duration="2067000" />
       <workItem from="1540420620456" duration="755000" />
-      <workItem from="1540430061947" duration="177000" />
+      <workItem from="1540430061947" duration="243000" />
+      <workItem from="1540670926862" duration="988000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73421000" />
+    <option name="totallyTimeSpent" value="74475000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -416,7 +410,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1719" height="942" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16142434" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -528,10 +521,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="-534">
+          <caret line="147" column="40" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -551,6 +551,7 @@
             <element signature="n#style#0;n#div#2;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#2;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#2;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#6;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#7;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#7;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#1;n#div#7;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -568,13 +569,6 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#9;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#1;n#div#9;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
         </state>
       </provider>
     </entry>
