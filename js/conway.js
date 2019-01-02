@@ -7,9 +7,6 @@ class Conway {
         this.r = this.c / 4; // row count
         this.size = Math.ceil(screen.width / this.c); // cell size
 
-        this.cell_color = "#52a1ce"; // cell color
-        this.background_color = "#3b94c6"; // background color
-
         // initializes canvas with random cells
         this.cells = Array(this.r * this.c);
         for (let i = 0; i < this.cells.length; i++) {
@@ -53,10 +50,21 @@ class Conway {
     draw() {
         let canvas = document.getElementById("conway");
         let ctx = canvas.getContext("2d");
+
+        // cell color
+        let cellGrad = ctx.createLinearGradient(0, 0, screen.width / 2, 0);
+        cellGrad.addColorStop(0, "#3d7dff");
+        cellGrad.addColorStop(1, "#6de8ff");
+
+        // background color
+        let backGrad = ctx.createLinearGradient(0, 0, screen.width / 2, 0);
+        backGrad.addColorStop(0, "#216aff");
+        backGrad.addColorStop(1, "#2dc7ff");
+
         ctx.beginPath();
         for (let i = 0; i < this.cells.length; i++) {
-            if (this.cells[i] === 1) ctx.fillStyle = this.cell_color; // dead cells color
-            else ctx.fillStyle = this.background_color; // living cells color
+            if (this.cells[i] === 1) ctx.fillStyle = cellGrad; // dead cells color
+            else ctx.fillStyle = backGrad; // living cells color
             ctx.fillRect((i % this.c) * this.size, Math.floor(i / this.c) * this.size, this.size, this.size);
         }
     }
