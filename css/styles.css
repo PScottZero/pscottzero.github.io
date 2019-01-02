@@ -1,15 +1,15 @@
-/* reset browser defaults */
+/* browser defaults */
 * {
     padding: 0;
     margin: 0;
     border: 0;
 
     /* variables */
-    --font-stack: Montserrat, Arial, serif;
-    --canvas-color: #3b94c6;
-    --header-color: #317ba5;
-    --drop-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
-    --min-screen-size: 720px;
+    --font-stack: Montserrat, Arial, serif; /* font stack */
+    --prim-color: #0055ff; /* primary color */
+    --scnd-color: #00d8ff; /* secondary color */
+    --header-gradient: linear-gradient(to right, var(--prim-color), var(--scnd-color)); /* header gradient */
+    --drop-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25); /* drop shadow */
 }
 
 /* configure links */
@@ -25,7 +25,7 @@ body {
     font-family: var(--font-stack);
     font-size: 18px;
     text-align: center;
-    background-color: var(--canvas-color);
+    background-color: var(--prim-color);
 }
 
 /* makes all images non-draggable */
@@ -123,7 +123,7 @@ p {
         top: 0;
         z-index: 2;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
-        background: linear-gradient(to right, #0055ff, #00d8ff);
+        background: var(--header-gradient);
     }
 
     /* container that holds project information */
@@ -143,7 +143,7 @@ p {
     /* adds box shadow when project div is hovered over */
     .project_div:hover {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-        color: var(--header-color);
+        color: var(--prim-color);
     }
 
     /* defines div rows used on all pages */
@@ -200,7 +200,7 @@ p {
         margin-top: 1.2em;
         color: #FFFFFF;
         font-size: 3em;
-        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        text-shadow: var(--drop-shadow);
         z-index: 1;
     }
 }
@@ -219,7 +219,7 @@ p {
         line-height: 1.5;
         border-radius: 1em;
         margin: 0.5em;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        box-shadow: var(--drop-shadow);
     }
 
     /* website header (acts like footer on mobile) */
@@ -229,7 +229,7 @@ p {
         width: 100%;
         bottom: 0;
         height: 3em;
-        background: linear-gradient(to right, #0055ff, #00d8ff);
+        background: var(--header-gradient);
         box-shadow: var(--drop-shadow);
     }
 
