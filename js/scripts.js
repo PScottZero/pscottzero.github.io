@@ -6,12 +6,7 @@ $(document).ready(function(){
         let canvas = document.getElementById("conway");
         canvas.width = screen.width;
         canvas.height = Math.floor(canvas.width / 4);
-        conway.draw();
-
-        // update game of life every two seconds
-        window.setInterval(function () {
-            conway.step();
-        }, 2000);
+        conway.run();
 
         // moves link image upward when hovered over
         $("#link_container img").mouseover(function () {
@@ -25,7 +20,7 @@ $(document).ready(function(){
         // Adds last updated date to footers on all pages
         let footer = document.getElementById("footer");
 
-        footer.innerHTML += "<p>Last Updated 15 January 2019</p>"
+        footer.innerHTML += "<p>Last Updated 17 January 2019</p>"
     }
 });
 

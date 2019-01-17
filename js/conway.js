@@ -8,42 +8,53 @@ class Conway {
         this.size = Math.ceil(screen.width / this.c); // cell size
 
         // initializes canvas with random cells
-        this.cells = Array(this.r * this.c);
+        this.arrBuff = new ArrayBuffer(this.r * this.c);
+        this.cells = new Uint8Array(this.arrBuff);
+        this.fill_random();
+
+        // temporary array used for calculating next generation
+        this.nextBuff = new ArrayBuffer(this.r * this.c);
+        this.nextCells = new Uint8Array(this.nextBuff);
+    }
+
+    fill_random() {
         for (let i = 0; i < this.cells.length; i++) {
             let rand = Math.floor(Math.random() * 10);
             if (rand < 2) this.cells[i] = 1;
             else this.cells[i] = 0;
         }
-
-        // temporary array used for calculating next generation
-        this.nextCells = Array(this.r * this.c).fill(0);
     }
 
     // progress to next cell generation
-    step() {
-        for (let a = 0; a < this.cells.length; a++) {
-            let r = Math.floor(a / this.c);
-            let c = a % this.c;
-            let count = 0;
+    run() {
+        let self = this;
+        requestAnimationFrame(async function step() {
+            for (let a = 0; a < self.cells.length; a++) {
+                let r = Math.floor(a / self.c);
+                let c = a % self.c;
+                let count = 0;
 
-            // get count of live cells surrounding cell
-            for (let i = r - 1; i < r + 2; i++) {
-                for (let j = c - 1; j < c + 2; j++) {
-                    if (!(i === r && j === c)
-                        && i >= 0 && i < this.r
-                        && j >= 0 && j < this.c) {
-                        if (this.cells[this.c * i + j] === 1) count++;
+                // get count of live cells surrounding cell
+                for (let i = r - 1; i < r + 2; i++) {
+                    for (let j = c - 1; j < c + 2; j++) {
+                        if (!(i === r && j === c)
+                            && i >= 0 && i < self.r
+                            && j >= 0 && j < self.c) {
+                            if (self.cells[self.c * i + j] === 1) count++;
+                        }
                     }
                 }
-            }
 
-            // conway rules
-            if (count > 3 || count < 2) this.nextCells[a] = 0; // cell dies if surrounded by more than 3 or less than 2
-            else if (count === 3 && this.cells[a] === 0) this.nextCells[a] = 1; // cell is born if surrounded by 3
-            else this.nextCells[a] = this.cells[a]; // cell lives on to the next generation
-        }
-        this.copy();
-        this.draw();
+                // conway rules
+                if (count > 3 || count < 2) self.nextCells[a] = 0; // cell dies if surrounded by more than 3 or less than 2
+                else if (count === 3 && self.cells[a] === 0) self.nextCells[a] = 1; // cell is born if surrounded by 3
+                else self.nextCells[a] = self.cells[a]; // cell lives on to the next generation
+            }
+            self.copy();
+            self.draw();
+            await self.sleep(2000);
+            requestAnimationFrame(step);
+        });
     }
 
     // draw cell canvas
@@ -52,12 +63,12 @@ class Conway {
         let ctx = canvas.getContext("2d");
 
         // cell color
-        let cellGrad = ctx.createLinearGradient(0, 0, screen.width / 2, 0);
+        let cellGrad = ctx.createLinearGradient(0, 0, screen.width, 0);
         cellGrad.addColorStop(0, "#3d7dff");
         cellGrad.addColorStop(1, "#6de8ff");
 
         // background color
-        let backGrad = ctx.createLinearGradient(0, 0, screen.width / 2, 0);
+        let backGrad = ctx.createLinearGradient(0, 0, screen.width, 0);
         backGrad.addColorStop(0, "#216aff");
         backGrad.addColorStop(1, "#2dc7ff");
 
@@ -74,5 +85,9 @@ class Conway {
         for (let i = 0; i < this.cells.length; i++) {
             this.cells[i] = this.nextCells[i];
         }
+    }
+
+    sleep(time_ms) {
+        return new Promise(resolve => setTimeout(resolve, time_ms));
     }
 }
