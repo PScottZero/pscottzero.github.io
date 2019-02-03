@@ -25,7 +25,7 @@ desktop styles
   #footer {
     padding: 2em;
     line-height: 1.5;
-    background: #EEE;
+    background: #f5f5f5;
   }
 
   /* website header */
@@ -51,7 +51,7 @@ desktop styles
     min-width: 50em;
     margin: auto;
     height: auto;
-    background: #FFFFFF;
+    background: white;
     padding-bottom: 2em;
   }
 
@@ -102,7 +102,7 @@ desktop styles
   /* title of website */
   #title {
     position: relative;
-    color: #FFFFFF;
+    color: white;
     font-size: 3em;
     top: 50%;
     transform: translateY(-50%);
