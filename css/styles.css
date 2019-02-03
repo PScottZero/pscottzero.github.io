@@ -1,92 +1,77 @@
+/*
+Paul Scott
+3 February 2019
+
+desktop and mobile shared styles
+ */
+
 /* browser defaults */
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
 
-    /* variables */
-    --font-stack: Montserrat, Arial, serif; /* font stack */
-    --prim-color: #0055ff; /* primary color */
-    --scnd-color: #00d8ff; /* secondary color */
-    --body-gradient: linear-gradient(var(--prim-color), #EEE);
-    --header-gradient: linear-gradient(to right, var(--prim-color), var(--scnd-color)); /* header gradient */
-    --drop-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25); /* drop shadow */
+  /* variables */
+  --font-stack: Montserrat, Arial, serif; /* font stack */
+  --header-gradient: linear-gradient(to right, #0055ff, #00d8ff); /* header gradient */
+  --drop-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25); /* drop shadow */
 }
 
 /* configure links */
 a, a:visited, a:hover {
-    color: #555;
-    text-decoration: none;
+  color: #555;
+  text-decoration: none;
 }
 
 /* set parameters for website body */
 body {
-    width: 100%;
-    height: 100%;
-    font-family: var(--font-stack);
-    font-size: 18px;
-    text-align: center;
-    background-color: var(--body-gradient);
-}
-
-/* makes all images non-draggable */
-img {
-    user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
-
-/* makes all text non-selectable */
-p {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-stack);
+  font-size: 18px;
+  text-align: center;
+  background-color: #EEE;
 }
 
 /* content div text */
-.content_div p {
-    font-size: 24px;
-    text-align: center;
+.data_div p {
+  font-size: 24px;
+  text-align: center;
 }
 
 /* content div images */
-.content_div img {
-    float: top;
-    height: 3em;
+.data_div img {
+  float: top;
+  height: 3em;
 }
 
 /* container that holds images used by links on header */
-.image_container {
-    flex: 25%;
-    float: left;
-    padding: 0.25em;
+.link_container {
+  flex: 25%;
+  float: left;
+  padding: 0.25em;
 }
 
 /* sets header link image size */
-.image_container img {
-    height: 2.5em;
+.link_container img {
+  height: 2.5em;
+  transition: 0.1s;
 }
 
 /* text that is located on project divs */
 .project_text {
-    width: 70%;
-    border-radius: 0 0 1em 1em;
-    border-bottom: 2px solid #555;
-    border-left: 2px solid #555;
-    border-right: 2px solid #555;
-    margin: auto;
-    padding: 0.2em;
-    background: white;
+  width: 70%;
+  border-radius: 0 0 1em 1em;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  margin: auto;
+  padding: 0.2em;
+  background: white;
 }
 
 /* title for each section of website */
 .section_title {
-    text-align: center;
-    padding-top: 1.5em;
-    font-size: 2em;
-    color: #555;
+  text-align: center;
+  padding: 1.5em 0;
+  font-size: 2em;
+  color: #555;
 }
