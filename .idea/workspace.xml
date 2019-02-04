@@ -2,9 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5e337a4-a0d2-4924-b0e5-597bf02fa065" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/icons/banner.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/desktop.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/desktop.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/edu_icons/shc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icons/banner.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/bitwise.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/bitwise.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/conway.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/conway.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/easton.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/easton.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/enigma.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/enigma.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/exgraph.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/exgraph.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/javapaint.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/javapaint.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/lucas.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/lucas.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/metar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/metar.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/phd.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/phd.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/projects/stp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/stp.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="173" column="52" selection-start-line="173" selection-start-column="52" selection-end-line="173" selection-end-column="52" />
+            <state relative-caret-position="6160">
+              <caret line="236" lean-forward="true" selection-start-line="236" selection-end-line="236" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -39,17 +51,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3444">
+            <state relative-caret-position="71">
               <caret line="127" column="65" selection-start-line="127" selection-start-column="65" selection-end-line="127" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1008">
-              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            <state relative-caret-position="379">
+              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -63,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/desktop.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="407">
+              <caret line="105" column="12" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -116,18 +128,18 @@
         <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/projects.html" />
         <option value="$PROJECT_DIR$/css/mobile.css" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/desktop.css" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="2577" />
-    <option name="height" value="1418" />
+    <option name="width" value="2581" />
+    <option name="height" value="1422" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -150,12 +162,6 @@
               <item name="pscottzero.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="pjs4.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pscottzero.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="prg_icons" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -172,19 +178,19 @@
     <property name="settings.editor.selected.configurable" value="stylesheet.code.style.group" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\icons" />
+      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\prg_icons" />
+      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\projects" />
+      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\exp_icons" />
+      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\hob_icons" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\icons" />
       <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img" />
       <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\projects" />
       <recent name="C:\Users\8psco\WebstormProjects\Personal Website\img\projects" />
       <recent name="C:\Users\8psco\WebstormProjects\Personal Website\img\hob_icons" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\prg_icons" />
-      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\projects" />
-      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\exp_icons" />
-      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\hob_icons" />
-      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -277,11 +283,13 @@
       <workItem from="1549166884593" duration="1458000" />
       <workItem from="1549168357583" duration="8664000" />
       <workItem from="1549215259966" duration="648000" />
+      <workItem from="1549220382280" duration="157000" />
+      <workItem from="1549305236614" duration="540000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100453000" />
+    <option name="totallyTimeSpent" value="101150000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -407,13 +415,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="60" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/scripts.js" />
     <entry file="file://$PROJECT_DIR$/img/projects/apogee.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -423,18 +425,10 @@
     <entry file="file://$PROJECT_DIR$/img/exp_icons/easton.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/prg_icons/java.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/prg_icons/c.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/prg_icons/javascript.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/prg_icons/kotlin.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/img/prg_icons/java.png" />
+    <entry file="file://$PROJECT_DIR$/img/prg_icons/c.png" />
+    <entry file="file://$PROJECT_DIR$/img/prg_icons/javascript.png" />
+    <entry file="file://$PROJECT_DIR$/img/prg_icons/kotlin.png" />
     <entry file="file://$PROJECT_DIR$/img/prg_icons/kotlin.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -462,10 +456,24 @@
     <entry file="file://$PROJECT_DIR$/img/prg_icons/cpp.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="127" column="65" selection-start-line="127" selection-start-column="65" selection-end-line="127" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="173" column="52" selection-start-line="173" selection-start-column="52" selection-end-line="173" selection-end-column="52" />
+        <state relative-caret-position="6160">
+          <caret line="236" lean-forward="true" selection-start-line="236" selection-end-line="236" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -478,31 +486,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/mobile.css">
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3444">
-          <caret line="127" column="65" selection-start-line="127" selection-start-column="65" selection-end-line="127" selection-end-column="65" />
+        <state relative-caret-position="379">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/desktop.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="407">
+          <caret line="105" column="12" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
         </state>
       </provider>
     </entry>

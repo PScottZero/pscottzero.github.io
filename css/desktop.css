@@ -95,7 +95,7 @@ desktop styles
     z-index: -1;
     width: 100%;
     height: 12em;
-    background: linear-gradient(to right, #0090ffcc, #00e5ffcc), url('../img/icons/banner.jpeg') center;
+    background: linear-gradient(to right, #0090ffcc, #00e5ffcc), url('../img/icons/banner.jpg') center;
     background-size: cover;
   }
 
