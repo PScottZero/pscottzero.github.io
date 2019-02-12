@@ -1,6 +1,6 @@
 /*
 Paul Scott
-3 February 2019
+11 February 2019
 
 desktop styles
  */
@@ -8,7 +8,9 @@ desktop styles
 @media (min-width: 720px) {
 
   /* hides logo that's meant only for mobile */
-  #mobile_logo { display: none }
+  #mobile_logo {
+    display: none
+  }
 
   /* div that holds about page information */
   .data_div {
@@ -19,13 +21,15 @@ desktop styles
     border-radius: 1em;
     margin: 0.5em;
     box-shadow: var(--drop-shadow);
+    background: var(--data-color);
   }
 
   /* footer of website */
   #footer {
     padding: 2em;
     line-height: 1.5;
-    background: #f5f5f5;
+    background: var(--body-color);
+    color: var(--text-color);
   }
 
   /* website header */
@@ -41,7 +45,9 @@ desktop styles
   }
 
   /* sets header link image size */
-  .link_container:hover img { height: 2.7em }
+  .link_container:hover img {
+    height: 2.7em
+  }
 
   /* main body of website where most text lies */
   #content {
@@ -51,7 +57,7 @@ desktop styles
     min-width: 50em;
     margin: auto;
     height: auto;
-    background: white;
+    background: var(--content-color);
     padding-bottom: 2em;
   }
 
@@ -95,7 +101,8 @@ desktop styles
     z-index: -1;
     width: 100%;
     height: 12em;
-    background: linear-gradient(to right, #0090ffcc, #00e5ffcc), url('../img/icons/banner.jpg') center;
+    /*background: linear-gradient(to right, #0090ffcc, #00e5ffcc), url('../img/icons/banner.jpg') center;*/
+    background: linear-gradient(to right, #0041c6cc, #0099b5cc), url('../img/icons/banner.jpg') center;
     background-size: cover;
   }
 

@@ -2,22 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5e337a4-a0d2-4924-b0e5-597bf02fa065" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/icons/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/edu_icons/shc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/exp_icons/acm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/exp_icons/easton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/exp_icons/lunar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/8psco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/8psco.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/desktop.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/desktop.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/edu_icons/shc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/icons/banner.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/projects/bitwise.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/bitwise.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/projects/conway.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/conway.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/projects/easton.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/easton.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/projects/enigma.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/enigma.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/projects/exgraph.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/exgraph.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/projects/javapaint.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/javapaint.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/projects/lucas.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/lucas.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/projects/metar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/metar.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/projects/phd.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/phd.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/projects/stp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/projects/stp.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mobile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/edu_icons/psu.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/edu_icons/psu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/edu_icons/shc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/exp_icons/acm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/exp_icons/easton.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/exp_icons/lockheed.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/exp_icons/lockheed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/exp_icons/lunar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/exp_icons/wvpl.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/exp_icons/wvpl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hack_icons/icpc.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/hack_icons/icpc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hob_icons/bass.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/bass.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hob_icons/coaster.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/coaster.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hob_icons/coin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/coin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hob_icons/guitar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/guitar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hob_icons/mac.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/mac.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hob_icons/piano.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/piano.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hob_icons/plane.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/plane.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hob_icons/ukulele.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/ukulele.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/hob_icons/vinyl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/vinyl.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icons/mobile_logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/icons/mobile_logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/prg_icons/c.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/c.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/prg_icons/cpp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/cpp.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/prg_icons/html.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/html.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/prg_icons/java.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/java.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/prg_icons/javascript.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/javascript.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/prg_icons/kotlin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/kotlin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/prg_icons/mips.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/mips.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/prg_icons/python.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/python.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/prg_icons/verilog.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/verilog.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,26 +56,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6160">
-              <caret line="236" lean-forward="true" selection-start-line="236" selection-end-line="236" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#5;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#2;n#div#5;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="491">
+              <caret line="302" column="20" selection-start-line="302" selection-start-column="20" selection-end-line="302" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="127" column="65" selection-start-line="127" selection-start-column="65" selection-end-line="127" selection-end-column="65" />
+            <state relative-caret-position="575">
+              <caret line="300" column="7" lean-forward="true" selection-start-line="300" selection-start-column="7" selection-end-line="300" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            <state relative-caret-position="364">
+              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -69,17 +86,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="295">
+              <caret line="73" column="18" lean-forward="true" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/desktop.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="105" column="12" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
+            <state relative-caret-position="547">
+              <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -103,10 +120,15 @@
       <find>to right</find>
       <find>prim</find>
       <find>primary</find>
+      <find>cls-1</find>
+      <find>style=&quot;font-size: 36px&quot;</find>
+      <find>font-size</find>
+      <find>white</find>
     </findStrings>
     <replaceStrings>
       <replace>info_block</replace>
       <replace>to left</replace>
+      <replace>cls-3</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -126,20 +148,33 @@
         <option value="$PROJECT_DIR$/js/conway.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
-        <option value="$PROJECT_DIR$/projects.html" />
+        <option value="$PROJECT_DIR$/img/prg_icons/python.svg" />
+        <option value="$PROJECT_DIR$/img/hob_icons/bass.svg" />
+        <option value="$PROJECT_DIR$/img/hob_icons/coaster.svg" />
+        <option value="$PROJECT_DIR$/img/hob_icons/coin.svg" />
+        <option value="$PROJECT_DIR$/img/hob_icons/guitar.svg" />
+        <option value="$PROJECT_DIR$/img/hob_icons/mac.svg" />
+        <option value="$PROJECT_DIR$/img/hob_icons/piano.svg" />
+        <option value="$PROJECT_DIR$/img/hob_icons/plane.svg" />
+        <option value="$PROJECT_DIR$/img/hob_icons/ukulele.svg" />
+        <option value="$PROJECT_DIR$/img/hob_icons/vinyl.svg" />
+        <option value="$PROJECT_DIR$/img/prg_icons/mips.svg" />
+        <option value="$PROJECT_DIR$/img/prg_icons/verilog.svg" />
+        <option value="$PROJECT_DIR$/css/desktop.css" />
         <option value="$PROJECT_DIR$/css/mobile.css" />
+        <option value="$PROJECT_DIR$/img/icons/mobile_logo.svg" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/desktop.css" />
+        <option value="$PROJECT_DIR$/projects.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="2581" />
-    <option name="height" value="1422" />
+    <option name="x" value="792" />
+    <option name="y" value="477" />
+    <option name="width" value="1944" />
+    <option name="height" value="2088" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -149,7 +184,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,10 +196,17 @@
               <item name="pscottzero.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="pjs4.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pscottzero.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -175,15 +216,15 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="stylesheet.code.style.group" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\icons" />
       <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\prg_icons" />
-      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\projects" />
+      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\edu_icons" />
+      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\hack_icons" />
       <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\exp_icons" />
-      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\hob_icons" />
+      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\icons" />
@@ -285,11 +326,20 @@
       <workItem from="1549215259966" duration="648000" />
       <workItem from="1549220382280" duration="157000" />
       <workItem from="1549305236614" duration="540000" />
+      <workItem from="1549311772124" duration="25000" />
+      <workItem from="1549409444467" duration="1232000" />
+      <workItem from="1549581121663" duration="599000" />
+      <workItem from="1549646895916" duration="446000" />
+      <workItem from="1549655265610" duration="492000" />
+      <workItem from="1549742061058" duration="423000" />
+      <workItem from="1549750853083" duration="2140000" />
+      <workItem from="1549918447819" duration="4477000" />
+      <workItem from="1549926426517" duration="5493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101150000" />
+    <option name="totallyTimeSpent" value="116477000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -303,7 +353,7 @@
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1719" height="932" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14896142" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1495549" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Structure" order="2" weight="0.5068249" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -369,33 +419,7 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/img/icons/favicon.svg" />
-    <entry file="file://$PROJECT_DIR$/img/icons/mobile_logo.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/hob_icons/guitar.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/hob_icons/ukulele.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/hob_icons/vinyl.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/hob_icons/mac.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/hob_icons/plane.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/hob_icons/coaster.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/hob_icons/bass.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/banner.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/banner.jpeg" />
     <entry file="file://$PROJECT_DIR$/img/banner.png" />
     <entry file="file://$PROJECT_DIR$/js/conway.js" />
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -422,23 +446,12 @@
     <entry file="file://$PROJECT_DIR$/img/edu_icons/psu.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/exp_icons/easton.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/img/exp_icons/easton.jpg" />
     <entry file="file://$PROJECT_DIR$/img/prg_icons/java.png" />
     <entry file="file://$PROJECT_DIR$/img/prg_icons/c.png" />
     <entry file="file://$PROJECT_DIR$/img/prg_icons/javascript.png" />
     <entry file="file://$PROJECT_DIR$/img/prg_icons/kotlin.png" />
-    <entry file="file://$PROJECT_DIR$/img/prg_icons/kotlin.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/prg_icons/javascript.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/prg_icons/python.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/prg_icons/html.svg">
+    <entry file="file://$PROJECT_DIR$/img/hack_icons/icpc.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/img/prg_icons/java.svg">
@@ -447,56 +460,92 @@
     <entry file="file://$PROJECT_DIR$/img/prg_icons/c.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/prg_icons/cpp.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/prg_icons/javascript.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/prg_icons/python.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/prg_icons/kotlin.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/prg_icons/html.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/hob_icons/bass.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/hob_icons/coaster.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/hob_icons/piano.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/hob_icons/mac.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/hob_icons/guitar.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/hob_icons/coin.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/hob_icons/plane.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/hob_icons/ukulele.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/hob_icons/vinyl.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/img/prg_icons/mips.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/img/prg_icons/verilog.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/prg_icons/cpp.svg">
+    <entry file="file://$PROJECT_DIR$/img/icons/mobile_logo.svg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/mobile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="127" column="65" selection-start-line="127" selection-start-column="65" selection-end-line="127" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6160">
-          <caret line="236" lean-forward="true" selection-start-line="236" selection-end-line="236" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#4;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#5;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#5;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="364">
+          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/desktop.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="105" column="12" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
+        <state relative-caret-position="547">
+          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="73" column="18" lean-forward="true" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="302" column="20" selection-start-line="302" selection-start-column="20" selection-end-line="302" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="300" column="7" lean-forward="true" selection-start-line="300" selection-start-column="7" selection-end-line="300" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

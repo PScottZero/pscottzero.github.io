@@ -1,6 +1,6 @@
 /*
 Paul Scott
-3 February 2019
+11 February 2019
 
 mobile styles
  */
@@ -8,7 +8,9 @@ mobile styles
 @media (max-width: 720px) {
 
   /* hide elements not needed for mobile version of website */
-  #footer, #title, #title_container { display: none }
+  #footer, #title, #title_container {
+    display: none
+  }
 
   /* div that holds about page information */
   .data_div {
@@ -17,6 +19,7 @@ mobile styles
     border-radius: 1em;
     margin: 0.5em;
     box-shadow: var(--drop-shadow);
+    background: var(--data-color);
   }
 
   /* website header (acts like footer on mobile) */
@@ -36,12 +39,14 @@ mobile styles
     width: 100%;
     margin: 3em auto auto auto;
     height: auto;
-    background: #FFFFFF;
+    background: var(--content-color);
     padding-bottom: 3em;
   }
 
   /* logo for mobile site */
-  #mobile_logo { height: 2.5em }
+  #mobile_logo {
+    height: 2.5em
+  }
 
   /* contains all header links */
   nav {
@@ -73,7 +78,7 @@ mobile styles
     top: 0;
     width: 100%;
     height: 3em;
-    background: white;
-    border-bottom: 1px solid grey;
+    background: var(--mobile-header);
+    border-bottom: var(--mobile-border);
   }
 }
