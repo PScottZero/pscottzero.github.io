@@ -2,43 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5e337a4-a0d2-4924-b0e5-597bf02fa065" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/edu_icons/shc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/exp_icons/acm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/exp_icons/easton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/exp_icons/lunar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/projects/tetrik.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/8psco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/8psco.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/desktop.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/desktop.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mobile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/edu_icons/psu.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/edu_icons/psu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/edu_icons/shc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/exp_icons/acm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/exp_icons/easton.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/exp_icons/lockheed.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/exp_icons/lockheed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/exp_icons/lunar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/exp_icons/wvpl.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/exp_icons/wvpl.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/hack_icons/icpc.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/hack_icons/icpc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/hob_icons/bass.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/bass.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/hob_icons/coaster.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/coaster.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/hob_icons/coin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/coin.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/hob_icons/guitar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/guitar.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/hob_icons/mac.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/mac.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/hob_icons/piano.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/piano.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/hob_icons/plane.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/plane.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/hob_icons/ukulele.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/ukulele.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/hob_icons/vinyl.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/hob_icons/vinyl.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icons/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/icons/favicon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/img/icons/mobile_logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/icons/mobile_logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/prg_icons/c.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/c.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/prg_icons/cpp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/cpp.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/prg_icons/html.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/html.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/prg_icons/java.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/java.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/prg_icons/javascript.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/javascript.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/prg_icons/kotlin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/kotlin.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/prg_icons/mips.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/mips.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/prg_icons/python.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/python.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/prg_icons/verilog.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/prg_icons/verilog.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
     </list>
@@ -56,29 +25,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="302" column="20" selection-start-line="302" selection-start-column="20" selection-end-line="302" selection-end-column="20" />
+            <state relative-caret-position="8372">
+              <caret line="299" column="23" lean-forward="true" selection-start-line="299" selection-start-column="23" selection-end-line="299" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="300" column="7" lean-forward="true" selection-start-line="300" selection-start-column="7" selection-end-line="300" selection-end-column="7" />
+            <state relative-caret-position="484">
+              <caret line="298" column="20" selection-start-line="298" selection-start-column="20" selection-end-line="298" selection-end-column="20" />
               <folding>
+                <element signature="n#style#0;n#a#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#1;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/icons/mobile_logo.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            <state relative-caret-position="680">
+              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -86,17 +62,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="73" column="18" lean-forward="true" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+            <state relative-caret-position="2044">
+              <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/desktop.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+            <state relative-caret-position="232">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -124,6 +100,7 @@
       <find>style=&quot;font-size: 36px&quot;</find>
       <find>font-size</find>
       <find>white</find>
+      <find>min</find>
     </findStrings>
     <replaceStrings>
       <replace>info_block</replace>
@@ -160,21 +137,20 @@
         <option value="$PROJECT_DIR$/img/hob_icons/vinyl.svg" />
         <option value="$PROJECT_DIR$/img/prg_icons/mips.svg" />
         <option value="$PROJECT_DIR$/img/prg_icons/verilog.svg" />
-        <option value="$PROJECT_DIR$/css/desktop.css" />
         <option value="$PROJECT_DIR$/css/mobile.css" />
-        <option value="$PROJECT_DIR$/img/icons/mobile_logo.svg" />
         <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/img/icons/mobile_logo.svg" />
         <option value="$PROJECT_DIR$/projects.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/desktop.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="792" />
-    <option name="y" value="477" />
+    <option name="x" value="-12" />
     <option name="width" value="1944" />
-    <option name="height" value="2088" />
+    <option name="height" value="2082" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -184,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,7 +183,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,16 +196,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\icons" />
       <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\prg_icons" />
       <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\edu_icons" />
       <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\hack_icons" />
       <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\exp_icons" />
-      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\projects" />
       <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\icons" />
       <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img" />
-      <recent name="C:\Users\8psco\Documents\GitHub\pscottzero.github.io\img\projects" />
       <recent name="C:\Users\8psco\WebstormProjects\Personal Website\img\projects" />
       <recent name="C:\Users\8psco\WebstormProjects\Personal Website\img\hob_icons" />
     </key>
@@ -335,11 +311,16 @@
       <workItem from="1549750853083" duration="2140000" />
       <workItem from="1549918447819" duration="4477000" />
       <workItem from="1549926426517" duration="5493000" />
+      <workItem from="1549932128117" duration="232000" />
+      <workItem from="1550772611550" duration="130000" />
+      <workItem from="1550772770268" duration="531000" />
+      <workItem from="1550775666167" duration="386000" />
+      <workItem from="1550776082503" duration="781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116477000" />
+    <option name="totallyTimeSpent" value="118537000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -400,9 +381,6 @@
     <entry file="file://$PROJECT_DIR$/resume.html" />
     <entry file="file://$PROJECT_DIR$/img/icons/icon_about.png" />
     <entry file="file://$PROJECT_DIR$/img/hob_icons/bass.png" />
-    <entry file="file://$PROJECT_DIR$/img/icons/favicon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/website_old/projects.html" />
     <entry file="file://$PROJECT_DIR$/website_old/about.html" />
     <entry file="file://$PROJECT_DIR$/css/styles_mobile.css" />
@@ -508,44 +486,49 @@
     <entry file="file://$PROJECT_DIR$/img/prg_icons/verilog.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/mobile_logo.svg">
+    <entry file="file://$PROJECT_DIR$/img/icons/favicon.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/desktop.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="73" column="18" lean-forward="true" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+        <state relative-caret-position="2044">
+          <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/mobile_logo.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="298" column="20" selection-start-line="298" selection-start-column="20" selection-end-line="298" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#a#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="302" column="20" selection-start-line="302" selection-start-column="20" selection-end-line="302" selection-end-column="20" />
+        <state relative-caret-position="8372">
+          <caret line="299" column="23" lean-forward="true" selection-start-line="299" selection-start-column="23" selection-end-line="299" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects.html">
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="300" column="7" lean-forward="true" selection-start-line="300" selection-start-column="7" selection-end-line="300" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="680">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/desktop.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
         </state>
       </provider>
     </entry>
