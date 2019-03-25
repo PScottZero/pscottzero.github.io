@@ -1,6 +1,6 @@
 /*
 Paul Scott
-16 March 2019
+25 March 2019
 
 desktop styles
  */
@@ -95,8 +95,9 @@ desktop styles
   }
 
   /* sets header link image size */
-  .link_container:hover img {
-    height: 2.7em
+  .link_container img:hover {
+    height: 2.8em;
+    transform: translateY(-0.15em)
   }
 
   /* container that holds project information */
