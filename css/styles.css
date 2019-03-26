@@ -1,6 +1,6 @@
 /*
 Paul Scott
-16 March 2019
+26 March 2019
 
 desktop and mobile shared styles
  */
@@ -60,7 +60,7 @@ body {
 /* sets header link image size */
 .link_container img {
   height: 2.5em;
-  transition: 0.1s;
+  transition: 0.05s;
 }
 
 /* text that is located on project divs */
