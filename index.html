@@ -16,7 +16,6 @@ About page for pjs4.com
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <!-- link to css -->
-  <link href="css/styles.css" rel="stylesheet">
   <link href="css/desktop.css" rel="stylesheet">
   <link href="css/mobile.css" rel="stylesheet">
 
@@ -32,48 +31,59 @@ About page for pjs4.com
 <body>
 
 <!-- header featuring website title -->
-<div id="title_container">
-  <div id="centered_title">
+<div id="header_img">
+  <div id="title_div">
     <img id="profile" src="img/icons/profile.png" alt="Picture of Me :)">
     <p id="title"><b>Paul Joseph Scott IV</b></p>
   </div>
 </div>
 
-<!-- header containing links to other pages -->
-<div class="header" id="header">
-
-  <!-- navigation bar -->
-  <nav>
+<!-- navigation bar -->
+<nav>
+  <div id="link_div">
 
     <!-- link to about page -->
-    <div class="link_container">
+    <div class="link_wrap">
       <a href="index.html">
-        <img alt="About" src="img/icons/icon_about.svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+          <path d="M116 344l-9 26H97l27-81h13l27 81h-11l-9-26zm26-8l-8-23-4-15-4 15-8 23zM175 370v-86h11v37c4-7 10-11 20-11 14 0 24 12 24 30 0 21-13 31-26 31-8 0-15-3-19-11h-1v10zm11-24a20 20 0 0 0 0 4c2 8 8 13 16 13 11 0 18-9 18-23 0-11-6-21-18-21-7 0-13 5-16 13a21 21 0 0 0 0 4zM296 340c0 22-15 31-29 31-15 0-28-12-28-30 0-19 13-31 29-31 17 0 28 12 28 30zm-46 1c0 12 7 22 18 22 10 0 17-9 17-23 0-9-5-22-17-22s-18 12-18 23zM358 354l1 16h-10v-10h-1a22 22 0 0 1-19 11c-9 0-20-5-20-25v-34h11v32c0 11 3 18 13 18a15 15 0 0 0 14-9 15 15 0 0 0 1-6v-35h10zM388 295v17h15v8h-15v31c0 7 2 11 8 11a23 23 0 0 0 6-1l1 8a26 26 0 0 1-9 2c-5 0-9-2-12-5s-4-8-4-15v-31h-9v-8h9v-14zM250 109a39 39 0 1 1 39-39 39 39 0 0 1-39 39zm0-57a19 19 0 1 0 19 18 19 19 0 0 0-19-18zM289 246h-78a22 22 0 0 1-22-22v-87a22 22 0 0 1 22-22h78a22 22 0 0 1 22 22v87a22 22 0 0 1-22 22zm-78-111a2 2 0 0 0-2 2v87a2 2 0 0 0 2 2h78a2 2 0 0 0 2-2v-87a2 2 0 0 0-2-2z"></path>
+        </svg>
       </a>
     </div>
 
     <!-- link to projects page -->
-    <div class="link_container">
+    <div class="link_wrap">
       <a href="projects.html">
-        <img alt="Projects" src="img/icons/icon_projects.svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+          <path d="M58 289a121 121 0 0 1 20-2c10 0 18 3 23 7 4 4 7 10 7 17s-2 13-6 17c-6 6-15 9-25 9a36 36 0 0 1-8-1v33H58zm11 39a35 35 0 0 0 8 1c13 0 20-6 20-18 0-10-7-15-19-15a44 44 0 0 0-9 0zM120 329l-1-18h9l1 11c3-8 9-13 16-13a11 11 0 0 1 3 1v10a16 16 0 0 0-3-1c-8 0-13 6-14 14a30 30 0 0 0-1 5v31h-10zM210 339c0 22-15 31-29 31-15 0-27-11-27-30s12-31 28-31c17 0 28 13 28 30zm-46 1c0 13 8 22 18 22s17-9 17-22c0-10-4-23-17-23s-18 12-18 23zM209 386c5-1 9-2 12-5s4-8 4-22v-48h11v52c0 12-2 19-7 24s-13 7-18 7zm28-92c0 4-3 7-7 7a6 6 0 0 1-6-7 6 6 0 0 1 6-6 6 6 0 0 1 7 6zM259 342c0 14 9 20 20 20 7 0 12-1 16-3l1 7c-3 2-10 4-19 4-18 0-28-12-28-29s10-32 27-32c19 0 24 17 24 28a40 40 0 0 1-1 5zm31-8c0-7-3-17-15-17-11 0-15 10-16 17zM354 367c-2 1-9 3-16 3-18 0-29-12-29-30s12-30 31-30a35 35 0 0 1 15 3l-3 8c-2-2-6-3-12-3-13 0-21 10-21 22 0 13 9 22 21 22a30 30 0 0 0 13-3zM381 294v17h15v8h-15v31c0 7 2 11 8 11a23 23 0 0 0 6 0v7a26 26 0 0 1-9 2c-5 0-9-2-11-5-3-3-4-8-4-15v-31h-9v-8h9v-14zM406 358a28 28 0 0 0 14 4c8 0 12-4 12-8 0-5-3-8-11-11-11-4-15-10-15-17 0-9 7-17 20-17a29 29 0 0 1 14 4l-3 8a23 23 0 0 0-12-4c-6 0-9 4-9 8 0 5 3 7 11 10 10 4 15 9 15 18 0 10-8 17-22 17a33 33 0 0 1-16-4zM208 246h-7q-23 0-36-11t-14-29v-38q0-23-22-23v-18q22 0 22-22V66q0-18 14-29t36-10h7v18h-5q-27 0-26 24v40q-1 21-21 27v1q20 5 21 26v40q0 25 26 25h5zM292 246v-18h5q26 0 26-25v-40q1-21 21-26v-1q-20-6-21-27V69q0-24-26-24h-5V27h7q23 0 36 10t14 29v39q0 22 22 22v18q-22 0-22 23v38q0 18-14 29t-36 11z"></path>
+        </svg>
       </a>
     </div>
 
     <!-- link to resume [External: Google Drive] -->
-    <div class="link_container">
-      <a href="https://drive.google.com/open?id=1Z79TNs30ttAftoWwJbqm93X77OljiM3L">
-        <img alt="Resume" src="img/icons/icon_resume.svg">
+    <div class="link_wrap">
+      <a href="https://drive.google.com/open?id=1Z79TNs30ttAftoWwJbqm93X77OljiM3L" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+          <path d="M320 246H180a22 22 0 0 1-22-22V54a22 22 0 0 1 22-22h140a22 22 0 0 1 22 22v170a22 22 0 0 1-22 22zM180 52a2 2 0 0 0-2 2v170a2 2 0 0 0 2 2h140a2 2 0 0 0 2-2V54a2 2 0 0 0-2-2z"></path>
+          <rect x="189" y="72" width="123" height="14" rx="7"></rect>
+          <rect x="189" y="132" width="123" height="14" rx="7"></rect>
+          <rect x="189" y="192" width="123" height="14" rx="7"></rect>
+          <path d="M57 290a109 109 0 0 1 20-2c11 0 19 2 24 7 4 3 6 9 6 15 0 11-7 18-15 21 6 2 10 8 12 16 2 12 4 20 6 23H99l-5-20c-3-11-7-15-16-15H68v35H57zm11 37h10c12 0 19-6 19-16s-8-15-19-15a43 43 0 0 0-10 1zM128 343c0 14 9 20 20 20 7 0 12-2 16-3l2 7c-4 2-11 4-20 4-18 0-28-12-28-29s10-32 27-32c19 0 24 17 24 28a40 40 0 0 1 0 5zm31-8c0-7-3-17-15-17-11 0-15 10-16 17zM181 359a28 28 0 0 0 14 4c7 0 11-4 11-9s-3-7-11-10c-10-4-15-10-15-17 0-9 7-17 20-17a29 29 0 0 1 14 4l-3 8a23 23 0 0 0-12-4c-6 0-9 4-9 8 0 5 3 7 11 10 10 4 15 9 15 17 0 11-8 18-22 18a33 33 0 0 1-16-4zM278 354l1 16h-10v-10h-1a22 22 0 0 1-19 11c-9 0-20-5-20-25v-34h11v32c0 11 3 18 13 18a15 15 0 0 0 14-9 15 15 0 0 0 1-6v-35h10zM296 327l-1-15h9l1 9c4-6 9-11 19-11a17 17 0 0 1 16 12 24 24 0 0 1 7-8 20 20 0 0 1 13-4c7 0 19 5 19 25v35h-11v-33c0-11-4-18-12-18-6 0-11 4-13 9a17 17 0 0 0-1 6v36h-10v-35c0-9-4-16-12-16-7 0-12 5-13 10a15 15 0 0 0-1 6v35h-10zM402 343c0 14 9 20 20 20 7 0 12-2 16-3l1 7c-3 2-10 4-19 4-18 0-28-12-28-29s10-32 27-32c19 0 24 17 24 28a40 40 0 0 1-1 5zm31-8c0-7-3-17-15-17-11 0-15 10-16 17z"></path>
+        </svg>
       </a>
     </div>
 
     <!-- link to linkedin [External: LinkedIn] -->
-    <div class="link_container">
-      <a href="https://www.linkedin.com/in/paul-scott-047858140/">
-        <img alt="LinkedIn" src="img/icons/icon_linkedin.svg">
+    <div class="link_wrap">
+      <a href="https://www.linkedin.com/in/paul-scott-047858140/" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+          <path d="M43 290h10v72h35v9H43zM111 297c0 3-3 6-7 6a6 6 0 0 1-6-6 6 6 0 0 1 6-7 6 6 0 0 1 7 7zm-12 74v-58h11v58zM127 329v-16h9l1 10c3-6 10-11 19-11 8 0 21 5 21 24v35h-11v-33c0-10-3-17-13-17a15 15 0 0 0-15 10 15 15 0 0 0 0 5v35h-11zM204 340l6-7 17-20h12l-22 24 25 34h-12l-20-28-6 6v22h-10v-85h10zM256 344c0 14 9 20 20 20 7 0 12-1 16-3l2 8c-4 1-10 3-20 3-17 0-28-11-28-29s10-31 27-31c19 0 24 16 24 27a40 40 0 0 1 0 5zm31-8c0-6-3-17-15-17-10 0-15 10-16 17zM360 286v70l1 15h-10v-10c-4 7-11 11-20 11-14 0-25-11-25-29 0-19 12-31 26-31 9 0 15 4 17 9h1v-35zm-10 51a19 19 0 0 0-1-5 16 16 0 0 0-15-12c-11 0-17 10-17 22s5 22 17 22c7 0 13-5 15-13a18 18 0 0 0 1-4zM389 290v81h-11v-81zM408 329l-1-16h10v10c3-6 10-11 20-11 8 0 20 5 20 24v35h-10v-33c0-10-4-17-14-17a15 15 0 0 0-14 10 15 15 0 0 0-1 5v35h-10zM335 246H165a22 22 0 0 1-22-22V54a22 22 0 0 1 22-22h170a22 22 0 0 1 22 22v170a22 22 0 0 1-22 22zM165 52a2 2 0 0 0-2 2v170a2 2 0 0 0 2 2h170a2 2 0 0 0 2-2V54a2 2 0 0 0-2-2z"></path>
+          <path d="M212 89c0 6-4 10-10 10a9 9 0 0 1-9-10 9 9 0 0 1 9-9c6 0 10 4 10 9zm-18 109v-85h16v85zM235 136v-23h13l1 14h1c4-8 14-16 28-16 11 0 29 7 29 36v51h-15v-49c0-14-5-25-20-25-10 0-18 7-20 16a22 22 0 0 0-1 7v51h-16z"></path>
+        </svg>
       </a>
     </div>
-  </nav>
-</div>
+  </div>
+</nav>
 
 <!-- part of website that holds content -->
 <div id="content">
@@ -91,7 +101,7 @@ About page for pjs4.com
         Sophomore <br>
         Computer Science <br>
         w/ Math Minor <br>
-        GPA 3.98/4.00
+        GPA 3.97/4.00
       </p>
     </div>
 
@@ -125,7 +135,7 @@ About page for pjs4.com
     <div class="data_div">
       <!-- image from https://news.psu.edu/ -->
       <img alt="Lunar Lion Logo" src="img/exp_icons/lunar.png">
-      <p><b> Lunar Lion </b><br> <i>Ground Control Lead</i> <br> Aug 2018-Present </p>
+      <p><b> Lunar Lion </b><br> <i>C&DH and GCS Lead</i> <br> Aug 2018-Present </p>
     </div>
   </div>
   <div class="row">
@@ -305,7 +315,7 @@ About page for pjs4.com
 <!-- website footer -->
 <div id="footer">
   <p>Created by Paul Scott with HTML and CSS</p>
-  <p>Last Updated 26 March 2019</p>
+  <p>Last Updated 18 May 2019</p>
 </div>
 </body>
 </html>

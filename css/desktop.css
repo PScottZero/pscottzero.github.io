@@ -1,24 +1,48 @@
 /*
 Paul Scott
-25 March 2019
+18 May 2019
 
 desktop styles
  */
 
 @media (min-width: 720px) {
 
-  /* contains all header links */
-  nav {
-    display: flex;
-    width: 40em;
+  * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    /* variables */
+    --font-stack: Montserrat, Arial, serif; /* font stack */
+    --header-gradient: linear-gradient(to right, #003cb5, #00839b); /* header gradient */
+    --drop-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25); /* drop shadow */
+    --content-color: #333;
+    --data-color: #3A3A3A;
+    --footer-color: #2F2F2F;
+    --text-color: #EEE;
+  }
+
+  /* configure links */
+  a, a:visited, a:hover {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  /* set parameters for website body */
+  body {
+    width: 100%;
     height: 100%;
-    margin: auto;
+    font-family: var(--font-stack);
+    font-size: 18px;
+    text-align: center;
+    background: var(--content-color);
   }
 
   /* div that centers profile image and title */
-  #centered_title {
-    top: -25%;
-    transform: translateY(25%);
+  #title_div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   /* main body of website where most text lies */
@@ -33,43 +57,6 @@ desktop styles
     padding-bottom: 2em;
   }
 
-  /* footer of website */
-  #footer {
-    padding: 2em;
-    line-height: 1.5;
-    background: var(--footer-color);
-    color: var(--text-color);
-  }
-
-  /* profile picture */
-  #profile {
-    display: inline-block;
-    text-align: center;
-    width: 5em;
-    border-radius: 5em;
-  }
-
-  /* container that holds website title */
-  #title_container {
-    z-index: -1;
-    width: 100%;
-    height: 12em;
-    background: linear-gradient(to right, #0041c6cc, #0099b5cc), url('../img/icons/banner.jpg') center;
-    background-size: cover;
-  }
-
-  /* title of website */
-  #title {
-    position: relative;
-    color: white;
-    font-size: 2em;
-    text-shadow: var(--drop-shadow);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
   /* div that holds about page information */
   .data_div {
     flex: 33.33%;
@@ -82,28 +69,93 @@ desktop styles
     background: var(--data-color);
   }
 
-  /* website header */
-  .header {
-    position: sticky;
+  /* content div images */
+  .data_div img {
+    float: top;
     height: 3em;
+  }
+
+  /* content div text */
+  .data_div p {
+    font-size: 26px;
+    text-align: center;
+    color: var(--text-color);
+  }
+
+  /* footer of website */
+  #footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 12em;
+    line-height: 1.5;
+    background: var(--footer-color);
+    color: #727272;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  /* container that holds website title */
+  #header_img {
+    z-index: -1;
+    width: 100%;
+    height: 20em;
+    background: linear-gradient(to right, #0041c6cc, #0099b5cc), url('../img/icons/banner.jpg') center;
+    background-size: cover;
+  }
+
+  /* link container */
+  #link_div {
+    display: flex;
+    height: 100%;
+    width: 50em;
+    margin: auto;
+  }
+
+  /* container that holds images used by links on header */
+  .link_wrap {
+    flex: 25%;
+    margin-top: 0.25em;
+  }
+
+  /* sets header link image size */
+  .link_wrap svg {
+    height: 3em;
+    fill: #fff;
+    transition: 0.25s;
+  }
+
+  .link_wrap svg:hover {
+    fill: #aaa;
+  }
+
+  /* navigation bar */
+  nav {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    height: 3.5em;
     max-width: 100%;
     min-width: 40em;
-    top: 0;
-    z-index: 2;
+    text-align: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
     background: var(--header-gradient);
   }
 
-  /* sets header link image size */
-  .link_container img:hover {
-    height: 2.8em;
-    transform: translateY(-0.15em)
+  /* profile picture */
+  #profile {
+    display: inline-block;
+    text-align: center;
+    width: 8em;
+    border-radius: 8em;
   }
 
   /* container that holds project information */
   .project_div {
-    display: block;
-    flex: 50%;
+    position: relative;
+    display: inline-block;
+    width: 30em;
     height: 24em;
     padding: 0;
     line-height: 1.5;
@@ -119,11 +171,43 @@ desktop styles
     color: #0055ff;
   }
 
+  /* text that is located on project divs */
+  .project_text {
+    position: absolute;
+    width: 12em;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 1em 1em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+    padding: 0.2em;
+    font-size: 28px;
+    background: var(--data-color);
+  }
+
   /* defines div rows used on all pages */
   .row {
     display: flex;
     max-width: 65em;
     min-width: 40em;
     margin: auto;
+  }
+
+  /* title for each section of website */
+  .section_title {
+    text-align: center;
+    padding: 1.5em 0;
+    font-size: 2em;
+    color: var(--text-color);
+  }
+
+  /* title of website */
+  #title {
+    color: white;
+    font-size: 3em;
+    text-shadow: var(--drop-shadow);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 }
