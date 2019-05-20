@@ -14,12 +14,25 @@ desktop styles
 
     /* variables */
     --font-stack: Montserrat, Arial, serif; /* font stack */
-    --header-gradient: linear-gradient(to right, #003cb5, #00839b); /* header gradient */
     --drop-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25); /* drop shadow */
+
+    /* dark theme (default) */
+    --header-gradient: linear-gradient(to right, #003cb5, #00839b); /* header gradient */
+    --header-img-gradient: linear-gradient(to right, #0041c6cc, #0099b5cc);
     --content-color: #333;
     --data-color: #3A3A3A;
     --footer-color: #2F2F2F;
+    --footer-font-color: #727272;
     --text-color: #EEE;
+
+    /* light theme */
+    /*--header-gradient: linear-gradient(to right, #003cb5, #00839b); !* header gradient *!
+    --header-img-gradient: linear-gradient(to right, #0041c6cc, #0099b5cc);
+    --content-color: white;
+    --data-color: white;
+    --footer-color: #F8F8F8;
+    --footer-font-color: #CCC;
+    --text-color: #333;*/
   }
 
   /* configure links */
@@ -91,7 +104,7 @@ desktop styles
     height: 12em;
     line-height: 1.5;
     background: var(--footer-color);
-    color: #727272;
+    color: var(--footer-font-color);
     font-weight: bold;
     font-size: 20px;
   }
@@ -101,7 +114,7 @@ desktop styles
     z-index: -1;
     width: 100%;
     height: 20em;
-    background: linear-gradient(to right, #0041c6cc, #0099b5cc), url('../img/icons/banner.jpg') center;
+    background: var(--header-img-gradient), url('../img/icons/banner.jpg') center;
     background-size: cover;
   }
 
@@ -109,7 +122,8 @@ desktop styles
   #link_div {
     display: flex;
     height: 100%;
-    width: 50em;
+    max-width: 50em;
+    min-width: 40em;
     margin: auto;
   }
 
@@ -122,7 +136,7 @@ desktop styles
   /* sets header link image size */
   .link_wrap svg {
     height: 3em;
-    fill: #fff;
+    fill: white;
     transition: 0.25s;
   }
 
