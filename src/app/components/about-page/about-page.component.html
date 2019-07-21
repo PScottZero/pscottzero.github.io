@@ -1,0 +1,4 @@
+<div class="content">
+  <app-info-group *ngFor="let infoGroup of getInfoGroups()" [title]="infoGroup.title"
+                  [infoArray]="infoGroup.infoArray" [flex]="infoGroup.flex"></app-info-group>
+</div>
