@@ -1,14 +1,25 @@
+@import '../../../variables';
+
 /* container that holds project information */
 .project {
-  position: relative;
-  display: inline-block;
-  width: 30em;
-  height: 24em;
   padding: 0;
   line-height: 1.5;
   border-radius: 2em;
   margin: 0.5em;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: $drop-shadow;
+
+  @media screen and (min-width: $screen-cutoff) {
+    position: relative;
+    display: inline-block;
+    width: 30em;
+    height: 24em;
+  }
+
+  @media screen and (max-width: $screen-cutoff) {
+    display: block;
+    height: 18em;
+    line-height: 1.5;
+  }
 }
 
 /* adds box shadow when project div is hovered over */
@@ -19,13 +30,21 @@
 
 /* text that is located on project divs */
 .projectText {
-  position: absolute;
-  width: 12em;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 0 0 1em 1em;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
   padding: 0.2em;
   font-size: 28px;
-  background: #3A3A3A;
+  background: $content-color;
+  border-radius: 0 0 1em 1em;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+
+  @media screen and (min-width: $screen-cutoff) {
+    position: absolute;
+    width: 12em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (max-width: $screen-cutoff) {
+    width: 70%;
+    margin: auto;
+  }
 }

@@ -1,3 +1,5 @@
+@import '../../../variables';
+
 /* content div images */
 .infoContainer img {
   float: top;
@@ -8,5 +10,5 @@
 .infoContainer p {
   font-size: 26px;
   text-align: center;
-  color: #EEE;
+  color: $text-color;
 }

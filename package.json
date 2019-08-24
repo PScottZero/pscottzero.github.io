@@ -1,6 +1,7 @@
 {
   "name": "pjs4",
   "version": "0.0.0",
+  "homepage": "https://pscottzero.github.io",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
