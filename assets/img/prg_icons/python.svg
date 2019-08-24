@@ -1,0 +1,21 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 500 500">
+    <defs>
+        <style>.cls-1{fill:url(#linear-gradient);}.cls-2{fill:url(#linear-gradient-2);}</style>
+        <linearGradient id="linear-gradient" x1="-0.78" y1="468.35" x2="484.21" y2="51.08"
+                        gradientTransform="matrix(0.56, 0, 0, -0.57, -8.96, 280.25)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#5a9fd4"/>
+            <stop offset="1" stop-color="#306998"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1="671.72" y1="-201.47" x2="498.53" y2="43.56"
+                        gradientTransform="matrix(0.56, 0, 0, -0.57, -8.96, 280.25)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ffd43b"/>
+            <stop offset="1" stop-color="#ffe873"/>
+        </linearGradient>
+    </defs>
+    <title>Artboard 1</title>
+    <path id="path1948" class="cls-1"
+          d="M247.06,0a341.44,341.44,0,0,0-57,4.87c-50.47,8.92-59.64,27.58-59.64,62v45.46H249.7v15.15h-164c-34.67,0-65,20.84-74.52,60.48-11,45.43-11.44,73.79,0,121.23,8.48,35.31,28.73,60.47,63.39,60.47h41V315.18c0-39.38,34.06-74.1,74.51-74.1H309.2c33.17,0,59.64-27.31,59.64-60.62V66.88c0-32.33-27.27-56.61-59.64-62A372.62,372.62,0,0,0,247.06,0ZM182.55,36.57a22.73,22.73,0,1,1-22.39,22.8A22.63,22.63,0,0,1,182.55,36.57Z"/>
+    <path id="path1950" class="cls-2"
+          d="M383.72,127.49v53c0,41.07-34.82,75.63-74.52,75.63H190.05c-32.63,0-59.64,27.93-59.64,60.62V430.29c0,32.33,28.11,51.34,59.64,60.62,37.76,11.1,74,13.1,119.15,0,30-8.7,59.64-26.2,59.64-60.62V384.83H249.7V369.67H428.48c34.67,0,47.59-24.18,59.65-60.47,12.45-37.37,11.92-73.3,0-121.23-8.57-34.51-24.93-60.48-59.65-60.48Zm-67,287.65a22.73,22.73,0,1,1-22.39,22.66A22.51,22.51,0,0,1,316.71,415.14Z"/>
+</svg>
