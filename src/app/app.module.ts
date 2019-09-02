@@ -9,7 +9,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { InfoComponent } from './components/info/info.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { InfoGroupComponent } from './components/info-group/info-group.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +18,7 @@ import { InfoGroupComponent } from './components/info-group/info-group.component
     ProjectComponent,
     HeaderComponent,
     FooterComponent,
-    InfoComponent,
-    InfoGroupComponent
+    InfoComponent
   ],
   imports: [
     BrowserModule,

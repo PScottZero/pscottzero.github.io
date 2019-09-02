@@ -1,9 +1,13 @@
+/**
+ * service that keeps track of which page to show
+ * (either about page or prj_img page)
+ */
 import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
-export class PageService {
+export class PageStateService {
   aboutPageIsVisible = true;
   projectsPageIsVisible = false;
 

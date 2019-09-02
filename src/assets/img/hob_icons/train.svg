@@ -1,0 +1,22 @@
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>.cls-1{fill:none;stroke:#FFF;stroke-miterlimit:10;stroke-width:14px;}</style>
+  </defs><title>Train</title>
+  <path class="cls-1" d="M465.88,353.15H34.12c.45-12.3,6.48-128.91,97-182.29,28.15-16.59,56.31-22.27,77.62-24H465.88Z"/>
+  <polyline class="cls-1" points="380.48 67.98 415.32 102.82 371.29 146.85"/>
+  <line class="cls-1" x1="355.97" y1="67.98" x2="422.6" y2="67.98"/>
+  <circle class="cls-1" cx="74.44" cy="388.78" r="19.15"/>
+  <circle class="cls-1" cx="149.94" cy="388.78" r="19.15"/>
+  <circle class="cls-1" cx="359.9" cy="388.78" r="19.15"/>
+  <circle class="cls-1" cx="435.4" cy="388.78" r="19.15"/>
+  <rect class="cls-1" x="349.64" y="195.13" width="87.31" height="45.96" rx="12"/>
+  <rect class="cls-1" x="229.59" y="195.13" width="87.31" height="45.96" rx="12"/>
+  <polyline class="cls-1" points="99.3 195.13 205.85 195.13 189 241.08 64.76 241.08"/>
+  <line class="cls-1" y1="426.56" x2="500" y2="426.56"/>
+  <rect class="cls-1" x="27.39" y="432.02" width="30.64" height="10.72"/>
+  <rect class="cls-1" x="110.33" y="432.02" width="30.64" height="10.72"/>
+  <rect class="cls-1" x="193.27" y="432.02" width="30.64" height="10.72"/>
+  <rect class="cls-1" x="276.21" y="432.02" width="30.64" height="10.72"/>
+  <rect class="cls-1" x="358.71" y="432.02" width="30.64" height="10.72"/>
+  <rect class="cls-1" x="441.97" y="432.02" width="30.64" height="10.72"/>
+</svg>

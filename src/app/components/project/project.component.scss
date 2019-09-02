@@ -8,6 +8,7 @@
   margin: 0.5em;
   box-shadow: $drop-shadow;
 
+  /* desktop styles */
   @media screen and (min-width: $screen-cutoff) {
     position: relative;
     display: inline-block;
@@ -15,6 +16,7 @@
     height: 24em;
   }
 
+  /* mobile styles */
   @media screen and (max-width: $screen-cutoff) {
     display: block;
     height: 18em;
@@ -36,6 +38,7 @@
   border-radius: 0 0 1em 1em;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
 
+  /* desktop styles */
   @media screen and (min-width: $screen-cutoff) {
     position: absolute;
     width: 12em;
@@ -43,6 +46,7 @@
     transform: translateX(-50%);
   }
 
+  /* mobile styles */
   @media screen and (max-width: $screen-cutoff) {
     width: 70%;
     margin: auto;

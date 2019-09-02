@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PageService } from './services/page.service';
+import { PageStateService } from './services/pageState/pageState.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ import { PageService } from './services/page.service';
 export class AppComponent {
   title = 'pjs4';
 
-  constructor(private pageService: PageService) {}
+  constructor(private pageService: PageStateService) {}
 
   aboutPageIsVisible() {
     return this.pageService.aboutPageIsVisible;

@@ -1,11 +1,14 @@
+/**
+ * this service contains information for the about page
+ */
 import { Injectable } from '@angular/core';
 
-const IMG_DIR = '../../assets/img/';
-const EDU_IMG_DIR = IMG_DIR + 'edu_icons/';
-const EXP_IMG_DIR = IMG_DIR + 'exp_icons/';
-const HACK_IMG_DIR = IMG_DIR + 'hack_icons/';
-const HOB_IMG_DIR = IMG_DIR + 'hob_icons/';
-const PRG_IMG_DIR = IMG_DIR + 'prg_icons/';
+const IMG_DIR = '../../assets/img/'; // image directory
+const EDU_IMG_DIR = IMG_DIR + 'edu_icons/'; // education icons directory
+const EXP_IMG_DIR = IMG_DIR + 'exp_icons/'; // experience icons directory
+const HACK_IMG_DIR = IMG_DIR + 'hack_icons/'; // hackathon icons directory
+const HOB_IMG_DIR = IMG_DIR + 'hob_icons/'; // hobby icons directory
+const PRG_IMG_DIR = IMG_DIR + 'prg_icons/'; // programming language icons directory
 
 @Injectable({
   providedIn: 'root'
@@ -23,9 +26,9 @@ export class AboutService {
 
   private experience = [
     new Info(EXP_IMG_DIR + 'lockheed.png', 'Lockheed Logo', 'Lockheed Martin',
-      ['Software Engineer Intern', 'May-Aug 2019']),
+      ['Software Engineer Intern', 'May-Aug 2019'], 3),
     new Info(EXP_IMG_DIR + 'lunar.png', 'Lunar Lion Logo', 'Lunar Lion',
-      ['C&DH, GCS Lead', 'Aug 2018-Present']),
+      ['Avionics Lead', '(Previously GCS Lead)', 'Aug 2018-Present']),
     new Info(EXP_IMG_DIR + 'easton.png', 'Easton Coach Logo', 'Easton Coach Company',
       ['Software Engineer', 'Summer 2018']),
     new Info(EXP_IMG_DIR + 'wvpl.png', 'WVPL Logo', 'Wissahickon Valley Public Library',
@@ -36,6 +39,7 @@ export class AboutService {
     new Info(PRG_IMG_DIR + 'java.svg', 'Java Logo', 'Java'),
     new Info(PRG_IMG_DIR + 'c.svg', 'C Logo', 'C'),
     new Info(PRG_IMG_DIR + 'cpp.svg', 'C++ Logo', 'C++'),
+    new Info(PRG_IMG_DIR + 'angular.png', 'Angular Logo', 'Angular'),
     new Info(PRG_IMG_DIR + 'javascript.svg', 'Javascript Logo', 'Javascript'),
     new Info(PRG_IMG_DIR + 'python.svg', 'Python Logo', 'Python'),
     new Info(PRG_IMG_DIR + 'kotlin.svg', 'Kotlin Logo', 'Kotlin'),
@@ -73,18 +77,19 @@ export class AboutService {
     new Info(HOB_IMG_DIR + 'vinyl.svg', 'Vinyl', 'Vinyl'),
     new Info(HOB_IMG_DIR + 'mac.svg', 'Macintosh', 'Old Tech'),
     new Info(HOB_IMG_DIR + 'plane.svg', 'Plane', 'Aviation'),
+    new Info(HOB_IMG_DIR + 'train.svg', 'Train', 'Trains'),
     new Info(HOB_IMG_DIR + 'coaster.svg', 'Coaster', 'Coasters'),
     new Info(HOB_IMG_DIR + 'coin.svg', 'Coin', 'Coins'),
   ];
 
   infoGroups = [
     new InfoGroup('Education', this.education, 33),
-    new InfoGroup('Experience', this.experience, 50),
-    new InfoGroup('Programming Languages', this.languages, 33),
+    new InfoGroup('Work Experience', this.experience, 50),
+    new InfoGroup('Programming Languages', this.languages, 50),
     new InfoGroup('Coursework', this.coursework, 33),
     new InfoGroup('Clubs', this.clubs, 50),
     new InfoGroup('Hackathons', this.hackathons, 33),
-    new InfoGroup('Hobbies & Interests', this.hobbies, 33),
+    new InfoGroup('Hobbies & Interests', this.hobbies, 50),
   ];
 }
 
@@ -93,12 +98,14 @@ export class Info {
   imgAlt: string;
   header: string;
   info: Array<string>;
+  flex: number;
 
-  constructor(img: string, imgAlt: string, header: string, info?: Array<string>) {
+  constructor(img: string, imgAlt: string, header: string, info?: Array<string>, flex?: number) {
     this.img = img;
     this.imgAlt = imgAlt;
     this.header = header;
     this.info = info;
+    this.flex = flex;
   }
 }
 

@@ -1,9 +1,12 @@
+/**
+ * service that holds information for prj_img page
+ */
 import { Injectable } from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
 
-const PROJ_IMG_DIR = '../../assets/img/projects/';
-const GIT_HUB = 'https://github.com/PScottZero/';
-const PJS4 = 'https://pjs4.com/';
+const PROJ_IMG_DIR = '../../assets/img/prj_img/'; // project image directory
+const GIT_HUB = 'https://github.com/PScottZero/'; // git hub link
+const PJS4 = 'https://pjs4.com/'; // website link
 
 @Injectable({
   providedIn: 'root'
@@ -13,8 +16,8 @@ export class ProjectService {
   constructor(private sanitizer: DomSanitizer) {}
 
   recentProjects = [
+    new Project('GBEmu', 'gameboy.jpg', GIT_HUB + 'GBEmu', this.sanitizer),
     new Project('Graham Scan Visualizer', 'convex.jpg', PJS4 + 'Graham-Scan', this.sanitizer),
-    new Project('Paul\'s Horrible Drawings' , 'phd.jpg', PJS4 + 'Pauls-Horrible-Drawings', this.sanitizer),
     new Project('SiliconEight' , 'silicon_javascript.jpg', PJS4 + 'SiliconEight-Javascript', this.sanitizer),
     new Project('Tetromino' , 'tetromino.jpg', PJS4 + 'Tetromino', this.sanitizer)
   ];
@@ -29,6 +32,7 @@ export class ProjectService {
     new Project('Java Paint', 'javapaint.jpg', GIT_HUB + 'JavaPaint', this.sanitizer),
     new Project('Lucas Lehmer Test Kotlin', 'lucas.jpg', GIT_HUB + 'Lucas-Lehmer-Test-Kotlin', this.sanitizer),
     new Project('METAR Decoder', 'metar.jpg', GIT_HUB + 'METAR-Decoder', this.sanitizer),
+    new Project('Paul\'s Horrible Drawings' , 'phd.jpg', PJS4 + 'Pauls-Horrible-Drawings', this.sanitizer),
     new Project('Python Punchcard', 'punchcard.jpg', GIT_HUB + 'PythonPunchcard', this.sanitizer),
     new Project('Recama\u0301n Sequence Visualizer', 'recaman.jpg', GIT_HUB + 'Recaman-Sequence-Visualizer', this.sanitizer),
     new Project('Silicon Eight', 'silicon.jpg', GIT_HUB + 'SiliconEight', this.sanitizer),

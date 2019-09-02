@@ -4,16 +4,19 @@ $gradient: linear-gradient(to right, #003cb5, #00839b);
 $img-gradient: linear-gradient(to right, #0041c6cc, #0099b5cc);
 $img: url('../../../assets/img/icons/banner.jpg');
 
+/* image in header */
 .headerImg {
   width: 100%;
   background: $img-gradient, $img center;
   background-size: cover;
 
+  /* desktop styles */
   @media screen and (min-width: $screen-cutoff) {
     z-index: -1;
     height: 20em;
   }
 
+  /* mobile styles */
   @media screen and (max-width: $screen-cutoff) {
     display: flex;
     align-items: center;
@@ -24,21 +27,25 @@ $img: url('../../../assets/img/icons/banner.jpg');
   }
 }
 
+/* container that holds links to other pages */
 .linkContainer {
   display: flex;
   height: 100%;
 
+  /* desktop styles */
   @media screen and (min-width: $screen-cutoff) {
     max-width: 50em;
     min-width: 40em;
     margin: auto;
   }
 
+  /* mobile styles */
   @media screen and (max-width: $screen-cutoff) {
     width: 100%;
   }
 }
 
+/* container that holds website title */
 .titleContainer {
   @media screen and (min-width: $screen-cutoff) {
     position: relative;
@@ -47,6 +54,7 @@ $img: url('../../../assets/img/icons/banner.jpg');
   }
 }
 
+/* website title */
 .title {
   font-weight: bold;
   color: white;
@@ -56,16 +64,21 @@ $img: url('../../../assets/img/icons/banner.jpg');
   -ms-user-select: none;
   user-select: none;
 
+  /* desktop styles */
   @media screen and (min-width: $screen-cutoff) {
     font-size: 3em;
   }
 
+  /* mobile styles */
   @media screen and (max-width: $screen-cutoff) {
     font-size: 28px;
   }
 }
 
+/* profile image */
 .profileImg {
+
+  /* desktop styles */
   @media screen and (min-width: $screen-cutoff) {
     display: inline-block;
     text-align: center;
@@ -73,12 +86,14 @@ $img: url('../../../assets/img/icons/banner.jpg');
     border-radius: 8em;
   }
 
+  /* mobile styles */
   @media screen and (max-width: $screen-cutoff) {
     width: 6em;
     border-radius: 6em;
   }
 }
 
+/* link button */
 button {
   flex: 25%;
   height: 100%;
@@ -89,6 +104,7 @@ button {
   margin-top: 0.15em;
 }
 
+/* link button icon */
 button svg {
   height: 80%;
   fill: white;
@@ -99,11 +115,13 @@ button svg {
   }
 }
 
+/* navigation bar */
 nav {
   z-index: 2;
   background: $gradient;
   box-shadow: $drop-shadow;
 
+  /* desktop styles */
   @media screen and (min-width: $screen-cutoff) {
     position: sticky;
     top: 0;
@@ -113,6 +131,7 @@ nav {
     text-align: center;
   }
 
+  /* mobile styles */
   @media screen and (max-width: $screen-cutoff) {
     position: fixed;
     width: 100%;

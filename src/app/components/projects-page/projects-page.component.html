@@ -1,11 +1,12 @@
-<!-- projects page body -->
+<!-- page that contains programming prj_img -->
 <div class="content">
 
-  <!-- recent projects -->
+  <!-- recent prj_img -->
   <p class="sectionTitle"> {{recentTitle}} </p>
   <app-project *ngFor="let project of getRecentProjects()" [title]="project.title"
                [style]="project.style" [url]="project.url"></app-project>
 
+  <!-- older prj_img -->
   <p class="sectionTitle"> {{olderTitle}} </p>
   <app-project *ngFor="let project of getOlderProjects()" [title]="project.title"
                [style]="project.style" [url]="project.url"></app-project>

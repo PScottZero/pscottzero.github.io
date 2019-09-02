@@ -1,32 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import {AboutService} from '../../services/about.service';
+import {Component} from '@angular/core';
+import {AboutService} from '../../services/about/about.service';
 
 @Component({
   selector: 'app-about-page',
   templateUrl: './about-page.component.html',
   styleUrls: ['./about-page.component.scss']
 })
-export class AboutPageComponent implements OnInit {
-  educationHeader: string;
-  experienceHeader: string;
-  programmingHeader: string;
-  courseworkHeader: string;
-  clubHeader: string;
-  hackHeader: string;
-  hobbyHeader: string;
+export class AboutPageComponent {
 
   constructor(private aboutService: AboutService) {}
 
-  ngOnInit() {
-    this.educationHeader = 'Education';
-    this.experienceHeader = 'Experience';
-    this.programmingHeader = 'Programming Languages';
-    this.courseworkHeader = 'Coursework';
-    this.clubHeader = 'Clubs';
-    this.hackHeader = 'Hackathons';
-    this.hobbyHeader = 'Hobbies & Interests';
-  }
-
+  /**
+   * returns info group list from about pageState service
+   */
   getInfoGroups() {
     return this.aboutService.infoGroups;
   }

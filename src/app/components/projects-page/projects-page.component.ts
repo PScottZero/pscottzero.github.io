@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Project, ProjectService } from '../../services/project.service';
+import { Project, ProjectService } from '../../services/project/project.service';
 
 @Component({
   selector: 'app-projects-page',
@@ -17,10 +17,16 @@ export class ProjectsPageComponent implements OnInit {
     this.olderTitle = 'Older Projects';
   }
 
+  /**
+   * returns list of recent prj_img from prj_img service
+   */
   getRecentProjects(): Array<Project> {
     return this.projectService.recentProjects;
   }
 
+  /**
+   * returns list of older prj_img from prj_img service
+   */
   getOlderProjects(): Array<Project> {
     return this.projectService.olderProjects;
   }

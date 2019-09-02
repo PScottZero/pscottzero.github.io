@@ -1,5 +1,6 @@
 @import '../../../variables';
 
+/* footer styles */
 .footer {
   display: flex;
   justify-content: center;
@@ -12,6 +13,7 @@
   font-weight: bold;
   font-size: 20px;
 
+  /* mobile styles */
   @media screen and (max-width: $screen-cutoff) {
     display: none;
   }

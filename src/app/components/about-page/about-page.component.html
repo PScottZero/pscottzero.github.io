@@ -1,4 +1,14 @@
+<!-- page that displays information about myself -->
 <div class="content">
-  <app-info-group *ngFor="let infoGroup of getInfoGroups()" [title]="infoGroup.title"
-                  [infoArray]="infoGroup.infoArray"></app-info-group>
+
+  <!-- information group (education, work experience, etc.) -->
+  <div *ngFor="let infoGroup of getInfoGroups()">
+    <p class="sectionTitle"> {{infoGroup.title}} </p>
+    <div class="row">
+
+      <!-- information container -->
+      <app-info *ngFor="let info of infoGroup.infoArray" [img]="info.img" [imgAlt]="info.imgAlt"
+                [header]="info.header" [info]="info.info" [fxFlex]="infoGroup.flex"></app-info>
+    </div>
+  </div>
 </div>
