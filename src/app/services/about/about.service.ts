@@ -36,25 +36,31 @@ export class AboutService {
   ];
 
   private languages = [
-    new Info(PRG_IMG_DIR + 'java.svg', 'Java Logo', 'Java'),
+    new Info(PRG_IMG_DIR + 'angular.png', 'Angular Logo', 'Angular'),
     new Info(PRG_IMG_DIR + 'c.svg', 'C Logo', 'C'),
     new Info(PRG_IMG_DIR + 'cpp.svg', 'C++ Logo', 'C++'),
-    new Info(PRG_IMG_DIR + 'angular.png', 'Angular Logo', 'Angular'),
-    new Info(PRG_IMG_DIR + 'javascript.svg', 'Javascript Logo', 'Javascript'),
-    new Info(PRG_IMG_DIR + 'python.svg', 'Python Logo', 'Python'),
-    new Info(PRG_IMG_DIR + 'kotlin.svg', 'Kotlin Logo', 'Kotlin'),
     new Info(PRG_IMG_DIR + 'html.svg', 'HTML Logo', 'HTML'),
+    new Info(PRG_IMG_DIR + 'java.svg', 'Java Logo', 'Java'),
+    new Info(PRG_IMG_DIR + 'javascript.svg', 'Javascript Logo', 'Javascript'),
+    new Info(PRG_IMG_DIR + 'kotlin.svg', 'Kotlin Logo', 'Kotlin'),
     new Info(PRG_IMG_DIR + 'mips.svg', 'MIPS Logo', 'MIPS'),
+    new Info(PRG_IMG_DIR + 'python.svg', 'Python Logo', 'Python'),
     new Info(PRG_IMG_DIR + 'verilog.svg', 'Verilog Logo', 'Verilog'),
   ];
 
   private coursework = [
+    new Info(undefined, undefined, 'CMPEN 331', ['Computer Design']),
+    new Info(undefined, undefined, 'CMPSC 473', ['Operating Systems']),
     new Info(undefined, undefined, 'CMPSC 465', ['Data Structures & Algorithms']),
+    new Info(undefined, undefined, 'CMPSC 461', ['Programming Language Concepts']),
     new Info(undefined, undefined, 'CMPSC 311', ['Systems Programming']),
     new Info(undefined, undefined, 'CMPSC 221', ['Object Oriented Programming']),
-    new Info(undefined, undefined, 'CMPEN 331', ['Computer Design']),
-    new Info(undefined, undefined, 'PHYS 212', ['Physics: Electricity & Magnetism']),
+    new Info(undefined, undefined, 'ENGL 202C', ['Technical Writing']),
+    new Info(undefined, undefined, 'MATH 441', ['Matrix Algebra']),
     new Info(undefined, undefined, 'MATH 230', ['Multi-variable Calculus']),
+    new Info(undefined, undefined, 'PHYS 212', ['Physics: Electricity & Magnetism']),
+    new Info(undefined, undefined, 'STAT 415', ['Intro to Mathematical Statistics']),
+    new Info(undefined, undefined, 'STAT 414', ['Intro to Probability Theory']),
   ];
 
   private clubs = [
