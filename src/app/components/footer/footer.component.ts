@@ -11,6 +11,6 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
     this.footerText = 'Created by Paul Scott using Angular';
-    this.lastUpdated = 'Last Updated 5 October 2019';
+    this.lastUpdated = 'Last Updated 9 November 2019';
   }
 }

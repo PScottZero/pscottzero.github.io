@@ -16,9 +16,9 @@ export class ProjectService {
   constructor(private sanitizer: DomSanitizer) {}
 
   recentProjects = [
-    new Project('GBEmu', 'gameboy.jpg', GIT_HUB + 'GBEmu', this.sanitizer),
+    new Project('Dot Matrix (Game Boy Emulator)', 'gameboy.jpg', GIT_HUB + 'DotMatrix', this.sanitizer),
     new Project('Graham Scan Visualizer', 'convex.jpg', PJS4 + 'Graham-Scan', this.sanitizer),
-    new Project('SiliconEight' , 'silicon_javascript.jpg', PJS4 + 'SiliconEight-Javascript', this.sanitizer),
+    new Project('SiliconEight (Chip-8 Emulator)' , 'silicon_javascript.jpg', PJS4 + 'SiliconEight-Javascript', this.sanitizer),
     new Project('Tetromino' , 'tetromino.jpg', PJS4 + 'Tetromino', this.sanitizer)
   ];
 
