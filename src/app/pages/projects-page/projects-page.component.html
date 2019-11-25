@@ -2,12 +2,12 @@
 <div class="content">
 
   <!-- recent prj_img -->
-  <p class="sectionTitle"> {{recentTitle}} </p>
+  <p class="section_title"> {{recentTitle}} </p>
   <app-project *ngFor="let project of getRecentProjects()" [title]="project.title"
                [style]="project.style" [url]="project.url"></app-project>
 
   <!-- older prj_img -->
-  <p class="sectionTitle"> {{olderTitle}} </p>
+  <p class="section_title"> {{olderTitle}} </p>
   <app-project *ngFor="let project of getOlderProjects()" [title]="project.title"
                [style]="project.style" [url]="project.url"></app-project>
 </div>

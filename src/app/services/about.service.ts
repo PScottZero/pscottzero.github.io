@@ -16,15 +16,15 @@ const PRG_IMG_DIR = '../../assets/img/about_img/languages/';
 export class AboutService {
 
   private education = [
-    new InfoBlock('Penn State', EDU_IMG_DIR + 'old_main.jpg', 'CS Major, Math Minor. 3.97/4.00'),
-    new InfoBlock('Schreyer Honors College', EDU_IMG_DIR + 'sch.png', 'Schreyer Scholar'),
-    new InfoBlock('Wissahickon High School', EDU_IMG_DIR + 'whs.png', 'Magna Cum Laude'),
+    new InfoBlock('Penn State', EDU_IMG_DIR + 'psu.jpg', 'CS Major, Math Minor. 3.97/4.00'),
+    new InfoBlock('Schreyer Honors College', EDU_IMG_DIR + 'shc.jpg', 'Schreyer Scholar'),
+    new InfoBlock('Wissahickon High School', EDU_IMG_DIR + 'whs.jpg', 'Magna Cum Laude'),
   ];
 
   private experience = [
-    new InfoBlock('Lockheed Martin', EXP_IMG_DIR + 'lockheed.png', 'Software Engineer Intern'),
-    new InfoBlock('Lunar Lion', EXP_IMG_DIR + 'lunar.png', 'Avionics Lead'),
-    new InfoBlock('Easton Coach Company', EXP_IMG_DIR + 'easton.png', 'Software Engineer Intern'),
+    new InfoBlock('Lockheed Martin', EXP_IMG_DIR + 'f35.jpg', 'Software Engineer Intern'),
+    new InfoBlock('Lunar Lion', EXP_IMG_DIR + 'lunar.jpg', 'Avionics Lead'),
+    new InfoBlock('Easton Coach Company', EXP_IMG_DIR + 'easton.jpg', 'Software Engineer Intern'),
   ];
 
   private languages = [
@@ -81,13 +81,13 @@ export class AboutService {
   ];
 
   infoGroups = [
-    new InfoBlockGroup('Education', this.education),
-    new InfoBlockGroup('Work Experience', this.experience),
-    new InfoBlockGroup('Programming Languages', this.languages),
-    new InfoBlockGroup('Coursework', this.coursework),
-    new InfoBlockGroup('Clubs', this.clubs),
-    new InfoBlockGroup('Hackathons', this.hackathons),
-    new InfoBlockGroup('Hobbies & Interests', this.hobbies),
+    new InfoBlockGroup('Education', '#666', this.education),
+    new InfoBlockGroup('Work Experience', '#555', this.experience),
+    new InfoBlockGroup('Programming Languages', '#444', this.languages),
+    new InfoBlockGroup('Coursework', '#333', this.coursework),
+    new InfoBlockGroup('Clubs', '#222', this.clubs),
+    new InfoBlockGroup('Hackathons', '#111', this.hackathons),
+    new InfoBlockGroup('Hobbies & Interests', '#000', this.hobbies),
   ];
 }
 
@@ -105,11 +105,12 @@ export class InfoBlock {
 
 export class InfoBlockGroup {
   title: string;
+  titleBkg: string;
   infoBlockArr: Array<InfoBlock>;
-  flex: number;
 
-  constructor(title: string, infoArray: Array<InfoBlock>) {
+  constructor(title: string, titleBkg: string, infoArray: Array<InfoBlock>) {
     this.title = title;
+    this.titleBkg = titleBkg;
     this.infoBlockArr = infoArray;
   }
 }

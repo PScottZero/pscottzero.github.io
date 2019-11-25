@@ -2,10 +2,12 @@
 <div class="content">
 
   <!-- information group (education, work experience, etc.) -->
-  <div *ngFor="let infoGroup of getInfoGroups()">
-
+  <div *ngFor="let infoBlockGroup of getInfoGroups()">
+    <div class="section_title" [ngStyle]="{'background': infoBlockGroup.titleBkg}">
+      <p>{{infoBlockGroup.title}}</p>
+    </div>
     <div class="info_block_group" fxFlex="row">
-      <app-info fxFlex="calc(33% - .5em)" *ngFor="let info of infoGroup.infoBlockArr"
+      <app-info fxFlex="33.333%" *ngFor="let info of infoBlockGroup.infoBlockArr"
                 [ngStyle]="{'background': 'url(' + info.backgroundImg + ')', 'background-size': 'cover'}"
                 [title]="info.title"
                 [description]="info.description"></app-info>

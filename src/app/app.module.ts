@@ -6,9 +6,9 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { ProjectComponent } from './components/project/project.component';
 import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { InfoBlockComponent } from './components/info-block/info-block.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HeaderImgComponent } from './components/header-img/header-img.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +17,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ProjectsPageComponent,
     ProjectComponent,
     HeaderComponent,
-    FooterComponent,
-    InfoBlockComponent
+    InfoBlockComponent,
+    HeaderImgComponent
   ],
   imports: [
     BrowserModule,
