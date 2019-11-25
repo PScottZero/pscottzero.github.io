@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PageStateService } from '../../services/pageState/pageState.service';
+import { PageStateService } from '../../services/pageState.service';
 
 @Component({
   selector: 'app-header',

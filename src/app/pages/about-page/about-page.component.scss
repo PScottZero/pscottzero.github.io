@@ -1,0 +1,23 @@
+@import '../../../variables';
+
+.content {
+  display: block;
+  max-width: 65em;
+  min-width: 40em;
+  margin-top: 6em;
+}
+
+.info_block_group {
+  display: block;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+app-info {
+  display: block;
+  line-height: 1.5;
+  height: 12em;
+  margin: 0.25em;
+  box-shadow: $drop-shadow;
+  background-size: cover;
+}

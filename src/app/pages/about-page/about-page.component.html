@@ -1,0 +1,14 @@
+<!-- page that displays information about myself -->
+<div class="content">
+
+  <!-- information group (education, work experience, etc.) -->
+  <div *ngFor="let infoGroup of getInfoGroups()">
+
+    <div class="info_block_group" fxFlex="row">
+      <app-info fxFlex="calc(33% - .5em)" *ngFor="let info of infoGroup.infoBlockArr"
+                [ngStyle]="{'background': 'url(' + info.backgroundImg + ')', 'background-size': 'cover'}"
+                [title]="info.title"
+                [description]="info.description"></app-info>
+    </div>
+  </div>
+</div>

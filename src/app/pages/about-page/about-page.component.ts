@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {AboutService} from '../../services/about/about.service';
+import {AboutService} from '../../services/about.service';
 
 @Component({
   selector: 'app-about-page',
@@ -11,7 +11,7 @@ export class AboutPageComponent {
   constructor(private aboutService: AboutService) {}
 
   /**
-   * returns info group list from about pageState service
+   * returns description-block group list from about pageState service
    */
   getInfoGroups() {
     return this.aboutService.infoGroups;
