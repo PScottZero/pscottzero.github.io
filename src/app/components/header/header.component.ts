@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PageStateService } from '../../services/pageState.service';
+import { ContentService } from '../../services/content.service';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +9,7 @@ import { PageStateService } from '../../services/pageState.service';
 export class HeaderComponent implements OnInit {
   title: string;
 
-  constructor(private pageService: PageStateService) { }
+  constructor(private pageService: ContentService) { }
 
   ngOnInit() {
     this.title = 'Paul Joseph Scott IV';
@@ -33,13 +33,13 @@ export class HeaderComponent implements OnInit {
    * display about page
    */
   showAboutPage() {
-    this.pageService.showAboutPage();
+    this.pageService.showAboutData();
   }
 
   /**
    * display prj_img page
    */
   showProjectsPage() {
-    this.pageService.showProjectsPage();
+    this.pageService.showProjectData();
   }
 }

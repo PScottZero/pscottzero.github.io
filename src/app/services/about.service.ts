@@ -1,14 +1,14 @@
-/**
- * this service contains information for the about page
- */
 import { Injectable } from '@angular/core';
+import {InfoBlock} from "../objects/InfoBlock";
+import {InfoBlockGroup} from "../objects/InfoBlockGroup";
 
-const EDU_IMG_DIR = '../../assets/img/about_img/education/';
-const EXP_IMG_DIR = '../../assets/img/about_img/experience/';
-const CLUB_IMG_DIR = '../../assets/img/about_img/clubs/';
-const HACK_IMG_DIR = '../../assets/img/about_img/hackathons/';
-const HOB_IMG_DIR = '../../assets/img/about_img/hobbies/';
-const PRG_IMG_DIR = '../../assets/img/about_img/languages/';
+const EDU_IMG_DIR = '../../assets/img/about/education/';
+const EXP_IMG_DIR = '../../assets/img/about/experience/';
+const CRS_IMG_DIR = '../../assets/img/about/coursework/';
+const CLUB_IMG_DIR = '../../assets/img/about/clubs/';
+const HACK_IMG_DIR = '../../assets/img/about/hackathons/';
+const HOB_IMG_DIR = '../../assets/img/about/hobbies/';
+const PRG_IMG_DIR = '../../assets/img/about/languages/';
 
 @Injectable({
   providedIn: 'root'
@@ -42,11 +42,11 @@ export class AboutService {
   ];
 
   private coursework = [
-    new InfoBlock('Computer Design', undefined, 'CMPEN 331'),
-    new InfoBlock('Operating Systems', undefined, 'CMPSC 473'),
-    new InfoBlock('Data Structures & Algorithms', undefined, 'CMPSC 465'),
-    new InfoBlock('Programming Language Concepts', undefined, 'CMPSC 461'),
-    new InfoBlock('Systems Programming', undefined, 'CMPSC 311'),
+    new InfoBlock('Computer Design', CRS_IMG_DIR + 'computer_design.png', 'CMPEN 331'),
+    new InfoBlock('Operating Systems', CRS_IMG_DIR + 'os.png', 'CMPSC 473'),
+    new InfoBlock('Data Structures & Algorithms', CRS_IMG_DIR + 'data_structures.png', 'CMPSC 465'),
+    new InfoBlock('Programming Language Concepts', CRS_IMG_DIR + 'lambda.png', 'CMPSC 461'),
+    new InfoBlock('Systems Programming', CRS_IMG_DIR + 'systems_programming.png', 'CMPSC 311'),
     new InfoBlock('Object Oriented Programming', undefined, 'CMPSC 221'),
     new InfoBlock('Technical Writing', undefined, 'ENGL 202C'),
     new InfoBlock('Matrix Algebra', undefined, 'MATH 441'),
@@ -82,36 +82,12 @@ export class AboutService {
   ];
 
   infoGroups = [
-    new InfoBlockGroup('Education', '#498cb8', this.education),
-    new InfoBlockGroup('Work Experience', '#3e779c', this.experience),
-    new InfoBlockGroup('Programming Languages', '#386a8a', this.languages),
-    new InfoBlockGroup('Coursework', '#2e5873', this.coursework),
-    new InfoBlockGroup('Clubs', '#284b61', this.clubs),
-    new InfoBlockGroup('Hackathons', '#213f52', this.hackathons),
-    new InfoBlockGroup('Hobbies & Interests', '#1b3342', this.hobbies),
+    new InfoBlockGroup('Education', this.education),
+    new InfoBlockGroup('Work Experience', this.experience),
+    new InfoBlockGroup('Programming Languages', this.languages),
+    new InfoBlockGroup('Coursework', this.coursework),
+    new InfoBlockGroup('Clubs', this.clubs),
+    new InfoBlockGroup('Hackathons', this.hackathons),
+    new InfoBlockGroup('Hobbies & Interests', this.hobbies),
   ];
-}
-
-export class InfoBlock {
-  title: string;
-  description: string;
-  backgroundImg: string;
-
-  constructor(title: string, backgroundImg: string, description?: string) {
-    this.title = title;
-    this.description = description;
-    this.backgroundImg = backgroundImg;
-  }
-}
-
-export class InfoBlockGroup {
-  title: string;
-  titleBkg: string;
-  infoBlockArr: Array<InfoBlock>;
-
-  constructor(title: string, titleBkg: string, infoArray: Array<InfoBlock>) {
-    this.title = title;
-    this.titleBkg = titleBkg;
-    this.infoBlockArr = infoArray;
-  }
 }

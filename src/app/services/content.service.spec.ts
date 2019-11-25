@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { PageStateService } from './pageState.service';
+import { ContentService } from './content.service';
 
 describe('PageService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: PageStateService = TestBed.get(PageStateService);
+    const service: ContentService = TestBed.get(ContentService);
     expect(service).toBeTruthy();
   });
 });
