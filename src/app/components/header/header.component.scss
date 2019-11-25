@@ -10,12 +10,13 @@ nav {
 }
 
 a {
-  color: #777;
+  color: white;
   transition: 0.3s;
   margin: 0 0.8em;
+  text-decoration: none;
 
   &:hover {
-    color: #AAA;
+    color: #CCC;
     transition: 0.3s;
   }
 }

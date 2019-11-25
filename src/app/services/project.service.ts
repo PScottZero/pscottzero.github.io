@@ -44,5 +44,5 @@ export class ProjectService {
   projectGroups = [
     new InfoBlockGroup('Recent Projects', this.recentProjects),
     new InfoBlockGroup('Older Projects', this.olderProjects),
-  ]
+  ];
 }

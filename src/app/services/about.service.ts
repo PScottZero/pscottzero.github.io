@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {InfoBlock} from "../objects/InfoBlock";
-import {InfoBlockGroup} from "../objects/InfoBlockGroup";
+import {InfoBlock} from '../objects/InfoBlock';
+import {InfoBlockGroup} from '../objects/InfoBlockGroup';
 
 const EDU_IMG_DIR = '../../assets/img/about/education/';
 const EXP_IMG_DIR = '../../assets/img/about/experience/';
@@ -42,30 +42,29 @@ export class AboutService {
   ];
 
   private coursework = [
-    new InfoBlock('Computer Design', CRS_IMG_DIR + 'computer_design.png', 'CMPEN 331'),
-    new InfoBlock('Operating Systems', CRS_IMG_DIR + 'os.png', 'CMPSC 473'),
     new InfoBlock('Data Structures & Algorithms', CRS_IMG_DIR + 'data_structures.png', 'CMPSC 465'),
+    new InfoBlock('Operating Systems', CRS_IMG_DIR + 'os.png', 'CMPSC 473'),
+    new InfoBlock('Computer Design', CRS_IMG_DIR + 'computer_design.png', 'CMPEN 331'),
     new InfoBlock('Programming Language Concepts', CRS_IMG_DIR + 'lambda.png', 'CMPSC 461'),
     new InfoBlock('Systems Programming', CRS_IMG_DIR + 'systems_programming.png', 'CMPSC 311'),
-    new InfoBlock('Object Oriented Programming', undefined, 'CMPSC 221'),
-    new InfoBlock('Technical Writing', undefined, 'ENGL 202C'),
-    new InfoBlock('Matrix Algebra', undefined, 'MATH 441'),
-    new InfoBlock('Multi-variable Calculus', undefined, 'MATH 230'),
-    new InfoBlock('Physics: Electricity & Magnetism', undefined, 'PHYS 212'),
-    new InfoBlock('Intro to Mathematical Statistics', undefined, 'STAT 415'),
-    new InfoBlock('Intro to Probability Theory', undefined, 'STAT 414'),
+    new InfoBlock('Object Oriented Programming', CRS_IMG_DIR + 'oop.jpg', 'CMPSC 221'),
+    new InfoBlock('Technical Writing', CRS_IMG_DIR + 'writing.jpg', 'ENGL 202C'),
+    new InfoBlock('Matrix Algebra', CRS_IMG_DIR + 'matrix.png', 'MATH 441'),
+    new InfoBlock('Multi-variable Calculus', CRS_IMG_DIR + 'mvc.jpg', 'MATH 230'),
+    new InfoBlock('Intro to Mathematical Statistics', CRS_IMG_DIR + 'stat.png', 'STAT 415'),
+    new InfoBlock('Intro to Probability Theory', CRS_IMG_DIR + 'probability.png', 'STAT 414'),
   ];
 
   private clubs = [
-    new InfoBlock('HackPSU', CLUB_IMG_DIR + 'hackpsu.png', 'Starting Spring 2020'),
+    new InfoBlock('HackPSU', CLUB_IMG_DIR + 'hackpsu.jpg', 'Starting Spring 2020'),
     new InfoBlock('Lunar Lion', CLUB_IMG_DIR + 'lunar.png', 'Fall 2017 - Present'),
-    new InfoBlock('ACM', CLUB_IMG_DIR + 'acm.png', 'Fall 2018'),
+    new InfoBlock('ACM', CLUB_IMG_DIR + 'acm.jpg', 'Fall 2018'),
   ];
 
   private hackathons = [
     new InfoBlock('CodePSU', HACK_IMG_DIR + 'codepsu.png', 'Spring 2019'),
     new InfoBlock('ICPC', HACK_IMG_DIR + 'icpc.png', 'Fall 2018'),
-    new InfoBlock('HackPSU', HACK_IMG_DIR + 'Fall 2018 - Present'),
+    new InfoBlock('HackPSU', HACK_IMG_DIR + 'hackpsu.jpg', 'Fall 2018 - Present'),
   ];
 
   private hobbies = [
@@ -75,8 +74,9 @@ export class AboutService {
     new InfoBlock('Ukulele', HOB_IMG_DIR + 'ukulele.svg'),
     new InfoBlock('Records', HOB_IMG_DIR + 'vinyl.svg'),
     new InfoBlock('Retro Tech', HOB_IMG_DIR + 'mac.svg'),
+    new InfoBlock('Electric Cars', HOB_IMG_DIR + 'cybertruck.jpg'),
     new InfoBlock('Aviation', HOB_IMG_DIR + 'plane.svg'),
-    new InfoBlock('Trains', HOB_IMG_DIR + 'train.svg'),
+    new InfoBlock('Trains', HOB_IMG_DIR + 'train.jpg'),
     new InfoBlock('Roller Coasters', HOB_IMG_DIR + 'coaster.svg'),
     new InfoBlock('Coin Collecting', HOB_IMG_DIR + 'coin.svg'),
   ];
