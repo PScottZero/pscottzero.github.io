@@ -17,7 +17,7 @@ export class AboutService {
 
   private education = [
     new Info(EDU_IMG_DIR + 'psu.png', 'Penn State Logo', 'Penn State',
-      ['Sophomore', 'Computer Science', 'w/ Math Minor', 'GPA 3.97/4.00']),
+      ['Junior', 'Computer Science', 'w/ Math Minor', 'GPA 3.97/4.00']),
     new Info(EDU_IMG_DIR + 'shc.png', 'Schreyer Logo', 'Schreyer Scholar',
       ['Gateway Program', 'Fall 2018']),
     new Info(EDU_IMG_DIR + 'whs.png', 'Wissahickon Logo', 'Wissahickon High School',
