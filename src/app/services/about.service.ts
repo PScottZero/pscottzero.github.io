@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 
 const EDU_IMG_DIR = '../../assets/img/about_img/education/';
 const EXP_IMG_DIR = '../../assets/img/about_img/experience/';
-const CLUB_IMG_DIR = '../../assets/img/about_img/experience/clubs/';
+const CLUB_IMG_DIR = '../../assets/img/about_img/clubs/';
 const HACK_IMG_DIR = '../../assets/img/about_img/hackathons/';
 const HOB_IMG_DIR = '../../assets/img/about_img/hobbies/';
 const PRG_IMG_DIR = '../../assets/img/about_img/languages/';
@@ -23,14 +23,15 @@ export class AboutService {
 
   private experience = [
     new InfoBlock('Lockheed Martin', EXP_IMG_DIR + 'f35.jpg', 'Software Engineer Intern'),
-    new InfoBlock('Lunar Lion', EXP_IMG_DIR + 'lunar.jpg', 'Avionics Lead'),
+    new InfoBlock('Lunar Lion', EXP_IMG_DIR + 'lunar.png', 'Avionics Lead'),
     new InfoBlock('Easton Coach Company', EXP_IMG_DIR + 'easton.jpg', 'Software Engineer Intern'),
   ];
 
   private languages = [
-    new InfoBlock('Angular', PRG_IMG_DIR + 'angular.png', '6 months'),
+    new InfoBlock('Angular', PRG_IMG_DIR + 'angular.svg', '6 months'),
     new InfoBlock('C', PRG_IMG_DIR + 'c.svg', '1 year'),
-    new InfoBlock('C++ Logo', PRG_IMG_DIR + 'cpp.svg', '2 years'),
+    new InfoBlock('C++', PRG_IMG_DIR + 'cpp.svg', '2 years'),
+    new InfoBlock('C#', PRG_IMG_DIR + 'csharp.svg', '1 month'),
     new InfoBlock('HTML', PRG_IMG_DIR + 'html.svg', '4 years'),
     new InfoBlock('Java', PRG_IMG_DIR + 'java.svg', '4 years' ),
     new InfoBlock('JavaScript', PRG_IMG_DIR + 'javascript.svg', '1 year'),
@@ -81,13 +82,13 @@ export class AboutService {
   ];
 
   infoGroups = [
-    new InfoBlockGroup('Education', '#666', this.education),
-    new InfoBlockGroup('Work Experience', '#555', this.experience),
-    new InfoBlockGroup('Programming Languages', '#444', this.languages),
-    new InfoBlockGroup('Coursework', '#333', this.coursework),
-    new InfoBlockGroup('Clubs', '#222', this.clubs),
-    new InfoBlockGroup('Hackathons', '#111', this.hackathons),
-    new InfoBlockGroup('Hobbies & Interests', '#000', this.hobbies),
+    new InfoBlockGroup('Education', '#498cb8', this.education),
+    new InfoBlockGroup('Work Experience', '#3e779c', this.experience),
+    new InfoBlockGroup('Programming Languages', '#386a8a', this.languages),
+    new InfoBlockGroup('Coursework', '#2e5873', this.coursework),
+    new InfoBlockGroup('Clubs', '#284b61', this.clubs),
+    new InfoBlockGroup('Hackathons', '#213f52', this.hackathons),
+    new InfoBlockGroup('Hobbies & Interests', '#1b3342', this.hobbies),
   ];
 }
 

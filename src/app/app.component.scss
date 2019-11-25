@@ -12,8 +12,8 @@ app-header-img {
   display: block;
   position: relative;
   width: 100%;
-  height: 20em;
+  height: 50vh;
   margin-top: 2em;
-  background: url('../assets/img/circuit.png') center;
+  background: linear-gradient(#FFFFFFCC, #000000EE), url('../assets/img/circuit.jpg') center;
   background-size: cover;
 }
