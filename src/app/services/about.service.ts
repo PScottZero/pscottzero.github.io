@@ -38,6 +38,7 @@ export class AboutService {
     new InfoBlock('Kotlin', PRG_IMG_DIR + 'kotlin.svg', '1 year'),
     new InfoBlock('MIPS', PRG_IMG_DIR + 'mips.svg', '6 months'),
     new InfoBlock('Python', PRG_IMG_DIR + 'python.svg', '3 years'),
+    new InfoBlock('SQL', PRG_IMG_DIR + 'sql.svg', '6 months'),
     new InfoBlock('Verilog', PRG_IMG_DIR + 'verilog.svg', '6 months'),
   ];
 
@@ -68,17 +69,18 @@ export class AboutService {
   ];
 
   private hobbies = [
-    new InfoBlock('Guitar', HOB_IMG_DIR + 'guitar.svg'),
-    new InfoBlock('Bass', HOB_IMG_DIR + 'bass.svg'),
-    new InfoBlock('Piano', HOB_IMG_DIR + 'piano.svg'),
-    new InfoBlock('Ukulele', HOB_IMG_DIR + 'ukulele.svg'),
-    new InfoBlock('Records', HOB_IMG_DIR + 'vinyl.svg'),
-    new InfoBlock('Retro Tech', HOB_IMG_DIR + 'mac.svg'),
-    new InfoBlock('Electric Cars', HOB_IMG_DIR + 'cybertruck.jpg'),
-    new InfoBlock('Aviation', HOB_IMG_DIR + 'plane.svg'),
-    new InfoBlock('Trains', HOB_IMG_DIR + 'train.jpg'),
-    new InfoBlock('Roller Coasters', HOB_IMG_DIR + 'coaster.svg'),
-    new InfoBlock('Coin Collecting', HOB_IMG_DIR + 'coin.svg'),
+    new InfoBlock('Guitar', HOB_IMG_DIR + 'lespaul.jpg'),
+    new InfoBlock('Bass', HOB_IMG_DIR + 'bass.jpg'),
+    new InfoBlock('Piano', HOB_IMG_DIR + 'piano.jpg'),
+    new InfoBlock('Ukulele', HOB_IMG_DIR + 'ukulele.jpg'),
+    new InfoBlock('Violin', HOB_IMG_DIR + 'violin.jpg'),
+    new InfoBlock('Records', HOB_IMG_DIR + 'remaininlight.jpg'),
+    new InfoBlock('Retro Tech', HOB_IMG_DIR + 'macintosh.jpg'),
+    new InfoBlock('Electric Cars', HOB_IMG_DIR + 'tesla.jpg'),
+    new InfoBlock('Aviation', HOB_IMG_DIR + 'airplane.jpg'),
+    new InfoBlock('Trains', HOB_IMG_DIR + 'shinkansen.jpg'),
+    new InfoBlock('Roller Coasters', HOB_IMG_DIR + 'roller_coaster.jpg'),
+    new InfoBlock('Coin Collecting', HOB_IMG_DIR + 'morgan_silver_dollar.png'),
   ];
 
   infoGroups = [

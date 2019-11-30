@@ -10,10 +10,12 @@ export class HeaderComponent {
 
   constructor(private pageService: ContentService) { }
 
+  // shows about info blocks
   showAboutData() {
     this.pageService.showAboutData();
   }
 
+  // shows project info blocks
   showProjectData() {
     this.pageService.showProjectData();
   }

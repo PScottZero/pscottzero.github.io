@@ -1,4 +1,4 @@
-import {InfoBlock} from "./InfoBlock";
+import {InfoBlock} from './InfoBlock';
 
 export class InfoBlockGroup {
   title: string;

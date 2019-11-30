@@ -1,17 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
-export class FooterComponent implements OnInit {
-
-  footerText: string;
-  lastUpdated: string;
-
-  ngOnInit() {
-    this.footerText = 'Created in Angular by Paul Scott';
-    this.lastUpdated = 'Last Updated 25 November 2019';
-  }
+export class FooterComponent {
+  about = 'Created by Paul Scott using Angular';
+  contact = 'Call at (215) 880-9592 or email at 8pscott@gmail.com';
+  lastUpdated = 'Last updated 30 November 2019';
 }

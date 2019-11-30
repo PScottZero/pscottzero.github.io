@@ -1,12 +1,17 @@
+<!-- info block groups -->
 <div *ngFor="let infoBlockGroup of getInfoBlockGroups()">
   <div class="section_title">
     <p>{{infoBlockGroup.title}}</p>
   </div>
+
+  <!-- info blocks -->
   <div class="info_block_group">
     <app-info *ngFor="let info of infoBlockGroup.infoBlockArr"
+              [class.appInfoLink]="info.link != undefined"
               [ngStyle]="{'background': 'url(' + info.backgroundImg + ') center',
                           'background-size': 'cover'}"
               [title]="info.title"
-              [description]="info.description"></app-info>
+              [description]="info.description"
+              (click)="open(info.link)"></app-info>
   </div>
 </div>
