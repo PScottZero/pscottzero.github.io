@@ -9,13 +9,9 @@ import { ContentService } from './services/content.service';
 export class AppComponent {
   title = 'pjs4';
 
-  constructor(private pageService: ContentService) {}
+  constructor(private contentService: ContentService) {}
 
-  aboutPageIsVisible() {
-    return this.pageService.aboutDataVisible;
-  }
-
-  projectsPageIsVisible() {
-    return this.pageService.projectDataVisible;
+  menuVisible(): boolean {
+    return this.contentService.menuVisible;
   }
 }

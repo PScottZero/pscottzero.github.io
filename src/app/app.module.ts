@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { InfoBlockComponent } from './components/info-block/info-block.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { HeaderImgComponent } from './components/header-img/header-img.component';
 import { ContentComponent } from './components/content/content.component';
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -14,9 +13,8 @@ import { FooterComponent } from './components/footer/footer.component';
     AppComponent,
     HeaderComponent,
     InfoBlockComponent,
-    HeaderImgComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

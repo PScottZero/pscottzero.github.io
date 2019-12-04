@@ -8,15 +8,34 @@ import { ContentService } from '../../services/content.service';
 })
 export class HeaderComponent {
 
-  constructor(private pageService: ContentService) { }
+  constructor(private contentService: ContentService) { }
 
   // shows about info blocks
   showAboutData() {
-    this.pageService.showAboutData();
+    this.closeMenu();
+    this.contentService.showAboutData();
   }
 
   // shows project info blocks
   showProjectData() {
-    this.pageService.showProjectData();
+    this.closeMenu();
+    this.contentService.showProjectData();
+  }
+
+  // toggles navigation menu (only on mobile)
+  toggleMenu() {
+    this.contentService.toggleMenu();
+  }
+
+  // close navigation menu (only on mobile)
+  closeMenu() {
+    if (this.menuVisible()) {
+      this.contentService.toggleMenu();
+    }
+  }
+
+  // returns menu visibility
+  menuVisible(): boolean {
+    return this.contentService.menuVisible;
   }
 }

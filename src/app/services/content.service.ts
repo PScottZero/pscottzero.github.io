@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class ContentService {
   aboutDataVisible = true;
   projectDataVisible = false;
+  menuVisible = false;
 
   constructor() { }
 
@@ -17,5 +18,9 @@ export class ContentService {
   showProjectData() {
     this.aboutDataVisible = false;
     this.projectDataVisible = true;
+  }
+
+  toggleMenu() {
+    this.menuVisible = !this.menuVisible;
   }
 }
