@@ -16,9 +16,10 @@ export class ProjectService {
   recentProjects = [
     new InfoBlock('Dot Matrix (Game Boy Emulator)', PROJ_IMG_DIR + 'gameboy.jpg', 'March 2019 - Present', GIT_HUB + 'DotMatrix'),
     new InfoBlock('Graham Scan Visualizer', PROJ_IMG_DIR + 'convex.jpg', 'January - March 2019', PJS4 + 'Graham-Scan'),
+    new InfoBlock('Paul\'s Horrible Drawings', PROJ_IMG_DIR + 'phd.jpg', 'January - February 2019', PJS4 + 'Pauls-Horrible-Drawings'),
     new InfoBlock('SiliconEight (Chip-8 Emulator)', PROJ_IMG_DIR + 'silicon_javascript.jpg', 'January 2019 - Present', PJS4 + 'SiliconEight-Javascript'),
     new InfoBlock('Tetromino', PROJ_IMG_DIR + 'tetromino.jpg', 'March 2019 - Present', PJS4 + 'Tetromino'),
-    new InfoBlock('Toxicity', PROJ_IMG_DIR + 'toxicity.png', 'October 2019 - Present', PJS4 + 'Toxicity'),
+    new InfoBlock('Toxicity', PROJ_IMG_DIR + 'toxicity.jpg', 'October 2019 - Present', PJS4 + 'Toxicity'),
   ];
 
   olderProjects = [
@@ -30,7 +31,6 @@ export class ProjectService {
     new InfoBlock('The Hypothetical Computer', PROJ_IMG_DIR + 'hypo.jpg', 'May 2017', GIT_HUB + 'The-Hypothetical-Computer'),
     new InfoBlock('Java Paint', PROJ_IMG_DIR + 'javapaint.jpg', 'May 2017', GIT_HUB + 'JavaPaint'),
     new InfoBlock('Lucas Lehmer Test', PROJ_IMG_DIR + 'lucas.jpg', 'March 2017', GIT_HUB + 'Lucas-Lehmer-Test-Kotlin'),
-    new InfoBlock('Paul\'s Horrible Drawings', PROJ_IMG_DIR + 'phd.jpg', 'January - February 2019', GIT_HUB + 'Pauls-Horrible-Drawings'),
     new InfoBlock('Recama\u0301n Sequence Visualizer', PROJ_IMG_DIR + 'recaman.jpg', 'June 2018', GIT_HUB + 'Recaman-Sequence-Visualizer'),
     new InfoBlock('Silicon Eight (Kotlin)', PROJ_IMG_DIR + 'silicon.jpg', 'October - November 2018', GIT_HUB + 'SiliconEight'),
     new InfoBlock('STP Ground', PROJ_IMG_DIR + 'stp.jpg', 'Fall 2017', GIT_HUB + 'STP-Ground'),
