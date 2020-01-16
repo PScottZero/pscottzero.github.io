@@ -4,7 +4,7 @@ import {InfoBlockGroup} from '../objects/InfoBlockGroup';
 
 const EDU_IMG_DIR = '../../assets/img/about/education/';
 const EXP_IMG_DIR = '../../assets/img/about/experience/';
-const CRS_IMG_DIR = '../../assets/img/about/coursework/';
+const CRS_IMG_DIR = '../../assets/img/about/courses/';
 const CLUB_IMG_DIR = '../../assets/img/about/clubs/';
 const HACK_IMG_DIR = '../../assets/img/about/hackathons/';
 const HOB_IMG_DIR = '../../assets/img/about/hobbies/';
