@@ -28,36 +28,46 @@ export class AboutService {
   ];
 
   private languages = [
-    new InfoBlock('Angular', PRG_IMG_DIR + 'angular.svg', '6 months'),
-    new InfoBlock('C', PRG_IMG_DIR + 'c.svg', '1 year'),
-    new InfoBlock('C++', PRG_IMG_DIR + 'cpp.svg', '2 years'),
-    new InfoBlock('C#', PRG_IMG_DIR + 'csharp.svg', '1 month'),
-    new InfoBlock('HTML', PRG_IMG_DIR + 'html.svg', '4 years'),
-    new InfoBlock('Java', PRG_IMG_DIR + 'java.svg', '4 years' ),
-    new InfoBlock('JavaScript', PRG_IMG_DIR + 'javascript.svg', '1 year'),
-    new InfoBlock('Kotlin', PRG_IMG_DIR + 'kotlin.svg', '1 year'),
-    new InfoBlock('MIPS', PRG_IMG_DIR + 'mips.svg', '6 months'),
-    new InfoBlock('Python', PRG_IMG_DIR + 'python.svg', '3 years'),
-    new InfoBlock('SQL', PRG_IMG_DIR + 'sql.svg', '6 months'),
-    new InfoBlock('Verilog', PRG_IMG_DIR + 'verilog.svg', '6 months'),
+    new InfoBlock('Angular', PRG_IMG_DIR + 'angular.svg', 'Proficient'),
+    new InfoBlock('C', PRG_IMG_DIR + 'c.svg', 'Proficient'),
+    new InfoBlock('C++', PRG_IMG_DIR + 'cpp.svg', 'Proficient'),
+    new InfoBlock('C#', PRG_IMG_DIR + 'csharp.svg', 'Familiar'),
+    new InfoBlock('HTML', PRG_IMG_DIR + 'html.svg', 'Proficient'),
+    new InfoBlock('Java', PRG_IMG_DIR + 'java.svg', 'Proficient' ),
+    new InfoBlock('JavaScript', PRG_IMG_DIR + 'javascript.svg', 'Proficient'),
+    new InfoBlock('Kotlin', PRG_IMG_DIR + 'kotlin.svg', 'Proficient'),
+    new InfoBlock('MATLAB', PRG_IMG_DIR + 'matlab.png', 'Currently Learning'),
+    new InfoBlock('MIPS', PRG_IMG_DIR + 'mips.svg', 'Familiar'),
+    new InfoBlock('Python', PRG_IMG_DIR + 'python.svg', 'Proficient'),
+    new InfoBlock('Scheme', PRG_IMG_DIR + 'scheme.png', 'Familiar'),
+    new InfoBlock('SQL', PRG_IMG_DIR + 'sql.svg', 'Familiar'),
+    new InfoBlock('Verilog', PRG_IMG_DIR + 'verilog.svg', 'Familiar'),
   ];
 
-  private coursework = [
+  private currentCourses = [
+    new InfoBlock('Computer Vision', CRS_IMG_DIR + 'computer_vision.jpg', 'CMPEN 454'),
+    new InfoBlock('Database Management Systems', CRS_IMG_DIR + 'database.png', 'CMPSC 431W'),
+    new InfoBlock('Machine Learning & AI', CRS_IMG_DIR + 'robot.jpg', 'CMPSC 448'),
+    new InfoBlock('Theory of Computation', CRS_IMG_DIR + 'automata.png', 'CMPSC 464'),
+    new InfoBlock('Numerical Computations', CRS_IMG_DIR + 'ieee.jpg', 'MATH 451'),
+  ];
+
+  private pastCourses = [
+    new InfoBlock('Computer Design', CRS_IMG_DIR + 'computer_design.png', 'CMPEN 331'),
+    new InfoBlock('Object Oriented Programming', CRS_IMG_DIR + 'oop.jpg', 'CMPSC 221'),
+    new InfoBlock('Systems Programming', CRS_IMG_DIR + 'c.svg', 'CMPSC 311'),
+    new InfoBlock('Programming Language Concepts', CRS_IMG_DIR + 'lambda.png', 'CMPSC 461'),
     new InfoBlock('Data Structures & Algorithms', CRS_IMG_DIR + 'data_structures.png', 'CMPSC 465'),
     new InfoBlock('Operating Systems', CRS_IMG_DIR + 'os.png', 'CMPSC 473'),
-    new InfoBlock('Computer Design', CRS_IMG_DIR + 'computer_design.png', 'CMPEN 331'),
-    new InfoBlock('Programming Language Concepts', CRS_IMG_DIR + 'lambda.png', 'CMPSC 461'),
-    new InfoBlock('Systems Programming', CRS_IMG_DIR + 'systems_programming.png', 'CMPSC 311'),
-    new InfoBlock('Object Oriented Programming', CRS_IMG_DIR + 'oop.jpg', 'CMPSC 221'),
     new InfoBlock('Technical Writing', CRS_IMG_DIR + 'writing.jpg', 'ENGL 202C'),
+    new InfoBlock('Multi-variable Calculus', CRS_IMG_DIR + 'calculus.png', 'MATH 230'),
     new InfoBlock('Matrix Algebra', CRS_IMG_DIR + 'matrix.png', 'MATH 441'),
-    new InfoBlock('Multi-variable Calculus', CRS_IMG_DIR + 'mvc.jpg', 'MATH 230'),
-    new InfoBlock('Intro to Mathematical Statistics', CRS_IMG_DIR + 'stat.png', 'STAT 415'),
-    new InfoBlock('Intro to Probability Theory', CRS_IMG_DIR + 'probability.png', 'STAT 414'),
+    new InfoBlock('Probability Theory', CRS_IMG_DIR + 'probability.png', 'STAT 414'),
+    new InfoBlock('Mathematical Statistics', CRS_IMG_DIR + 'stat.png', 'STAT 415'),
   ];
 
   private clubs = [
-    new InfoBlock('HackPSU', CLUB_IMG_DIR + 'hackpsu.jpg', 'Starting Spring 2020'),
+    new InfoBlock('HackPSU', CLUB_IMG_DIR + 'hackpsu.jpg', 'Spring 2020 - Present'),
     new InfoBlock('Lunar Lion', CLUB_IMG_DIR + 'lunar.png', 'Fall 2017 - Present'),
     new InfoBlock('ACM', CLUB_IMG_DIR + 'acm.jpg', 'Fall 2018'),
   ];
@@ -75,19 +85,20 @@ export class AboutService {
     new InfoBlock('Ukulele', HOB_IMG_DIR + 'ukulele.jpg'),
     new InfoBlock('Violin', HOB_IMG_DIR + 'violin.jpg'),
     new InfoBlock('Records', HOB_IMG_DIR + 'remaininlight.jpg'),
-    new InfoBlock('Retro Tech', HOB_IMG_DIR + 'macintosh.jpg'),
+    new InfoBlock('Retro Tech', HOB_IMG_DIR + 'commodore_pet.jpg'),
     new InfoBlock('Electric Cars', HOB_IMG_DIR + 'tesla.jpg'),
     new InfoBlock('Aviation', HOB_IMG_DIR + 'airplane.jpg'),
     new InfoBlock('Trains', HOB_IMG_DIR + 'shinkansen.jpg'),
     new InfoBlock('Roller Coasters', HOB_IMG_DIR + 'roller_coaster.jpg'),
-    new InfoBlock('Coin Collecting', HOB_IMG_DIR + 'morgan_silver_dollar.png'),
+    new InfoBlock('Coin Collecting', HOB_IMG_DIR + 'morgan_silver_dollar.jpg'),
   ];
 
   infoGroups = [
     new InfoBlockGroup('Education', this.education),
     new InfoBlockGroup('Work Experience', this.experience),
     new InfoBlockGroup('Programming Languages', this.languages),
-    new InfoBlockGroup('Coursework', this.coursework),
+    new InfoBlockGroup('Current Courses', this.currentCourses),
+    new InfoBlockGroup('Past Courses', this.pastCourses),
     new InfoBlockGroup('Clubs', this.clubs),
     new InfoBlockGroup('Hackathons', this.hackathons),
     new InfoBlockGroup('Hobbies & Interests', this.hobbies),

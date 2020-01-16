@@ -17,7 +17,7 @@ export class ProjectService {
     new InfoBlock('Dot Matrix (Game Boy Emulator)', PROJ_IMG_DIR + 'gameboy.jpg', 'March 2019 - Present', GIT_HUB + 'DotMatrix'),
     new InfoBlock('Graham Scan Visualizer', PROJ_IMG_DIR + 'convex.jpg', 'January - March 2019', PJS4 + 'Graham-Scan'),
     new InfoBlock('Paul\'s Horrible Drawings', PROJ_IMG_DIR + 'phd.jpg', 'January - Present', PJS4 + 'Pauls-Horrible-Drawings'),
-    new InfoBlock('SiliconEight (Chip-8 Emulator)', PROJ_IMG_DIR + 'silicon_eight.png', 'January 2019 - Present', PJS4 + 'SiliconEight'),
+    new InfoBlock('SiliconEight (Chip-8 Emulator)', PROJ_IMG_DIR + 'silicon_eight.jpg', 'January 2019 - Present', PJS4 + 'SiliconEight'),
     new InfoBlock('Tetromino', PROJ_IMG_DIR + 'tetromino.jpg', 'March 2019 - Present', PJS4 + 'Tetromino'),
     new InfoBlock('Toxicity', PROJ_IMG_DIR + 'toxicity.png', 'October 2019 - Present', PJS4 + 'Toxicity'),
   ];
