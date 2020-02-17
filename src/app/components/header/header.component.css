@@ -1,16 +1,13 @@
-@import '../../../variables';
-
 a {
   color: white;
   transition: 0.3s;
   margin: 0 0.8em;
   text-decoration: none;
   font-size: 20px;
-
-  &:hover {
-    color: #CCC;
-    transition: 0.3s;
-  }
+}
+a:hover {
+  color: #CCC;
+  transition: 0.3s;
 }
 
 header {
@@ -21,33 +18,32 @@ header {
   height: 4em;
   transition: 0.3s;
   background: transparent;
-
-  img {
-    float: left;
-    height: 4em;
-    margin-left: 0.3em;
-  }
+}
+header img {
+  float: left;
+  height: 4em;
+  margin-left: 0.3em;
 }
 
-nav {
-  @media screen and (min-width: $screen-cutoff) {
+@media screen and (min-width: 700px) {
+  nav {
     float: right;
     line-height: 4em;
   }
-
-  @media screen and (max-width: $screen-cutoff) {
+}
+@media screen and (max-width: 700px) {
+  nav {
     height: 0;
     width: 100%;
     transition: 0.3s;
     overflow: hidden;
     border-radius: 0 0 1em 1em;
-
-    a {
-      display: block;
-      width: 100%;
-      font-size: 20px;
-      margin: 1em 0;
-    }
+  }
+  nav a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    margin: 1em 0;
   }
 }
 
@@ -61,12 +57,13 @@ nav {
   border-radius: 0 0 3em 3em;
 }
 
-.menu_icon {
-  @media screen and (min-width: $screen-cutoff) {
+@media screen and (min-width: 700px) {
+  .menu_icon {
     display: none;
   }
-
-  @media screen and (max-width: $screen-cutoff) {
+}
+@media screen and (max-width: 700px) {
+  .menu_icon {
     float: right;
     height: 2em;
     width: 2em;
@@ -79,26 +76,23 @@ nav {
   height: 0.2em;
   background: white;
   transition: 0.3s;
-
-  &:nth-child(1) {
-    margin-top: .6em;
-  }
-
-  &:nth-child(2) {
-    margin-top: .4em;
-  }
+}
+.menu_icon_bar:nth-child(1) {
+  margin-top: 0.6em;
+}
+.menu_icon_bar:nth-child(2) {
+  margin-top: 0.4em;
 }
 
 .menu_height {
   height: 16em;
 }
 
-.rotate {
-  &:nth-child(1) {
-    transform: translate(0, 0.3em);
-  }
-
-  &:nth-child(2) {
-    transform: translate(0, -0.3em);
-  }
+.rotate:nth-child(1) {
+  transform: translate(0, 0.3em);
 }
+.rotate:nth-child(2) {
+  transform: translate(0, -0.3em);
+}
+
+/*# sourceMappingURL=header.component.css.map */

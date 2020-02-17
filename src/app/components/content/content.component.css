@@ -1,6 +1,4 @@
-@import '../../../variables';
-
-app-info, .app_info_link{
+app-info, .app_info_link {
   flex: 30%;
   display: block;
   line-height: 1.5;
@@ -8,11 +6,12 @@ app-info, .app_info_link{
   float: bottom;
   margin: 1em;
   flex-grow: 1;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.70);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
   border-radius: 2em;
   overflow: hidden;
-
-  @media screen and (max-width: $screen-cutoff) {
+}
+@media screen and (max-width: 700px) {
+  app-info, .app_info_link {
     flex: 100%;
     box-shadow: none;
     margin: 0.5em 0;
@@ -41,3 +40,5 @@ app-info, .app_info_link{
   color: whitesmoke;
   overflow: hidden;
 }
+
+/*# sourceMappingURL=content.component.css.map */

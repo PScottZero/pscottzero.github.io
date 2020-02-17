@@ -41,6 +41,7 @@ export class AboutService {
     new InfoBlock('Python', PRG_IMG_DIR + 'python.svg', 'Proficient'),
     new InfoBlock('Scheme', PRG_IMG_DIR + 'scheme.png', 'Familiar'),
     new InfoBlock('SQL', PRG_IMG_DIR + 'sql.svg', 'Familiar'),
+    new InfoBlock('TensorFlow', PRG_IMG_DIR + 'tensorflow.svg', 'Currently Learning'),
     new InfoBlock('Verilog', PRG_IMG_DIR + 'verilog.svg', 'Familiar'),
   ];
 

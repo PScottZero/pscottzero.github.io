@@ -8,10 +8,4 @@ import { ContentService } from './services/content.service';
 })
 export class AppComponent {
   title = 'pjs4';
-
-  constructor(private contentService: ContentService) {}
-
-  menuVisible(): boolean {
-    return this.contentService.menuVisible;
-  }
 }

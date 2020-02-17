@@ -1,16 +1,19 @@
-<!-- logo -->
-<img src="../../../assets/img/main/logo.svg" alt="Paul Scott">
+<header id="header" [class.header_with_menu]="menuVisible()">
 
-<div class="menu_icon" (click)="toggleMenu()">
-  <div class="menu_icon_bar" [class.rotate]="menuVisible()"></div>
-  <div class="menu_icon_bar" [class.rotate]="menuVisible()"></div>
-</div>
+  <!-- logo -->
+  <img src="../../../assets/img/main/logo.svg" alt="Paul Scott">
 
-<!-- links -->
-<nav [class.show_menu]="menuVisible()">
-  <a (click)="showAboutData()">About Me</a>
-  <a (click)="showProjectData()">Projects</a>
-  <a href="https://drive.google.com/open?id=1Z79TNs30ttAftoWwJbqm93X77OljiM3L" target="_blank" (click)="closeMenu()">Resume</a>
-  <a href="https://www.linkedin.com/in/paul-scott-047858140/" target="_blank" (click)="closeMenu()">LinkedIn</a>
-  <a href="https://github.com/PScottZero" target="_blank" (click)="closeMenu()">GitHub</a>
-</nav>
+  <div class="menu_icon" (click)="toggleMenu()">
+    <div class="menu_icon_bar" [class.rotate]="menuVisible()"></div>
+    <div class="menu_icon_bar" [class.rotate]="menuVisible()"></div>
+  </div>
+
+  <!-- links -->
+  <nav [class.menu_height]="menuVisible()">
+    <a (click)="showAboutData()">About Me</a>
+    <a (click)="showProjectData()">Projects</a>
+    <a href="https://drive.google.com/open?id=1Z79TNs30ttAftoWwJbqm93X77OljiM3L" target="_blank" (click)="closeMenu()">Resume</a>
+    <a href="https://www.linkedin.com/in/paul-scott-047858140/" target="_blank" (click)="closeMenu()">LinkedIn</a>
+    <a href="https://github.com/PScottZero" target="_blank" (click)="closeMenu()">GitHub</a>
+  </nav>
+</header>

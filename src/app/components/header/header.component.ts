@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import { ContentService } from '../../services/content.service';
 
 @Component({
@@ -24,7 +24,12 @@ export class HeaderComponent {
 
   // toggles navigation menu (only on mobile)
   toggleMenu() {
+    const header = document.getElementById('header');
     this.contentService.toggleMenu();
+    header.classList.add('header_scroll');
+    if (window.pageYOffset <= 0 && !this.contentService.menuVisible) {
+      header.classList.remove('header_scroll');
+    }
   }
 
   // close navigation menu (only on mobile)
@@ -37,5 +42,15 @@ export class HeaderComponent {
   // returns menu visibility
   menuVisible(): boolean {
     return this.contentService.menuVisible;
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll($event) {
+    const header = document.getElementById('header');
+    if (window.pageYOffset > 0 || this.contentService.menuVisible) {
+      header.classList.add('header_scroll');
+    } else {
+      header.classList.remove('header_scroll');
+    }
   }
 }
