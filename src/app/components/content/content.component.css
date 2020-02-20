@@ -1,4 +1,10 @@
-app-info, .app_info_link {
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+  color: whitesmoke;
+}
+
+.info_block, .app_info_link {
   flex: 30%;
   display: block;
   line-height: 1.5;
@@ -11,7 +17,7 @@ app-info, .app_info_link {
   overflow: hidden;
 }
 @media screen and (max-width: 700px) {
-  app-info, .app_info_link {
+  .info_block, .app_info_link {
     flex: 100%;
     box-shadow: none;
     margin: 0.5em 0;
@@ -25,6 +31,15 @@ app-info, .app_info_link {
 
 .app_info_link:hover {
   box-shadow: 0 0 20px #0b96e0;
+}
+
+.description {
+  width: 100%;
+  padding: 0.5em 1em;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  text-align: left;
+  color: whitesmoke;
 }
 
 .info_block_group {

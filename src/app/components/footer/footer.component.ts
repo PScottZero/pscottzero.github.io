@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class FooterComponent {
   about = 'Created by Paul Scott using Angular';
   contact = 'Call at (215) 880-9592 or email at pauljscott8@gmail.com';
-  lastUpdated = 'Last updated 16 February 2020';
+  lastUpdated = 'Last updated 19 February 2020';
 }
