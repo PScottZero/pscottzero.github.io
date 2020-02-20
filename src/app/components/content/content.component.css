@@ -15,6 +15,12 @@ h1 {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
   border-radius: 2em;
   overflow: hidden;
+  /* safari only */
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  .info_block, .app_info_link {
+    backdrop-filter: blur(0);
+  }
 }
 @media screen and (max-width: 700px) {
   .info_block, .app_info_link {
@@ -40,6 +46,12 @@ h1 {
   backdrop-filter: blur(20px);
   text-align: left;
   color: whitesmoke;
+  /* firefox only */
+}
+@-moz-document url-prefix() {
+  .description {
+    background: rgba(0, 0, 0, 0.7) !important;
+  }
 }
 
 .info_block_group {

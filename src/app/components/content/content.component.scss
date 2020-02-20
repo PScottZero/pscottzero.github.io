@@ -6,7 +6,7 @@ h1 {
   color: whitesmoke;
 }
 
-.info_block, .app_info_link{
+.info_block, .app_info_link {
   flex: 30%;
   display: block;
   line-height: 1.5;
@@ -17,6 +17,11 @@ h1 {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.70);
   border-radius: 2em;
   overflow: hidden;
+
+  /* safari only */
+  @media not all and (min-resolution:.001dpcm) {
+    backdrop-filter: blur(0);
+  }
 
   @media screen and (max-width: $screen-cutoff) {
     flex: 100%;
@@ -41,6 +46,11 @@ h1 {
   backdrop-filter: blur(20px);
   text-align: left;
   color: whitesmoke;
+
+  /* firefox only */
+  @-moz-document url-prefix() {
+    background: rgba(0, 0, 0, 0.7) !important;
+  }
 }
 
 .info_block_group {

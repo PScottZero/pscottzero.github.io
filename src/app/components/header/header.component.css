@@ -50,6 +50,13 @@ header img {
 .header_scroll {
   background: #0b96e0aa;
   backdrop-filter: blur(10px);
+  /* firefox only */
+}
+@-moz-document url-prefix() {
+  .header_scroll {
+    background: #0b96e0 !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+  }
 }
 
 .header_with_menu {
