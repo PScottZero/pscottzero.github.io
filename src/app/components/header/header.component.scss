@@ -58,7 +58,7 @@ nav {
   /* firefox only */
   @-moz-document url-prefix() {
     background: #0b96e0 !important;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
   }
 }
 

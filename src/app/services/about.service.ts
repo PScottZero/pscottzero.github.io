@@ -22,9 +22,8 @@ export class AboutService {
   ];
 
   private experience = [
-    new InfoBlock('Lockheed Martin', EXP_IMG_DIR + 'f35.jpg', 'Software Engineer Intern'),
-    new InfoBlock('Lunar Lion', EXP_IMG_DIR + 'lunar.png', 'Avionics Lead'),
-    new InfoBlock('Easton Coach Company', EXP_IMG_DIR + 'easton.jpg', 'Software Engineer Intern'),
+    new InfoBlock('Lockheed Martin', EXP_IMG_DIR + 'orion.jpg', 'Software Engineer Intern, Summer 2019'),
+    new InfoBlock('Easton Coach Company', EXP_IMG_DIR + 'easton.jpg', 'Software Engineer Intern, Summer 2018'),
   ];
 
   private languages = [
@@ -36,7 +35,7 @@ export class AboutService {
     new InfoBlock('Java', PRG_IMG_DIR + 'java.svg', 'Proficient' ),
     new InfoBlock('JavaScript', PRG_IMG_DIR + 'javascript.svg', 'Proficient'),
     new InfoBlock('Kotlin', PRG_IMG_DIR + 'kotlin.svg', 'Proficient'),
-    new InfoBlock('MATLAB', PRG_IMG_DIR + 'matlab.png', 'Currently Learning'),
+    new InfoBlock('MATLAB', PRG_IMG_DIR + 'matlab.png', 'Familiar'),
     new InfoBlock('MIPS', PRG_IMG_DIR + 'mips.svg', 'Familiar'),
     new InfoBlock('Python', PRG_IMG_DIR + 'python.svg', 'Proficient'),
     new InfoBlock('Scheme', PRG_IMG_DIR + 'scheme.png', 'Familiar'),
@@ -68,15 +67,15 @@ export class AboutService {
   ];
 
   private clubs = [
-    new InfoBlock('HackPSU', CLUB_IMG_DIR + 'hackpsu.jpg', 'Spring 2020 - Present'),
-    new InfoBlock('Lunar Lion', CLUB_IMG_DIR + 'lunar.png', 'Fall 2017 - Present'),
-    new InfoBlock('ACM', CLUB_IMG_DIR + 'acm.jpg', 'Fall 2018'),
+    new InfoBlock('HackPSU', CLUB_IMG_DIR + 'hackpsu.svg', 'Frontend Developer, Spring 2020 - Present'),
+    new InfoBlock('Lunar Lion', CLUB_IMG_DIR + 'lunar.png', 'Avionics Lead, Fall 2018 - Present'),
+    new InfoBlock('ACM', CLUB_IMG_DIR + 'acm.jpg', 'Competitive Programming, Fall 2018'),
   ];
 
   private hackathons = [
     new InfoBlock('CodePSU', HACK_IMG_DIR + 'codepsu.png', 'Spring 2019'),
     new InfoBlock('ICPC', HACK_IMG_DIR + 'icpc.png', 'Fall 2018'),
-    new InfoBlock('HackPSU', HACK_IMG_DIR + 'hackpsu.jpg', 'Fall 2018 - Present'),
+    new InfoBlock('HackPSU', HACK_IMG_DIR + 'hackpsu.svg', 'Spring/Fall 2018'),
   ];
 
   private hobbies = [
