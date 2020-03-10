@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { InfoBlock } from '../objects/InfoBlock';
 import { InfoBlockGroup } from '../objects/InfoBlockGroup';
 
-const PROJ_IMG_DIR = '../../assets/img/projects/';
+const PROJ_IMG_DIR = '../../assets/images/projects/';
 const GIT_HUB = 'https://github.com/PScottZero/';
 const PJS4 = 'https://pjs4.com/';
 
@@ -30,10 +30,7 @@ export class ProjectService {
     new InfoBlock('Lucas Lehmer Test', PROJ_IMG_DIR + 'lucas.jpg', 'March 2017', GIT_HUB + 'Lucas-Lehmer-Test-Kotlin'),
     new InfoBlock('Paul\'s Horrible Drawings', PROJ_IMG_DIR + 'phd.jpg', 'January - Present', PJS4 + 'Pauls-Horrible-Drawings'),
     new InfoBlock('Recama\u0301n Sequence Visualizer', PROJ_IMG_DIR + 'recaman.jpg', 'June 2018', GIT_HUB + 'Recaman-Sequence-Visualizer'),
-    new InfoBlock('Silicon Eight (Kotlin)', PROJ_IMG_DIR + 'silicon_eight_kotlin.jpg', 'October - November 2018', GIT_HUB + 'SiliconEight-Kotlin'),
-    new InfoBlock('STP Ground', PROJ_IMG_DIR + 'stp.jpg', 'Fall 2017', GIT_HUB + 'STP-Ground'),
     new InfoBlock('Terminal Enigma', PROJ_IMG_DIR + 'enigma.jpg', 'December 2017', GIT_HUB + 'TerminalEnigma'),
-    new InfoBlock('TetriK', PROJ_IMG_DIR + 'tetrik.jpg', 'February 2019', GIT_HUB + 'TetriK'),
   ];
 
   projectGroups = [

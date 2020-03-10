@@ -13,7 +13,7 @@ export class ContentComponent {
 
   about = 'Created by Paul Scott using Angular';
   contact = 'Call at (215) 880-9592 or email at pauljscott8@gmail.com';
-  lastUpdated = 'Last updated 2 March 2020';
+  lastUpdated = 'Last updated 10 March 2020';
 
   constructor(private contentService: ContentService,
               private aboutService: AboutService,
