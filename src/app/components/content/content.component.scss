@@ -28,12 +28,8 @@ h1 {
   flex-grow: 1;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.70);
   border-radius: 2em;
+  backdrop-filter: blur(0);
   overflow: hidden;
-
-  /* safari only */
-  @media not all and (min-resolution:.001dpcm) {
-    backdrop-filter: blur(0);
-  }
 
   @media screen and (max-width: $screen-cutoff) {
     flex: 100%;
