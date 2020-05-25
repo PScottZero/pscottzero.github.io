@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, ElementRef} from '@angular/core';
 import {ContentService} from '../../services/content.service';
 import {AboutService} from '../../services/about.service';
 import {ProjectService} from '../../services/project.service';
@@ -13,11 +13,12 @@ export class ContentComponent {
 
   about = 'Created by Paul Scott using Angular';
   contact = 'Call at (215) 880-9592 or email at pauljscott8@gmail.com';
-  lastUpdated = 'Last updated 20 April 2020';
+  lastUpdated = 'Last updated 25 May 2020';
 
   constructor(private contentService: ContentService,
               private aboutService: AboutService,
-              private projectService: ProjectService) { }
+              private projectService: ProjectService,
+              elementRef: ElementRef) { }
 
   // gets info block depending on page being shown
   getInfoBlockGroups(): InfoBlockGroup[] {

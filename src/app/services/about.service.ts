@@ -22,13 +22,13 @@ export class AboutService {
   ];
 
   private experience = [
-    new InfoBlock('Lockheed Martin', EXP_IMG_DIR + 'orion.jpg', 'Software Engineer Intern, Summer 2019'),
+    new InfoBlock('Lockheed Martin', EXP_IMG_DIR + 'orion.jpg', 'Software Engineer Intern, Summer 2019/2020'),
     new InfoBlock('Easton Coach Company', EXP_IMG_DIR + 'easton.jpg', 'Software Engineer Intern, Summer 2018'),
   ];
 
   private languages = [
     new InfoBlock('Angular', PRG_IMG_DIR + 'angular.svg', 'Proficient'),
-    new InfoBlock('C', PRG_IMG_DIR + 'c.svg', 'Proficient'),
+    new InfoBlock('C', PRG_IMG_DIR + 'clang.svg', 'Proficient'),
     new InfoBlock('C++', PRG_IMG_DIR + 'cpp.svg', 'Proficient'),
     new InfoBlock('C#', PRG_IMG_DIR + 'csharp.svg', 'Familiar'),
     new InfoBlock('HTML', PRG_IMG_DIR + 'html.svg', 'Proficient'),
@@ -36,31 +36,28 @@ export class AboutService {
     new InfoBlock('JavaScript', PRG_IMG_DIR + 'javascript.svg', 'Proficient'),
     new InfoBlock('Kotlin', PRG_IMG_DIR + 'kotlin.svg', 'Proficient'),
     new InfoBlock('MATLAB', PRG_IMG_DIR + 'matlab.png', 'Familiar'),
-    new InfoBlock('MIPS', PRG_IMG_DIR + 'mips.svg', 'Familiar'),
     new InfoBlock('Python', PRG_IMG_DIR + 'python.svg', 'Proficient'),
-    new InfoBlock('Scheme', PRG_IMG_DIR + 'scheme.png', 'Familiar'),
     new InfoBlock('SQL', PRG_IMG_DIR + 'sql.svg', 'Familiar'),
     new InfoBlock('TensorFlow', PRG_IMG_DIR + 'tensorflow.svg', 'Currently Learning'),
-    new InfoBlock('Verilog', PRG_IMG_DIR + 'verilog.svg', 'Familiar'),
   ];
 
   private currentCourses = [
     new InfoBlock('Computer Vision', CRS_IMG_DIR + 'computer_vision.jpg', 'CMPEN 454'),
     new InfoBlock('Database Management Systems', CRS_IMG_DIR + 'database.png', 'CMPSC 431W'),
     new InfoBlock('Machine Learning & AI', CRS_IMG_DIR + 'robot.jpg', 'CMPSC 448'),
-    new InfoBlock('Theory of Computation', CRS_IMG_DIR + 'automata.png', 'CMPSC 464'),
-    new InfoBlock('Numerical Computations', CRS_IMG_DIR + 'ieee.jpg', 'MATH 451'),
+    new InfoBlock('Theory of Computation', CRS_IMG_DIR + 'turing_machine.jpg', 'CMPSC 464'),
+    new InfoBlock('Numerical Computations', CRS_IMG_DIR + 'trapezoid.png', 'MATH 451'),
   ];
 
   private pastCourses = [
     new InfoBlock('Computer Design', CRS_IMG_DIR + 'computer_design.png', 'CMPEN 331'),
     new InfoBlock('Object Oriented Programming', CRS_IMG_DIR + 'oop.jpg', 'CMPSC 221'),
-    new InfoBlock('Systems Programming', CRS_IMG_DIR + 'c.svg', 'CMPSC 311'),
+    new InfoBlock('Systems Programming', PRG_IMG_DIR + 'clang.svg', 'CMPSC 311'),
     new InfoBlock('Programming Language Concepts', CRS_IMG_DIR + 'lambda.png', 'CMPSC 461'),
     new InfoBlock('Data Structures & Algorithms', CRS_IMG_DIR + 'data_structures.png', 'CMPSC 465'),
     new InfoBlock('Operating Systems', CRS_IMG_DIR + 'os.png', 'CMPSC 473'),
     new InfoBlock('Technical Writing', CRS_IMG_DIR + 'writing.jpg', 'ENGL 202C'),
-    new InfoBlock('Multi-variable Calculus', CRS_IMG_DIR + 'calculus.png', 'MATH 230'),
+    new InfoBlock('Multi-variable Calculus', CRS_IMG_DIR + 'calculus.jpg', 'MATH 230'),
     new InfoBlock('Matrix Algebra', CRS_IMG_DIR + 'matrix.png', 'MATH 441'),
     new InfoBlock('Probability Theory', CRS_IMG_DIR + 'probability.png', 'STAT 414'),
     new InfoBlock('Mathematical Statistics', CRS_IMG_DIR + 'stat.png', 'STAT 415'),
@@ -75,7 +72,7 @@ export class AboutService {
   private hackathons = [
     new InfoBlock('CodePSU', HACK_IMG_DIR + 'codepsu.png', 'Spring 2019'),
     new InfoBlock('ICPC', HACK_IMG_DIR + 'icpc.png', 'Fall 2018'),
-    new InfoBlock('HackPSU', HACK_IMG_DIR + 'hackpsu.svg', 'Spring/Fall 2018'),
+    new InfoBlock('HackPSU', CLUB_IMG_DIR + 'hackpsu.svg', 'Spring/Fall 2018'),
   ];
 
   private hobbies = [

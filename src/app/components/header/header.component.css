@@ -4,6 +4,7 @@ a {
   margin: 0 0.8em;
   text-decoration: none;
   font-size: 20px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 a:hover {
   color: #CCC;
@@ -48,19 +49,19 @@ header img {
 }
 
 .header_scroll {
-  background: #0b96e0aa;
+  background: #00616daa;
   backdrop-filter: blur(10px);
   /* firefox only */
 }
 @-moz-document url-prefix() {
   .header_scroll {
-    background: #0b96e0 !important;
+    background: #00616d !important;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
   }
 }
 
 .header_with_menu {
-  height: 20em;
+  height: 24em;
   border-radius: 0 0 3em 3em;
 }
 
@@ -92,7 +93,10 @@ header img {
 }
 
 .menu_height {
-  height: 16em;
+  height: 18em;
+}
+.menu_height a {
+  margin: 1.5em 0;
 }
 
 .rotate:nth-child(1) {
