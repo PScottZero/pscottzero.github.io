@@ -91,6 +91,7 @@ export class DataService {
     new Info('Retro Tech', HOB_IMG_DIR, 'commodore_pet.jpg'),
     new Info('Electric Cars', HOB_IMG_DIR, 'tesla.jpg'),
     new Info('Aviation', HOB_IMG_DIR, 'a350.jpg'),
+    new Info('Space Flight', HOB_IMG_DIR, 'falcon.jpg'),
     new Info('Trains', HOB_IMG_DIR, 'acela.jpg'),
     new Info('Roller Coasters', HOB_IMG_DIR, 'skyrush.jpg'),
     new Info('Coin Collecting', HOB_IMG_DIR, 'coins.jpg'),

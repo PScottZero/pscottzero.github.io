@@ -8,7 +8,11 @@ export class Info {
               description?: string, baseLink?: string, projectLink?: string) {
     this.title = title;
     this.description = description;
-    this.backgroundImage = baseImgDir + backgroundImg;
-    this.projectLink = baseLink + projectLink;
+    if (backgroundImg) {
+      this.backgroundImage = baseImgDir.concat(backgroundImg);
+    }
+    if (projectLink) {
+      this.projectLink = baseLink.concat(projectLink);
+    }
   }
 }
