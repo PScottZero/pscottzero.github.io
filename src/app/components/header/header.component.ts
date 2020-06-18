@@ -1,5 +1,5 @@
 import {Component, HostListener} from '@angular/core';
-import { ContentService } from '../../services/content.service';
+import { ViewService } from '../../services/view.service';
 
 @Component({
   selector: 'app-header',
@@ -8,46 +8,41 @@ import { ContentService } from '../../services/content.service';
 })
 export class HeaderComponent {
 
-  constructor(private contentService: ContentService) { }
+  constructor(private viewService: ViewService) { }
 
-  // shows about info blocks
-  showAboutData() {
+  showAboutPage() {
     this.closeMenu();
-    this.contentService.showAboutData();
+    this.viewService.showAboutData();
   }
 
-  // shows project info blocks
-  showProjectData() {
+  showProjectPage() {
     this.closeMenu();
-    this.contentService.showProjectData();
+    this.viewService.showProjectData();
   }
 
-  // toggles navigation menu (only on mobile)
   toggleMenu() {
     const header = document.getElementById('header');
-    this.contentService.toggleMenu();
+    this.viewService.toggleMenu();
     header.classList.add('header_scroll');
-    if (window.pageYOffset <= 0 && !this.contentService.menuVisible) {
+    if (window.pageYOffset <= 0 && !this.viewService.menuVisible) {
       header.classList.remove('header_scroll');
     }
   }
 
-  // close navigation menu (only on mobile)
   closeMenu() {
-    if (this.menuVisible()) {
-      this.contentService.toggleMenu();
+    if (this.menuIsVisible()) {
+      this.viewService.toggleMenu();
     }
   }
 
-  // returns menu visibility
-  menuVisible(): boolean {
-    return this.contentService.menuVisible;
+  menuIsVisible(): boolean {
+    return this.viewService.menuVisible;
   }
 
   @HostListener('window:scroll', ['$event'])
   onScroll($event) {
     const header = document.getElementById('header');
-    if (window.pageYOffset > 0 || this.contentService.menuVisible) {
+    if (window.pageYOffset > 0 || this.viewService.menuVisible) {
       header.classList.add('header_scroll');
     } else {
       header.classList.remove('header_scroll');

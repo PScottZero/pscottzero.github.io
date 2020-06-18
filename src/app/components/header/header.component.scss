@@ -53,12 +53,12 @@ nav {
 }
 
 .header_scroll {
-  background: #00616daa;
+  background: #00C8FFaa;
   backdrop-filter: blur(10px);
 
   /* firefox only */
   @-moz-document url-prefix() {
-    background: #00616d !important;
+    background: #00C8FF !important;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
   }
 }

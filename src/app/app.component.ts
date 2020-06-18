@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ContentService } from './services/content.service';
+import { ViewService } from './services/view.service';
 
 @Component({
   selector: 'app-root',

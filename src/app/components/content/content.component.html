@@ -1,25 +1,18 @@
- <!-- info block groups -->
-<div *ngFor="let infoBlockGroup of getInfoBlockGroups()">
+<div *ngFor="let infoGroup of getPageInfo()">
   <div class="section_title">
-    <p>{{infoBlockGroup.title}}</p>
+    <p>{{infoGroup.title}}</p>
   </div>
 
-  <!-- info blocks -->
   <div class="info_group">
-    <div class="info" *ngFor="let info of infoBlockGroup.infoBlockArr"
-         [class.app_info_link]="info.link != undefined"
-         [ngStyle]="{'background': 'url(' + info.backgroundImg + ') center',
-                        'background-size': 'cover'}"
-         (click)="open(info.link)">
-      <div class="description">
-        <h1>{{info.title}}</h1>
-        <p>{{info.description}}</p>
-      </div>
-    </div>
+    <app-info *ngFor="let info of infoGroup.infoArray"
+              [title]="info.title"
+              [description]="info.description"
+              [backgroundImage]="info.backgroundImage"
+              [projectLink]="info.projectLink">
+    </app-info>
   </div>
 </div>
 
-<!-- website footer w/ description and contact info -->
 <div class="footer">
   <p>{{about}}</p>
   <p>{{contact}}</p>

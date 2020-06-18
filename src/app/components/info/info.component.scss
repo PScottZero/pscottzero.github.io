@@ -1,0 +1,37 @@
+@import '../../../variables';
+
+.description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5em 0;
+  background: #333333dd;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.info, .project_link {
+  position: relative;
+  flex: calc(50% - 3em);
+  max-width: calc(50% - 3em);
+  display: block;
+  line-height: 1.5;
+  height: 20em;
+  float: bottom;
+  margin: 1.5em;
+  flex-grow: 1;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.70);
+  border-radius: 2em;
+  overflow: hidden;
+
+  @media screen and (max-width: $screen-cutoff) {
+    flex: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    margin: 0.5em 0;
+  }
+}
+
+.project_link:hover {
+  box-shadow: 0 0 20px #00C8FF;
+}

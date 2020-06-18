@@ -1,8 +1,7 @@
-import {Component, ElementRef} from '@angular/core';
-import {ContentService} from '../../services/content.service';
-import {AboutService} from '../../services/about.service';
-import {ProjectService} from '../../services/project.service';
-import {InfoBlockGroup} from '../../objects/InfoBlockGroup';
+import {Component} from '@angular/core';
+import {ViewService} from '../../services/view.service';
+import {DataService} from '../../services/data.service';
+import {InfoGroup} from '../../objects/InfoGroup';
 
 @Component({
   selector: 'app-content',
@@ -15,24 +14,10 @@ export class ContentComponent {
   contact = 'Call at (215) 880-9592 or email at pauljscott8@gmail.com';
   lastUpdated = 'Last updated 25 May 2020';
 
-  constructor(private contentService: ContentService,
-              private aboutService: AboutService,
-              private projectService: ProjectService,
-              elementRef: ElementRef) { }
+  constructor(private contentService: ViewService,
+              private dataService: DataService) { }
 
-  // gets info block depending on page being shown
-  getInfoBlockGroups(): InfoBlockGroup[] {
-    if (this.contentService.aboutDataVisible) {
-      return this.aboutService.infoGroups;
-    } else {
-      return this.projectService.projectGroups;
-    }
-  }
-
-  // opens given link in new tab
-  open(link: string) {
-    if (link) {
-      window.open(link, '_blank');
-    }
+  getPageInfo(): InfoGroup[] {
+    return this.contentService.aboutDataVisible ? this.dataService.infoGroups : this.dataService.projectGroups;
   }
 }
