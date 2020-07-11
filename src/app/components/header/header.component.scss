@@ -33,7 +33,8 @@ header {
 nav {
   @media screen and (min-width: $screen-cutoff) {
     float: right;
-    line-height: 4em;
+    line-height: 4.2em;
+    height: 100%;
   }
 
   @media screen and (max-width: $screen-cutoff) {
@@ -55,6 +56,10 @@ nav {
 .header_scroll {
   background: #00C8FFaa;
   backdrop-filter: blur(10px);
+
+  a {
+    text-shadow: none !important;
+  }
 
   /* firefox only */
   @-moz-document url-prefix() {
