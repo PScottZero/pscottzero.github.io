@@ -108,14 +108,15 @@ export class DataService {
     new InfoGroup('Hobbies & Interests', this.hobbies),
   ];
 
-  recentProjects = [
-    new Info('Altair 8800 Emulator', PROJ_IMG_DIR, 'altair.jpg', 'February 2020 - Present', GIT_HUB, 'Altair8800'),
+  featuredProjects = [
+    new Info('The Coffee App', PROJ_IMG_DIR, 'the_coffee_app.png', 'July 2020 - Present', GIT_HUB, 'The-Coffee-App'),
     new Info('Dot Matrix (Game Boy Emulator)', PROJ_IMG_DIR, 'dotmatrix.jpg', 'March 2019 - Present', GIT_HUB, 'DotMatrix'),
     new Info('SiliconEight (Chip-8 Emulator)', PROJ_IMG_DIR, 'silicon_eight.jpg', 'January 2019 - Present', PJS4, 'SiliconEight'),
     new Info('Toxicity', PROJ_IMG_DIR, 'toxicity.png', 'October 2019 - Present', PJS4, 'Toxicity'),
   ];
 
-  olderProjects = [
+  otherProjects = [
+    new Info('Altair 8800 Emulator', PROJ_IMG_DIR, 'altair.jpg', 'February 2020 - Present', GIT_HUB, 'Altair8800'),
     new Info('Apogee Artist', PROJ_IMG_DIR, 'apogee.jpg', 'May 2018 - February 2019', GIT_HUB, 'Apogee-Artist'),
     new Info('Bitwise Game Maker', PROJ_IMG_DIR, 'bitwise.jpg', 'April - May 2018', GIT_HUB, 'Bitwise-Game-Maker'),
     new Info('Conway\'s Game of Life', PROJ_IMG_DIR, 'conway.jpg', 'February - May 2018', GIT_HUB, 'Conways-Game-of-Life'),
@@ -129,7 +130,7 @@ export class DataService {
   ];
 
   projectGroups = [
-    new InfoGroup('Recent Projects', this.recentProjects),
-    new InfoGroup('Older Projects', this.olderProjects),
+    new InfoGroup('Featured Projects', this.featuredProjects),
+    new InfoGroup('Other Projects', this.otherProjects),
   ];
 }
