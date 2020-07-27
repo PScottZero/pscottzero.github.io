@@ -41,6 +41,7 @@ h1 {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.70);
   border-radius: 2em;
   overflow: hidden;
+  transition: 0.2s;
 
   @media screen and (max-width: $screen-cutoff) {
     flex: 100%;
@@ -60,7 +61,8 @@ h1 {
 }
 
 .project_link:hover {
-  box-shadow: 0 0 20px #00C8FF;
+  cursor: pointer;
+  filter: brightness(70%);
 }
 
 .section_title {

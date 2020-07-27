@@ -7,6 +7,7 @@ a {
   text-decoration: none;
   font-size: 20px;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 
   &:hover {
     color: #CCC;
@@ -63,7 +64,7 @@ nav {
 
   /* firefox only */
   @-moz-document url-prefix() {
-    background: #00C8FF !important;
+    background: #00C8FFdd !important;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
   }
 }

@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core';
 import {Info} from '../objects/Info';
 import {InfoGroup} from '../objects/InfoGroup';
 
-const EDU_IMG_DIR = '../../assets/images/about/education/';
-const EXP_IMG_DIR = '../../assets/images/about/experience/';
-const CRS_IMG_DIR = '../../assets/images/about/courses/';
-const CLUB_IMG_DIR = '../../assets/images/about/clubs/';
-const HACK_IMG_DIR = '../../assets/images/about/hackathons/';
-const HOB_IMG_DIR = '../../assets/images/about/hobbies/';
-const PRG_IMG_DIR = '../../assets/images/about/languages/';
+const EDU_IMG_DIR = '../../assets/images/education/';
+const EXP_IMG_DIR = '../../assets/images/experience/';
+const CRS_IMG_DIR = '../../assets/images/courses/';
+const CLUB_IMG_DIR = '../../assets/images/clubs/';
+const HACK_IMG_DIR = '../../assets/images/hackathons/';
+const HOB_IMG_DIR = '../../assets/images/hobbies/';
+const PRG_IMG_DIR = '../../assets/images/languages/';
 const PROJ_IMG_DIR = '../../assets/images/projects/';
 const GIT_HUB = 'https://github.com/PScottZero/';
 const PJS4 = 'https://pjs4.com/';
@@ -70,7 +70,7 @@ export class DataService {
   ];
 
   private clubs = [
-    new Info('HackPSU', CLUB_IMG_DIR, 'hackpsu.svg', 'Frontend Developer, Spring 2020 - Present'),
+    new Info('HackPSU', CLUB_IMG_DIR, 'hackpsu.png', 'Frontend Developer, Spring 2020 - Present'),
     new Info('Lunar Lion', CLUB_IMG_DIR, 'lunar.png', 'Avionics Lead, Fall 2018 - Present'),
     new Info('ACM', CLUB_IMG_DIR, 'acm.jpg', 'Competitive Programming, Fall 2018'),
   ];
@@ -78,7 +78,7 @@ export class DataService {
   private hackathons = [
     new Info('CodePSU', HACK_IMG_DIR, 'codepsu.png', 'Spring 2019'),
     new Info('ICPC', HACK_IMG_DIR, 'icpc.png', 'Fall 2018'),
-    new Info('HackPSU', CLUB_IMG_DIR, 'hackpsu.svg', 'Spring/Fall 2018'),
+    new Info('HackPSU', CLUB_IMG_DIR, 'hackpsu.png', 'Spring/Fall 2018'),
   ];
 
   private hobbies = [
@@ -109,24 +109,25 @@ export class DataService {
   ];
 
   featuredProjects = [
-    new Info('The Coffee App', PROJ_IMG_DIR, 'the_coffee_app.png', 'July 2020 - Present', GIT_HUB, 'The-Coffee-App'),
-    new Info('Dot Matrix (Game Boy Emulator)', PROJ_IMG_DIR, 'dotmatrix.jpg', 'March 2019 - Present', GIT_HUB, 'DotMatrix'),
-    new Info('SiliconEight (Chip-8 Emulator)', PROJ_IMG_DIR, 'silicon_eight.jpg', 'January 2019 - Present', PJS4, 'SiliconEight'),
-    new Info('Toxicity', PROJ_IMG_DIR, 'toxicity.png', 'October 2019 - Present', PJS4, 'Toxicity'),
+    new Info('Charcoal', PROJ_IMG_DIR, 'charcoal.jpg', 'April 2020', GIT_HUB, 'Charcoal'),
+    new Info('The Coffee App', PROJ_IMG_DIR, 'the_coffee_app.jpg', 'July 2020 - Present', GIT_HUB, 'The-Coffee-App'),
+    new Info('Dot Matrix', PROJ_IMG_DIR, 'dotmatrix.jpg', 'February 2020 - May 2020', GIT_HUB, 'DotMatrix'),
+    new Info('Qubit Playground', PROJ_IMG_DIR, 'qubit_playground.jpg', 'July 2020 - Present', PJS4, 'QubitPlayground'),
   ];
 
   otherProjects = [
-    new Info('Altair 8800 Emulator', PROJ_IMG_DIR, 'altair.jpg', 'February 2020 - Present', GIT_HUB, 'Altair8800'),
+    new Info('Altair 8800 Emulator', PROJ_IMG_DIR, 'altair.jpg', 'February 2020 - March 2020', GIT_HUB, 'Altair8800'),
     new Info('Apogee Artist', PROJ_IMG_DIR, 'apogee.jpg', 'May 2018 - February 2019', GIT_HUB, 'Apogee-Artist'),
     new Info('Bitwise Game Maker', PROJ_IMG_DIR, 'bitwise.jpg', 'April - May 2018', GIT_HUB, 'Bitwise-Game-Maker'),
     new Info('Conway\'s Game of Life', PROJ_IMG_DIR, 'conway.jpg', 'February - May 2018', GIT_HUB, 'Conways-Game-of-Life'),
     new Info('Easton Coach Driver Report', PROJ_IMG_DIR, 'easton.jpg', 'June - August 2018', GIT_HUB, 'Easton-Coach-Driver-Report'),
     new Info('Graham Scan Visualizer', PROJ_IMG_DIR, 'convex.jpg', 'January - March 2019', PJS4, 'Graham-Scan'),
     new Info('Lucas Lehmer Test', PROJ_IMG_DIR, 'lucas.jpg', 'March 2017', GIT_HUB, 'Lucas-Lehmer_Test'),
-    new Info('Paul\'s Horrible Drawings', PROJ_IMG_DIR, 'phd.jpg', 'January - Present', PJS4, 'Pauls-Horrible-Drawings'),
     new Info('Recama\u0301n Sequence Visualizer', PROJ_IMG_DIR, 'recaman.jpg', 'June 2018', GIT_HUB, 'Recaman-Sequence-Visualizer'),
+    new Info('SiliconEight', PROJ_IMG_DIR, 'silicon_eight.jpg', 'January 2020', PJS4, 'SiliconEight'),
     new Info('Terminal Enigma', PROJ_IMG_DIR, 'enigma.jpg', 'December 2017', GIT_HUB, 'TerminalEnigma'),
-    new Info('Tetromino', PROJ_IMG_DIR, 'tetromino.jpg', 'March 2019 - Present', PJS4, 'Tetromino'),
+    new Info('Tetromino', PROJ_IMG_DIR, 'tetromino.jpg', 'March 2019', PJS4, 'Tetromino'),
+    new Info('Toxicity', PROJ_IMG_DIR, 'toxicity.jpg', 'October 2019 - December 2019', PJS4, 'Toxicity'),
   ];
 
   projectGroups = [
