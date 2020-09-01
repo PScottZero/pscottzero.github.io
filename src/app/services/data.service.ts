@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import {Info} from '../objects/Info';
-import {InfoGroup} from '../objects/InfoGroup';
+import {Info} from '../classes/Info';
+import {InfoGroup} from '../classes/InfoGroup';
+import {CR} from '@angular/compiler/src/i18n/serializers/xml_helper';
 
 const EDU_IMG_DIR = '../../assets/images/education/';
 const EXP_IMG_DIR = '../../assets/images/experience/';
@@ -19,7 +20,7 @@ const PJS4 = 'https://pjs4.com/';
 export class DataService {
 
   private education = [
-    new Info('Penn State', EDU_IMG_DIR, 'psu.jpg', 'CS Major, Math Minor. 3.98/4.00'),
+    new Info('Penn State', EDU_IMG_DIR, 'psu.jpg', 'B.S. Computer Science, Minor in Math 3.98/4.00'),
     new Info('Schreyer Honors College', EDU_IMG_DIR, 'shc.jpg', 'Schreyer Scholar'),
     new Info('Wissahickon High School', EDU_IMG_DIR, 'whs.jpg', 'Magna Cumme Laude'),
   ];
@@ -34,39 +35,45 @@ export class DataService {
     new Info('C', PRG_IMG_DIR, 'clang.svg', 'Proficient'),
     new Info('C++', PRG_IMG_DIR, 'cpp.svg', 'Proficient'),
     new Info('C#', PRG_IMG_DIR, 'csharp.svg', 'Familiar'),
-    new Info('Flutter', PRG_IMG_DIR, 'flutter.svg', 'Currently Learning'),
+    new Info('Flutter', PRG_IMG_DIR, 'flutter.svg', 'Familiar'),
     new Info('HTML', PRG_IMG_DIR, 'html.svg', 'Proficient'),
     new Info('Java', PRG_IMG_DIR, 'java.svg', 'Proficient' ),
     new Info('JavaScript', PRG_IMG_DIR, 'javascript.svg', 'Proficient'),
     new Info('Kotlin', PRG_IMG_DIR, 'kotlin.svg', 'Proficient'),
     new Info('MATLAB', PRG_IMG_DIR, 'matlab.svg', 'Familiar'),
     new Info('Python', PRG_IMG_DIR, 'python.svg', 'Proficient'),
-    new Info('Rust', PRG_IMG_DIR, 'rust.svg', 'Currently Learning'),
+    new Info('Rust', PRG_IMG_DIR, 'rust.svg', 'Learning'),
+    new Info('Swift', PRG_IMG_DIR, 'swift.png', 'Learning'),
     new Info('SQL', PRG_IMG_DIR, 'sql.svg', 'Familiar'),
     new Info('TensorFlow', PRG_IMG_DIR, 'tensorflow.svg', 'Familiar'),
+    new Info('TypeScript', PRG_IMG_DIR, 'typescript.svg', 'Proficient')
   ];
 
   private currentCourses = [
-    new Info('Quantum Mechanics and Quantum Computation', CRS_IMG_DIR, 'quantum_computer.jpg', 'CS-191X (BerkeleyX)'),
+    new Info('Applications Programming', PRG_IMG_DIR, 'swift.png', 'CMPSC 475'),
+    new Info('Senior Honors Thesis', EDU_IMG_DIR, 'shc.jpg', 'CMPSC 494H')
   ];
 
   private pastCourses = [
     new Info('Computer Design', CRS_IMG_DIR, 'computer_design.png', 'CMPEN 331'),
     new Info('Computer Vision', CRS_IMG_DIR, 'computer_vision.jpg', 'CMPEN 454'),
-    new Info('Object Oriented Programming', CRS_IMG_DIR, 'oop.jpg', 'CMPSC 221'),
-    new Info('Systems Programming', PRG_IMG_DIR, 'clang.svg', 'CMPSC 311'),
+    new Info('Data Structures & Algorithms', CRS_IMG_DIR, 'data_structures.png', 'CMPSC 465'),
     new Info('Database Management Systems', CRS_IMG_DIR, 'database.png', 'CMPSC 431W'),
     new Info('Machine Learning & AI', CRS_IMG_DIR, 'robot.jpg', 'CMPSC 448'),
-    new Info('Programming Language Concepts', CRS_IMG_DIR, 'lambda.png', 'CMPSC 461'),
-    new Info('Theory of Computation', CRS_IMG_DIR, 'turing_machine.jpg', 'CMPSC 464'),
-    new Info('Data Structures & Algorithms', CRS_IMG_DIR, 'data_structures.png', 'CMPSC 465'),
-    new Info('Operating Systems', CRS_IMG_DIR, 'os.png', 'CMPSC 473'),
-    new Info('Technical Writing', CRS_IMG_DIR, 'writing.jpg', 'ENGL 202C'),
-    new Info('Multi-variable Calculus', CRS_IMG_DIR, 'calculus.jpg', 'MATH 230'),
-    new Info('Matrix Algebra', CRS_IMG_DIR, 'matrix.png', 'MATH 441'),
-    new Info('Numerical Computations', CRS_IMG_DIR, 'trapezoid.png', 'MATH 451'),
-    new Info('Probability Theory', CRS_IMG_DIR, 'probability.png', 'STAT 414'),
     new Info('Mathematical Statistics', CRS_IMG_DIR, 'stat.png', 'STAT 415'),
+    new Info('Matrix Algebra', CRS_IMG_DIR, 'matrix.png', 'MATH 441'),
+    new Info('Multi-variable Calculus', CRS_IMG_DIR, 'calculus.jpg', 'MATH 230'),
+    new Info('Numerical Computations', CRS_IMG_DIR, 'trapezoid.png', 'MATH 451'),
+    new Info('Object Oriented Programming', CRS_IMG_DIR, 'oop.jpg', 'CMPSC 221'),
+    new Info('Operating Systems', CRS_IMG_DIR, 'os.png', 'CMPSC 473'),
+    new Info('Probability Theory', CRS_IMG_DIR, 'probability.png', 'STAT 414'),
+    new Info('Programming Language Concepts', CRS_IMG_DIR, 'lambda.png', 'CMPSC 461'),
+    new Info('Quantum Mechanics and Quantum Computation', CRS_IMG_DIR, 'quantum_computer.jpg',
+      'CS-191x (BerkeleyX) [Click for Certificate]',
+      'https://courses.edx.org/', 'certificates/a7a842fb46834ea4b9459b44583f3e23'),
+    new Info('Systems Programming', PRG_IMG_DIR, 'clang.svg', 'CMPSC 311'),
+    new Info('Technical Writing', CRS_IMG_DIR, 'writing.jpg', 'ENGL 202C'),
+    new Info('Theory of Computation', CRS_IMG_DIR, 'turing_machine.jpg', 'CMPSC 464'),
   ];
 
   private clubs = [
@@ -82,19 +89,18 @@ export class DataService {
   ];
 
   private hobbies = [
-    new Info('Guitar', HOB_IMG_DIR, 'lespaul.jpg'),
+    new Info('Aviation', HOB_IMG_DIR, 'a350.jpg'),
     new Info('Bass', HOB_IMG_DIR, 'bass.jpg'),
+    new Info('Coin Collecting', HOB_IMG_DIR, 'coins.jpg'),
+    new Info('Electric Cars', HOB_IMG_DIR, 'tesla.jpg'),
+    new Info('Guitar', HOB_IMG_DIR, 'lespaul.jpg'),
     new Info('Piano', HOB_IMG_DIR, 'piano.jpg'),
-    new Info('Ukulele', HOB_IMG_DIR, 'ukulele.jpg'),
-    new Info('Violin', HOB_IMG_DIR, 'violin.jpg'),
     new Info('Records', HOB_IMG_DIR, 'remaininlight.jpg'),
     new Info('Retro Tech', HOB_IMG_DIR, 'commodore_pet.jpg'),
-    new Info('Electric Cars', HOB_IMG_DIR, 'tesla.jpg'),
-    new Info('Aviation', HOB_IMG_DIR, 'a350.jpg'),
+    new Info('Roller Coasters', HOB_IMG_DIR, 'skyrush.jpg'),
     new Info('Space Flight', HOB_IMG_DIR, 'falcon.jpg'),
     new Info('Trains', HOB_IMG_DIR, 'acela.jpg'),
-    new Info('Roller Coasters', HOB_IMG_DIR, 'skyrush.jpg'),
-    new Info('Coin Collecting', HOB_IMG_DIR, 'coins.jpg'),
+    new Info('Ukulele', HOB_IMG_DIR, 'ukulele.jpg'),
   ];
 
   infoGroups = [

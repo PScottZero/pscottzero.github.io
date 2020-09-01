@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {ViewService} from '../../services/view.service';
 import {DataService} from '../../services/data.service';
-import {InfoGroup} from '../../objects/InfoGroup';
+import {InfoGroup} from '../../classes/InfoGroup';
 
 @Component({
   selector: 'app-content',

@@ -103,10 +103,10 @@ header img {
   margin: 1.5em 0;
 }
 
-.rotate:nth-child(1) {
+.merge:nth-child(1) {
   transform: translate(0, 0.3em);
 }
-.rotate:nth-child(2) {
+.merge:nth-child(2) {
   transform: translate(0, -0.3em);
 }
 
