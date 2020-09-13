@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import {Info} from '../classes/Info';
 import {InfoGroup} from '../classes/InfoGroup';
-import {CR} from '@angular/compiler/src/i18n/serializers/xml_helper';
 
 const EDU_IMG_DIR = '../../assets/images/education/';
 const EXP_IMG_DIR = '../../assets/images/experience/';
+const RSH_IMG_DIR = '../../assets/images/research/';
 const CRS_IMG_DIR = '../../assets/images/courses/';
 const CLUB_IMG_DIR = '../../assets/images/clubs/';
 const HACK_IMG_DIR = '../../assets/images/hackathons/';
@@ -28,6 +28,10 @@ export class DataService {
   private experience = [
     new Info('Lockheed Martin', EXP_IMG_DIR, 'orion.jpg', 'Software Engineer Intern, Summer 2019/2020'),
     new Info('Easton Coach Company', EXP_IMG_DIR, 'easton.jpg', 'Software Engineer Intern, Summer 2018'),
+  ];
+
+  private research = [
+    new Info('Automated Analysis of HotCRP\'s Enforcement of Information Flow Policy', RSH_IMG_DIR, 'research.jpg')
   ];
 
   private languages = [
@@ -84,8 +88,8 @@ export class DataService {
 
   private hackathons = [
     new Info('CodePSU', HACK_IMG_DIR, 'codepsu.png', 'Spring 2019'),
-    new Info('ICPC', HACK_IMG_DIR, 'icpc.png', 'Fall 2018'),
     new Info('HackPSU', CLUB_IMG_DIR, 'hackpsu.png', 'Spring/Fall 2018'),
+    new Info('ICPC', HACK_IMG_DIR, 'icpc.png', 'Fall 2018'),
   ];
 
   private hobbies = [
@@ -106,6 +110,7 @@ export class DataService {
   infoGroups = [
     new InfoGroup('Education', this.education),
     new InfoGroup('Work Experience', this.experience),
+    new InfoGroup('Research', this.research),
     new InfoGroup('Programming Languages', this.languages),
     new InfoGroup('Current Courses', this.currentCourses),
     new InfoGroup('Past Courses', this.pastCourses),
@@ -117,7 +122,7 @@ export class DataService {
   featuredProjects = [
     new Info('Charcoal', PROJ_IMG_DIR, 'charcoal.jpg', 'April 2020', GIT_HUB, 'Charcoal'),
     new Info('The Coffee App', PROJ_IMG_DIR, 'the_coffee_app.jpg', 'July 2020 - Present', GIT_HUB, 'The-Coffee-App'),
-    new Info('MNIST Playground', PROJ_IMG_DIR, 'mnist.png', 'September 2020 - Present', PJS4, 'MNISTPlayground'),
+    new Info('MNIST Playground', PROJ_IMG_DIR, 'mnist.jpg', 'September 2020 - Present', PJS4, 'MNISTPlayground'),
     new Info('Dot Matrix', PROJ_IMG_DIR, 'dotmatrix.jpg', 'February 2020 - May 2020', GIT_HUB, 'DotMatrix'),
     new Info('Qubit Playground', PROJ_IMG_DIR, 'qubit_playground.jpg', 'July 2020 - Present', PJS4, 'QubitPlayground'),
   ];
