@@ -6,6 +6,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ContentComponent } from './components/content/content.component';
 import { InfoComponent } from './components/info/info.component';
+import { IconButtonComponent } from './components/icon-button/icon-button.component';
+import { HeaderBackgroundComponent } from './components/header-background/header-background.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { InfoComponent } from './components/info/info.component';
     HeaderComponent,
     ContentComponent,
     InfoComponent,
+    IconButtonComponent,
+    HeaderBackgroundComponent,
   ],
   imports: [
     BrowserModule,

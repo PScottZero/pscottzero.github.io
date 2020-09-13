@@ -1,47 +1,37 @@
-import {Component, HostListener} from '@angular/core';
-import { ViewService } from '../../services/view.service';
+import {Component, HostListener, OnInit} from '@angular/core';
+import {IconButton} from '../../classes/IconButton';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
-  constructor(private viewService: ViewService) { }
+export class HeaderComponent implements OnInit{
+  buttons = [
+    new IconButton('email.svg', 'mailto: pauljscott8@gmail.com'),
+    new IconButton('resume.svg', 'https://drive.google.com/file/d/1Z79TNs30ttAftoWwJbqm93X77OljiM3L/'),
+    new IconButton('linkedin.svg', 'https://www.linkedin.com/in/paul-scott-047858140/'),
+    new IconButton('github.svg', 'https://github.com/PScottZero')
+  ];
+  menuIsVisible: boolean;
 
-  showAboutPage() {
-    this.closeMenu();
-    this.viewService.showAboutData();
-  }
-
-  showProjectPage() {
-    this.closeMenu();
-    this.viewService.showProjectData();
+  ngOnInit(): void {
+    this.menuIsVisible = false;
   }
 
   toggleMenu() {
+    this.menuIsVisible = !this.menuIsVisible;
     const header = document.getElementById('header');
-    this.viewService.toggleMenu();
     header.classList.add('header_scroll');
-    if (window.pageYOffset <= 0 && !this.viewService.menuVisible) {
+    if (window.pageYOffset <= 0 && !this.menuIsVisible) {
       header.classList.remove('header_scroll');
     }
-  }
-
-  closeMenu() {
-    if (this.menuIsVisible()) {
-      this.viewService.toggleMenu();
-    }
-  }
-
-  menuIsVisible(): boolean {
-    return this.viewService.menuVisible;
   }
 
   @HostListener('window:scroll', ['$event'])
   onScroll($event) {
     const header = document.getElementById('header');
-    if (window.pageYOffset > 0 || this.viewService.menuVisible) {
+    if (window.pageYOffset > 0 || this.menuIsVisible) {
       header.classList.add('header_scroll');
     } else {
       header.classList.remove('header_scroll');

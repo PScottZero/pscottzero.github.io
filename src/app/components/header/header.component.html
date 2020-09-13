@@ -1,16 +1,10 @@
-<header id="header" [class.header_with_menu]="menuIsVisible()">
+<header id="header" [class.header_with_menu]="menuIsVisible">
   <img src="../../../assets/images/logo.svg" alt="Paul Scott">
-
   <div class="menu_icon" (click)="toggleMenu()">
-    <div class="menu_icon_bar" [class.merge]="menuIsVisible()"></div>
-    <div class="menu_icon_bar" [class.merge]="menuIsVisible()"></div>
+    <div class="menu_icon_bar" [class.merge]="menuIsVisible"></div>
+    <div class="menu_icon_bar" [class.merge]="menuIsVisible"></div>
   </div>
-
-  <nav [class.menu_height]="menuIsVisible()">
-    <a (click)="showAboutPage()">About Me</a>
-    <a (click)="showProjectPage()">Projects</a>
-    <a href="https://drive.google.com/open?id=1Z79TNs30ttAftoWwJbqm93X77OljiM3L" target="_blank" (click)="closeMenu()">Resume</a>
-    <a href="https://www.linkedin.com/in/paul-scott-047858140/" target="_blank" (click)="closeMenu()">LinkedIn</a>
-    <a href="https://github.com/PScottZero" target="_blank" (click)="closeMenu()">GitHub</a>
+  <nav [class.menu_height]="menuIsVisible">
+    <app-icon-button *ngFor="let button of buttons" [icon]="button.icon" [link]="button.link"></app-icon-button>
   </nav>
 </header>

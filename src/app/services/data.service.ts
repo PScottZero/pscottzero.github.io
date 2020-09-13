@@ -4,7 +4,6 @@ import {InfoGroup} from '../classes/InfoGroup';
 
 const EDU_IMG_DIR = '../../assets/images/education/';
 const EXP_IMG_DIR = '../../assets/images/experience/';
-const RSH_IMG_DIR = '../../assets/images/research/';
 const CRS_IMG_DIR = '../../assets/images/courses/';
 const CLUB_IMG_DIR = '../../assets/images/clubs/';
 const HACK_IMG_DIR = '../../assets/images/hackathons/';
@@ -18,7 +17,6 @@ const PJS4 = 'https://pjs4.com/';
   providedIn: 'root'
 })
 export class DataService {
-
   private education = [
     new Info('Penn State', EDU_IMG_DIR, 'psu.jpg', 'B.S. Computer Science, Minor in Math 3.98/4.00'),
     new Info('Schreyer Honors College', EDU_IMG_DIR, 'shc.jpg', 'Schreyer Scholar'),
@@ -26,13 +24,19 @@ export class DataService {
   ];
 
   private experience = [
+    new Info('Undergraduate Research', EXP_IMG_DIR, 'research.jpg',
+      'With Professor Danfeng Zhang and Peixuan Li, Fall 2020'),
     new Info('Lockheed Martin', EXP_IMG_DIR, 'orion.jpg', 'Software Engineer Intern, Summer 2019/2020'),
     new Info('Easton Coach Company', EXP_IMG_DIR, 'easton.jpg', 'Software Engineer Intern, Summer 2018'),
   ];
 
-  private research = [
-    new Info('Automated Analysis of HotCRP\'s Enforcement of Information Flow Policy', RSH_IMG_DIR, 'research.jpg',
-      'In collaboration with Professor Danfeng Zhang and Peixuan Li')
+  projects = [
+    new Info('Charcoal', PROJ_IMG_DIR, 'charcoal.jpg', 'April 2020', GIT_HUB, 'Charcoal'),
+    new Info('The Coffee App', PROJ_IMG_DIR, 'the_coffee_app.jpg', 'July 2020 - Present', GIT_HUB, 'The-Coffee-App'),
+    new Info('MNIST Playground', PROJ_IMG_DIR, 'mnist.jpg', 'September 2020 - Present', PJS4, 'MNISTPlayground'),
+    new Info('Dot Matrix', PROJ_IMG_DIR, 'dotmatrix.jpg', 'February 2020 - May 2020', GIT_HUB, 'DotMatrix'),
+    new Info('Qubit Playground', PROJ_IMG_DIR, 'qubit_playground.jpg', 'July 2020 - Present', PJS4, 'QubitPlayground'),
+    new Info('Toxicity', PROJ_IMG_DIR, 'toxicity.jpg', 'October 2019 - December 2019', PJS4, 'Toxicity'),
   ];
 
   private languages = [
@@ -110,41 +114,13 @@ export class DataService {
 
   infoGroups = [
     new InfoGroup('Education', this.education),
-    new InfoGroup('Work Experience', this.experience),
-    new InfoGroup('Research', this.research),
+    new InfoGroup('Experience', this.experience),
+    new InfoGroup('Projects', this.projects),
     new InfoGroup('Programming Languages', this.languages),
     new InfoGroup('Current Courses', this.currentCourses),
     new InfoGroup('Past Courses', this.pastCourses),
     new InfoGroup('Clubs', this.clubs),
     new InfoGroup('Hackathons', this.hackathons),
     new InfoGroup('Hobbies & Interests', this.hobbies),
-  ];
-
-  featuredProjects = [
-    new Info('Charcoal', PROJ_IMG_DIR, 'charcoal.jpg', 'April 2020', GIT_HUB, 'Charcoal'),
-    new Info('The Coffee App', PROJ_IMG_DIR, 'the_coffee_app.jpg', 'July 2020 - Present', GIT_HUB, 'The-Coffee-App'),
-    new Info('MNIST Playground', PROJ_IMG_DIR, 'mnist.jpg', 'September 2020 - Present', PJS4, 'MNISTPlayground'),
-    new Info('Dot Matrix', PROJ_IMG_DIR, 'dotmatrix.jpg', 'February 2020 - May 2020', GIT_HUB, 'DotMatrix'),
-    new Info('Qubit Playground', PROJ_IMG_DIR, 'qubit_playground.jpg', 'July 2020 - Present', PJS4, 'QubitPlayground'),
-  ];
-
-  otherProjects = [
-    new Info('Altair 8800 Emulator', PROJ_IMG_DIR, 'altair.jpg', 'February 2020 - March 2020', GIT_HUB, 'Altair8800'),
-    new Info('Apogee Artist', PROJ_IMG_DIR, 'apogee.jpg', 'May 2018 - February 2019', GIT_HUB, 'Apogee-Artist'),
-    new Info('Bitwise Game Maker', PROJ_IMG_DIR, 'bitwise.jpg', 'April - May 2018', GIT_HUB, 'Bitwise-Game-Maker'),
-    new Info('Conway\'s Game of Life', PROJ_IMG_DIR, 'conway.jpg', 'February - May 2018', GIT_HUB, 'Conways-Game-of-Life'),
-    new Info('Easton Coach Driver Report', PROJ_IMG_DIR, 'easton.jpg', 'June - August 2018', GIT_HUB, 'Easton-Coach-Driver-Report'),
-    new Info('Graham Scan Visualizer', PROJ_IMG_DIR, 'convex.jpg', 'January - March 2019', PJS4, 'Graham-Scan'),
-    new Info('Lucas Lehmer Test', PROJ_IMG_DIR, 'lucas.jpg', 'March 2017', GIT_HUB, 'Lucas-Lehmer_Test'),
-    new Info('Recama\u0301n Sequence Visualizer', PROJ_IMG_DIR, 'recaman.jpg', 'June 2018', GIT_HUB, 'Recaman-Sequence-Visualizer'),
-    new Info('SiliconEight', PROJ_IMG_DIR, 'silicon_eight.jpg', 'January 2020', PJS4, 'SiliconEight'),
-    new Info('Terminal Enigma', PROJ_IMG_DIR, 'enigma.jpg', 'December 2017', GIT_HUB, 'TerminalEnigma'),
-    new Info('Tetromino', PROJ_IMG_DIR, 'tetromino.jpg', 'March 2019', PJS4, 'Tetromino'),
-    new Info('Toxicity', PROJ_IMG_DIR, 'toxicity.jpg', 'October 2019 - December 2019', PJS4, 'Toxicity'),
-  ];
-
-  projectGroups = [
-    new InfoGroup('Featured Projects', this.featuredProjects),
-    new InfoGroup('Other Projects', this.otherProjects),
   ];
 }
