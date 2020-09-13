@@ -32,13 +32,13 @@ header {
 }
 
 nav {
-  @media screen and (min-width: $screen-cutoff) {
+  @media screen and (min-width: $mobile-cutoff) {
     float: right;
     line-height: 4.2em;
     height: 100%;
   }
 
-  @media screen and (max-width: $screen-cutoff) {
+  @media screen and (max-width: $mobile-cutoff) {
     height: 0;
     width: 100%;
     transition: 0.3s;
@@ -75,11 +75,11 @@ nav {
 }
 
 .menu_icon {
-  @media screen and (min-width: $screen-cutoff) {
+  @media screen and (min-width: $mobile-cutoff) {
     display: none;
   }
 
-  @media screen and (max-width: $screen-cutoff) {
+  @media screen and (max-width: $mobile-cutoff) {
     float: right;
     height: 2em;
     width: 2em;

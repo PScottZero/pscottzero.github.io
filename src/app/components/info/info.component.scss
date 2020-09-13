@@ -1,0 +1,27 @@
+@import '../../../variables';
+
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+  color: whitesmoke;
+}
+
+#info {
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5em 0;
+  background: #333333dd;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.project_link:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+}

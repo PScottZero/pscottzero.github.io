@@ -1,21 +1,5 @@
 @import '../../../variables';
 
-h1 {
-  font-size: 24px;
-  font-weight: normal;
-  color: whitesmoke;
-}
-
-.description {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 0.5em 0;
-  background: #333333dd;
-  text-align: center;
-  color: whitesmoke;
-}
-
 .footer {
   display: flex;
   justify-content: center;
@@ -28,29 +12,6 @@ h1 {
   font-size: 20px;
 }
 
-.info {
-  position: relative;
-  flex: calc(50% - 3em);
-  max-width: calc(50% - 3em);
-  display: block;
-  line-height: 1.5;
-  height: 28em;
-  float: bottom;
-  margin: 1.5em;
-  flex-grow: 1;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.70);
-  border-radius: 2em;
-  overflow: hidden;
-  transition: 0.2s;
-
-  @media screen and (max-width: $screen-cutoff) {
-    flex: 100%;
-    max-width: 100%;
-    box-shadow: none;
-    margin: 0.5em 0;
-  }
-}
-
 .info_group {
   display: flex;
   margin: auto;
@@ -60,20 +21,34 @@ h1 {
   flex-wrap: wrap;
 }
 
-.project_link:hover {
-  cursor: pointer;
-  filter: brightness(70%);
-}
-
 .section_title {
-  width: available;
   padding: 2em 0 0.3em 0;
   font-size: 42px;
   color: whitesmoke;
   overflow: hidden;
 
-  @media screen and (max-width: $screen-cutoff) {
+  @media screen and (max-width: $mobile-cutoff) {
     padding: 1em;
     font-size: 32px;
+  }
+}
+
+app-info {
+  position: relative;
+  flex: calc(50% - 3em);
+  max-width: calc(50% - 3em);
+  line-height: 1.5;
+  height: 28em;
+  margin: 1.5em;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.70);
+  border-radius: 2em;
+  overflow: hidden;
+  transition: 0.2s;
+
+  @media screen and (max-width: $mobile-cutoff) {
+    flex: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    margin: 0.5em 0;
   }
 }

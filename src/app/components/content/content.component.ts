@@ -15,10 +15,4 @@ export class ContentComponent {
   getPageInfo(): InfoGroup[] {
     return this.contentService.aboutDataVisible ? this.dataService.infoGroups : this.dataService.projectGroups;
   }
-
-  open(link: string) {
-    if (link) {
-      window.open(link, '_blank');
-    }
-  }
 }

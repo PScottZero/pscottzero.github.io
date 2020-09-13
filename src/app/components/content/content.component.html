@@ -2,20 +2,13 @@
   <div class="section_title">
     <p>{{infoGroup.title}}</p>
   </div>
-
   <div class="info_group">
-    <div class="info" *ngFor="let info of infoGroup.infoArray"
-         [class.project_link]="info.projectLink != undefined"
-         [ngStyle]="{'background': 'url(' + info.backgroundImage + ') center', 'background-size': 'cover'}"
-         (click)="open(info.projectLink)">
-      <div class="description">
-        <h1>{{info.title}}</h1>
-        <p>{{info.description}}</p>
-      </div>
-    </div>
+    <app-info *ngFor="let info of infoGroup.infoArray"
+              [title]="info.title" [description]="info.description"
+              [image]="info.backgroundImage" [link]="info.projectLink">
+    </app-info>
   </div>
 </div>
-
 <div class="footer">
   <p>Created by Paul Scott using Angular</p>
   <p>Call at (215) 880-9592 or email at pauljscott8@gmail.com</p>

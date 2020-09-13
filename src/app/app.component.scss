@@ -19,7 +19,7 @@
     margin-top: 1.5em;
   }
 
-  @media screen and (max-width: $screen-cutoff) {
+  @media screen and (max-width: $mobile-cutoff) {
     height: 40vh;
   }
 }

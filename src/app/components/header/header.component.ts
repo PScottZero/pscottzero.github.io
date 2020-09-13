@@ -7,7 +7,6 @@ import { ViewService } from '../../services/view.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
   constructor(private viewService: ViewService) { }
 
   showAboutPage() {

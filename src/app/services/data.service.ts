@@ -31,7 +31,8 @@ export class DataService {
   ];
 
   private research = [
-    new Info('Automated Analysis of HotCRP\'s Enforcement of Information Flow Policy', RSH_IMG_DIR, 'research.jpg')
+    new Info('Automated Analysis of HotCRP\'s Enforcement of Information Flow Policy', RSH_IMG_DIR, 'research.jpg',
+      'In collaboration with Professor Danfeng Zhang and Peixuan Li')
   ];
 
   private languages = [
