@@ -31,12 +31,12 @@ export class DataService {
   ];
 
   projects = [
-    new Info('Charcoal', PROJ_IMG_DIR, 'charcoal.jpg', 'April 2020', GIT_HUB, 'Charcoal'),
-    new Info('The Coffee App', PROJ_IMG_DIR, 'the_coffee_app.jpg', 'July 2020 - Present', GIT_HUB, 'The-Coffee-App'),
-    new Info('MNIST Playground', PROJ_IMG_DIR, 'mnist.jpg', 'September 2020 - Present', PJS4, 'MNISTPlayground'),
-    new Info('Dot Matrix', PROJ_IMG_DIR, 'dotmatrix.jpg', 'February 2020 - May 2020', GIT_HUB, 'DotMatrix'),
-    new Info('Qubit Playground', PROJ_IMG_DIR, 'qubit_playground.jpg', 'July 2020 - Present', PJS4, 'QubitPlayground'),
-    new Info('Toxicity', PROJ_IMG_DIR, 'toxicity.jpg', 'October 2019 - December 2019', PJS4, 'Toxicity'),
+    new Info('Charcoal', PROJ_IMG_DIR, 'charcoal.jpg', 'April 2020 [Click to view]', GIT_HUB, 'Charcoal'),
+    new Info('The Coffee App', PROJ_IMG_DIR, 'the_coffee_app.jpg', 'July 2020 - Present [Click to view]', GIT_HUB, 'The-Coffee-App'),
+    new Info('MNIST Playground', PROJ_IMG_DIR, 'mnist.jpg', 'September 2020 - Present [Click to view]', PJS4, 'MNISTPlayground'),
+    new Info('Dot Matrix', PROJ_IMG_DIR, 'dotmatrix.jpg', 'February 2020 - May 2020 [Click to view]', GIT_HUB, 'DotMatrix'),
+    new Info('Qubit Playground', PROJ_IMG_DIR, 'qubit_playground.jpg', 'July 2020 - Present [Click to view]', PJS4, 'QubitPlayground'),
+    new Info('Toxicity', PROJ_IMG_DIR, 'toxicity.jpg', 'October 2019 - December 2019 [Click to view]', PJS4, 'Toxicity'),
   ];
 
   private languages = [
