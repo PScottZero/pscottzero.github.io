@@ -12,10 +12,11 @@ h1 {
 }
 
 .description {
+  box-sizing: border-box;
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 0.5em 0;
+  padding: 0.5em 1em;
   background: #333333dd;
   text-align: center;
   color: whitesmoke;

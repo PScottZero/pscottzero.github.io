@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  height: 12em;
+  line-height: 1.5;
+  color: #999999;
+  font-weight: bold;
+  font-size: 20px;
+
+  a {
+    color: cornflowerblue;
+    text-decoration: none;
+  }
+}

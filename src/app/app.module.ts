@@ -8,6 +8,7 @@ import { ContentComponent } from './components/content/content.component';
 import { InfoComponent } from './components/info/info.component';
 import { IconButtonComponent } from './components/icon-button/icon-button.component';
 import { HeaderBackgroundComponent } from './components/header-background/header-background.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HeaderBackgroundComponent } from './components/header-background/header
     InfoComponent,
     IconButtonComponent,
     HeaderBackgroundComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,7 @@
 
 button {
   height: 100%;
-  padding: 1.2em;
+  padding: 1em;
   background: transparent;
   border: none;
   outline: none;
@@ -17,7 +17,7 @@ button {
   @media screen and (min-width: $mobile-cutoff) {
     &:hover {
       cursor: pointer;
-      filter: brightness(70%);
+      filter: brightness(80%);
     }
   }
 
