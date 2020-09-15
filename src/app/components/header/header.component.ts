@@ -22,9 +22,9 @@ export class HeaderComponent implements OnInit{
   toggleMenu() {
     this.menuIsVisible = !this.menuIsVisible;
     const header = document.getElementById('header');
-    header.classList.add('header_scroll');
+    header.classList.add('header-scroll');
     if (window.pageYOffset <= 0 && !this.menuIsVisible) {
-      header.classList.remove('header_scroll');
+      header.classList.remove('header-scroll');
     }
   }
 
@@ -32,9 +32,9 @@ export class HeaderComponent implements OnInit{
   onScroll($event) {
     const header = document.getElementById('header');
     if (window.pageYOffset > 0 || this.menuIsVisible) {
-      header.classList.add('header_scroll');
+      header.classList.add('header-scroll');
     } else {
-      header.classList.remove('header_scroll');
+      header.classList.remove('header-scroll');
     }
   }
 }

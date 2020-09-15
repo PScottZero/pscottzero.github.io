@@ -17,12 +17,20 @@ h1 {
   bottom: 0;
   width: 100%;
   padding: 0.5em 1em;
-  background: #333333dd;
+  background: $description-background;
   text-align: center;
   color: whitesmoke;
 }
 
-.project_link:hover {
+.link-icon {
+  position: absolute;
+  height: 1.5em;
+  right: 1.5em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.info-link:hover {
   cursor: pointer;
   filter: brightness(70%);
 }

@@ -1,11 +1,13 @@
+@import '../../../variables';
+
 .footer {
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  height: 12em;
+  height: $footer-height;
   line-height: 1.5;
-  color: #999999;
+  color: $footer-text-color;
   font-weight: bold;
   font-size: 20px;
 

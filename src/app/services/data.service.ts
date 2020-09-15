@@ -31,12 +31,12 @@ export class DataService {
   ];
 
   projects = [
-    new Info('Charcoal', PROJ_IMG_DIR, 'charcoal.jpg', 'April 2020 [Click to view]', GIT_HUB, 'Charcoal'),
-    new Info('The Coffee App', PROJ_IMG_DIR, 'the_coffee_app.jpg', 'July 2020 - Present [Click to view]', GIT_HUB, 'The-Coffee-App'),
-    new Info('MNIST Playground', PROJ_IMG_DIR, 'mnist.jpg', 'September 2020 - Present [Click to view]', PJS4, 'MNISTPlayground'),
-    new Info('Dot Matrix', PROJ_IMG_DIR, 'dotmatrix.jpg', 'February 2020 - May 2020 [Click to view]', GIT_HUB, 'DotMatrix'),
-    new Info('Qubit Playground', PROJ_IMG_DIR, 'qubit_playground.jpg', 'July 2020 - Present [Click to view]', PJS4, 'QubitPlayground'),
-    new Info('Toxicity', PROJ_IMG_DIR, 'toxicity.jpg', 'October 2019 - December 2019 [Click to view]', PJS4, 'Toxicity'),
+    new Info('Charcoal', PROJ_IMG_DIR, 'charcoal.jpg', 'April 2020', GIT_HUB, 'Charcoal'),
+    new Info('The Coffee App', PROJ_IMG_DIR, 'the_coffee_app.jpg', 'July 2020 - Present', GIT_HUB, 'The-Coffee-App'),
+    new Info('MNIST Playground', PROJ_IMG_DIR, 'mnist.jpg', 'September 2020 - Present', PJS4, 'MNISTPlayground'),
+    new Info('Dot Matrix', PROJ_IMG_DIR, 'dotmatrix.jpg', 'February 2020 - May 2020', GIT_HUB, 'DotMatrix'),
+    new Info('Qubit Playground', PROJ_IMG_DIR, 'qubit_playground.jpg', 'July 2020 - Present', PJS4, 'QubitPlayground'),
+    new Info('Toxicity', PROJ_IMG_DIR, 'toxicity.jpg', 'October 2019 - December 2019', PJS4, 'Toxicity'),
   ];
 
   private languages = [
@@ -50,6 +50,7 @@ export class DataService {
     new Info('JavaScript', PRG_IMG_DIR, 'javascript.svg', 'Proficient'),
     new Info('Kotlin', PRG_IMG_DIR, 'kotlin.svg', 'Proficient'),
     new Info('MATLAB', PRG_IMG_DIR, 'matlab.svg', 'Familiar'),
+    new Info('PHP', PRG_IMG_DIR, 'php.svg', 'Learning'),
     new Info('Python', PRG_IMG_DIR, 'python.svg', 'Proficient'),
     new Info('Rust', PRG_IMG_DIR, 'rust.svg', 'Learning'),
     new Info('Swift', PRG_IMG_DIR, 'swift.png', 'Learning'),
@@ -58,31 +59,27 @@ export class DataService {
     new Info('TypeScript', PRG_IMG_DIR, 'typescript.svg', 'Proficient')
   ];
 
-  private currentCourses = [
-    new Info('Applications Programming', PRG_IMG_DIR, 'swift.png', 'CMPSC 475'),
-    new Info('Senior Honors Thesis', EDU_IMG_DIR, 'shc.jpg', 'CMPSC 494H')
-  ];
-
-  private pastCourses = [
-    new Info('Computer Design', CRS_IMG_DIR, 'computer_design.png', 'CMPEN 331'),
-    new Info('Computer Vision', CRS_IMG_DIR, 'computer_vision.jpg', 'CMPEN 454'),
-    new Info('Data Structures & Algorithms', CRS_IMG_DIR, 'data_structures.png', 'CMPSC 465'),
-    new Info('Database Management Systems', CRS_IMG_DIR, 'database.png', 'CMPSC 431W'),
-    new Info('Machine Learning & AI', CRS_IMG_DIR, 'robot.jpg', 'CMPSC 448'),
-    new Info('Mathematical Statistics', CRS_IMG_DIR, 'stat.png', 'STAT 415'),
-    new Info('Matrix Algebra', CRS_IMG_DIR, 'matrix.png', 'MATH 441'),
-    new Info('Multi-variable Calculus', CRS_IMG_DIR, 'calculus.jpg', 'MATH 230'),
-    new Info('Numerical Computations', CRS_IMG_DIR, 'trapezoid.png', 'MATH 451'),
-    new Info('Object Oriented Programming', CRS_IMG_DIR, 'oop.jpg', 'CMPSC 221'),
-    new Info('Operating Systems', CRS_IMG_DIR, 'os.png', 'CMPSC 473'),
-    new Info('Probability Theory', CRS_IMG_DIR, 'probability.png', 'STAT 414'),
-    new Info('Programming Language Concepts', CRS_IMG_DIR, 'lambda.png', 'CMPSC 461'),
+  private courses = [
+    new Info('Applications Programming', PRG_IMG_DIR, 'swift.png', 'CMPSC 475, Fall 2020'),
+    new Info('Computer Design', CRS_IMG_DIR, 'computer_design.png', 'CMPEN 331, Fall 2019'),
+    new Info('Computer Vision', CRS_IMG_DIR, 'computer_vision.jpg', 'CMPEN 454, Spring 2020'),
+    new Info('Data Structures & Algorithms', CRS_IMG_DIR, 'data_structures.png', 'CMPSC 465, Spring 2019'),
+    new Info('Database Management Systems', CRS_IMG_DIR, 'database.png', 'CMPSC 431W, Spring 2020'),
+    new Info('Machine Learning & AI', CRS_IMG_DIR, 'robot.jpg', 'CMPSC 448, Spring 2020'),
+    new Info('Mathematical Statistics', CRS_IMG_DIR, 'stat.png', 'STAT 415, Fall 2019'),
+    new Info('Matrix Algebra', CRS_IMG_DIR, 'matrix.png', 'MATH 441, Fall 2019'),
+    new Info('Multi-variable Calculus', CRS_IMG_DIR, 'calculus.jpg', 'MATH 230, Fall 2017'),
+    new Info('Numerical Computations', CRS_IMG_DIR, 'trapezoid.png', 'MATH 451, Spring 2020'),
+    new Info('Object Oriented Programming', CRS_IMG_DIR, 'oop.jpg', 'CMPSC 221, Spring 2018'),
+    new Info('Operating Systems', CRS_IMG_DIR, 'os.png', 'CMPSC 473, Fall 2019'),
+    new Info('Probability Theory', CRS_IMG_DIR, 'probability.png', 'STAT 414, Spring 2019'),
+    new Info('Programming Language Concepts', CRS_IMG_DIR, 'lambda.png', 'CMPSC 461, Fall 2019'),
     new Info('Quantum Mechanics and Quantum Computation', CRS_IMG_DIR, 'quantum_computer.jpg',
-      'CS-191x (BerkeleyX) [Click for Certificate]',
+      'CS-191x (BerkeleyX), Summer 2020',
       'https://courses.edx.org/', 'certificates/a7a842fb46834ea4b9459b44583f3e23'),
-    new Info('Systems Programming', PRG_IMG_DIR, 'clang.svg', 'CMPSC 311'),
-    new Info('Technical Writing', CRS_IMG_DIR, 'writing.jpg', 'ENGL 202C'),
-    new Info('Theory of Computation', CRS_IMG_DIR, 'turing_machine.jpg', 'CMPSC 464'),
+    new Info('Systems Programming', PRG_IMG_DIR, 'clang.svg', 'CMPSC 311, Fall 2018'),
+    new Info('Technical Writing', CRS_IMG_DIR, 'writing.jpg', 'ENGL 202C, Spring 2019'),
+    new Info('Theory of Computation', CRS_IMG_DIR, 'turing_machine.jpg', 'CMPSC 464, Spring 2020'),
   ];
 
   private clubs = [
@@ -117,8 +114,7 @@ export class DataService {
     new InfoGroup('Experience', this.experience),
     new InfoGroup('Projects', this.projects),
     new InfoGroup('Programming Languages', this.languages),
-    new InfoGroup('Current Courses', this.currentCourses),
-    new InfoGroup('Past Courses', this.pastCourses),
+    new InfoGroup('Courses', this.courses),
     new InfoGroup('Clubs', this.clubs),
     new InfoGroup('Hackathons', this.hackathons),
     new InfoGroup('Hobbies & Interests', this.hobbies),

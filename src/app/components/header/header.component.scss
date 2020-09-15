@@ -32,8 +32,8 @@ nav {
   }
 }
 
-.header_scroll {
-  background: #00C8FFaa;
+.header-scroll {
+  background: $header-color;
   backdrop-filter: blur(10px);
 
   a {
@@ -42,17 +42,17 @@ nav {
 
   /* firefox only */
   @-moz-document url-prefix() {
-    background: #00C8FFdd !important;
+    background: $header-color-firefox !important;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
   }
 }
 
-.header_with_menu {
+.header-with-menu {
   height: $header-height * 2;
   border-radius: 0 0 3em 3em;
 }
 
-.menu_icon {
+.menu-icon {
   @media screen and (min-width: $mobile-cutoff) {
     display: none;
   }
@@ -65,7 +65,7 @@ nav {
   }
 }
 
-.menu_icon_bar {
+.menu-icon-bar {
   width: 100%;
   height: 0.2em;
   background: white;
@@ -81,15 +81,15 @@ nav {
   }
 }
 
-.menu_height {
-  height: 18em;
+.menu-expanded-height {
+  height: 4em;
 
   a {
     margin: 1.5em 0;
   }
 }
 
-.merge {
+.to-x-mark {
   &:nth-child(1) {
     transform: translate(0, 0.3em) rotate(45deg);
   }

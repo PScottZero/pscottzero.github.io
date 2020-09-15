@@ -49,7 +49,7 @@ h1 {
   }
 }
 
-.info_group {
+.info-group {
   display: flex;
   margin: auto;
   max-width: 80em;
@@ -62,7 +62,7 @@ h1 {
   box-shadow: 0 0 20px #00C8FF;
 }
 
-.section_title {
+.section-title {
   width: available;
   padding: 2em 0 0.3em 0;
   font-size: 42px;
@@ -70,7 +70,7 @@ h1 {
   overflow: hidden;
 }
 @media screen and (max-width: 700px) {
-  .section_title {
+  .section-title {
     padding: 1em;
     font-size: 32px;
   }
