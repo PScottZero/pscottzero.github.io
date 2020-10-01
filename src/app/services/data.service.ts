@@ -33,6 +33,7 @@ export class DataService {
   projects = [
     new Info('Charcoal', PROJ_IMG_DIR, 'charcoal.jpg', 'April 2020', GIT_HUB, 'Charcoal'),
     new Info('The Coffee App', PROJ_IMG_DIR, 'the_coffee_app.jpg', 'July 2020 - Present', GIT_HUB, 'The-Coffee-App'),
+    new Info('Gossamer', PROJ_IMG_DIR, 'gossamer.jpg', 'September 2020 - Present', GIT_HUB, 'Gossamer'),
     new Info('MNIST Playground', PROJ_IMG_DIR, 'mnist.jpg', 'September 2020 - Present', PJS4, 'MNISTPlayground'),
     new Info('Dot Matrix', PROJ_IMG_DIR, 'dotmatrix.jpg', 'February 2020 - May 2020', GIT_HUB, 'DotMatrix'),
     new Info('Qubit Playground', PROJ_IMG_DIR, 'qubit_playground.jpg', 'July 2020 - Present', PJS4, 'QubitPlayground'),
@@ -53,7 +54,7 @@ export class DataService {
     new Info('PHP', PRG_IMG_DIR, 'php.svg', 'Learning'),
     new Info('Python', PRG_IMG_DIR, 'python.svg', 'Proficient'),
     new Info('Rust', PRG_IMG_DIR, 'rust.svg', 'Learning'),
-    new Info('Swift', PRG_IMG_DIR, 'swift.png', 'Learning'),
+    new Info('Swift', PRG_IMG_DIR, 'swift.png', 'Familiar'),
     new Info('SQL', PRG_IMG_DIR, 'sql.svg', 'Familiar'),
     new Info('TensorFlow', PRG_IMG_DIR, 'tensorflow.svg', 'Familiar'),
     new Info('TypeScript', PRG_IMG_DIR, 'typescript.svg', 'Proficient')
