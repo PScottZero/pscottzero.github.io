@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  day = 20;
-  month = 'September';
+  day = 17;
+  month = 'November';
   year = 2020;
 }

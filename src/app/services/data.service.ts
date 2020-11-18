@@ -12,6 +12,7 @@ const PRG_IMG_DIR = '../../assets/images/languages/';
 const PROJ_IMG_DIR = '../../assets/images/projects/';
 const GIT_HUB = 'https://github.com/PScottZero/';
 const PJS4 = 'https://pjs4.com/';
+const YOUTUBE = 'https://www.youtube.com/embed/';
 
 @Injectable({
   providedIn: 'root'
@@ -38,6 +39,11 @@ export class DataService {
     new Info('Dot Matrix', PROJ_IMG_DIR, 'dotmatrix.jpg', 'February 2020 - May 2020', GIT_HUB, 'DotMatrix'),
     new Info('Qubit Playground', PROJ_IMG_DIR, 'qubit_playground.jpg', 'July 2020 - Present', PJS4, 'QubitPlayground'),
     new Info('Toxicity', PROJ_IMG_DIR, 'toxicity.jpg', 'October 2019 - December 2019', PJS4, 'Toxicity'),
+  ];
+
+  videos = [
+    new Info('Quantum Computing Workshop (HackPSU Fall 2020)', YOUTUBE, '64P6tOwtl-0'),
+    new Info('Angular Workshop (HackPSU Fall 2020)', YOUTUBE, '2tUOiTtocoA')
   ];
 
   private languages = [
@@ -114,6 +120,7 @@ export class DataService {
     new InfoGroup('Education', this.education),
     new InfoGroup('Experience', this.experience),
     new InfoGroup('Projects', this.projects),
+    new InfoGroup('Videos', this.videos),
     new InfoGroup('Programming Languages', this.languages),
     new InfoGroup('Courses', this.courses),
     new InfoGroup('Clubs', this.clubs),

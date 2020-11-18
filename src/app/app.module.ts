@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ContentComponent } from './components/content/content.component';
-import { InfoComponent } from './components/info/info.component';
+import { InfoComponent, SanitizePipe } from './components/info/info.component';
 import { IconButtonComponent } from './components/icon-button/icon-button.component';
 import { HeaderBackgroundComponent } from './components/header-background/header-background.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -19,6 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
     IconButtonComponent,
     HeaderBackgroundComponent,
     FooterComponent,
+    SanitizePipe
   ],
   imports: [
     BrowserModule,

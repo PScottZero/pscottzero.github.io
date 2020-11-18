@@ -1,4 +1,5 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, Pipe, PipeTransform} from '@angular/core';
+import {DomSanitizer, SafeUrl} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-info',
@@ -15,5 +16,13 @@ export class InfoComponent {
     if (link) {
       window.open(link, '_blank');
     }
+  }
+}
+
+@Pipe({name: 'sanitize'})
+export class SanitizePipe implements PipeTransform {
+  constructor(private sanitizer: DomSanitizer) {}
+  transform(value: string): SafeUrl {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(value);
   }
 }
