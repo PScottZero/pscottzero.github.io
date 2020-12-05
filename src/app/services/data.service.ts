@@ -33,12 +33,12 @@ export class DataService {
 
   projects = [
     new Info('Charcoal', PROJ_IMG_DIR, 'charcoal.jpg', 'April 2020', GIT_HUB, 'Charcoal'),
-    new Info('The Coffee App', PROJ_IMG_DIR, 'the_coffee_app.jpg', 'July 2020 - Present', GIT_HUB, 'The-Coffee-App'),
-    new Info('Gossamer', PROJ_IMG_DIR, 'gossamer.jpg', 'September 2020 - Present', GIT_HUB, 'Gossamer'),
-    new Info('MNIST Playground', PROJ_IMG_DIR, 'mnist.jpg', 'September 2020 - Present', PJS4, 'MNISTPlayground'),
-    new Info('Dot Matrix', PROJ_IMG_DIR, 'dotmatrix.jpg', 'February 2020 - May 2020', GIT_HUB, 'DotMatrix'),
-    new Info('Qubit Playground', PROJ_IMG_DIR, 'qubit_playground.jpg', 'July 2020 - Present', PJS4, 'QubitPlayground'),
-    new Info('Toxicity', PROJ_IMG_DIR, 'toxicity.jpg', 'October 2019 - December 2019', PJS4, 'Toxicity'),
+    new Info('The Coffee App', PROJ_IMG_DIR, 'the_coffee_app.jpg', 'July - September 2020', GIT_HUB, 'The-Coffee-App'),
+    new Info('Gossamer', PROJ_IMG_DIR, 'gossamer.jpg', 'September 2020', GIT_HUB, 'Gossamer'),
+    new Info('MNIST Playground', PROJ_IMG_DIR, 'mnist.jpg', 'September - October 2020', PJS4, 'MNISTPlayground'),
+    new Info('Dot Matrix', PROJ_IMG_DIR, 'dotmatrix.jpg', 'February - May 2020', GIT_HUB, 'DotMatrix'),
+    new Info('Qubit Playground', PROJ_IMG_DIR, 'qubit_playground.jpg', 'July - August 2020', PJS4, 'QubitPlayground'),
+    new Info('Toxicity', PROJ_IMG_DIR, 'toxicity.jpg', 'October - December 2019', PJS4, 'Toxicity'),
   ];
 
   videos = [
@@ -90,14 +90,14 @@ export class DataService {
   ];
 
   private clubs = [
-    new Info('HackPSU', CLUB_IMG_DIR, 'hackpsu.png', 'Frontend Developer, Spring 2020 - Present'),
+    new Info('HackPSU', CLUB_IMG_DIR, 'hackpsu.png', 'Tech Team - Frontend, Spring 2020 - Present'),
     new Info('Lunar Lion', CLUB_IMG_DIR, 'lunar.png', 'Avionics Lead, Fall 2018 - Present'),
     new Info('ACM', CLUB_IMG_DIR, 'acm.jpg', 'Competitive Programming, Fall 2018'),
   ];
 
   private hackathons = [
     new Info('CodePSU', HACK_IMG_DIR, 'codepsu.png', 'Spring 2019'),
-    new Info('HackPSU', CLUB_IMG_DIR, 'hackpsu.png', 'Spring/Fall 2018'),
+    new Info('HackPSU', CLUB_IMG_DIR, 'hackpsu.png', 'Spring and Fall 2018'),
     new Info('ICPC', HACK_IMG_DIR, 'icpc.png', 'Fall 2018'),
   ];
 
@@ -125,6 +125,6 @@ export class DataService {
     new InfoGroup('Courses', this.courses),
     new InfoGroup('Clubs', this.clubs),
     new InfoGroup('Hackathons', this.hackathons),
-    new InfoGroup('Hobbies & Interests', this.hobbies),
+    new InfoGroup('Hobbies & Other Interests', this.hobbies),
   ];
 }
