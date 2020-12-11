@@ -33,6 +33,7 @@ export class DataService {
 
   projects = [
     new Info('Charcoal', PROJ_IMG_DIR, 'charcoal.jpg', 'April 2020', GIT_HUB, 'Charcoal'),
+    new Info('Checkmate', PROJ_IMG_DIR, 'checkmate.jpg', 'November - December 2020', GIT_HUB, 'Checkmate'),
     new Info('The Coffee App', PROJ_IMG_DIR, 'the_coffee_app.jpg', 'July - September 2020', GIT_HUB, 'The-Coffee-App'),
     new Info('Gossamer', PROJ_IMG_DIR, 'gossamer.jpg', 'September 2020', GIT_HUB, 'Gossamer'),
     new Info('MNIST Playground', PROJ_IMG_DIR, 'mnist.jpg', 'September - October 2020', PJS4, 'MNISTPlayground'),
