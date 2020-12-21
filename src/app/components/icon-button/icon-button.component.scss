@@ -18,6 +18,7 @@ button {
     &:hover {
       cursor: pointer;
       filter: brightness(80%);
+      transform: scale(1.1);
     }
   }
 
