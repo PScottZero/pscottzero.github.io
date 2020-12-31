@@ -13,6 +13,7 @@ const PROJ_IMG_DIR = '../../assets/images/projects/';
 const GIT_HUB = 'https://github.com/PScottZero/';
 const PJS4 = 'https://pjs4.com/';
 const YOUTUBE = 'https://www.youtube.com/embed/';
+const GOOGLE_PLAY = 'https://play.google.com/store/apps/';
 
 @Injectable({
   providedIn: 'root'
@@ -33,8 +34,8 @@ export class DataService {
 
   projects = [
     new Info('Charcoal', PROJ_IMG_DIR, 'charcoal.jpg', 'April 2020', GIT_HUB, 'Charcoal'),
-    new Info('Checkmate', PROJ_IMG_DIR, 'checkmate.jpg', 'November - December 2020', GIT_HUB, 'Checkmate'),
     new Info('The Coffee App', PROJ_IMG_DIR, 'the_coffee_app.jpg', 'July - September 2020', GIT_HUB, 'The-Coffee-App'),
+    new Info('En Passant', PROJ_IMG_DIR, 'en_passant.jpg', 'November 2020 - Present', GOOGLE_PLAY, 'details?id=com.pscottzero.en_passant'),
     new Info('Gossamer', PROJ_IMG_DIR, 'gossamer.jpg', 'September 2020', GIT_HUB, 'Gossamer'),
     new Info('MNIST Playground', PROJ_IMG_DIR, 'mnist.jpg', 'September - October 2020', PJS4, 'MNISTPlayground'),
     new Info('Dot Matrix', PROJ_IMG_DIR, 'dotmatrix.jpg', 'February - May 2020', GIT_HUB, 'DotMatrix'),
