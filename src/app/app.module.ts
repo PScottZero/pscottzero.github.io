@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { ContentComponent } from './components/content/content.component';
 import { InfoComponent, SanitizePipe } from './components/info/info.component';
 import { IconButtonComponent } from './components/icon-button/icon-button.component';
@@ -23,7 +22,6 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
