@@ -27,7 +27,7 @@ export class DataService {
 
   private experience = [
     new Info('Undergraduate Research', EXP_IMG_DIR, 'research.jpg',
-      'With Professor Danfeng Zhang and Peixuan Li, Fall 2020'),
+      'With Professor Danfeng Zhang and Peixuan Li, Fall 2020 - Spring 2021'),
     new Info('Lockheed Martin', EXP_IMG_DIR, 'orion.jpg', 'Software Engineer Intern, Summer 2019/2020'),
     new Info('Easton Coach Company', EXP_IMG_DIR, 'easton.jpg', 'Software Engineer Intern, Summer 2018'),
   ];
@@ -53,16 +53,17 @@ export class DataService {
     new Info('C', PRG_IMG_DIR, 'clang.svg', 'Proficient'),
     new Info('C++', PRG_IMG_DIR, 'cpp.svg', 'Proficient'),
     new Info('C#', PRG_IMG_DIR, 'csharp.svg', 'Familiar'),
-    new Info('Flutter', PRG_IMG_DIR, 'flutter.svg', 'Familiar'),
+    new Info('Dart', PRG_IMG_DIR, 'dart.svg', 'Proficient'),
+    new Info('Flutter', PRG_IMG_DIR, 'flutter.svg', 'Proficient'),
     new Info('HTML', PRG_IMG_DIR, 'html.svg', 'Proficient'),
     new Info('Java', PRG_IMG_DIR, 'java.svg', 'Proficient' ),
     new Info('JavaScript', PRG_IMG_DIR, 'javascript.svg', 'Proficient'),
     new Info('Kotlin', PRG_IMG_DIR, 'kotlin.svg', 'Proficient'),
     new Info('MATLAB', PRG_IMG_DIR, 'matlab.svg', 'Familiar'),
-    new Info('PHP', PRG_IMG_DIR, 'php.svg', 'Learning'),
+    new Info('PHP', PRG_IMG_DIR, 'php.svg', 'Familiar'),
     new Info('Python', PRG_IMG_DIR, 'python.svg', 'Proficient'),
-    new Info('Rust', PRG_IMG_DIR, 'rust.svg', 'Learning'),
-    new Info('Swift', PRG_IMG_DIR, 'swift.png', 'Familiar'),
+    new Info('Rust', PRG_IMG_DIR, 'rust.svg', 'Familiar'),
+    new Info('Swift', PRG_IMG_DIR, 'swift.png', 'Proficient'),
     new Info('SQL', PRG_IMG_DIR, 'sql.svg', 'Familiar'),
     new Info('TensorFlow', PRG_IMG_DIR, 'tensorflow.svg', 'Familiar'),
     new Info('TypeScript', PRG_IMG_DIR, 'typescript.svg', 'Proficient')
