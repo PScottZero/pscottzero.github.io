@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {Info} from '../classes/Info';
-import {InfoGroup} from '../classes/InfoGroup';
+import { Info } from '../classes/Info';
+import { InfoGroup } from '../classes/InfoGroup';
 
 const EDU_IMG_DIR = '../../assets/images/education/';
 const EXP_IMG_DIR = '../../assets/images/experience/';
@@ -16,36 +16,125 @@ const YOUTUBE = 'https://www.youtube.com/embed/';
 const GOOGLE_PLAY = 'https://play.google.com/store/apps/';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DataService {
   private education = [
-    new Info('Penn State', EDU_IMG_DIR, 'psu.jpg', 'B.S. Computer Science, Minor in Math 3.98/4.00'),
-    new Info('Schreyer Honors College', EDU_IMG_DIR, 'shc.jpg', 'Schreyer Scholar'),
-    new Info('Wissahickon High School', EDU_IMG_DIR, 'whs.jpg', 'Magna Cumme Laude'),
+    new Info(
+      'Penn State',
+      EDU_IMG_DIR,
+      'psu.jpg',
+      'B.S. Computer Science, Minor in Math 3.98/4.00'
+    ),
+    new Info(
+      'Schreyer Honors College',
+      EDU_IMG_DIR,
+      'shc.jpg',
+      'Schreyer Scholar'
+    ),
+    new Info(
+      'Wissahickon High School',
+      EDU_IMG_DIR,
+      'whs.jpg',
+      'Magna Cumme Laude'
+    ),
   ];
 
   private experience = [
-    new Info('Undergraduate Research', EXP_IMG_DIR, 'research.jpg',
-      'With Professor Danfeng Zhang and Peixuan Li, Fall 2020 - Spring 2021'),
-    new Info('Lockheed Martin', EXP_IMG_DIR, 'orion.jpg', 'Software Engineer Intern, Summer 2019/2020'),
-    new Info('Easton Coach Company', EXP_IMG_DIR, 'easton.jpg', 'Software Engineer Intern, Summer 2018'),
+    new Info(
+      'Undergraduate Research',
+      EXP_IMG_DIR,
+      'research.jpg',
+      'With Professor Danfeng Zhang and Peixuan Li, Fall 2020 - Spring 2021'
+    ),
+    new Info(
+      'Lockheed Martin',
+      EXP_IMG_DIR,
+      'orion.jpg',
+      'Software Engineer Intern, Summer 2019/2020'
+    ),
+    new Info(
+      'Easton Coach Company',
+      EXP_IMG_DIR,
+      'easton.jpg',
+      'Software Engineer Intern, Summer 2018'
+    ),
   ];
 
   projects = [
-    new Info('Charcoal', PROJ_IMG_DIR, 'charcoal.jpg', 'April 2020', GIT_HUB, 'Charcoal'),
-    new Info('The Coffee App', PROJ_IMG_DIR, 'the_coffee_app.jpg', 'July - September 2020', GIT_HUB, 'The-Coffee-App'),
-    new Info('En Passant', PROJ_IMG_DIR, 'en_passant.jpg', 'November 2020 - Present', GOOGLE_PLAY, 'details?id=com.pscottzero.en_passant'),
-    new Info('Gossamer', PROJ_IMG_DIR, 'gossamer.jpg', 'September 2020', GIT_HUB, 'Gossamer'),
-    new Info('MNIST Playground', PROJ_IMG_DIR, 'mnist.jpg', 'September - October 2020', PJS4, 'MNISTPlayground'),
-    new Info('Dot Matrix', PROJ_IMG_DIR, 'dotmatrix.jpg', 'February - May 2020', GIT_HUB, 'DotMatrix'),
-    new Info('Qubit Playground', PROJ_IMG_DIR, 'qubit_playground.jpg', 'July - August 2020', PJS4, 'QubitPlayground'),
-    new Info('Toxicity', PROJ_IMG_DIR, 'toxicity.jpg', 'October - December 2019', PJS4, 'Toxicity'),
+    new Info(
+      'Charcoal',
+      PROJ_IMG_DIR,
+      'charcoal.jpg',
+      'April 2020',
+      GIT_HUB,
+      'Charcoal'
+    ),
+    new Info(
+      'The Coffee App',
+      PROJ_IMG_DIR,
+      'the_coffee_app.jpg',
+      'July - September 2020',
+      GIT_HUB,
+      'The-Coffee-App'
+    ),
+    new Info(
+      'En Passant',
+      PROJ_IMG_DIR,
+      'en_passant.jpg',
+      'November 2020 - Present',
+      GOOGLE_PLAY,
+      'details?id=com.pscottzero.en_passant'
+    ),
+    new Info(
+      'Gossamer',
+      PROJ_IMG_DIR,
+      'gossamer.jpg',
+      'September 2020',
+      GIT_HUB,
+      'Gossamer'
+    ),
+    new Info(
+      'MNIST Playground',
+      PROJ_IMG_DIR,
+      'mnist.jpg',
+      'September - October 2020',
+      PJS4,
+      'MNISTPlayground'
+    ),
+    new Info(
+      'Dot Matrix',
+      PROJ_IMG_DIR,
+      'dotmatrix.jpg',
+      'February - May 2020',
+      GIT_HUB,
+      'DotMatrix'
+    ),
+    new Info(
+      'Qubit Playground',
+      PROJ_IMG_DIR,
+      'qubit_playground.jpg',
+      'July - August 2020',
+      PJS4,
+      'QubitPlayground'
+    ),
+    new Info(
+      'Toxicity',
+      PROJ_IMG_DIR,
+      'toxicity.jpg',
+      'October - December 2019',
+      PJS4,
+      'Toxicity'
+    ),
   ];
 
   videos = [
-    new Info('Quantum Computing Workshop (HackPSU Fall 2020)', YOUTUBE, '64P6tOwtl-0'),
-    new Info('Angular Workshop (HackPSU Fall 2020)', YOUTUBE, '2tUOiTtocoA')
+    new Info(
+      'Quantum Computing Workshop (HackPSU Fall 2020)',
+      YOUTUBE,
+      '64P6tOwtl-0'
+    ),
+    new Info('Angular Workshop (HackPSU Fall 2020)', YOUTUBE, '2tUOiTtocoA'),
   ];
 
   private languages = [
@@ -56,7 +145,7 @@ export class DataService {
     new Info('Dart', PRG_IMG_DIR, 'dart.svg', 'Proficient'),
     new Info('Flutter', PRG_IMG_DIR, 'flutter.svg', 'Proficient'),
     new Info('HTML', PRG_IMG_DIR, 'html.svg', 'Proficient'),
-    new Info('Java', PRG_IMG_DIR, 'java.svg', 'Proficient' ),
+    new Info('Java', PRG_IMG_DIR, 'java.svg', 'Proficient'),
     new Info('JavaScript', PRG_IMG_DIR, 'javascript.svg', 'Proficient'),
     new Info('Kotlin', PRG_IMG_DIR, 'kotlin.svg', 'Proficient'),
     new Info('MATLAB', PRG_IMG_DIR, 'matlab.svg', 'Familiar'),
@@ -66,36 +155,141 @@ export class DataService {
     new Info('Swift', PRG_IMG_DIR, 'swift.png', 'Proficient'),
     new Info('SQL', PRG_IMG_DIR, 'sql.svg', 'Familiar'),
     new Info('TensorFlow', PRG_IMG_DIR, 'tensorflow.svg', 'Familiar'),
-    new Info('TypeScript', PRG_IMG_DIR, 'typescript.svg', 'Proficient')
+    new Info('TypeScript', PRG_IMG_DIR, 'typescript.svg', 'Proficient'),
   ];
 
   private courses = [
-    new Info('Applications Programming', PRG_IMG_DIR, 'swift.png', 'CMPSC 475, Fall 2020'),
-    new Info('Computer Design', CRS_IMG_DIR, 'computer_design.png', 'CMPEN 331, Fall 2019'),
-    new Info('Computer Vision', CRS_IMG_DIR, 'computer_vision.jpg', 'CMPEN 454, Spring 2020'),
-    new Info('Data Structures & Algorithms', CRS_IMG_DIR, 'data_structures.png', 'CMPSC 465, Spring 2019'),
-    new Info('Database Management Systems', CRS_IMG_DIR, 'database.png', 'CMPSC 431W, Spring 2020'),
-    new Info('Machine Learning & AI', CRS_IMG_DIR, 'robot.jpg', 'CMPSC 448, Spring 2020'),
-    new Info('Mathematical Statistics', CRS_IMG_DIR, 'stat.png', 'STAT 415, Fall 2019'),
-    new Info('Matrix Algebra', CRS_IMG_DIR, 'matrix.png', 'MATH 441, Fall 2019'),
-    new Info('Multi-variable Calculus', CRS_IMG_DIR, 'calculus.jpg', 'MATH 230, Fall 2017'),
-    new Info('Numerical Computations', CRS_IMG_DIR, 'trapezoid.png', 'MATH 451, Spring 2020'),
-    new Info('Object Oriented Programming', CRS_IMG_DIR, 'oop.jpg', 'CMPSC 221, Spring 2018'),
-    new Info('Operating Systems', CRS_IMG_DIR, 'os.png', 'CMPSC 473, Fall 2019'),
-    new Info('Probability Theory', CRS_IMG_DIR, 'probability.png', 'STAT 414, Spring 2019'),
-    new Info('Programming Language Concepts', CRS_IMG_DIR, 'lambda.png', 'CMPSC 461, Fall 2019'),
-    new Info('Quantum Mechanics and Quantum Computation', CRS_IMG_DIR, 'quantum_computer.jpg',
+    new Info(
+      'Applications Programming',
+      PRG_IMG_DIR,
+      'swift.png',
+      'CMPSC 475, Fall 2020'
+    ),
+    new Info(
+      'Computer Design',
+      CRS_IMG_DIR,
+      'computer_design.png',
+      'CMPEN 331, Fall 2019'
+    ),
+    new Info(
+      'Computer Vision',
+      CRS_IMG_DIR,
+      'computer_vision.jpg',
+      'CMPEN 454, Spring 2020'
+    ),
+    new Info(
+      'Data Structures & Algorithms',
+      CRS_IMG_DIR,
+      'data_structures.png',
+      'CMPSC 465, Spring 2019'
+    ),
+    new Info(
+      'Database Management Systems',
+      CRS_IMG_DIR,
+      'database.png',
+      'CMPSC 431W, Spring 2020'
+    ),
+    new Info(
+      'Machine Learning & AI',
+      CRS_IMG_DIR,
+      'robot.jpg',
+      'CMPSC 448, Spring 2020'
+    ),
+    new Info(
+      'Mathematical Statistics',
+      CRS_IMG_DIR,
+      'stat.png',
+      'STAT 415, Fall 2019'
+    ),
+    new Info(
+      'Matrix Algebra',
+      CRS_IMG_DIR,
+      'matrix.png',
+      'MATH 441, Fall 2019'
+    ),
+    new Info(
+      'Multi-variable Calculus',
+      CRS_IMG_DIR,
+      'calculus.jpg',
+      'MATH 230, Fall 2017'
+    ),
+    new Info(
+      'Numerical Computations',
+      CRS_IMG_DIR,
+      'trapezoid.png',
+      'MATH 451, Spring 2020'
+    ),
+    new Info(
+      'Object Oriented Programming',
+      CRS_IMG_DIR,
+      'oop.jpg',
+      'CMPSC 221, Spring 2018'
+    ),
+    new Info(
+      'Operating Systems',
+      CRS_IMG_DIR,
+      'os.png',
+      'CMPSC 473, Fall 2019'
+    ),
+    new Info(
+      'Probability Theory',
+      CRS_IMG_DIR,
+      'probability.png',
+      'STAT 414, Spring 2019'
+    ),
+    new Info(
+      'Programming Language Concepts',
+      CRS_IMG_DIR,
+      'lambda.png',
+      'CMPSC 461, Fall 2019'
+    ),
+    new Info(
+      'Quantum Mechanics and Quantum Computation',
+      CRS_IMG_DIR,
+      'quantum_computer.jpg',
       'CS-191x (BerkeleyX), Summer 2020',
-      'https://courses.edx.org/', 'certificates/a7a842fb46834ea4b9459b44583f3e23'),
-    new Info('Systems Programming', PRG_IMG_DIR, 'clang.svg', 'CMPSC 311, Fall 2018'),
-    new Info('Technical Writing', CRS_IMG_DIR, 'writing.jpg', 'ENGL 202C, Spring 2019'),
-    new Info('Theory of Computation', CRS_IMG_DIR, 'turing_machine.jpg', 'CMPSC 464, Spring 2020'),
+      'https://courses.edx.org/',
+      'certificates/a7a842fb46834ea4b9459b44583f3e23'
+    ),
+    new Info(
+      'Systems Programming',
+      PRG_IMG_DIR,
+      'clang.svg',
+      'CMPSC 311, Fall 2018'
+    ),
+    new Info(
+      'Technical Writing',
+      CRS_IMG_DIR,
+      'writing.jpg',
+      'ENGL 202C, Spring 2019'
+    ),
+    new Info(
+      'Theory of Computation',
+      CRS_IMG_DIR,
+      'turing_machine.jpg',
+      'CMPSC 464, Spring 2020'
+    ),
   ];
 
   private clubs = [
-    new Info('HackPSU', CLUB_IMG_DIR, 'hackpsu.png', 'Tech Team - Frontend, Spring 2020 - Present'),
-    new Info('Lunar Lion', CLUB_IMG_DIR, 'lunar.png', 'Avionics Lead, Fall 2018 - Present'),
-    new Info('ACM', CLUB_IMG_DIR, 'acm.jpg', 'Competitive Programming, Fall 2018'),
+    new Info(
+      'HackPSU',
+      CLUB_IMG_DIR,
+      'hackpsu.png',
+      'Tech Team - Frontend, Spring 2020 - Present'
+    ),
+    new Info(
+      'Lunar Lion',
+      CLUB_IMG_DIR,
+      'lunar.png',
+      'Avionics Lead, Fall 2018 - Present'
+    ),
+    new Info(
+      'ACM',
+      CLUB_IMG_DIR,
+      'acm.jpg',
+      'Competitive Programming, Fall 2018'
+    ),
   ];
 
   private hackathons = [

@@ -1,10 +1,10 @@
-import {Component, Input, Pipe, PipeTransform} from '@angular/core';
-import {DomSanitizer, SafeUrl} from '@angular/platform-browser';
+import { Component, Input, Pipe, PipeTransform } from '@angular/core';
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-info',
   templateUrl: './info.component.html',
-  styleUrls: ['./info.component.scss']
+  styleUrls: ['./info.component.scss'],
 })
 export class InfoComponent {
   @Input() title: string;
@@ -19,7 +19,7 @@ export class InfoComponent {
   }
 }
 
-@Pipe({name: 'sanitize'})
+@Pipe({ name: 'sanitize' })
 export class SanitizePipe implements PipeTransform {
   constructor(private sanitizer: DomSanitizer) {}
   transform(value: string): SafeUrl {

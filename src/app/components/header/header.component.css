@@ -7,7 +7,7 @@ a {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 a:hover {
-  color: #CCC;
+  color: #ccc;
   transition: 0.3s;
 }
 
@@ -50,7 +50,7 @@ header img {
 }
 
 .header-scroll {
-  background: #00C8FFaa;
+  background: #00c8ffaa;
   backdrop-filter: blur(10px);
   /* firefox only */
 }
@@ -59,7 +59,7 @@ header img {
 }
 @-moz-document url-prefix() {
   .header-scroll {
-    background: #00C8FF !important;
+    background: #00c8ff !important;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
   }
 }

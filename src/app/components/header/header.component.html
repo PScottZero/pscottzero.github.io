@@ -1,10 +1,14 @@
 <header id="header" [class.header-with-menu]="menuIsVisible">
-  <img src="../../../assets/images/logo.svg" alt="Paul Scott">
+  <img src="../../../assets/images/logo.svg" alt="Paul Scott" />
   <div class="menu-icon" (click)="toggleMenu()">
     <div class="menu-icon-bar" [class.to-x-mark]="menuIsVisible"></div>
     <div class="menu-icon-bar" [class.to-x-mark]="menuIsVisible"></div>
   </div>
   <nav [class.menu-expanded-height]="menuIsVisible">
-    <app-icon-button *ngFor="let button of buttons" [icon]="button.icon" [link]="button.link"></app-icon-button>
+    <app-icon-button
+      *ngFor="let button of buttons"
+      [icon]="button.icon"
+      [link]="button.link"
+    ></app-icon-button>
   </nav>
 </header>

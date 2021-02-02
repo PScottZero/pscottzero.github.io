@@ -1,17 +1,23 @@
-import {Component, HostListener, OnInit} from '@angular/core';
-import {IconButton} from '../../classes/IconButton';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { IconButton } from '../../classes/IconButton';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent implements OnInit {
   buttons = [
     new IconButton('email.svg', 'mailto: pauljscott8@gmail.com'),
-    new IconButton('resume.svg', 'https://drive.google.com/file/d/1Z79TNs30ttAftoWwJbqm93X77OljiM3L/'),
-    new IconButton('linkedin.svg', 'https://www.linkedin.com/in/paul-scott-047858140/'),
-    new IconButton('github.svg', 'https://github.com/PScottZero')
+    new IconButton(
+      'resume.svg',
+      'https://drive.google.com/file/d/1Z79TNs30ttAftoWwJbqm93X77OljiM3L/'
+    ),
+    new IconButton(
+      'linkedin.svg',
+      'https://www.linkedin.com/in/paul-scott-047858140/'
+    ),
+    new IconButton('github.svg', 'https://github.com/PScottZero'),
   ];
   menuIsVisible: boolean;
 

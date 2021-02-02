@@ -18,12 +18,10 @@ import { FooterComponent } from './components/footer/footer.component';
     IconButtonComponent,
     HeaderBackgroundComponent,
     FooterComponent,
-    SanitizePipe
+    SanitizePipe,
   ],
-  imports: [
-    BrowserModule,
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

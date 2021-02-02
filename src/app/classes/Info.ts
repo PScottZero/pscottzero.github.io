@@ -4,8 +4,14 @@ export class Info {
   backgroundImage: string;
   projectLink: string;
 
-  constructor(title: string, baseImgDir: string, backgroundImg: string,
-              description?: string, baseLink?: string, projectLink?: string) {
+  constructor(
+    title: string,
+    baseImgDir: string,
+    backgroundImg: string,
+    description?: string,
+    baseLink?: string,
+    projectLink?: string
+  ) {
     this.title = title;
     this.description = description;
     if (backgroundImg) {

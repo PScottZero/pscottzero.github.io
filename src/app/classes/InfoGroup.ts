@@ -1,4 +1,4 @@
-import {Info} from './Info';
+import { Info } from './Info';
 
 export class InfoGroup {
   title: string;

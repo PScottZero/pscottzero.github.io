@@ -1,11 +1,15 @@
 <div *ngFor="let infoGroup of getPageInfo()">
   <div class="section-title">
-    <p>{{infoGroup.title}}</p>
+    <p>{{ infoGroup.title }}</p>
   </div>
   <div class="info-group">
-    <app-info *ngFor="let info of infoGroup.infoArray"
-              [title]="info.title" [description]="info.description"
-              [image]="info.backgroundImage" [link]="info.projectLink">
+    <app-info
+      *ngFor="let info of infoGroup.infoArray"
+      [title]="info.title"
+      [description]="info.description"
+      [image]="info.backgroundImage"
+      [link]="info.projectLink"
+    >
     </app-info>
   </div>
 </div>
