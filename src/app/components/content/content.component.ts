@@ -65,20 +65,12 @@ export class ContentComponent {
 
   private projects = [
     new Info(
-      'Charcoal',
+      'PDP-1 Emulator',
       PROJ_IMG_DIR,
-      'charcoal.jpg',
-      'April 2020',
-      GIT_HUB,
-      'Charcoal'
-    ),
-    new Info(
-      'The Coffee App',
-      PROJ_IMG_DIR,
-      'the_coffee_app.jpg',
-      'July - September 2020',
-      GIT_HUB,
-      'The-Coffee-App'
+      'pdp1.jpg',
+      'February 2021 - Present',
+      PJS4,
+      'pdp1'
     ),
     new Info(
       'En Passant',
@@ -89,14 +81,6 @@ export class ContentComponent {
       'details?id=com.pscottzero.en_passant'
     ),
     new Info(
-      'Gossamer',
-      PROJ_IMG_DIR,
-      'gossamer.jpg',
-      'September 2020',
-      GIT_HUB,
-      'Gossamer'
-    ),
-    new Info(
       'MNIST Playground',
       PROJ_IMG_DIR,
       'mnist.jpg',
@@ -105,12 +89,12 @@ export class ContentComponent {
       'MNISTPlayground'
     ),
     new Info(
-      'Dot Matrix',
+      'Gossamer',
       PROJ_IMG_DIR,
-      'dotmatrix.jpg',
-      'February - May 2020',
+      'gossamer.jpg',
+      'September 2020',
       GIT_HUB,
-      'DotMatrix'
+      'Gossamer'
     ),
     new Info(
       'Qubit Playground',
@@ -119,6 +103,22 @@ export class ContentComponent {
       'July - August 2020',
       PJS4,
       'QubitPlayground'
+    ),
+    new Info(
+      'Charcoal',
+      PROJ_IMG_DIR,
+      'charcoal.jpg',
+      'April 2020',
+      GIT_HUB,
+      'Charcoal'
+    ),
+    new Info(
+      'Dot Matrix',
+      PROJ_IMG_DIR,
+      'dotmatrix.jpg',
+      'February - May 2020',
+      GIT_HUB,
+      'DotMatrix'
     ),
     new Info(
       'Toxicity',
