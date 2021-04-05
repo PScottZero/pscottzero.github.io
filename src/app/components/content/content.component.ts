@@ -23,22 +23,22 @@ const GOOGLE_PLAY = 'https://play.google.com/store/apps/';
 export class ContentComponent {
   private education = [
     new Info(
+      'University of Pennsylvania',
+      EDU_IMG_DIR,
+      'upenn.jpg',
+      'MSE Computer and Information Science, Starting Fall 2021'
+    ),
+    new Info(
       'Penn State',
       EDU_IMG_DIR,
       'psu.jpg',
-      'B.S. Computer Science, Minor in Math 3.98/4.00'
-    ),
-    new Info(
-      'Schreyer Honors College',
-      EDU_IMG_DIR,
-      'shc.jpg',
-      'Schreyer Scholar'
+      'BS Computer Science, Minor in Math, GPA 3.98/4.00, Schreyer Honors Scholar, Fall 2017 - Spring 2021'
     ),
     new Info(
       'Wissahickon High School',
       EDU_IMG_DIR,
       'whs.jpg',
-      'Magna Cumme Laude'
+      'Magna Cumme Laude, Fall 2013 - Spring 2017'
     ),
   ];
 
@@ -196,6 +196,12 @@ export class ContentComponent {
       CRS_IMG_DIR,
       'robot.jpg',
       'CMPSC 448, Spring 2020'
+    ),
+    new Info(
+      'Mathematical Logic',
+      CRS_IMG_DIR,
+      'lnt.svg',
+      'MATH 457, Spring 2021'
     ),
     new Info(
       'Mathematical Statistics',
