@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Info } from '../../classes/Info';
-import { InfoGroup } from '../../classes/InfoGroup';
+import { Info } from './Info';
+import { InfoGroup } from './InfoGroup';
 
 const EDU_IMG_DIR = '../../assets/images/education/';
 const EXP_IMG_DIR = '../../assets/images/experience/';
@@ -13,7 +13,6 @@ const PROJ_IMG_DIR = '../../assets/images/projects/';
 const GIT_HUB = 'https://github.com/PScottZero/';
 const PJS4 = 'https://pjs4.com/';
 const YOUTUBE = 'https://www.youtube.com/embed/';
-const GOOGLE_PLAY = 'https://play.google.com/store/apps/';
 
 @Component({
   selector: 'app-content',
@@ -26,40 +25,42 @@ export class ContentComponent {
       'University of Pennsylvania',
       EDU_IMG_DIR,
       'upenn.jpg',
-      'MSE Computer and Information Science, Starting Fall 2021'
+      'MSE Computer and Information Science <br> Starting Fall 2021'
     ),
     new Info(
       'Penn State',
       EDU_IMG_DIR,
       'psu.jpg',
-      'BS Computer Science, Minor in Math, GPA 3.98/4.00, Schreyer Honors Scholar, Fall 2017 - Spring 2021'
+      'BS Computer Science, Minor in Math <br> GPA 3.98/4.00, Schreyer Honors Scholar <br> Fall 2017 - Spring 2021'
     ),
     new Info(
       'Wissahickon High School',
       EDU_IMG_DIR,
       'whs.jpg',
-      'Magna Cumme Laude, Fall 2013 - Spring 2017'
+      'Magna Cumme Laude <br> Fall 2013 - Spring 2017'
     ),
   ];
 
   private experience = [
     new Info(
+      'ShopRunner',
+      EXP_IMG_DIR,
+      'shoprunner.jpg',
+      'Software Engineer Intern, MBX Team <br> Summer 2021'
+    ),
+    new Info(
       'Undergraduate Research',
       EXP_IMG_DIR,
-      'research.jpg',
-      'With Professor Danfeng Zhang and Peixuan Li, Fall 2020 - Spring 2021'
+      'research.png',
+      '<i>Automated Analysis of Information Flow Enforcement in PHP Program</i> <br> With Professor Danfeng Zhang and Peixuan Li <br> Fall 2020 - Spring 2021',
+      '',
+      'https://drive.google.com/file/d/1LutOnj9kyM6MvTPjfy1Qtdzqdu-7NE4-/view?usp=sharing'
     ),
     new Info(
       'Lockheed Martin',
       EXP_IMG_DIR,
       'orion.jpg',
-      'Software Engineer Intern, Summer 2019/2020'
-    ),
-    new Info(
-      'Easton Coach Company',
-      EXP_IMG_DIR,
-      'easton.jpg',
-      'Software Engineer Intern, Summer 2018'
+      'Software Engineer Intern (Space) <br> Summer 2019/2020'
     ),
   ];
 
@@ -68,7 +69,7 @@ export class ContentComponent {
       'PDP-1 Emulator',
       PROJ_IMG_DIR,
       'pdp1.jpg',
-      'February 2021 - Present',
+      'February - March 2021',
       PJS4,
       'pdp1'
     ),
@@ -77,8 +78,8 @@ export class ContentComponent {
       PROJ_IMG_DIR,
       'en_passant.jpg',
       'November 2020 - Present',
-      GOOGLE_PLAY,
-      'details?id=com.pscottzero.en_passant'
+      GIT_HUB,
+      'EnPassant'
     ),
     new Info(
       'MNIST Playground',

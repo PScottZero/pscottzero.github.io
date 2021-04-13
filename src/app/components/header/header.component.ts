@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { IconButton } from '../../classes/IconButton';
+import { IconButton } from '../icon-button/IconButton';
 
 @Component({
   selector: 'app-header',
