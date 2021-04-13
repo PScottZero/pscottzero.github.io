@@ -285,13 +285,13 @@ export class ContentComponent {
       'HackPSU',
       CLUB_IMG_DIR,
       'hackpsu.png',
-      'Tech Team - Frontend, Spring 2020 - Present'
+      'Tech Team - Frontend, Spring 2020 - Spring 2021'
     ),
     new Info(
       'Lunar Lion',
       CLUB_IMG_DIR,
       'lunar.png',
-      'Avionics Lead, Fall 2018 - Present'
+      'Avionics Lead, Fall 2018 - Spring 2021'
     ),
     new Info(
       'ACM',
@@ -315,10 +315,10 @@ export class ContentComponent {
     new Info('Guitar', HOB_IMG_DIR, 'lespaul.jpg'),
     new Info('Piano', HOB_IMG_DIR, 'piano.jpg'),
     new Info('Records', HOB_IMG_DIR, 'remaininlight.jpg'),
-    new Info('Retro Tech', HOB_IMG_DIR, 'commodore_pet.jpg'),
+    new Info('Retro Tech', HOB_IMG_DIR, 'pdp1.jpg'),
     new Info('Roller Coasters', HOB_IMG_DIR, 'skyrush.jpg'),
-    new Info('Space Flight', HOB_IMG_DIR, 'falcon.jpg'),
-    new Info('Trains', HOB_IMG_DIR, 'acela.jpg'),
+    new Info('Space Flight', HOB_IMG_DIR, 'starship.jpg'),
+    new Info('Trains', HOB_IMG_DIR, 'shinkansen.jpg'),
     new Info('Ukulele', HOB_IMG_DIR, 'ukulele.jpg'),
   ];
 
