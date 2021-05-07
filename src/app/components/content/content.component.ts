@@ -31,7 +31,7 @@ export class ContentComponent {
       'Penn State',
       EDU_IMG_DIR,
       'psu.jpg',
-      'BS Computer Science, Minor in Math <br> GPA 3.98/4.00, Schreyer Honors Scholar <br> Fall 2017 - Spring 2021'
+      'BS Computer Science, Minor in Math <br> GPA 3.98/4.00, Summa Cumme Laude <br> Schreyer Honors Scholar <br> Fall 2017 - Spring 2021'
     ),
     new Info(
       'Wissahickon High School',

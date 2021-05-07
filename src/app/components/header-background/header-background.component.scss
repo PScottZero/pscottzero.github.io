@@ -1,32 +1,30 @@
 @import '../../../variables';
 
 #header-background {
-  position: relative;
+  box-sizing: border-box;
   width: 100%;
-  height: 70vh;
+  height: auto;
   background: url('../../../assets/images/header.jpg') bottom;
   background-size: cover;
   border-radius: 0 0 3em 3em;
+  padding: calc(12vh + 2em) 0 12vh 0;
 
   @media screen and (max-width: $mobile-cutoff) {
-    height: 60vh;
+    padding: 4em 0 1em 0;
   }
 }
 
 #header-info {
+  margin: auto;
   box-sizing: border-box;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   max-width: 64em;
   width: 100%;
-  height: 40vh;
+  height: auto;
   padding: 2em;
   line-height: 1.5;
 
   img {
-    height: 60%;
+    height: 20vh;
     border-radius: 50%;
   }
 
@@ -35,20 +33,5 @@
     font-size: 2.5vh;
     color: white;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-  }
-
-  @media screen and (max-width: $mobile-cutoff) {
-    max-width: 100%;
-    padding: 1em;
-    height: 20em;
-
-    img {
-      height: 50%;
-    }
-
-    #about {
-      font-size: 18px;
-      text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
-    }
   }
 }
