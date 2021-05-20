@@ -4,8 +4,6 @@
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  background: url('../../../assets/images/header.jpg') bottom;
-  background-size: cover;
   border-radius: 0 0 3em 3em;
   padding: calc(12vh + 2em) 0 12vh 0;
 
@@ -24,7 +22,7 @@
   line-height: 1.5;
 
   img {
-    height: 20vh;
+    height: 24vh;
     border-radius: 50%;
   }
 

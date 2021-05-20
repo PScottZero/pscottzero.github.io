@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit {
     this.menuIsVisible = false;
   }
 
-  toggleMenu() {
+  toggleMenu(): void {
     this.menuIsVisible = !this.menuIsVisible;
     const header = document.getElementById('header');
     header.classList.add('header-scroll');
@@ -35,9 +35,9 @@ export class HeaderComponent implements OnInit {
   }
 
   @HostListener('window:scroll', ['$event'])
-  onScroll($event) {
+  onScroll(): void {
     const header = document.getElementById('header');
-    if (window.pageYOffset > 0 || this.menuIsVisible) {
+    if (window.pageYOffset > 0.1 || this.menuIsVisible) {
       header.classList.add('header-scroll');
     } else {
       header.classList.remove('header-scroll');

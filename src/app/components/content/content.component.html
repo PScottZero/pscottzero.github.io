@@ -9,6 +9,8 @@
       [description]="info.description"
       [image]="info.backgroundImage"
       [link]="info.projectLink"
+      [style.--flex-large]="getFlexPercentage(infoGroup.columnCountLarge)"
+      [style.--flex-small]="getFlexPercentage(infoGroup.columnCountSmall)"
     >
     </app-info>
   </div>

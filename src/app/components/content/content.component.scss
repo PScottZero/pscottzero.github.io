@@ -28,24 +28,25 @@
 
 app-info {
   position: relative;
-  flex: 33%;
-  max-width: calc(33% - 1vw);
+  flex: calc(1% * var(--flex-large));
+  max-width: calc(1% * var(--flex-large) - 1vw);
+  height: calc(1vw * var(--flex-large) / 1.5);
   line-height: 1.5;
-  height: 20vw;
   margin: 0.5vw;
   border-radius: 2em;
   overflow: hidden;
   transition: 0.2s;
 
   @media screen and (max-width: $tablet-cutoff) {
-    flex: 50%;
-    max-width: calc(50% - 1vw);
-    height: 20em;
+    flex: calc(1% * var(--flex-small));
+    max-width: calc(1% * var(--flex-small) - 1vw);
+    height: calc(1vw * var(--flex-small) / 1.5);
   }
 
   @media screen and (max-width: $mobile-cutoff) {
     flex: 100%;
     max-width: 100%;
+    height: calc(100vw / 1.2);
     box-shadow: none;
     margin: 0.5em 0;
   }

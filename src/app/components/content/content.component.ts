@@ -327,10 +327,14 @@ export class ContentComponent {
     new InfoGroup('Experience', this.experience),
     new InfoGroup('Projects', this.projects),
     new InfoGroup('Videos', this.videos),
-    new InfoGroup('Programming Languages', this.languages),
-    new InfoGroup('Courses', this.courses),
+    new InfoGroup('Programming Languages', this.languages, 4, 3),
+    new InfoGroup('Courses', this.courses, 4, 3),
     new InfoGroup('Clubs', this.clubs),
     new InfoGroup('Hackathons', this.hackathons),
-    new InfoGroup('Hobbies & Other Interests', this.hobbies),
+    new InfoGroup('Hobbies & Other Interests', this.hobbies, 4, 3),
   ];
+
+  getFlexPercentage(columnCount: number): number {
+    return 100 / columnCount;
+  }
 }
