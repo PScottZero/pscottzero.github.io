@@ -1,16 +1,16 @@
 <div *ngFor="let infoGroup of pageData">
   <div class="section-title">
-    <p>{{ infoGroup.title }}</p>
+    <p>{{ infoGroup.groupName }}</p>
   </div>
   <div class="info-group">
     <app-info
-      *ngFor="let info of infoGroup.infoArray"
+      *ngFor="let info of infoGroup.groupContent"
       [title]="info.title"
       [description]="info.description"
-      [image]="info.backgroundImage"
-      [link]="info.projectLink"
-      [style.--flex-large]="getFlexPercentage(infoGroup.columnCountLarge)"
-      [style.--flex-small]="getFlexPercentage(infoGroup.columnCountSmall)"
+      [img]="'assets/images/' + infoGroup.groupImgDir + '/' + info.img"
+      [link]="info.link"
+      [style.--flex-large]="getLargeFlex(infoGroup.columnCount)"
+      [style.--flex-small]="getSmallFlex(infoGroup.columnCount)"
     >
     </app-info>
   </div>

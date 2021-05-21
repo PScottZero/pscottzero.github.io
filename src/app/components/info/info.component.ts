@@ -9,13 +9,17 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 export class InfoComponent {
   @Input() title: string;
   @Input() description: string;
-  @Input() image: string;
+  @Input() img: string;
   @Input() link: string;
 
-  open(link: string) {
+  open(link: string): void {
     if (link) {
       window.open(link, '_blank');
     }
+  }
+
+  isVideo(): boolean {
+    return this.link !== undefined && this.link.includes('youtube');
   }
 }
 

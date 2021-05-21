@@ -1,8 +1,8 @@
 <div
-  *ngIf="!image.includes('youtube')"
+  *ngIf="!isVideo()"
   class="info"
   [ngStyle]="{
-    background: 'url(' + image + ') center',
+    background: 'url(' + img + ') center',
     'background-size': 'cover'
   }"
   [class.info-link]="link !== undefined"
@@ -20,9 +20,9 @@
   </div>
 </div>
 
-<div *ngIf="image.includes('youtube')" class="info">
+<div *ngIf="isVideo()" class="info">
   <iframe
-    [src]="image | sanitize"
+    [src]="link | sanitize"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
   ></iframe>

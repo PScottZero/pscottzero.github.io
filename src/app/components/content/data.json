@@ -1,0 +1,407 @@
+[
+  {
+    "groupName": "Education",
+    "groupImgDir": "education",
+    "groupContent": [
+      {
+        "title": "University of Pennsylvania",
+        "img": "upenn.jpg",
+        "description": "MSE Computer and Information Science <br> Starting Fall 2021"
+      },
+      {
+        "title": "Penn State",
+        "img": "psu.jpg",
+        "description": "BS Computer Science, Minor in Math <br> GPA 3.98/4.00, Summa Cumme Laude <br> Schreyer Honors Scholar <br> Fall 2017 - Spring 2021"
+      },
+      {
+        "title": "Wissahickon High School",
+        "img": "whs.jpg",
+        "description": "Magna Cumme Laude <br> Fall 2013 - Spring 2017"
+      }
+    ]
+  },
+  {
+    "groupName": "Experience",
+    "groupImgDir": "experience",
+    "groupContent": [
+      {
+        "title": "ShopRunner",
+        "img": "shoprunner.jpg",
+        "description": "Software Engineer Intern, MBX Team <br> Summer 2021"
+      },
+      {
+        "title": "Undergraduate Research",
+        "img": "research.png",
+        "description": "<i>Automated Analysis of Information Flow Enforcement in PHP Program</i> <br> With Professor Danfeng Zhang and Peixuan Li <br> Fall 2020 - Spring 2021",
+        "link": "https://drive.google.com/file/d/1LutOnj9kyM6MvTPjfy1Qtdzqdu-7NE4-/view?usp=sharing"
+      },
+      {
+        "title": "Lockheed Martin",
+        "img": "orion.jpg",
+        "description": "Software Engineer Intern (Space) <br> Summer 2019/2020"
+      }
+    ]
+  },
+  {
+    "groupName": "Projects",
+    "groupImgDir": "projects",
+    "groupContent": [
+      {
+        "title": "PDP-1 Emulator",
+        "img": "pdp1.jpg",
+        "description": "February - March 2021",
+        "link": "https://pjs4.com/pdp1"
+      },
+      {
+        "title": "En Passant",
+        "img": "en_passant.jpg",
+        "description": "November 2020 - Present",
+        "link": "https://github.com/PScottZero/EnPassant"
+      },
+      {
+        "title": "MNIST Playground",
+        "img": "mnist.jpg",
+        "description": "September - October 2020",
+        "link": "https://pjs4.com/MNISTPlayground"
+      },
+      {
+        "title": "Gossamer",
+        "img": "gossamer.jpg",
+        "description": "September 2020",
+        "link": "https://github.com/PScottZero/Gossamer"
+      },
+      {
+        "title": "Qubit Playground",
+        "img": "qubit_playground.jpg",
+        "description": "July - August 2020",
+        "link": "https://pjs4.com/QubitPlayground"
+      },
+      {
+        "title": "Charcoal",
+        "img": "charcoal.jpg",
+        "description": "April 2020",
+        "link": "https://github.com/PScottZero/Charcoal"
+      },
+      {
+        "title": "Dot Matrix",
+        "img": "dotmatrix.jpg",
+        "description": "February - May 2020",
+        "link": "https://github.com/PScottZero/DotMatrix"
+      },
+      {
+        "title": "Toxicity",
+        "img": "toxicity.jpg",
+        "description": "October - December 2019",
+        "link": "https://pjs4.com/Toxicity"
+      }
+    ]
+  },
+  {
+    "groupName": "Videos",
+    "groupContent": [
+      {
+        "link": "https://www.youtube.com/embed/64P6tOwtl-0"
+      },
+      {
+        "link": "https://www.youtube.com/embed/2tUOiTtocoA"
+      }
+    ]
+  },
+  {
+    "groupName": "Programming Languages",
+    "groupImgDir": "languages",
+    "columnCount": 4,
+    "groupContent": [
+      {
+        "title": "Angular",
+        "img": "angular.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "C",
+        "img": "clang.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "C++",
+        "img": "cpp.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "C#",
+        "img": "csharp.svg",
+        "description": "Familiar"
+      },
+      {
+        "title": "Dart",
+        "img": "dart.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "Flutter",
+        "img": "flutter.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "HTML",
+        "img": "html.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "Java",
+        "img": "java.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "JavaScript",
+        "img": "javascript.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "Kotlin",
+        "img": "kotlin.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "MATLAB",
+        "img": "matlab.svg",
+        "description": "Familiar"
+      },
+      {
+        "title": "PHP",
+        "img": "php.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "Python",
+        "img": "python.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "Rust",
+        "img": "rust.svg",
+        "description": "Familiar"
+      },
+      {
+        "title": "Swift",
+        "img": "swift.png",
+        "description": "Proficient"
+      },
+      {
+        "title": "SQL",
+        "img": "sql.svg",
+        "description": "Familiar"
+      },
+      {
+        "title": "TensorFlow",
+        "img": "tensorflow.svg",
+        "description": "Familiar"
+      },
+      {
+        "title": "TypeScript",
+        "img": "typescript.svg",
+        "description": "Proficient"
+      }
+    ]
+  },
+  {
+    "groupName": "Courses",
+    "groupImgDir": "courses",
+    "columnCount": 4,
+    "groupContent": [
+      {
+        "title": "Applications Programming",
+        "img": "swift.png",
+        "description": "CMPSC 475, Fall 2020"
+      },
+      {
+        "title": "Computer Design",
+        "img": "computer_design.png",
+        "description": "CMPEN 331, Fall 2019"
+      },
+      {
+        "title": "Computer Vision",
+        "img": "computer_vision.jpg",
+        "description": "CMPEN 454, Spring 2020"
+      },
+      {
+        "title": "Data Structures & Algorithms",
+        "img": "data_structures.png",
+        "description": "CMPSC 465, Spring 2019"
+      },
+      {
+        "title": "Database Management Systems",
+        "img": "database.png",
+        "description": "CMPSC 431W, Spring 2020"
+      },
+      {
+        "title": "Machine Learning & AI",
+        "img": "robot.jpg",
+        "description": "CMPSC 448, Spring 2020"
+      },
+      {
+        "title": "Mathematical Logic",
+        "img": "lnt.svg",
+        "description": "MATH 457, Spring 2021"
+      },
+      {
+        "title": "Mathematical Statistics",
+        "img": "stat.png",
+        "description": "STAT 415, Fall 2019"
+      },
+      {
+        "title": "Matrix Algebra",
+        "img": "matrix.png",
+        "description": "MATH 441, Fall 2019"
+      },
+      {
+        "title": "Multivariable Calculus",
+        "img": "calculus.jpg",
+        "description": "MATH 230, Fall 2017"
+      },
+      {
+        "title": "Numerical Computations",
+        "img": "trapezoid.png",
+        "description": "MATH 451, Spring 2020"
+      },
+      {
+        "title": "Object-Oriented Programming",
+        "img": "oop.jpg",
+        "description": "CMPSC 221, Spring 2018"
+      },
+      {
+        "title": "Operating Systems",
+        "img": "os.png",
+        "description": "CMPSC 473, Fall 2019"
+      },
+      {
+        "title": "Probability Theory",
+        "img": "probability.png",
+        "description": "STAT 414, Spring 2019"
+      },
+      {
+        "title": "Programming Language Concepts",
+        "img": "lambda.png",
+        "description": "CMPSC 461, Fall 2019"
+      },
+      {
+        "title": "Quantum Mechanics and Quantum Computation",
+        "img": "quantum_computer.jpg",
+        "description": "CS-191x (BerkeleyX), Summer 2020",
+        "link": "https://courses.edx.org/certificates/a7a842fb46834ea4b9459b44583f3e23"
+      },
+      {
+        "title": "Systems Programming",
+        "img": "clang.svg",
+        "description": "CMPSC 311, Fall 2018"
+      },
+      {
+        "title": "Technical Writing",
+        "img": "writing.jpg",
+        "description": "ENGL 202C, Spring 2019"
+      },
+      {
+        "title": "Theory of Computation",
+        "img": "turing_machine.jpg",
+        "description": "CMPSC 464, Spring 2020"
+      }
+    ]
+  },
+  {
+    "groupName": "Clubs",
+    "groupImgDir": "clubs",
+    "groupContent": [
+      {
+        "title": "HackPSU",
+        "img": "hackpsu.png",
+        "description": "Tech Team - Frontend, Spring 2020 - Spring 2021"
+      },
+      {
+        "title": "Lunar Lion",
+        "img": "lunar.png",
+        "description": "Avionics Lead, Fall 2018 - Spring 2021"
+      },
+      {
+        "title": "ACM",
+        "img": "acm.jpg",
+        "description": "Competitive Programming, Fall 2018"
+      }
+    ]
+  },
+  {
+    "groupName": "Hackathons",
+    "groupImgDir": "hackathons",
+    "groupContent": [
+      {
+        "title": "CodePSU",
+        "img": "codepsu.png",
+        "description": "Spring 2019"
+      },
+      {
+        "title": "HackPSU",
+        "img": "hackpsu.png",
+        "description": "Spring and Fall 2018"
+      },
+      {
+        "title": "ICPC",
+        "img": "icpc.png",
+        "description": "Fall 2018"
+      }
+    ]
+  },
+  {
+    "groupName": "Hobbies",
+    "groupImgDir": "hobbies",
+    "columnCount": 4,
+    "groupContent": [
+      {
+        "title": "Aviation",
+        "img": "a350.jpg"
+      },
+      {
+        "title": "Bass",
+        "img": "bass.jpg"
+      },
+      {
+        "title": "Coin Collecting",
+        "img": "coins.jpg"
+      },
+      {
+        "title": "Electric Cars",
+        "img": "tesla.jpg"
+      },
+      {
+        "title": "Guitar",
+        "img": "lespaul.jpg"
+      },
+      {
+        "title": "Piano",
+        "img": "piano.jpg"
+      },
+      {
+        "title": "Records",
+        "img": "remaininlight.jpg"
+      },
+      {
+        "title": "Retro Tech",
+        "img": "pdp1.jpg"
+      },
+      {
+        "title": "Roller Coasters",
+        "img": "skyrush.jpg"
+      },
+      {
+        "title": "Space Flight",
+        "img": "starship.jpg"
+      },
+      {
+        "title": "Trains",
+        "img": "shinkansen.jpg"
+      },
+      {
+        "title": "Ukulele",
+        "img": "ukulele.jpg"
+      }
+    ]
+  }
+]
