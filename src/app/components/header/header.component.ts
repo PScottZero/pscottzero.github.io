@@ -37,7 +37,7 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   onScroll(): void {
     const header = document.getElementById('header');
-    if (window.pageYOffset > 0.1 || this.menuIsVisible) {
+    if (window.scrollY > 0 || this.menuIsVisible) {
       header.classList.add('header-scroll');
     } else {
       header.classList.remove('header-scroll');
