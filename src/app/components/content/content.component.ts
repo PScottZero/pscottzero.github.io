@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import pageDataJSON from './data.json';
+import pageDataJSON from '../../../assets/data.json';
 
 @Component({
   selector: 'app-content',

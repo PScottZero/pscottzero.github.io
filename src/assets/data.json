@@ -6,12 +6,12 @@
       {
         "title": "University of Pennsylvania",
         "img": "upenn.jpg",
-        "description": "MSE Computer and Information Science <br> Starting Fall 2021"
+        "description": "MSE Computer and Information Science <br> Starting August 2021"
       },
       {
         "title": "Penn State",
         "img": "psu.jpg",
-        "description": "BS Computer Science, Minor in Math <br> GPA 3.98/4.00, Summa Cumme Laude <br> Schreyer Honors Scholar <br> Fall 2017 - Spring 2021"
+        "description": "BS Computer Science, Math Minor <br> GPA 3.98/4.00, Summa Cumme Laude <br> Schreyer Honors Scholar <br> August 2017 - May 2021"
       },
       {
         "title": "Wissahickon High School",
@@ -55,7 +55,7 @@
       {
         "title": "En Passant",
         "img": "en_passant.jpg",
-        "description": "November 2020 - Present",
+        "description": "November 2020 - April 2021",
         "link": "https://github.com/PScottZero/EnPassant"
       },
       {
@@ -205,29 +205,52 @@
     ]
   },
   {
-    "groupName": "Courses",
+    "groupName": "Graduate Courses",
+    "groupImgDir": "courses",
+    "columnCount": 3,
+    "groupContent": [
+      {
+        "title": "Theory of Computation",
+        "img": "theory_of_computation.svg",
+        "description": "CIS 511, Fall 2021"
+      },
+      {
+        "title": "Machine Learning",
+        "img": "machine_learning.svg",
+        "description": "CIS 520, Fall 2021"
+      },
+      {
+        "title": "Artificial Intelligence",
+        "img": "ai.svg",
+        "description": "CIS 521, Fall 2021"
+      }
+    ]
+  },
+  {
+    "groupName": "Undergraduate Courses",
     "groupImgDir": "courses",
     "columnCount": 4,
     "groupContent": [
+      {
+        "title": "Mathematical Logic",
+        "img": "lnt.svg",
+        "description": "MATH 457, Spring 2021"
+      },
       {
         "title": "Applications Programming",
         "img": "swift.png",
         "description": "CMPSC 475, Fall 2020"
       },
       {
-        "title": "Computer Design",
-        "img": "computer_design.png",
-        "description": "CMPEN 331, Fall 2019"
+        "title": "Quantum Mechanics and Quantum Computation",
+        "img": "quantum_computer.jpg",
+        "description": "CS-191x (BerkeleyX), Summer 2020",
+        "link": "https://courses.edx.org/certificates/a7a842fb46834ea4b9459b44583f3e23"
       },
       {
         "title": "Computer Vision",
         "img": "computer_vision.jpg",
         "description": "CMPEN 454, Spring 2020"
-      },
-      {
-        "title": "Data Structures & Algorithms",
-        "img": "data_structures.png",
-        "description": "CMPSC 465, Spring 2019"
       },
       {
         "title": "Database Management Systems",
@@ -240,24 +263,9 @@
         "description": "CMPSC 448, Spring 2020"
       },
       {
-        "title": "Mathematical Logic",
-        "img": "lnt.svg",
-        "description": "MATH 457, Spring 2021"
-      },
-      {
-        "title": "Mathematical Statistics",
-        "img": "stat.png",
-        "description": "STAT 415, Fall 2019"
-      },
-      {
-        "title": "Matrix Algebra",
-        "img": "matrix.png",
-        "description": "MATH 441, Fall 2019"
-      },
-      {
-        "title": "Multivariable Calculus",
-        "img": "calculus.jpg",
-        "description": "MATH 230, Fall 2017"
+        "title": "Theory of Computation",
+        "img": "turing_machine.jpg",
+        "description": "CMPSC 464, Spring 2020"
       },
       {
         "title": "Numerical Computations",
@@ -265,19 +273,9 @@
         "description": "MATH 451, Spring 2020"
       },
       {
-        "title": "Object-Oriented Programming",
-        "img": "oop.jpg",
-        "description": "CMPSC 221, Spring 2018"
-      },
-      {
-        "title": "Operating Systems",
-        "img": "os.png",
-        "description": "CMPSC 473, Fall 2019"
-      },
-      {
-        "title": "Probability Theory",
-        "img": "probability.png",
-        "description": "STAT 414, Spring 2019"
+        "title": "Computer Design",
+        "img": "computer_design.png",
+        "description": "CMPEN 331, Fall 2019"
       },
       {
         "title": "Programming Language Concepts",
@@ -285,15 +283,24 @@
         "description": "CMPSC 461, Fall 2019"
       },
       {
-        "title": "Quantum Mechanics and Quantum Computation",
-        "img": "quantum_computer.jpg",
-        "description": "CS-191x (BerkeleyX), Summer 2020",
-        "link": "https://courses.edx.org/certificates/a7a842fb46834ea4b9459b44583f3e23"
+        "title": "Operating Systems",
+        "img": "os.png",
+        "description": "CMPSC 473, Fall 2019"
       },
       {
-        "title": "Systems Programming",
-        "img": "clang.svg",
-        "description": "CMPSC 311, Fall 2018"
+        "title": "Matrix Algebra",
+        "img": "matrix.png",
+        "description": "MATH 441, Fall 2019"
+      },
+      {
+        "title": "Mathematical Statistics",
+        "img": "stat.png",
+        "description": "STAT 415, Fall 2019"
+      },
+      {
+        "title": "Data Structures & Algorithms",
+        "img": "data_structures.png",
+        "description": "CMPSC 465, Spring 2019"
       },
       {
         "title": "Technical Writing",
@@ -301,9 +308,24 @@
         "description": "ENGL 202C, Spring 2019"
       },
       {
-        "title": "Theory of Computation",
-        "img": "turing_machine.jpg",
-        "description": "CMPSC 464, Spring 2020"
+        "title": "Probability Theory",
+        "img": "probability.png",
+        "description": "STAT 414, Spring 2019"
+      },
+      {
+        "title": "Systems Programming",
+        "img": "clang.svg",
+        "description": "CMPSC 311, Fall 2018"
+      },
+      {
+        "title": "Object-Oriented Programming",
+        "img": "oop.jpg",
+        "description": "CMPSC 221, Spring 2018"
+      },
+      {
+        "title": "Multivariable Calculus",
+        "img": "calculus.jpg",
+        "description": "MATH 230, Fall 2017"
       }
     ]
   },
@@ -325,27 +347,6 @@
         "title": "ACM",
         "img": "acm.jpg",
         "description": "Competitive Programming, Fall 2018"
-      }
-    ]
-  },
-  {
-    "groupName": "Hackathons",
-    "groupImgDir": "hackathons",
-    "groupContent": [
-      {
-        "title": "CodePSU",
-        "img": "codepsu.png",
-        "description": "Spring 2019"
-      },
-      {
-        "title": "HackPSU",
-        "img": "hackpsu.png",
-        "description": "Spring and Fall 2018"
-      },
-      {
-        "title": "ICPC",
-        "img": "icpc.png",
-        "description": "Fall 2018"
       }
     ]
   },
