@@ -185,6 +185,11 @@
         "description": "Proficient"
       },
       {
+        "title": "React",
+        "img": "react.svg",
+        "description": "Familiar"
+      },
+      {
         "title": "Rust",
         "img": "rust.svg",
         "description": "Familiar"
