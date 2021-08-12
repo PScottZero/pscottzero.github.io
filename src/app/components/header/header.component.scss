@@ -1,4 +1,4 @@
-@import '../../../variables';
+@import '../../styles/variables.scss';
 
 header {
   z-index: 2;
@@ -36,14 +36,9 @@ nav {
   background: $header-color;
   backdrop-filter: blur(10px);
 
-  a {
-    text-shadow: none !important;
-  }
-
   /* firefox only */
   @-moz-document url-prefix() {
     background: $header-color-firefox !important;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
   }
 }
 
