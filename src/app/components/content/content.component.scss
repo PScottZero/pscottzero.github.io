@@ -1,53 +1,60 @@
 @import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
-.info-group {
-  display: flex;
-  box-sizing: border-box;
-  margin: auto;
-  max-width: 100%;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-
-  @media screen and (min-width: $mobile-cutoff) {
-    padding: 1vw;
+.content {
+  @include largerThanPhone {
+    padding: 0.5rem 1rem 0 1rem;
   }
 }
 
-.section-title {
-  padding: 2em 0 0.3em 0;
-  font-size: 42px;
-  color: whitesmoke;
-  overflow: hidden;
+.info-group {
+  @include flexCenter;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100% !important;
+}
 
-  @media screen and (max-width: $mobile-cutoff) {
-    padding: 1em;
+.section-title {
+  box-sizing: border-box;
+  font-size: 42px;
+  border: 2px solid $primary-color;
+  color: #a0bfeb;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 1rem 0.5vw;
+  width: calc(100% - 1vw);
+
+  @include phone {
+    padding: 1rem;
     font-size: 32px;
+    border-radius: 1.5rem;
   }
 }
 
 app-info {
   position: relative;
-  flex: calc(1% * var(--flex-large));
-  max-width: calc(1% * var(--flex-large) - 1vw);
-  height: calc(1vw * var(--flex-large) / 1.5);
   line-height: 1.5;
   margin: 0.5vw;
   border-radius: 2em;
   overflow: hidden;
   transition: 0.2s;
 
-  @media screen and (max-width: $tablet-cutoff) {
+  @include largerThanPhone {
+    flex: calc(1% * var(--flex-large));
+    max-width: calc(1% * var(--flex-large) - 1vw);
+    height: calc(1vw * var(--flex-large) / 1.5);
+  }
+
+  @include tablet {
     flex: calc(1% * var(--flex-small));
     max-width: calc(1% * var(--flex-small) - 1vw);
     height: calc(1vw * var(--flex-small) / 1.5);
   }
 
-  @media screen and (max-width: $mobile-cutoff) {
+  @include phone {
     flex: 100%;
     max-width: 100%;
     height: calc(100vw / 1.2);
-    box-shadow: none;
     margin: 0.5em 0;
   }
 }

@@ -1,4 +1,5 @@
 @import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 #header-background {
   box-sizing: border-box;
@@ -6,8 +7,11 @@
   height: auto;
   border-radius: 0 0 3em 3em;
   padding: calc(12vh + 2em) 0 12vh 0;
+  background: url('../../../assets/images/header.jpg') center;
+  background-size: cover;
+  background-repeat: none;
 
-  @media screen and (max-width: $mobile-cutoff) {
+  @include phone {
     padding: 4em 0 1em 0;
   }
 }
@@ -29,7 +33,6 @@
   #about {
     margin-top: 0.5em;
     font-size: 2.5vh;
-    color: white;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    color: #101010;
   }
 }

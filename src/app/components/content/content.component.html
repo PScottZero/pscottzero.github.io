@@ -1,18 +1,20 @@
-<div *ngFor="let infoGroup of pageData">
-  <div class="section-title">
-    <p>{{ infoGroup.groupName }}</p>
-  </div>
-  <div class="info-group">
-    <app-info
-      *ngFor="let info of infoGroup.groupContent"
-      [title]="info.title"
-      [description]="info.description"
-      [img]="'assets/images/' + infoGroup.groupImgDir + '/' + info.img"
-      [link]="info.link"
-      [style.--flex-large]="getLargeFlex(infoGroup.columnCount)"
-      [style.--flex-small]="getSmallFlex(infoGroup.columnCount)"
-    >
-    </app-info>
+<div class="content">
+  <div *ngFor="let infoGroup of pageData">
+    <div class="section-title">
+      <p>{{ infoGroup.groupName }}</p>
+    </div>
+    <div class="info-group">
+      <app-info
+        *ngFor="let info of infoGroup.groupContent"
+        [title]="info.title"
+        [description]="info.description"
+        [img]="'assets/images/' + infoGroup.groupImgDir + '/' + info.img"
+        [link]="info.link"
+        [style.--flex-large]="getLargeFlex(infoGroup.columnCount)"
+        [style.--flex-small]="getSmallFlex(infoGroup.columnCount)"
+      >
+      </app-info>
+    </div>
   </div>
 </div>
 <app-footer></app-footer>

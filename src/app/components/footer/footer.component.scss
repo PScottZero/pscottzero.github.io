@@ -1,9 +1,8 @@
 @import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .footer {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  @include flexCenter;
   flex-direction: column;
   height: $footer-height;
   line-height: 1.5;
@@ -12,7 +11,7 @@
   font-size: 20px;
 
   a {
-    color: cornflowerblue;
+    color: $primary-color;
     text-decoration: none;
   }
 }
