@@ -3,15 +3,22 @@
 
 .footer {
   @include flexCenter;
+  @include blueBorder;
   flex-direction: column;
-  height: $footer-height;
   line-height: 1.5;
-  color: $footer-text-color;
   font-weight: bold;
-  font-size: 20px;
+  padding: 2rem;
+  font-size: $font-medium;
+  width: calc(100% - 1vw);
+  margin: 0.5vw auto;
+
+  @include phone {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
 
   a {
-    color: $primary-color;
+    color: white;
     text-decoration: none;
   }
 }

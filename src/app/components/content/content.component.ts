@@ -23,4 +23,8 @@ export class ContentComponent {
     }
     return 100 / 2;
   }
+
+  sectionTitleTopMargin(index: number): string {
+    return index === 0 ? '0' : '0.5vw';
+  }
 }
