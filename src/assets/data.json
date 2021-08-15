@@ -118,7 +118,6 @@
     "groupName": "Programming Languages",
     "groupImgDir": "languages",
     "columnCount": 4,
-    "shrinkForMobile": true,
     "groupContent": [
       {
         "title": "Angular",

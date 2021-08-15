@@ -11,7 +11,6 @@ export class InfoComponent {
   @Input() description: string;
   @Input() img: string;
   @Input() link: string;
-  @Input() hideDescription: boolean;
 
   open(link: string): void {
     if (link) {

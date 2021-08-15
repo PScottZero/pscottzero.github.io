@@ -8,7 +8,7 @@
   [class.info-link]="link !== undefined"
   (click)="open(link)"
 >
-  <div class="description" *ngIf="hideDescription">
+  <div class="description">
     <h1>{{ title }}</h1>
     <div [innerHTML]="description"></div>
     <img
