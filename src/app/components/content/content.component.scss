@@ -24,7 +24,6 @@
   font-size: $font-large;
   padding: 2rem;
   margin: 0.5vw;
-  width: calc(100% - 1vw);
 
   @include phone {
     padding: 1rem;
@@ -37,7 +36,7 @@ app-info {
   position: relative;
   line-height: 1.5;
   margin: 0.5vw;
-  border-radius: 2em;
+  border-radius: 2rem;
   overflow: hidden;
   transition: 0.2s;
 
