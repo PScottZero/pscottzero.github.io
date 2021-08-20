@@ -5,24 +5,24 @@
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  border-radius: 0 0 3em 3em;
-  padding: calc(12vh + 2em) 0 12vh 0;
+  border-radius: 0 0 3rem 3rem;
+  padding: calc(12vh + 2rem) 0 12vh 0;
   background: url('../../../assets/images/header.jpg') center;
   background-size: cover;
   background-repeat: none;
 
   @include phone {
-    padding: 4em 0 1em 0;
+    padding: 4rem 0 1rem 0;
   }
 }
 
 #header-info {
   margin: auto;
   box-sizing: border-box;
-  max-width: 64em;
+  max-width: 64rem;
   width: 100%;
   height: auto;
-  padding: 2em;
+  padding: 2rem;
   line-height: 1.5;
 
   img {
@@ -31,7 +31,7 @@
   }
 
   #about {
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
     font-size: 2.5vh;
     color: $body-color;
   }
