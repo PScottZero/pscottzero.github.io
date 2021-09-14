@@ -48,9 +48,15 @@
     "groupImgDir": "projects",
     "groupContent": [
       {
+        "title": "Numismatic Coin Collecting App",
+        "img": "numismatic.jpg",
+        "description": "August 2021 - Present",
+        "link": "https://github.com/PScottZero/Numismatic"
+      },
+      {
         "title": "Mario Kart 8 Kart Optimizer",
         "img": "kart-optimizer.jpg",
-        "description": "July 2021 - Present",
+        "description": "July - August 2021",
         "link": "http://pjs4.com/kart-optimizer"
       },
       {

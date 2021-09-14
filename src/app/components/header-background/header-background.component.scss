@@ -6,10 +6,8 @@
   width: 100%;
   height: auto;
   border-radius: 0 0 3rem 3rem;
-  padding: calc(12vh + 2rem) 0 12vh 0;
-  background: url('../../../assets/images/header.jpg') center;
-  background-size: cover;
-  background-repeat: none;
+  padding: calc(10vh + 2rem) 0 10vh 0;
+  background: linear-gradient(to right, #00d5ff, #5cff82);
 
   @include phone {
     padding: 4rem 0 1rem 0;
@@ -27,7 +25,9 @@
 
   img {
     height: 24vh;
-    border-radius: 50%;
+    border-radius: 25%;
+    margin-bottom: 1rem;
+    border: solid 4px $body-color;
   }
 
   #about {
