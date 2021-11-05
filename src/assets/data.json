@@ -13,11 +13,6 @@
         "img": "psu.jpg",
         "description": "BS Computer Science, Math Minor <br> GPA 3.98/4.00, Summa Cumme Laude <br> Schreyer Honors Scholar <br> August 2017 - May 2021",
         "link": "https://drive.google.com/file/d/1dIxfRqGWENmOSOC6zmntMHqLMxq6WNmk/view?usp=sharing"
-      },
-      {
-        "title": "Wissahickon High School",
-        "img": "whs.jpg",
-        "description": "Magna Cumme Laude <br> Fall 2013 - Spring 2017"
       }
     ]
   },
@@ -386,10 +381,6 @@
         "img": "coins.jpg"
       },
       {
-        "title": "Electric Cars",
-        "img": "tesla.jpg"
-      },
-      {
         "title": "Guitar",
         "img": "lespaul.jpg"
       },
@@ -410,12 +401,12 @@
         "img": "skyrush.jpg"
       },
       {
-        "title": "Space Flight",
-        "img": "starship.jpg"
+        "title": "Space Exploration",
+        "img": "curiosity.jpg"
       },
       {
         "title": "Trains",
-        "img": "shinkansen.jpg"
+        "img": "acela.jpg"
       },
       {
         "title": "Ukulele",
