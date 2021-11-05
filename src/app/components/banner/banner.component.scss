@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
-#header-background {
+#banner {
   box-sizing: border-box;
   width: 100%;
   height: auto;
@@ -14,7 +14,7 @@
   }
 }
 
-#header-info {
+#profile {
   margin: auto;
   box-sizing: border-box;
   max-width: 64rem;
