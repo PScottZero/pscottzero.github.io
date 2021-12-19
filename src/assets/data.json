@@ -116,7 +116,7 @@
     ]
   },
   {
-    "groupName": "Programming Languages",
+    "groupName": "Programming Languages & Tools",
     "groupImgDir": "languages",
     "columnCount": 4,
     "groupContent": [
@@ -186,6 +186,11 @@
         "description": "Proficient"
       },
       {
+        "title": "PyTorch",
+        "img": "pytorch.svg",
+        "description": "Familiar"
+      },
+      {
         "title": "React",
         "img": "react.svg",
         "description": "Familiar"
@@ -222,6 +227,21 @@
     "groupImgDir": "courses",
     "columnCount": 3,
     "groupContent": [
+      {
+        "title": "Deep Learning",
+        "img": "cnn.svg",
+        "description": "CIS 522, Spring 2022"
+      },
+      {
+        "title": "Big Data Analytics",
+        "img": "big_data.svg",
+        "description": "CIS 545, Spring 2022"
+      },
+      {
+        "title": "Interactive Fiction and Text Generation",
+        "img": "interactive_fiction.svg",
+        "description": "CIS 700, Spring 2022"
+      },
       {
         "title": "Theory of Computation",
         "img": "theory_of_computation.svg",
