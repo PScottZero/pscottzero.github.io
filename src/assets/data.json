@@ -122,73 +122,59 @@
     "groupContent": [
       {
         "title": "Angular",
-        "img": "angular.svg",
-        "description": "Proficient"
+        "img": "angular.svg"
       },
       {
         "title": "C",
-        "img": "clang.svg",
-        "description": "Proficient"
+        "img": "clang.svg"
       },
       {
         "title": "C++",
-        "img": "cpp.svg",
-        "description": "Proficient"
+        "img": "cpp.svg"
       },
       {
         "title": "C#",
-        "img": "csharp.svg",
-        "description": "Familiar"
+        "img": "csharp.svg"
       },
       {
         "title": "Dart",
-        "img": "dart.svg",
-        "description": "Proficient"
+        "img": "dart.svg"
       },
       {
         "title": "Flutter",
-        "img": "flutter.svg",
-        "description": "Proficient"
+        "img": "flutter.svg"
       },
       {
         "title": "HTML",
-        "img": "html.svg",
-        "description": "Proficient"
+        "img": "html.svg"
       },
       {
         "title": "Java",
-        "img": "java.svg",
-        "description": "Proficient"
+        "img": "java.svg"
       },
       {
         "title": "JavaScript",
-        "img": "javascript.svg",
-        "description": "Proficient"
+        "img": "javascript.svg"
       },
       {
         "title": "Kotlin",
-        "img": "kotlin.svg",
-        "description": "Proficient"
+        "img": "kotlin.svg"
       },
       {
         "title": "MATLAB",
-        "img": "matlab.svg",
-        "description": "Familiar"
+        "img": "matlab.svg"
       },
       {
         "title": "PHP",
-        "img": "php.svg",
-        "description": "Proficient"
+        "img": "php.svg"
       },
       {
         "title": "Python",
-        "img": "python.svg",
-        "description": "Proficient"
+        "img": "python.svg"
       },
       {
         "title": "PyTorch",
-        "img": "pytorch.svg",
-        "description": "Familiar"
+        "img": "pytorch.svg"
       },
       {
         "title": "React",
@@ -197,28 +183,23 @@
       },
       {
         "title": "Rust",
-        "img": "rust.svg",
-        "description": "Familiar"
+        "img": "rust.svg"
       },
       {
         "title": "Swift",
-        "img": "swift.png",
-        "description": "Proficient"
+        "img": "swift.png"
       },
       {
         "title": "SQL",
-        "img": "sql.svg",
-        "description": "Familiar"
+        "img": "sql.svg"
       },
       {
         "title": "TensorFlow",
-        "img": "tensorflow.svg",
-        "description": "Familiar"
+        "img": "tensorflow.svg"
       },
       {
         "title": "TypeScript",
-        "img": "typescript.svg",
-        "description": "Proficient"
+        "img": "typescript.svg"
       }
     ]
   },
