@@ -1,9 +1,11 @@
 /* colors */
-$body-color: #101010;
+$body-color: #222;
 $footer-text-color: #999999;
 $primary-color: #00d5ff;
 $header-color: linear-gradient(to right, #00d5ffcc, #5cff82cc);
+$title-gradient: linear-gradient(to right, #00d5ff, #5cff82);
 $description-background: #00000099;
+$shadow: 5px 5px 20px rgba(0, 0, 0, 0.75);
 
 /* font */
 $font-large: 36px;

@@ -3,14 +3,15 @@
 
 .footer {
   @include flexCenter;
-  @include blueBorder;
+  @include gradientBackground;
   flex-direction: column;
   line-height: 1.5;
   font-weight: bold;
   padding: 4rem;
   font-size: $font-medium;
-  width: calc(100% - 1vw);
-  margin: 0.5vw auto;
+  width: calc(100% - 2vw);
+  margin: 1vw;
+  border-radius: 2rem;
 
   @include phone {
     width: 100%;
@@ -21,6 +22,7 @@
 
   a {
     color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
     text-decoration: none;
   }
 }

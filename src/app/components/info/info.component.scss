@@ -28,6 +28,7 @@ iframe {
   background: $description-background;
   text-align: center;
   color: white;
+  backdrop-filter: blur(10px);
 
   @include phone {
     font-size: 14px;

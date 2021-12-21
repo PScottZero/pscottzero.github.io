@@ -20,10 +20,11 @@
 }
 
 .section-title {
-  @include blueBorder;
+  @include gradientBackground;
   font-size: $font-large;
   padding: 2rem;
-  margin: 0.5vw;
+  margin: 1vw;
+  border-radius: 10rem;
 
   @include phone {
     padding: 1rem;
@@ -35,20 +36,21 @@
 app-info {
   position: relative;
   line-height: 1.5;
-  margin: 0.5vw;
+  margin: 1vw;
   border-radius: 2rem;
   overflow: hidden;
   transition: 0.2s;
+  box-shadow: $shadow;
 
   @include largerThanPhone {
     flex: calc(1% * var(--flex-large));
-    max-width: calc(1% * var(--flex-large) - 1vw);
+    max-width: calc(1% * var(--flex-large) - 2vw);
     height: calc(1vw * var(--flex-large) / 1.5);
   }
 
   @include tablet {
     flex: calc(1% * var(--flex-small));
-    max-width: calc(1% * var(--flex-small) - 1vw);
+    max-width: calc(1% * var(--flex-small) - 2vw);
     height: calc(1vw * var(--flex-small) / 1.5);
   }
 

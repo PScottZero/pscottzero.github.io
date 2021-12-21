@@ -24,9 +24,9 @@
   align-items: center;
 }
 
-@mixin blueBorder {
+@mixin gradientBackground {
   box-sizing: border-box;
-  color: $primary-color;
-  border: 4px solid $primary-color;
-  border-radius: 2rem;
+  background: $title-gradient;
+  color: $body-color;
+  box-shadow: $shadow;
 }
