@@ -43,16 +43,16 @@
     "groupImgDir": "projects",
     "groupContent": [
       {
+        "title": "US Coin Classifier",
+        "img": "coin_classifier.jpg",
+        "description": "October 2021 - Present",
+        "link": "https://github.com/PScottZero/US-Coin-Classifier"
+      },
+      {
         "title": "Numismatic Coin Collecting App",
         "img": "numismatic.png",
         "description": "August 2021 - Present",
         "link": "https://github.com/PScottZero/Numismatic"
-      },
-      {
-        "title": "Mario Kart 8 Kart Optimizer",
-        "img": "kart-optimizer.jpg",
-        "description": "July - August 2021",
-        "link": "http://pjs4.com/kart-optimizer"
       },
       {
         "title": "PDP-1 Emulator",
@@ -73,12 +73,6 @@
         "link": "https://pjs4.com/MNISTPlayground"
       },
       {
-        "title": "Gossamer",
-        "img": "gossamer.jpg",
-        "description": "September 2020",
-        "link": "https://github.com/PScottZero/Gossamer"
-      },
-      {
         "title": "Qubit Playground",
         "img": "qubit_playground.jpg",
         "description": "July - August 2020",
@@ -95,12 +89,6 @@
         "img": "dotmatrix.jpg",
         "description": "February - May 2020",
         "link": "https://github.com/PScottZero/DotMatrix"
-      },
-      {
-        "title": "Toxicity",
-        "img": "toxicity.jpg",
-        "description": "October - December 2019",
-        "link": "https://pjs4.com/Toxicity"
       }
     ]
   },
@@ -344,27 +332,6 @@
     ]
   },
   {
-    "groupName": "Clubs",
-    "groupImgDir": "clubs",
-    "groupContent": [
-      {
-        "title": "HackPSU",
-        "img": "hackpsu.png",
-        "description": "Tech Team - Frontend, Spring 2020 - Spring 2021"
-      },
-      {
-        "title": "Lunar Lion",
-        "img": "lunar.png",
-        "description": "Avionics Lead, Fall 2018 - Spring 2021"
-      },
-      {
-        "title": "ACM",
-        "img": "acm.jpg",
-        "description": "Competitive Programming, Fall 2018"
-      }
-    ]
-  },
-  {
     "groupName": "Hobbies",
     "groupImgDir": "hobbies",
     "columnCount": 4,
@@ -403,15 +370,11 @@
       },
       {
         "title": "Space Exploration",
-        "img": "curiosity.jpg"
+        "img": "jwst.jpg"
       },
       {
         "title": "Trains",
-        "img": "acela.jpg"
-      },
-      {
-        "title": "Ukulele",
-        "img": "ukulele.jpg"
+        "img": "eurostar.jpg"
       }
     ]
   }
