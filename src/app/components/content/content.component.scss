@@ -20,11 +20,12 @@
 }
 
 .section-title {
-  @include gradientBackground;
   font-size: $font-large;
+  color: white;
   padding: 2rem;
   margin: 1vw;
-  border-radius: 10rem;
+  border-radius: 2rem;
+  background: $gradient;
 
   @include phone {
     padding: 1rem;
@@ -35,12 +36,13 @@
 
 app-info {
   position: relative;
+  box-sizing: border-box;
   line-height: 1.5;
   margin: 1vw;
   border-radius: 2rem;
   overflow: hidden;
   transition: 0.2s;
-  box-shadow: $shadow;
+  border: 4px solid #333;
 
   @include largerThanPhone {
     flex: calc(1% * var(--flex-large));

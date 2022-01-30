@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IconButton } from '../icon-button/IconButton';
 
 @Component({
@@ -30,16 +30,6 @@ export class HeaderComponent implements OnInit {
     const header = document.getElementById('header');
     header.classList.add('header-scroll');
     if (window.pageYOffset <= 0 && !this.menuIsVisible) {
-      header.classList.remove('header-scroll');
-    }
-  }
-
-  @HostListener('window:scroll', ['$event'])
-  onScroll(): void {
-    const header = document.getElementById('header');
-    if (window.scrollY > 0 || this.menuIsVisible) {
-      header.classList.add('header-scroll');
-    } else {
       header.classList.remove('header-scroll');
     }
   }

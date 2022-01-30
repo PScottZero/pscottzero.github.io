@@ -3,7 +3,8 @@
 
 .footer {
   @include flexCenter;
-  @include gradientBackground;
+  background: $gradient;
+  box-sizing: border-box;
   flex-direction: column;
   line-height: 1.5;
   font-weight: bold;
@@ -12,6 +13,7 @@
   width: calc(100% - 2vw);
   margin: 1vw;
   border-radius: 2rem;
+  color: white;
 
   @include phone {
     width: 100%;
@@ -21,8 +23,7 @@
   }
 
   a {
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.75);
+    color: #6eb5f0;
     text-decoration: none;
   }
 }

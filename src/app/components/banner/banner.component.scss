@@ -7,7 +7,8 @@
   height: auto;
   border-radius: 0 0 3rem 3rem;
   padding: calc(10vh + 2rem) 0 10vh 0;
-  background: linear-gradient(to right, #00d5ff, #5cff82);
+  background: $gradient;
+  margin-bottom: 1vw;
 
   @include phone {
     padding: 4rem 0 1rem 0;
@@ -27,12 +28,12 @@
     height: 20vh;
     border-radius: 25%;
     margin-bottom: 1rem;
-    border: solid 6px $body-color;
+    border: solid 4px white;
   }
 
   #about {
     margin-top: 0.5rem;
     font-size: 2.2vh;
-    color: $body-color;
+    color: white;
   }
 }

@@ -23,10 +23,3 @@
   justify-content: center;
   align-items: center;
 }
-
-@mixin gradientBackground {
-  box-sizing: border-box;
-  background: $title-gradient;
-  color: $body-color;
-  box-shadow: $shadow;
-}
