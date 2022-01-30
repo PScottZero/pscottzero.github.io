@@ -3,12 +3,12 @@
 
 button {
   height: 100%;
-  padding: 1rem;
+  padding: 0.75rem;
   background: transparent;
   border: none;
   outline: none;
   transition: 0.2s;
-  margin: 0 1rem;
+  margin: 0 0.75rem;
 
   img {
     float: top;
@@ -16,6 +16,8 @@ button {
   }
 
   @include largerThanPhone {
+    margin: 0 1rem;
+
     &:hover {
       cursor: pointer;
       filter: brightness(80%);
