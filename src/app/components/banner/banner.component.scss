@@ -8,10 +8,11 @@
   border-radius: 0 0 3rem 3rem;
   padding: calc(10vh + 2rem) 0 10vh 0;
   background: $gradient;
-  margin-bottom: 1vw;
+  margin-bottom: 0.5vw;
 
   @include phone {
     padding: 4rem 0 1rem 0;
+    border-radius: 0 0 2rem 2rem;
   }
 }
 

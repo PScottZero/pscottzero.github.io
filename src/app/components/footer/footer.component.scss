@@ -8,18 +8,16 @@
   flex-direction: column;
   line-height: 1.5;
   font-weight: bold;
-  padding: 4rem;
+  padding: 6rem;
   font-size: $font-medium;
-  width: calc(100% - 2vw);
-  margin: 1vw;
-  border-radius: 2rem;
+  border-radius: 3rem 3rem 0 0;
   color: white;
 
   @include phone {
     width: 100%;
-    margin: 0.5rem 0;
     padding: 4rem 2rem;
     font-size: $font-small;
+    border-radius: 2rem 2rem 0 0;
   }
 
   a {
