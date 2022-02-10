@@ -43,15 +43,21 @@
     "groupImgDir": "projects",
     "groupContent": [
       {
+        "title": "N-Gram Tweet Generator",
+        "img": "ngram.jpg",
+        "description": "January - February 2022",
+        "link": "https://github.com/PScottZero/ngram-tweets"
+      },
+      {
         "title": "US Coin Classifier",
         "img": "coin_classifier.jpg",
-        "description": "October 2021 - Present",
+        "description": "October 2021 - February 2022",
         "link": "https://github.com/PScottZero/US-Coin-Classifier"
       },
       {
         "title": "Numismatic Coin Collecting App",
         "img": "numismatic.png",
-        "description": "August 2021 - Present",
+        "description": "August 2021 - January 2022",
         "link": "https://github.com/PScottZero/Numismatic"
       },
       {
@@ -110,8 +116,8 @@
     ]
   },
   {
-    "groupName": "Programming Languages & Tools",
-    "groupImgDir": "languages",
+    "groupName": "Programming Languages & Skills",
+    "groupImgDir": "skills",
     "columnCount": 4,
     "groupContent": [
       {
@@ -153,6 +159,10 @@
       {
         "title": "JavaScript",
         "img": "javascript.svg"
+      },
+      {
+        "title": "Jupyter Notebook",
+        "img": "jupyter.svg"
       },
       {
         "title": "Kotlin",
