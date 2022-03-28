@@ -39,9 +39,15 @@
     ]
   },
   {
-    "groupName": "Projects",
+    "groupName": "ML/AI Projects",
     "groupImgDir": "projects",
     "groupContent": [
+      {
+        "title": "WGAN-GP",
+        "img": "wgan-gp.png",
+        "description": "February 2022 - Present",
+        "link": "https://github.com/PScottZero/wgan-gp" 
+      },
       {
         "title": "N-Gram Tweet Generator",
         "img": "ngram.jpg",
@@ -55,27 +61,15 @@
         "link": "https://github.com/PScottZero/US-Coin-Classifier"
       },
       {
-        "title": "Numismatic Coin Collecting App",
-        "img": "numismatic.png",
-        "description": "August 2021 - January 2022",
-        "link": "https://github.com/PScottZero/Numismatic"
-      },
-      {
         "title": "LSTM Stock Movement Predictor (CIS 520 Final Project)",
         "img": "lstm.jpg",
         "description": "November - December 2021",
         "link": "https://colab.research.google.com/drive/1uyr2Rugf2EjVsR0Q-xhPuaZpJt0XmWiQ?usp=sharing"
       },
       {
-        "title": "PDP-1 Emulator",
-        "img": "pdp1.jpg",
-        "description": "February - March 2021",
-        "link": "https://pjs4.com/pdp1"
-      },
-      {
         "title": "En Passant",
         "img": "en_passant.jpg",
-        "description": "November 2020 - Present",
+        "description": "November 2020 - June 2021",
         "link": "https://github.com/PScottZero/EnPassant"
       },
       {
@@ -83,6 +77,24 @@
         "img": "mnist.jpg",
         "description": "September - October 2020",
         "link": "https://pjs4.com/MNISTPlayground"
+      }
+    ]
+  },
+  {
+    "groupName": "Other Projects",
+    "groupImgDir": "projects",
+    "groupContent": [
+      {
+        "title": "Numismatic Coin Collecting App",
+        "img": "numismatic.png",
+        "description": "August 2021 - January 2022",
+        "link": "https://github.com/PScottZero/Numismatic"
+      },
+      {
+        "title": "PDP-1 Emulator",
+        "img": "pdp1.jpg",
+        "description": "February - March 2021",
+        "link": "https://pjs4.com/pdp1"
       },
       {
         "title": "Qubit Playground",
