@@ -137,6 +137,14 @@
         "img": "angular.svg"
       },
       {
+        "title": "Apache Spark",
+        "img": "apache_spark.svg"
+      },
+      {
+        "title": "AWS",
+        "img": "aws.svg"
+      },
+      {
         "title": "C",
         "img": "clang.svg"
       },
@@ -157,7 +165,7 @@
         "img": "git.svg"
       },
       {
-        "title": "GPT3",
+        "title": "GPT-3",
         "img": "gpt3.svg"
       },
       {
@@ -199,6 +207,10 @@
       {
         "title": "React",
         "img": "react.svg"
+      },
+      {
+        "title": "Scikit-Learn",
+        "img": "sklearn.svg"
       },
       {
         "title": "Swift",
@@ -378,6 +390,10 @@
       {
         "title": "Guitar",
         "img": "lespaul.jpg"
+      },
+      {
+        "title": "Movies",
+        "img": "mulholland_drive.jpg"
       },
       {
         "title": "Piano",
