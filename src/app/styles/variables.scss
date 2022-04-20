@@ -1,8 +1,9 @@
 /* colors */
-$body-color: black;
-$gradient-transparent: linear-gradient(to right, #004f99cc, #008545cc);
-$gradient: linear-gradient(to right, #004f99, #008545);
+$body-color: #111;
+$gradient-transparent: linear-gradient(to right, #0055ffcc, #00d66bcc);
+$gradient: linear-gradient(to right, #0055ff, #00d66b);
 $description-background: #000000bb;
+$box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
 
 /* font */
 $font-large: 36px;

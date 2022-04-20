@@ -1,8 +1,8 @@
 [
   {
     "groupName": "Education",
-    "groupImgDir": "education",
-    "groupContent": [
+    "imgDir": "education",
+    "content": [
       {
         "title": "University of Pennsylvania",
         "img": "upenn_winter.jpg",
@@ -18,8 +18,8 @@
   },
   {
     "groupName": "Experience",
-    "groupImgDir": "experience",
-    "groupContent": [
+    "imgDir": "experience",
+    "content": [
       {
         "title": "ShopRunner",
         "img": "shoprunner.jpg",
@@ -40,12 +40,18 @@
   },
   {
     "groupName": "ML/AI Projects",
-    "groupImgDir": "projects",
-    "groupContent": [
+    "imgDir": "projects",
+    "content": [
+      {
+        "title": "DQN Reinforcement Learning for Atari Games",
+        "img": "atari.png",
+        "description": "April 2022",
+        "link": "https://github.com/PScottZero/Atari-Reinforcement-Learning"
+      },
       {
         "title": "WGAN-GP",
         "img": "wgan-gp.png",
-        "description": "February 2022 - Present",
+        "description": "February 2022 - March 2022",
         "link": "https://github.com/PScottZero/wgan-gp" 
       },
       {
@@ -82,8 +88,8 @@
   },
   {
     "groupName": "Other Projects",
-    "groupImgDir": "projects",
-    "groupContent": [
+    "imgDir": "projects",
+    "content": [
       {
         "title": "Numismatic Coin Collecting App",
         "img": "numismatic.png",
@@ -118,7 +124,7 @@
   },
   {
     "groupName": "Videos",
-    "groupContent": [
+    "content": [
       {
         "link": "https://www.youtube.com/embed/64P6tOwtl-0"
       },
@@ -129,9 +135,9 @@
   },
   {
     "groupName": "Skills",
-    "groupImgDir": "skills",
+    "imgDir": "skills",
     "columnCount": 4,
-    "groupContent": [
+    "content": [
       {
         "title": "Angular",
         "img": "angular.svg"
@@ -232,9 +238,9 @@
   },
   {
     "groupName": "Graduate Courses",
-    "groupImgDir": "courses",
+    "imgDir": "courses",
     "columnCount": 3,
-    "groupContent": [
+    "content": [
       {
         "title": "Deep Learning",
         "img": "cnn.svg",
@@ -269,9 +275,9 @@
   },
   {
     "groupName": "Undergraduate Courses",
-    "groupImgDir": "courses",
+    "imgDir": "courses",
     "columnCount": 4,
-    "groupContent": [
+    "content": [
       {
         "title": "Mathematical Logic",
         "img": "lnt.svg",
@@ -372,9 +378,9 @@
   },
   {
     "groupName": "Hobbies",
-    "groupImgDir": "hobbies",
+    "imgDir": "hobbies",
     "columnCount": 4,
-    "groupContent": [
+    "content": [
       {
         "title": "Aviation",
         "img": "a350.jpg"

@@ -27,6 +27,7 @@
   border-radius: 2rem;
   background: $gradient;
   box-sizing: border-box;
+  box-shadow: $box-shadow;
 
   @include phone {
     padding: 1rem;
@@ -43,7 +44,7 @@ app-info {
   border-radius: 2rem;
   overflow: hidden;
   transition: 0.2s;
-  border: 4px solid #333;
+  box-shadow: $box-shadow;
 
   @include largerThanPhone {
     flex: calc(1% * var(--flex-large));

@@ -5,10 +5,10 @@
     </div>
     <div class="info-group">
       <app-info
-        *ngFor="let info of infoGroup.groupContent"
+        *ngFor="let info of infoGroup.content"
         [title]="info.title"
         [description]="info.description"
-        [img]="'assets/images/' + infoGroup.groupImgDir + '/' + info.img"
+        [img]="'assets/images/' + infoGroup.imgDir + '/' + info.img"
         [link]="info.link"
         [style.--flex-large]="getLargeFlex(infoGroup.columnCount)"
         [style.--flex-small]="getSmallFlex(infoGroup.columnCount)"
