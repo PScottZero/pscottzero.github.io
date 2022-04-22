@@ -123,33 +123,10 @@
     ]
   },
   {
-    "groupName": "Videos",
-    "content": [
-      {
-        "link": "https://www.youtube.com/embed/64P6tOwtl-0"
-      },
-      {
-        "link": "https://www.youtube.com/embed/2tUOiTtocoA"
-      }
-    ]
-  },
-  {
-    "groupName": "Skills",
-    "imgDir": "skills",
+    "groupName": "Programming Languages",
+    "imgDir": "languages",
     "columnCount": 4,
     "content": [
-      {
-        "title": "Angular",
-        "img": "angular.svg"
-      },
-      {
-        "title": "Apache Spark",
-        "img": "apache_spark.svg"
-      },
-      {
-        "title": "AWS",
-        "img": "aws.svg"
-      },
       {
         "title": "C",
         "img": "clang.svg"
@@ -163,18 +140,6 @@
         "img": "dart.svg"
       },
       {
-        "title": "Flutter",
-        "img": "flutter.svg"
-      },
-      {
-        "title": "Git",
-        "img": "git.svg"
-      },
-      {
-        "title": "GPT-3",
-        "img": "gpt3.svg"
-      },
-      {
         "title": "HTML",
         "img": "html.svg"
       },
@@ -185,10 +150,6 @@
       {
         "title": "JavaScript",
         "img": "javascript.svg"
-      },
-      {
-        "title": "Jupyter Notebook",
-        "img": "jupyter.svg"
       },
       {
         "title": "Kotlin",
@@ -207,32 +168,149 @@
         "img": "python.svg"
       },
       {
-        "title": "PyTorch",
-        "img": "pytorch.svg"
+        "title": "Swift",
+        "img": "swift.png"
       },
       {
-        "title": "React",
-        "img": "react.svg"
+        "title": "TypeScript",
+        "img": "typescript.svg"
+      }
+    ]
+  },
+  {
+    "groupName": "Packages",
+    "imgDir": "packages",
+    "columnCount": 4,
+    "content": [
+      {
+        "title": "Beautiful Soup",
+        "img": "beautiful_soup.svg"
+      },
+      {
+        "title": "Matplotlib",
+        "img": "matplotlib.svg"
+      },
+      {
+        "title": "NumPy",
+        "img": "numpy.svg"
+      },
+      {
+        "title": "Pandas",
+        "img": "pandas.svg"
+      },
+      {
+        "title": "PySpark",
+        "img": "apache_spark.svg"
+      },
+      {
+        "title": "PyTorch",
+        "img": "pytorch.svg"
       },
       {
         "title": "Scikit-Learn",
         "img": "sklearn.svg"
       },
       {
-        "title": "Swift",
-        "img": "swift.png"
-      },
-      {
-        "title": "SQL",
-        "img": "sql.svg"
+        "title": "Seaborn",
+        "img": "seaborn.svg"
       },
       {
         "title": "TensorFlow",
         "img": "tensorflow.svg"
+      }
+    ]
+  },
+  {
+    "groupName": "ML/AI Skills",
+    "imgDir": "ml-ai-skills",
+    "columnCount": 4,
+    "content": [
+      {
+        "title": "Autoencoder",
+        "img": "autoencoder.bmp"
       },
       {
-        "title": "TypeScript",
-        "img": "typescript.svg"
+        "title": "Clustering",
+        "img": "kmeans.bmp"
+      },
+      {
+        "title": "CNN",
+        "img": "cnn.bmp"
+      },
+      {
+        "title": "Data Visualization",
+        "img": "data_visualization.bmp"
+      },
+      {
+        "title": "GAN",
+        "img": "gan.bmp"
+      },
+      {
+        "title": "Jupyter Notebook",
+        "img": "jupyter.svg"
+      },
+      {
+        "title": "KNN",
+        "img": "knn.bmp"
+      },
+      {
+        "title": "Linear Regression",
+        "img": "linear_regression.bmp"
+      },
+      {
+        "title": "Logistic Regression",
+        "img": "logistic_regression.bmp"
+      },
+      {
+        "title": "LSTM",
+        "img": "lstm.bmp"
+      },
+      {
+        "title": "Natural Language Processing",
+        "img": "nlp.bmp"
+      },
+      {
+        "title": "PCA",
+        "img": "pca.bmp"
+      },
+      {
+        "title": "Reinforcement Learning",
+        "img": "reinforcement_learning.bmp"
+      }
+    ]
+  },
+  {
+    "groupName": "Other Skills",
+    "imgDir": "other-skills",
+    "columnCount": 4,
+    "content": [
+      {
+        "title": "Angular",
+        "img": "angular.svg"
+      },
+      {
+        "title": "AWS",
+        "img": "aws.svg"
+      },
+      {
+        "title": "Flutter",
+        "img": "flutter.svg"
+      },
+      {
+        "title": "Git",
+        "img": "git.svg"
+      },
+      {
+        "title": "GPT-3",
+        "img": "gpt3.svg"
+      },
+      {
+        "title": "React",
+        "img": "react.svg"
+      },
+      {
+        "title": "SQL",
+        "img": "sql.svg"
       }
     ]
   },
@@ -373,6 +451,17 @@
         "title": "Multivariable Calculus",
         "img": "calculus.jpg",
         "description": "MATH 230, Fall 2017"
+      }
+    ]
+  },
+  {
+    "groupName": "Videos",
+    "content": [
+      {
+        "link": "https://www.youtube.com/embed/64P6tOwtl-0"
+      },
+      {
+        "link": "https://www.youtube.com/embed/2tUOiTtocoA"
       }
     ]
   },
