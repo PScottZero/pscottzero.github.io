@@ -6,7 +6,7 @@
       {
         "title": "University of Pennsylvania",
         "img": "upenn_winter.jpg",
-        "description": "MSE Computer and Information Science <br> GPA 3.67/4.00 <br> August 2021 - May 2023"
+        "description": "MSE Computer and Information Science <br> GPA 3.83/4.00 <br> August 2021 - May 2023"
       },
       {
         "title": "Penn State",
@@ -45,8 +45,20 @@
       {
         "title": "DQN Reinforcement Learning for Atari Games",
         "img": "atari.png",
-        "description": "April 2022",
+        "description": "April 2022 - Present",
         "link": "https://github.com/PScottZero/Atari-Reinforcement-Learning"
+      },
+      {
+        "title": "Piano Music Sentiment Classifier",
+        "img": "canon_in_d.png",
+        "description": "CIS 522 Final Project <br> March - April 2022",
+        "link": "https://colab.research.google.com/drive/1FPAd_H1OSF8BVLAmxVc_x5X6ZtMrItyR?usp=sharing"
+      },
+      {
+        "title": "US Car Accident Analysis and Severity Classification",
+        "img": "car_accidents.jpg",
+        "description": "CIS 545 Final Project <br> March - April 2022",
+        "link": "https://colab.research.google.com/drive/1qLpFrDaYhRxwQEgqsOrPQJq9zMOIlgt5?usp=sharing"
       },
       {
         "title": "WGAN-GP",
@@ -67,9 +79,9 @@
         "link": "https://github.com/PScottZero/US-Coin-Classifier"
       },
       {
-        "title": "LSTM Stock Movement Predictor (CIS 520 Final Project)",
+        "title": "LSTM Stock Movement Predictor",
         "img": "lstm.jpg",
-        "description": "November - December 2021",
+        "description": "CIS 520 Final Project <br> November - December 2021",
         "link": "https://colab.research.google.com/drive/1uyr2Rugf2EjVsR0Q-xhPuaZpJt0XmWiQ?usp=sharing"
       },
       {
@@ -115,7 +127,7 @@
         "link": "https://github.com/PScottZero/Charcoal"
       },
       {
-        "title": "Dot Matrix",
+        "title": "Dot Matrix (Game Boy Emulator)",
         "img": "dotmatrix.jpg",
         "description": "February - May 2020",
         "link": "https://github.com/PScottZero/DotMatrix"
