@@ -5,7 +5,7 @@
     "content": [
       {
         "title": "University of Pennsylvania",
-        "img": "upenn_winter.jpg",
+        "img": "upenn.jpg",
         "description": "MSE Computer and Information Science <br> GPA 3.83/4.00 <br> August 2021 - May 2023"
       },
       {
@@ -23,7 +23,7 @@
       {
         "title": "ShopRunner",
         "img": "shoprunner.jpg",
-        "description": "Software Engineer Intern, MBX Team <br> Summer 2021"
+        "description": "Software Engineer Intern, MBX+MAX Teams <br> Summer 2021/2022"
       },
       {
         "title": "Undergraduate Research",
@@ -162,6 +162,10 @@
       {
         "title": "JavaScript",
         "img": "javascript.svg"
+      },
+      {
+        "title": "Julia",
+        "img": "julia.svg"
       },
       {
         "title": "Kotlin",
@@ -332,6 +336,16 @@
     "columnCount": 3,
     "content": [
       {
+        "title": "Computer Graphics",
+        "img": "computer_graphics.svg",
+        "description": "CIS 560, Fall 2022"
+      },
+      {
+        "title": "Software Systems",
+        "img": "software_systems.svg",
+        "description": "CIS 505, Fall 2022"
+      },
+      {
         "title": "Deep Learning",
         "img": "cnn.svg",
         "description": "CIS 522, Spring 2022"
@@ -499,6 +513,10 @@
         "img": "lespaul.jpg"
       },
       {
+        "title": "Model Trains",
+        "img": "model_trains.jpg"
+      },
+      {
         "title": "Movies",
         "img": "mulholland_drive.jpg"
       },
@@ -512,7 +530,7 @@
       },
       {
         "title": "Retro Tech",
-        "img": "pdp1.jpg"
+        "img": "apple_iie.jpg"
       },
       {
         "title": "Roller Coasters",
@@ -524,7 +542,7 @@
       },
       {
         "title": "Trains",
-        "img": "eurostar.jpg"
+        "img": "thalys.jpg"
       }
     ]
   }
