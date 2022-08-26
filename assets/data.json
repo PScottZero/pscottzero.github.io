@@ -43,6 +43,18 @@
     "imgDir": "projects",
     "content": [
       {
+        "title": "Language Translation with Transformers",
+        "img": "translation.png",
+        "description": "August 2022",
+        "link": "https://github.com/PScottZero/transformer_translation"
+      },
+      {
+        "title": "CycleGAN TensorFlow Implementation",
+        "img": "cycle_gan.png",
+        "description": "July - August 2022",
+        "link": "https://github.com/PScottZero/cycle_gan"
+      },
+      {
         "title": "DQN Reinforcement Learning for Atari Games",
         "img": "atari.png",
         "description": "April 2022 - Present",
@@ -203,8 +215,16 @@
         "img": "beautiful_soup.svg"
       },
       {
+        "title": "Gradio",
+        "img": "gradio.svg"
+      },
+      {
         "title": "Matplotlib",
         "img": "matplotlib.svg"
+      },
+      {
+        "title": "NLTK",
+        "img": "nltk.svg"
       },
       {
         "title": "NumPy",
@@ -231,6 +251,10 @@
         "img": "seaborn.svg"
       },
       {
+        "title": "Stanza",
+        "img": "stanza.svg"
+      },
+      {
         "title": "TensorFlow",
         "img": "tensorflow.svg"
       }
@@ -252,6 +276,10 @@
       {
         "title": "CNN",
         "img": "cnn.bmp"
+      },
+      {
+        "title": "CycleGAN",
+        "img": "cycle_gan.jpg"
       },
       {
         "title": "Data Visualization",
@@ -292,6 +320,10 @@
       {
         "title": "Reinforcement Learning",
         "img": "reinforcement_learning.bmp"
+      },
+      {
+        "title": "Transformer",
+        "img": "transformer.png"
       }
     ]
   },
@@ -338,12 +370,12 @@
       {
         "title": "Computer Graphics",
         "img": "computer_graphics.svg",
-        "description": "CIS 560, Fall 2022"
+        "description": "CIS 5600, Fall 2022"
       },
       {
         "title": "Software Systems",
         "img": "software_systems.svg",
-        "description": "CIS 505, Fall 2022"
+        "description": "CIS 5050, Fall 2022"
       },
       {
         "title": "Deep Learning",
@@ -499,6 +531,10 @@
       {
         "title": "Aviation",
         "img": "a350.jpg"
+      },
+      {
+        "title": "Baking / Cooking",
+        "img": "cooking.jpg"
       },
       {
         "title": "Bass",
