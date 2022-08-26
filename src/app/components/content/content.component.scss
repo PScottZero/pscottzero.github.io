@@ -21,13 +21,12 @@
 
 .section-title {
   font-size: $font-large;
-  color: white;
+  color: $body-color;
   padding: 2rem;
   margin: 1vw;
   border-radius: 2rem;
-  background: $gradient;
+  background: $primary-color;
   box-sizing: border-box;
-  box-shadow: $box-shadow;
 
   @include phone {
     padding: 1rem;
@@ -44,7 +43,6 @@ app-info {
   border-radius: 2rem;
   overflow: hidden;
   transition: 0.2s;
-  box-shadow: $box-shadow;
 
   @include largerThanPhone {
     flex: calc(1% * var(--flex-large));

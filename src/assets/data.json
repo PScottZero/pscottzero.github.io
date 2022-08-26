@@ -5,7 +5,7 @@
     "content": [
       {
         "title": "University of Pennsylvania",
-        "img": "upenn_winter.jpg",
+        "img": "upenn.jpg",
         "description": "MSE Computer and Information Science <br> GPA 3.83/4.00 <br> August 2021 - May 2023"
       },
       {
@@ -23,7 +23,7 @@
       {
         "title": "ShopRunner",
         "img": "shoprunner.jpg",
-        "description": "Software Engineer Intern, MBX Team <br> Summer 2021"
+        "description": "Software Engineer Intern, MBX+MAX Teams <br> Summer 2021/2022"
       },
       {
         "title": "Undergraduate Research",
@@ -42,6 +42,18 @@
     "groupName": "ML/AI Projects",
     "imgDir": "projects",
     "content": [
+      {
+        "title": "Language Translation with Transformers",
+        "img": "translation.png",
+        "description": "August 2022",
+        "link": "https://github.com/PScottZero/transformer_translation"
+      },
+      {
+        "title": "CycleGAN TensorFlow Implementation",
+        "img": "cycle_gan.png",
+        "description": "July - August 2022",
+        "link": "https://github.com/PScottZero/cycle_gan"
+      },
       {
         "title": "DQN Reinforcement Learning for Atari Games",
         "img": "atari.png",
@@ -164,6 +176,10 @@
         "img": "javascript.svg"
       },
       {
+        "title": "Julia",
+        "img": "julia.svg"
+      },
+      {
         "title": "Kotlin",
         "img": "kotlin.svg"
       },
@@ -199,8 +215,16 @@
         "img": "beautiful_soup.svg"
       },
       {
+        "title": "Gradio",
+        "img": "gradio.svg"
+      },
+      {
         "title": "Matplotlib",
         "img": "matplotlib.svg"
+      },
+      {
+        "title": "NLTK",
+        "img": "nltk.svg"
       },
       {
         "title": "NumPy",
@@ -227,6 +251,10 @@
         "img": "seaborn.svg"
       },
       {
+        "title": "Stanza",
+        "img": "stanza.svg"
+      },
+      {
         "title": "TensorFlow",
         "img": "tensorflow.svg"
       }
@@ -248,6 +276,10 @@
       {
         "title": "CNN",
         "img": "cnn.bmp"
+      },
+      {
+        "title": "CycleGAN",
+        "img": "cycle_gan.jpg"
       },
       {
         "title": "Data Visualization",
@@ -288,6 +320,10 @@
       {
         "title": "Reinforcement Learning",
         "img": "reinforcement_learning.bmp"
+      },
+      {
+        "title": "Transformer",
+        "img": "transformer.png"
       }
     ]
   },
@@ -331,6 +367,16 @@
     "imgDir": "courses",
     "columnCount": 3,
     "content": [
+      {
+        "title": "Computer Graphics",
+        "img": "computer_graphics.svg",
+        "description": "CIS 5600, Fall 2022"
+      },
+      {
+        "title": "Software Systems",
+        "img": "software_systems.svg",
+        "description": "CIS 5050, Fall 2022"
+      },
       {
         "title": "Deep Learning",
         "img": "cnn.svg",
@@ -487,6 +533,10 @@
         "img": "a350.jpg"
       },
       {
+        "title": "Baking / Cooking",
+        "img": "cooking.jpg"
+      },
+      {
         "title": "Bass",
         "img": "bass.jpg"
       },
@@ -497,6 +547,10 @@
       {
         "title": "Guitar",
         "img": "lespaul.jpg"
+      },
+      {
+        "title": "Model Trains",
+        "img": "model_trains.jpg"
       },
       {
         "title": "Movies",
@@ -512,7 +566,7 @@
       },
       {
         "title": "Retro Tech",
-        "img": "pdp1.jpg"
+        "img": "apple_iie.jpg"
       },
       {
         "title": "Roller Coasters",
@@ -524,7 +578,7 @@
       },
       {
         "title": "Trains",
-        "img": "eurostar.jpg"
+        "img": "thalys.jpg"
       }
     ]
   }

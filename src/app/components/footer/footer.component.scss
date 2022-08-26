@@ -3,7 +3,7 @@
 
 .footer {
   @include flexCenter;
-  background: $gradient;
+  background: $primary-color;
   box-sizing: border-box;
   flex-direction: column;
   line-height: 1.5;
@@ -11,7 +11,7 @@
   padding: 6rem;
   font-size: $font-medium;
   border-radius: 3rem 3rem 0 0;
-  color: white;
+  color: $body-color;
 
   @include phone {
     width: 100%;
@@ -21,7 +21,7 @@
   }
 
   a {
-    color: #111;
+    color: $link-color;
     text-decoration: none;
   }
 }

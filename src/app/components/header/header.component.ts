@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
     new IconButton('email.svg', 'mailto: pauljscott8@gmail.com'),
     new IconButton(
       'resume.svg',
-      'https://drive.google.com/file/d/1rgBbltW_1MdOtV0_xERcKmfOFf2mt7PE/view?usp=sharing'
+      'https://drive.google.com/file/d/1Bh8Dhi3kXh_P13SzMrtdO51R9Dnx76oW/view?usp=sharing'
     ),
     new IconButton(
       'linkedin.svg',
