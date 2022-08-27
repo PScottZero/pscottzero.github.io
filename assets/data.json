@@ -97,12 +97,6 @@
         "link": "https://colab.research.google.com/drive/1uyr2Rugf2EjVsR0Q-xhPuaZpJt0XmWiQ?usp=sharing"
       },
       {
-        "title": "En Passant",
-        "img": "en_passant.jpg",
-        "description": "November 2020 - June 2021",
-        "link": "https://github.com/PScottZero/EnPassant"
-      },
-      {
         "title": "MNIST Playground",
         "img": "mnist.jpg",
         "description": "September - October 2020",
@@ -115,6 +109,12 @@
     "imgDir": "projects",
     "content": [
       {
+        "title": "Flutter Cookbook",
+        "img": "cookbook.png",
+        "description": "July 2022",
+        "link": "https://github.com/PScottZero/flutter-cookbook"
+      },
+      {
         "title": "Numismatic Coin Collecting App",
         "img": "numismatic.png",
         "description": "August 2021 - January 2022",
@@ -125,6 +125,12 @@
         "img": "pdp1.jpg",
         "description": "February - March 2021",
         "link": "https://pjs4.com/pdp1"
+      },
+      {
+        "title": "En Passant",
+        "img": "en_passant.jpg",
+        "description": "November 2020 - June 2021",
+        "link": "https://github.com/PScottZero/EnPassant"
       },
       {
         "title": "Qubit Playground",
