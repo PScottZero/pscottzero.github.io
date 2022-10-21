@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
-.content {
+.main {
   @include phone {
     padding: 0.5rem 0;
   }
@@ -19,40 +19,25 @@
   height: 100%;
 }
 
-.section-title {
-  font-size: $font-large;
-  color: $body-color;
-  padding: 2rem;
-  margin: 1vw;
-  border-radius: 2rem;
-  background: $primary-color;
-  box-sizing: border-box;
-
-  @include phone {
-    padding: 1rem;
-    margin: 0.5rem 0;
-    width: 100%;
-  }
-}
-
 app-info {
   position: relative;
   box-sizing: border-box;
   line-height: 1.5;
-  margin: 1vw;
+  margin: 1.5vw;
   border-radius: 2rem;
   overflow: hidden;
   transition: 0.2s;
+  box-shadow: $box-shadow;
 
   @include largerThanPhone {
     flex: calc(1% * var(--flex-large));
-    max-width: calc(1% * var(--flex-large) - 2vw);
+    max-width: calc(1% * var(--flex-large) - 3vw);
     height: calc(1vw * var(--flex-large) / 1.5);
   }
 
   @include tablet {
     flex: calc(1% * var(--flex-small));
-    max-width: calc(1% * var(--flex-small) - 2vw);
+    max-width: calc(1% * var(--flex-small) - 3vw);
     height: calc(1vw * var(--flex-small) / 1.5);
   }
 

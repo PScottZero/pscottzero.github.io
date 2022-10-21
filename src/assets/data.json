@@ -39,73 +39,7 @@
     ]
   },
   {
-    "groupName": "ML/AI Projects",
-    "imgDir": "projects",
-    "content": [
-      {
-        "title": "Language Translation with Transformers",
-        "img": "translation.png",
-        "description": "August 2022",
-        "link": "https://github.com/PScottZero/transformer_translation"
-      },
-      {
-        "title": "CycleGAN TensorFlow Implementation",
-        "img": "cycle_gan.png",
-        "description": "July - August 2022",
-        "link": "https://github.com/PScottZero/cycle_gan"
-      },
-      {
-        "title": "DQN Reinforcement Learning for Atari Games",
-        "img": "atari.png",
-        "description": "April 2022 - Present",
-        "link": "https://github.com/PScottZero/Atari-Reinforcement-Learning"
-      },
-      {
-        "title": "Piano Music Sentiment Classifier",
-        "img": "canon_in_d.png",
-        "description": "CIS 522 Final Project <br> March - April 2022",
-        "link": "https://colab.research.google.com/drive/1FPAd_H1OSF8BVLAmxVc_x5X6ZtMrItyR?usp=sharing"
-      },
-      {
-        "title": "US Car Accident Analysis and Severity Classification",
-        "img": "car_accidents.jpg",
-        "description": "CIS 545 Final Project <br> March - April 2022",
-        "link": "https://colab.research.google.com/drive/1qLpFrDaYhRxwQEgqsOrPQJq9zMOIlgt5?usp=sharing"
-      },
-      {
-        "title": "WGAN-GP",
-        "img": "wgan-gp.png",
-        "description": "February 2022 - March 2022",
-        "link": "https://github.com/PScottZero/wgan-gp" 
-      },
-      {
-        "title": "N-Gram Tweet Generator",
-        "img": "ngram.jpg",
-        "description": "January - February 2022",
-        "link": "https://github.com/PScottZero/ngram-tweets"
-      },
-      {
-        "title": "US Coin Classifier",
-        "img": "coin_classifier.jpg",
-        "description": "October 2021 - February 2022",
-        "link": "https://github.com/PScottZero/US-Coin-Classifier"
-      },
-      {
-        "title": "LSTM Stock Movement Predictor",
-        "img": "lstm.jpg",
-        "description": "CIS 520 Final Project <br> November - December 2021",
-        "link": "https://colab.research.google.com/drive/1uyr2Rugf2EjVsR0Q-xhPuaZpJt0XmWiQ?usp=sharing"
-      },
-      {
-        "title": "MNIST Playground",
-        "img": "mnist.jpg",
-        "description": "September - October 2020",
-        "link": "https://pjs4.com/MNISTPlayground"
-      }
-    ]
-  },
-  {
-    "groupName": "Other Projects",
+    "groupName": "Software Projects",
     "imgDir": "projects",
     "content": [
       {
@@ -149,6 +83,72 @@
         "img": "dotmatrix.jpg",
         "description": "February - May 2020",
         "link": "https://github.com/PScottZero/DotMatrix"
+      }
+    ]
+  },
+  {
+    "groupName": "ML/AI Projects",
+    "imgDir": "projects",
+    "content": [
+      {
+        "title": "Language Translation with Transformers",
+        "img": "translation.png",
+        "description": "August 2022",
+        "link": "https://github.com/PScottZero/transformer_translation"
+      },
+      {
+        "title": "CycleGAN TensorFlow Implementation",
+        "img": "cycle_gan.png",
+        "description": "July - August 2022",
+        "link": "https://github.com/PScottZero/cycle_gan"
+      },
+      {
+        "title": "DQN Reinforcement Learning for Atari Games",
+        "img": "atari.png",
+        "description": "April 2022 - Present",
+        "link": "https://github.com/PScottZero/Atari-Reinforcement-Learning"
+      },
+      {
+        "title": "Piano Music Sentiment Classifier",
+        "img": "canon_in_d.png",
+        "description": "CIS 522 Final Project <br> March - April 2022",
+        "link": "https://colab.research.google.com/drive/1FPAd_H1OSF8BVLAmxVc_x5X6ZtMrItyR?usp=sharing"
+      },
+      {
+        "title": "US Car Accident Analysis and Severity Classification",
+        "img": "car_accidents.jpg",
+        "description": "CIS 545 Final Project <br> March - April 2022",
+        "link": "https://colab.research.google.com/drive/1qLpFrDaYhRxwQEgqsOrPQJq9zMOIlgt5?usp=sharing"
+      },
+      {
+        "title": "WGAN-GP",
+        "img": "wgan-gp.png",
+        "description": "February 2022 - March 2022",
+        "link": "https://github.com/PScottZero/wgan-gp"
+      },
+      {
+        "title": "N-Gram Tweet Generator",
+        "img": "ngram.jpg",
+        "description": "January - February 2022",
+        "link": "https://github.com/PScottZero/ngram-tweets"
+      },
+      {
+        "title": "US Coin Classifier",
+        "img": "coin_classifier.jpg",
+        "description": "October 2021 - February 2022",
+        "link": "https://github.com/PScottZero/US-Coin-Classifier"
+      },
+      {
+        "title": "LSTM Stock Movement Predictor",
+        "img": "lstm.jpg",
+        "description": "CIS 520 Final Project <br> November - December 2021",
+        "link": "https://colab.research.google.com/drive/1uyr2Rugf2EjVsR0Q-xhPuaZpJt0XmWiQ?usp=sharing"
+      },
+      {
+        "title": "MNIST Playground",
+        "img": "mnist.jpg",
+        "description": "September - October 2020",
+        "link": "https://pjs4.com/MNISTPlayground"
       }
     ]
   },
@@ -212,7 +212,7 @@
     ]
   },
   {
-    "groupName": "Packages",
+    "groupName": "Python Packages",
     "imgDir": "packages",
     "columnCount": 4,
     "content": [
@@ -267,6 +267,57 @@
     ]
   },
   {
+    "groupName": "Software Skills",
+    "imgDir": "sw-skills",
+    "columnCount": 4,
+    "content": [
+      {
+        "title": "Angular",
+        "img": "angular.svg"
+      },
+      {
+        "title": "AWS",
+        "img": "aws.svg"
+      },
+      {
+        "title": "Flutter",
+        "img": "flutter.svg"
+      },
+      {
+        "title": "Git",
+        "img": "git.svg"
+      },
+      {
+        "title": "GitHub",
+        "img": "github.svg"
+      },
+      {
+        "title": "OpenGL",
+        "img": "opengl.svg"
+      },
+      {
+        "title": "React",
+        "img": "react.svg"
+      },
+      {
+        "title": "RESTful API",
+        "img": "rest_api.svg"
+      },
+      {
+        "title": "SQL",
+        "img": "sql.svg"
+      },
+      {
+        "title": "Unit Testing",
+        "img": "unit_testing.svg"
+      },
+      {
+        "title": "Web Scraping",
+        "img": "web_scraping.svg"
+      }
+    ]
+  },
+  {
     "groupName": "ML/AI Skills",
     "imgDir": "ml-ai-skills",
     "columnCount": 4,
@@ -294,6 +345,10 @@
       {
         "title": "GAN",
         "img": "gan.bmp"
+      },
+      {
+        "title": "GPT-3",
+        "img": "gpt3.svg"
       },
       {
         "title": "Jupyter Notebook",
@@ -334,44 +389,9 @@
     ]
   },
   {
-    "groupName": "Other Skills",
-    "imgDir": "other-skills",
-    "columnCount": 4,
-    "content": [
-      {
-        "title": "Angular",
-        "img": "angular.svg"
-      },
-      {
-        "title": "AWS",
-        "img": "aws.svg"
-      },
-      {
-        "title": "Flutter",
-        "img": "flutter.svg"
-      },
-      {
-        "title": "Git",
-        "img": "git.svg"
-      },
-      {
-        "title": "GPT-3",
-        "img": "gpt3.svg"
-      },
-      {
-        "title": "React",
-        "img": "react.svg"
-      },
-      {
-        "title": "SQL",
-        "img": "sql.svg"
-      }
-    ]
-  },
-  {
     "groupName": "Graduate Courses",
     "imgDir": "courses",
-    "columnCount": 3,
+    "columnCount": 4,
     "content": [
       {
         "title": "Computer Graphics",

@@ -27,7 +27,7 @@ iframe {
   padding: 0.5rem 4rem;
   background: $description-background;
   text-align: center;
-  color: white;
+  color: rgb(220, 220, 220);
 
   @include phone {
     font-size: 14px;

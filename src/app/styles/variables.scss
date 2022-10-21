@@ -1,13 +1,24 @@
 /* colors */
 $body-color: #304657;
 $primary-color: #00e5ff;
+$secondary-color: #ffbc48;
 $primary-color-transparent: #00e5ffcc;
+$secondary-color-transparent: #ffbc48cc;
+$gradient: linear-gradient(to right, $primary-color, $secondary-color);
+$gradient-transparent: linear-gradient(
+  to right,
+  $primary-color-transparent,
+  $secondary-color-transparent
+);
 $description-background: #304657cc;
 $link-color: blue;
 
+/* box shadow */
+$box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 /* font */
 $font-large: 36px;
-$font-medium: 22px;
+$font-medium: 20px;
 $font-small: 18px;
 $font-stack: 'Comfortaa', Arial, serif;
 

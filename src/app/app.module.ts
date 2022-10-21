@@ -8,6 +8,7 @@ import { InfoComponent, SanitizePipe } from './components/info/info.component';
 import { IconButtonComponent } from './components/icon-button/icon-button.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SectionTitleComponent } from './components/section-title/section-title.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FooterComponent } from './components/footer/footer.component';
     BannerComponent,
     FooterComponent,
     SanitizePipe,
+    SectionTitleComponent,
   ],
   imports: [BrowserModule],
   providers: [],

@@ -3,7 +3,7 @@
 
 .footer {
   @include flexCenter;
-  background: $primary-color;
+  background: $gradient;
   box-sizing: border-box;
   flex-direction: column;
   line-height: 1.5;
@@ -12,6 +12,7 @@
   font-size: $font-medium;
   border-radius: 3rem 3rem 0 0;
   color: $body-color;
+  box-shadow: $box-shadow;
 
   @include phone {
     width: 100%;

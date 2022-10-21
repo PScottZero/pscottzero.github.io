@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.section-title {
+  font-size: $font-large;
+  color: $body-color;
+  padding: 2rem;
+  margin: 1vw;
+  border-radius: 2rem;
+  background: $gradient;
+  box-sizing: border-box;
+  box-shadow: $box-shadow;
+
+  @include phone {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+}

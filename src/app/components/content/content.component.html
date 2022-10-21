@@ -1,8 +1,6 @@
-<div class="content">
+<div class="main">
   <div *ngFor="let infoGroup of pageData; let i = index">
-    <div class="section-title">
-      <p>{{ infoGroup.groupName }}</p>
-    </div>
+    <app-section-title [title]="infoGroup.groupName"></app-section-title>
     <div class="info-group">
       <app-info
         *ngFor="let info of infoGroup.content"
