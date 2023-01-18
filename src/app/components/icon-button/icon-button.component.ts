@@ -9,6 +9,11 @@ export class IconButtonComponent {
   @Input() icon: string;
   @Input() link: string;
 
+  constructor() {
+    this.icon = '';
+    this.link = '';
+  }
+
   openLink(): void {
     window.open(this.link, '_blank');
   }

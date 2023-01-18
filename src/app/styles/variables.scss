@@ -1,23 +1,17 @@
 /* colors */
-$body-color: #304657;
-$primary-color: #00e5ff;
-$secondary-color: #ffbc48;
-$primary-color-transparent: #00e5ffcc;
-$secondary-color-transparent: #ffbc48cc;
-$gradient: linear-gradient(to right, $primary-color, $secondary-color);
-$gradient-transparent: linear-gradient(
-  to right,
-  $primary-color-transparent,
-  $secondary-color-transparent
-);
-$description-background: #304657cc;
-$link-color: blue;
+$body-color: #1c2126;
+$text-color: #e0f0ff;
+$primary-color: #4a5763;
+$primary-color-transparent: #4a5763cc;
+$description-background: #4a5763cc;
+$link-color: #0bbeff;
 
 /* box shadow */
 $box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 /* font */
-$font-large: 36px;
+$font-xlarge: 36px;
+$font-large: 24px;
 $font-medium: 20px;
 $font-small: 18px;
 $font-stack: 'Comfortaa', Arial, serif;

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import pageDataJSON from '../../../assets/data.json';
+import contentJson from '../../../assets/content.json';
 
 @Component({
   selector: 'app-content',
@@ -7,8 +7,11 @@ import pageDataJSON from '../../../assets/data.json';
   styleUrls: ['./content.component.scss'],
 })
 export class ContentComponent {
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-  pageData = pageDataJSON;
+  content: any;
+
+  constructor() {
+    this.content = contentJson;
+  }
 
   getLargeFlex(columnCount: number): number {
     if (columnCount !== undefined) {

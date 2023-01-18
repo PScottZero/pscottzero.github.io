@@ -7,7 +7,8 @@
   height: auto;
   border-radius: 0 0 3rem 3rem;
   padding: calc(10vh + 2rem) 0 10vh 0;
-  background: $gradient;
+  background: url('../../../assets/images/banner.jpg');
+  background-size: cover;
   margin-bottom: 0.5vw;
   box-shadow: $box-shadow;
 
@@ -30,12 +31,13 @@
     height: 25vh;
     border-radius: 25%;
     margin-bottom: 1rem;
-    border: solid 6px $body-color;
+    border: solid 6px $text-color;
   }
 
   #about {
     margin-top: 0.5rem;
     font-size: 2.2vh;
-    color: $body-color;
+    color: $text-color;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1);
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { IconButton } from '../icon-button/IconButton';
 
 @Component({
@@ -6,7 +6,7 @@ import { IconButton } from '../icon-button/IconButton';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   buttons = [
     new IconButton('email.svg', 'mailto: pauljscott8@gmail.com'),
     new IconButton(
@@ -21,16 +21,32 @@ export class HeaderComponent implements OnInit {
   ];
   menuIsVisible: boolean;
 
-  ngOnInit(): void {
+  constructor() {
     this.menuIsVisible = false;
+    window.addEventListener('scroll', this.toggleHeaderBackground, true);
   }
 
   toggleMenu(): void {
     this.menuIsVisible = !this.menuIsVisible;
     const header = document.getElementById('header');
-    header.classList.add('header-scroll');
-    if (window.pageYOffset <= 0 && !this.menuIsVisible) {
-      header.classList.remove('header-scroll');
+    if (header !== null) {
+      header.classList.add('header-scroll');
+      if (window.pageYOffset <= 0 && !this.menuIsVisible) {
+        header.classList.remove('header-scroll');
+      }
+    }
+  }
+
+  toggleHeaderBackground(): void {
+    const header = document.getElementById('header');
+    if (header !== null) {
+      if (window.pageYOffset <= 0) {
+        console.log('true');
+        header.classList.remove('header-scroll');
+      } else {
+        console.log('false');
+        header.classList.add('header-scroll');
+      }
     }
   }
 }

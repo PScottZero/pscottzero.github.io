@@ -2,15 +2,22 @@ import { Component, Input, Pipe, PipeTransform } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-info',
-  templateUrl: './info.component.html',
-  styleUrls: ['./info.component.scss'],
+  selector: 'app-item',
+  templateUrl: './item.component.html',
+  styleUrls: ['./item.component.scss'],
 })
-export class InfoComponent {
+export class ItemComponent {
   @Input() title: string;
   @Input() description: string;
   @Input() img: string;
   @Input() link: string;
+
+  constructor() {
+    this.title = '';
+    this.description = '';
+    this.img = '';
+    this.link = '';
+  }
 
   open(link: string): void {
     if (link) {

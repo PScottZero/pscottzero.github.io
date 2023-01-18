@@ -1,8 +1,8 @@
 <div class="main">
-  <div *ngFor="let infoGroup of pageData; let i = index">
+  <div *ngFor="let infoGroup of content; let i = index">
     <app-section-title [title]="infoGroup.groupName"></app-section-title>
     <div class="info-group">
-      <app-info
+      <app-item
         *ngFor="let info of infoGroup.content"
         [title]="info.title"
         [description]="info.description"
@@ -12,7 +12,7 @@
         [style.--flex-small]="getSmallFlex(infoGroup.columnCount)"
         [style.--column-count]="infoGroup.columnCount"
       >
-      </app-info>
+      </app-item>
     </div>
   </div>
 </div>

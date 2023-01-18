@@ -1,11 +1,11 @@
 <div
   *ngIf="!isVideo()"
-  class="info"
+  class="item"
   [ngStyle]="{
-    background: 'url(' + img + ') center',
+    'background': 'url(' + img + ') center',
     'background-size': 'cover'
   }"
-  [class.info-link]="link !== undefined"
+  [class.item-link]="link !== undefined"
   (click)="open(link)"
 >
   <div class="description">
@@ -20,7 +20,7 @@
   </div>
 </div>
 
-<div *ngIf="isVideo()" class="info">
+<div *ngIf="isVideo()" class="item">
   <iframe
     [src]="link | sanitize"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
