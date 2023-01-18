@@ -10,10 +10,9 @@ $link-color: #0bbeff;
 $box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 /* font */
-$font-xlarge: 36px;
-$font-large: 24px;
+$font-large: 32px;
 $font-medium: 20px;
-$font-small: 18px;
+$font-small: 14px;
 $font-stack: 'Comfortaa', Arial, serif;
 
 /* sizing */
@@ -21,3 +20,6 @@ $header-height: 4rem;
 $footer-height: 12rem;
 $mobile-cutoff: 768px;
 $tablet-cutoff: 1200px;
+$item-margin: 1vw;
+$item-aspect-ratio: 1.5;
+$item-aspect-ratio-mobile: 1.2;

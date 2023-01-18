@@ -23,28 +23,27 @@ app-item {
   position: relative;
   box-sizing: border-box;
   line-height: 1.5;
-  margin: 1.5vw;
+  margin: $item-margin;
   border-radius: 2rem;
   overflow: hidden;
-  transition: 0.2s;
   box-shadow: $box-shadow;
 
   @include largerThanPhone {
     flex: calc(1% * var(--flex-large));
-    max-width: calc(1% * var(--flex-large) - 3vw);
-    height: calc(1vw * var(--flex-large) / 1.5);
+    max-width: calc(1% * var(--flex-large) - ($item-margin * 2));
+    height: calc(1vw * var(--flex-large) / $item-aspect-ratio);
   }
 
   @include tablet {
     flex: calc(1% * var(--flex-small));
-    max-width: calc(1% * var(--flex-small) - 3vw);
-    height: calc(1vw * var(--flex-small) / 1.5);
+    max-width: calc(1% * var(--flex-small) - ($item-margin * 2));
+    height: calc(1vw * var(--flex-small) / $item-aspect-ratio);
   }
 
   @include phone {
     flex: 100%;
     max-width: 100%;
-    height: calc(100vw / 1.2);
+    height: calc(100vw / $item-aspect-ratio-mobile);
     margin: 0.5rem 0;
   }
 }

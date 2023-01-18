@@ -2,9 +2,13 @@
 @import '../../styles/mixins.scss';
 
 h1 {
-  font-size: $font-medium;
+  font-size: 1.2vw;
   font-weight: normal;
   color: $text-color;
+
+  @include phone {
+    font-size: $font-medium;
+  }
 }
 
 iframe {
@@ -15,6 +19,7 @@ iframe {
 .item {
   width: 100%;
   height: 100%;
+  transition: 0.2s;
 }
 
 .description {
@@ -28,9 +33,10 @@ iframe {
   background: $description-background;
   text-align: center;
   color: $text-color;
+  font-size: 0.9vw;
 
   @include phone {
-    font-size: 14px;
+    font-size: $font-small;
   }
 }
 
@@ -44,5 +50,5 @@ iframe {
 
 .item-link:hover {
   cursor: pointer;
-  filter: brightness(70%);
+  filter: brightness(60%);
 }
