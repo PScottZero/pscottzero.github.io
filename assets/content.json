@@ -459,7 +459,7 @@
         "description": "CMPSC 475, Fall 2020"
       },
       {
-        "title": "Quantum Mechanics and Quantum Computation",
+        "title": "Quantum Computation",
         "img": "quantum_computer.jpg",
         "description": "CS-191x (BerkeleyX), Summer 2020",
         "link": "https://courses.edx.org/certificates/a7a842fb46834ea4b9459b44583f3e23"
@@ -547,17 +547,6 @@
     ]
   },
   {
-    "groupName": "Videos",
-    "content": [
-      {
-        "link": "https://www.youtube.com/embed/64P6tOwtl-0"
-      },
-      {
-        "link": "https://www.youtube.com/embed/2tUOiTtocoA"
-      }
-    ]
-  },
-  {
     "groupName": "Hobbies",
     "imgDir": "hobbies",
     "columnCount": 4,
@@ -612,7 +601,7 @@
       },
       {
         "title": "Trains",
-        "img": "thalys.jpg"
+        "img": "trains.jpg"
       }
     ]
   }
