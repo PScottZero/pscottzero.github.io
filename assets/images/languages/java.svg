@@ -1,1 +1,122 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1600"><defs><style>.cls-1{fill:#86b1ce;}.cls-2{fill:#f44336;}.cls-3{fill:#1565c0;}</style></defs><rect class="cls-1" width="2400" height="1600"/><g id="surface1"><path class="cls-2" d="M1191.21,822.46c-24.9-40.23-43-73.63-68.07-136.42C1080.76,580,1381,484.18,1259.28,300c52.73,127.25-189.46,205.86-211.92,311.82C1026.76,709.28,1191.11,822.46,1191.21,822.46Z"/><path class="cls-2" d="M1197,631.74c-4.78,62.89,55.67,96.48,57.42,142.38,1.47,37.4-36.13,68.56-36.13,68.56s68.17-13.38,89.45-70.41c23.64-63.38-45.8-106.74-38.67-157.43,6.64-48.53,150.78-138.57,150.78-138.57S1207.81,490.23,1197,631.74Z"/><path class="cls-3" d="M1402.15,826.37c43.85-9.87,80.76,18.06,80.76,50.29,0,72.46-100.49,141-100.49,141S1538,999.12,1538,880.08C1538,801.37,1461.62,781.64,1402.15,826.37Z"/><path class="cls-3" d="M1328.22,884.86s48.54-34.57,61.43-47.56c-119,25.3-390.92,28.72-390.92,6.74,0-20.21,87.7-40.91,87.7-40.91s-194.34-2.84-194.34,54.49C892.09,917.38,1146.48,921.68,1328.22,884.86Z"/><path class="cls-3" d="M1298.34,939.26c-112.7,37.5-320.31,25.49-258.79-24.81-30,0-74.41,24-74.41,47.27,0,46.39,224.61,82.23,390.82,14.26Z"/><path class="cls-3" d="M1067.19,1018.46c-40.92,0-67.39,26.36-67.39,45.6,0,59.77,244,65.73,340.63,5.08L1279,1028.32C1206.74,1060.06,1025.39,1064.45,1067.19,1018.46Z"/><path class="cls-3" d="M1507,1115.82c0-23.44-26.37-34.47-35.84-39.75,55.67,134.38-557.91,123.93-557.91,44.63,0-18.06,45.22-35.64,86.92-27.34l-35.45-21c-83.21-13-139.75,23.54-139.75,53C825,1263,1507,1256.35,1507,1115.82Z"/><path class="cls-3" d="M1575,1165.14c-103.61,102.34-366.5,139.65-630.76,76.36C1208.5,1354.1,1573.73,1290.72,1575,1165.14Z"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 2400 1600"
+   version="1.1"
+   sodipodi:docname="java.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview239"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.19298123"
+     inkscape:cx="1176.2802"
+     inkscape:cy="753.95935"
+     inkscape:window-width="1024"
+     inkscape:window-height="1088"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1" />
+  <defs
+     id="defs217">
+    <style
+       id="style215">.cls-1{fill:#86b1ce;}.cls-2{fill:#f44336;}.cls-3{fill:#1565c0;}</style>
+    <radialGradient
+       id="_Radial1"
+       cx="0"
+       cy="0"
+       r="1"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(23.5347,0,0,23.5347,19.868,0.840901)">
+      <stop
+         offset="0"
+         style="stop-color:rgb(228,72,87);stop-opacity:1"
+         id="stop138" />
+      <stop
+         offset="0"
+         style="stop-color:rgb(228,72,87);stop-opacity:1"
+         id="stop140" />
+      <stop
+         offset="0.47"
+         style="stop-color:rgb(199,17,225);stop-opacity:1"
+         id="stop142" />
+      <stop
+         offset="1"
+         style="stop-color:rgb(127,82,255);stop-opacity:1"
+         id="stop144" />
+    </radialGradient>
+  </defs>
+  <rect
+     class="cls-1"
+     width="1196.7308"
+     height="1600"
+     id="rect219"
+     x="0"
+     y="0"
+     style="stroke-width:0.706143" />
+  <g
+     id="surface1"
+     transform="matrix(0.70012775,0,0,0.70012775,-241.77738,239.89858)">
+    <path
+       class="cls-2"
+       d="m 1191.21,822.46 c -24.9,-40.23 -43,-73.63 -68.07,-136.42 C 1080.76,580 1381,484.18 1259.28,300 c 52.73,127.25 -189.46,205.86 -211.92,311.82 -20.6,97.46 143.75,210.64 143.85,210.64 z"
+       id="path221" />
+    <path
+       class="cls-2"
+       d="m 1197,631.74 c -4.78,62.89 55.67,96.48 57.42,142.38 1.47,37.4 -36.13,68.56 -36.13,68.56 0,0 68.17,-13.38 89.45,-70.41 23.64,-63.38 -45.8,-106.74 -38.67,-157.43 6.64,-48.53 150.78,-138.57 150.78,-138.57 0,0 -212.04,13.96 -222.85,155.47 z"
+       id="path223" />
+    <path
+       class="cls-3"
+       d="m 1402.15,826.37 c 43.85,-9.87 80.76,18.06 80.76,50.29 0,72.46 -100.49,141 -100.49,141 0,0 155.58,-18.54 155.58,-137.58 0,-78.71 -76.38,-98.44 -135.85,-53.71 z"
+       id="path225" />
+    <path
+       class="cls-3"
+       d="m 1328.22,884.86 c 0,0 48.54,-34.57 61.43,-47.56 -119,25.3 -390.92,28.72 -390.92,6.74 0,-20.21 87.7,-40.91 87.7,-40.91 0,0 -194.34,-2.84 -194.34,54.49 0,59.76 254.39,64.06 436.13,27.24 z"
+       id="path227" />
+    <path
+       class="cls-3"
+       d="m 1298.34,939.26 c -112.7,37.5 -320.31,25.49 -258.79,-24.81 -30,0 -74.41,24 -74.41,47.27 0,46.39 224.61,82.23 390.82,14.26 z"
+       id="path229" />
+    <path
+       class="cls-3"
+       d="m 1067.19,1018.46 c -40.92,0 -67.39,26.36 -67.39,45.6 0,59.77 244,65.73 340.63,5.08 L 1279,1028.32 c -72.26,31.74 -253.61,36.13 -211.81,-9.86 z"
+       id="path231" />
+    <path
+       class="cls-3"
+       d="m 1507,1115.82 c 0,-23.44 -26.37,-34.47 -35.84,-39.75 55.67,134.38 -557.91,123.93 -557.91,44.63 0,-18.06 45.22,-35.64 86.92,-27.34 l -35.45,-21 c -83.21,-13 -139.75,23.54 -139.75,53 C 825,1263 1507,1256.35 1507,1115.82 Z"
+       id="path233" />
+    <path
+       class="cls-3"
+       d="m 1575,1165.14 c -103.61,102.34 -366.5,139.65 -630.76,76.36 264.26,112.6 629.49,49.22 630.76,-76.36 z"
+       id="path235" />
+  </g>
+  <rect
+     x="1196.7308"
+     y="6.1035156e-05"
+     width="1203.2692"
+     height="1600"
+     style="clip-rule:evenodd;fill:#aa87de;fill-rule:evenodd;stroke-width:0.708069;stroke-linejoin:round;stroke-miterlimit:2"
+     id="rect132" />
+  <g
+     transform="matrix(31.723242,0,0,31.723242,1472.3457,474.15478)"
+     id="g136"
+     style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
+        <path
+   d="M 20.554,20.543 H 0 V 0 H 20.554 L 10.065,10.119 Z"
+   style="fill:url(#_Radial1);fill-rule:nonzero"
+   id="path134" />
+
+    </g>
+</svg>
