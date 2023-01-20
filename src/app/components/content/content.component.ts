@@ -17,13 +17,13 @@ export class ContentComponent {
     if (columnCount !== undefined) {
       return 100 / columnCount;
     }
-    return 100 / 3;
+    return 100 / 4;
   }
 
   getSmallFlex(columnCount: number): number {
     if (columnCount !== undefined) {
       return this.getLargeFlex(columnCount - 1);
     }
-    return 100 / 2;
+    return 100 / 3;
   }
 }

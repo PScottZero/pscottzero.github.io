@@ -2,10 +2,11 @@
   {
     "groupName": "Education",
     "imgDir": "education",
+    "columnCount": 3,
     "content": [
       {
         "title": "University of Pennsylvania",
-        "img": "upenn.jpg",
+        "img": "upenn_college_hall.jpg",
         "description": "MSE Computer and Information Science <br> GPA 3.79/4.00 <br> August 2021 - May 2023"
       },
       {
@@ -17,8 +18,9 @@
     ]
   },
   {
-    "groupName": "Experience",
-    "imgDir": "experience",
+    "groupName": "Work Experience",
+    "imgDir": "work-experience",
+    "columnCount": 3,
     "content": [
       {
         "title": "ShopRunner",
@@ -39,7 +41,7 @@
     ]
   },
   {
-    "groupName": "Software Projects",
+    "groupName": "Projects",
     "imgDir": "projects",
     "content": [
       {
@@ -149,40 +151,46 @@
   {
     "groupName": "Programming Languages",
     "imgDir": "languages",
-    "columnCount": 4,
     "content": [
       {
-        "title": "C",
-        "img": "clang.svg"
-      },
-      {
-        "title": "C++",
-        "img": "cpp.svg"
+        "title": "C / C++",
+        "img": "clang.svg",
+        "description": "Proficient"
       },
       {
         "title": "Dart",
-        "img": "dart.svg"
+        "img": "dart.svg",
+        "description": "Proficient"
       },
       {
-        "title": "HTML",
-        "img": "html.svg"
+        "title": "HTML / CSS",
+        "img": "html.svg",
+        "description": "Proficient"
       },
       {
-        "title": "Java",
-        "img": "java.svg"
+        "title": "Java / Kotlin",
+        "img": "java.svg",
+        "description": "Proficient"
       },
       {
-        "title": "JavaScript",
-        "img": "javascript.svg"
+        "title": "Python",
+        "img": "python.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "JavaScript / TypeScript",
+        "img": "javascript.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "C#",
+        "img": "csharp.svg"
       },
       {
         "title": "Julia",
         "img": "julia.svg"
       },
-      {
-        "title": "Kotlin",
-        "img": "kotlin.svg"
-      },
+
       {
         "title": "MATLAB",
         "img": "matlab.svg"
@@ -192,90 +200,126 @@
         "img": "php.svg"
       },
       {
-        "title": "Python",
-        "img": "python.svg"
+        "title": "Rust",
+        "img": "rust.svg"
+      },
+      {
+        "title": "SQL",
+        "img": "sql.svg"
       },
       {
         "title": "Swift",
         "img": "swift.png"
-      },
-      {
-        "title": "TypeScript",
-        "img": "typescript.svg"
       }
     ]
   },
   {
-    "groupName": "Python Packages",
-    "imgDir": "packages",
-    "columnCount": 4,
+    "groupName": "Libraries / Frameworks",
+    "imgDir": "libraries",
     "content": [
       {
+        "title": "Angular",
+        "img": "angular.svg",
+        "description": "HTML / CSS / TS"
+      },
+      {
         "title": "Beautiful Soup",
-        "img": "beautiful_soup.svg"
+        "img": "beautiful_soup.svg",
+        "description": "Python"
+      },
+      {
+        "title": "Flutter",
+        "img": "flutter.svg",
+        "description": "Dart"
       },
       {
         "title": "Gradio",
-        "img": "gradio.svg"
+        "img": "gradio.svg",
+        "description": "Python"
+      },
+      {
+        "title": "gRPC",
+        "img": "grpc.svg",
+        "description": "C++"
       },
       {
         "title": "Matplotlib",
-        "img": "matplotlib.svg"
+        "img": "matplotlib.svg",
+        "description": "Python"
       },
       {
         "title": "NLTK",
-        "img": "nltk.svg"
+        "img": "nltk.svg",
+        "description": "Python"
       },
       {
         "title": "NumPy",
-        "img": "numpy.svg"
+        "img": "numpy.svg",
+        "description": "Python"
+      },
+      {
+        "title": "OpenGL",
+        "img": "opengl.svg",
+        "description": "C++"
       },
       {
         "title": "Pandas",
-        "img": "pandas.svg"
+        "img": "pandas.svg",
+        "description": "Python"
       },
       {
         "title": "PySpark",
-        "img": "apache_spark.svg"
+        "img": "apache_spark.svg",
+        "description": "Python"
       },
       {
         "title": "PyTorch",
-        "img": "pytorch.svg"
+        "img": "pytorch.svg",
+        "description": "Python"
+      },
+      {
+        "title": "QT",
+        "img": "qt.svg",
+        "description": "C++"
+      },
+      {
+        "title": "React",
+        "img": "react.svg",
+        "description": "HTML / CSS / TS"
       },
       {
         "title": "Scikit-Learn",
-        "img": "sklearn.svg"
+        "img": "sklearn.svg",
+        "description": "Python"
       },
       {
         "title": "Seaborn",
-        "img": "seaborn.svg"
+        "img": "seaborn.svg",
+        "description": "Python"
       },
       {
         "title": "Stanza",
-        "img": "stanza.svg"
+        "img": "stanza.svg",
+        "description": "Python"
       },
       {
         "title": "TensorFlow",
-        "img": "tensorflow.svg"
+        "img": "tensorflow.svg",
+        "description": "Python"
       }
     ]
   },
   {
     "groupName": "Software Skills",
-    "imgDir": "sw-skills",
-    "columnCount": 4,
+    "imgDir": "skills-sw",
     "content": [
-      {
-        "title": "Angular",
-        "img": "angular.svg"
-      },
       {
         "title": "AWS",
         "img": "aws.svg"
       },
       {
-        "title": "Flutter",
-        "img": "flutter.svg"
+        "title": "Docker",
+        "img": "docker.svg"
       },
       {
         "title": "Git",
@@ -286,24 +330,12 @@
         "img": "github.svg"
       },
       {
-        "title": "gRPC",
-        "img": "grpc.svg"
-      },
-      {
-        "title": "OpenGL",
-        "img": "opengl.svg"
-      },
-      {
-        "title": "React",
-        "img": "react.svg"
+        "title": "Linux",
+        "img": "linux.svg"
       },
       {
         "title": "RESTful API",
         "img": "rest_api.svg"
-      },
-      {
-        "title": "SQL",
-        "img": "sql.svg"
       },
       {
         "title": "Unit Testing",
@@ -316,9 +348,8 @@
     ]
   },
   {
-    "groupName": "ML/AI Skills",
-    "imgDir": "ml-ai-skills",
-    "columnCount": 4,
+    "groupName": "ML / AI Skills",
+    "imgDir": "skills-ml-ai",
     "content": [
       {
         "title": "Autoencoder",
@@ -388,8 +419,7 @@
   },
   {
     "groupName": "Graduate Courses @ UPenn",
-    "imgDir": "courses",
-    "columnCount": 4,
+    "imgDir": "courses-grad",
     "content": [
       {
         "title": "Advanced Computer Graphics",
@@ -445,8 +475,7 @@
   },
   {
     "groupName": "Undergraduate Courses @ Penn State",
-    "imgDir": "courses",
-    "columnCount": 4,
+    "imgDir": "courses-undergrad",
     "content": [
       {
         "title": "Mathematical Logic",
@@ -459,7 +488,7 @@
         "description": "CMPSC 475, Fall 2020"
       },
       {
-        "title": "Quantum Mechanics and Quantum Computation",
+        "title": "Quantum Computation",
         "img": "quantum_computer.jpg",
         "description": "CS-191x (BerkeleyX), Summer 2020",
         "link": "https://courses.edx.org/certificates/a7a842fb46834ea4b9459b44583f3e23"
@@ -547,28 +576,16 @@
     ]
   },
   {
-    "groupName": "Videos",
-    "content": [
-      {
-        "link": "https://www.youtube.com/embed/64P6tOwtl-0"
-      },
-      {
-        "link": "https://www.youtube.com/embed/2tUOiTtocoA"
-      }
-    ]
-  },
-  {
     "groupName": "Hobbies",
     "imgDir": "hobbies",
-    "columnCount": 4,
     "content": [
       {
         "title": "Aviation",
-        "img": "a350.jpg"
+        "img": "a380.jpg"
       },
       {
         "title": "Baking / Cooking",
-        "img": "cooking.jpg"
+        "img": "bread.jpg"
       },
       {
         "title": "Bass",
@@ -580,7 +597,7 @@
       },
       {
         "title": "Guitar",
-        "img": "lespaul.jpg"
+        "img": "martin_guitar.jpg"
       },
       {
         "title": "Model Trains",
@@ -604,15 +621,15 @@
       },
       {
         "title": "Roller Coasters",
-        "img": "skyrush.jpg"
+        "img": "roller_coaster.jpg"
       },
       {
         "title": "Space Exploration",
-        "img": "jwst.jpg"
+        "img": "jwst.png"
       },
       {
         "title": "Trains",
-        "img": "thalys.jpg"
+        "img": "trains.jpg"
       }
     ]
   }
