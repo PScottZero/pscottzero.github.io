@@ -29,7 +29,7 @@
       },
       {
         "title": "Undergraduate Research",
-        "img": "research.png",
+        "img": "research.jpg",
         "description": "<i>Automated Analysis of Information Flow Enforcement in PHP Program</i> <br> With Professor Danfeng Zhang and Peixuan Li <br> Fall 2020 - Spring 2021",
         "link": "https://honors.libraries.psu.edu/catalog/7131pjs5684"
       },
@@ -46,31 +46,31 @@
     "content": [
       {
         "title": "Language Translation with Transformers",
-        "img": "translation.png",
+        "img": "translation.jpg",
         "description": "August 2022",
         "link": "https://github.com/PScottZero/transformer_translation"
       },
       {
         "title": "CycleGAN TensorFlow Implementation",
-        "img": "cycle_gan.png",
+        "img": "cycle_gan.jpg",
         "description": "July - August 2022",
         "link": "https://github.com/PScottZero/cycle_gan"
       },
       {
         "title": "Flutter Cookbook",
-        "img": "cookbook.png",
+        "img": "cookbook.jpg",
         "description": "July 2022",
         "link": "https://github.com/PScottZero/flutter-cookbook"
       },
       {
         "title": "DQN Reinforcement Learning for Atari Games",
-        "img": "atari.png",
+        "img": "atari.jpg",
         "description": "April - May 2022",
         "link": "https://github.com/PScottZero/Atari-Reinforcement-Learning"
       },
       {
         "title": "Piano Music Sentiment Classifier",
-        "img": "canon_in_d.png",
+        "img": "canon_in_d.jpg",
         "description": "CIS 522 Final Project <br> March - April 2022",
         "link": "https://colab.research.google.com/drive/1FPAd_H1OSF8BVLAmxVc_x5X6ZtMrItyR?usp=sharing"
       },
@@ -82,7 +82,7 @@
       },
       {
         "title": "WGAN-GP",
-        "img": "wgan-gp.png",
+        "img": "wgan-gp.jpg",
         "description": "February 2022 - March 2022",
         "link": "https://github.com/PScottZero/wgan-gp"
       },
@@ -106,7 +106,7 @@
       },
       {
         "title": "Numismatic Coin Collecting App",
-        "img": "numismatic.png",
+        "img": "numismatic.jpg",
         "description": "August 2021 - January 2022",
         "link": "https://github.com/PScottZero/Numismatic"
       },
@@ -209,7 +209,7 @@
       },
       {
         "title": "Swift",
-        "img": "swift.png"
+        "img": "swift.jpg"
       }
     ]
   },
@@ -353,15 +353,15 @@
     "content": [
       {
         "title": "Autoencoder",
-        "img": "autoencoder.bmp"
+        "img": "autoencoder.jpg"
       },
       {
         "title": "Clustering",
-        "img": "kmeans.bmp"
+        "img": "kmeans.jpg"
       },
       {
         "title": "CNN",
-        "img": "cnn.bmp"
+        "img": "cnn.jpg"
       },
       {
         "title": "CycleGAN",
@@ -369,11 +369,11 @@
       },
       {
         "title": "Data Visualization",
-        "img": "data_visualization.bmp"
+        "img": "data_visualization.jpg"
       },
       {
         "title": "GAN",
-        "img": "gan.bmp"
+        "img": "gan.jpg"
       },
       {
         "title": "GPT-3",
@@ -385,35 +385,35 @@
       },
       {
         "title": "KNN",
-        "img": "knn.bmp"
+        "img": "knn.jpg"
       },
       {
         "title": "Linear Regression",
-        "img": "linear_regression.bmp"
+        "img": "linear_regression.jpg"
       },
       {
         "title": "Logistic Regression",
-        "img": "logistic_regression.bmp"
+        "img": "logistic_regression.jpg"
       },
       {
         "title": "LSTM",
-        "img": "lstm.bmp"
+        "img": "lstm.jpg"
       },
       {
         "title": "Natural Language Processing",
-        "img": "nlp.bmp"
+        "img": "nlp.jpg"
       },
       {
         "title": "PCA",
-        "img": "pca.bmp"
+        "img": "pca.jpg"
       },
       {
         "title": "Reinforcement Learning",
-        "img": "reinforcement_learning.bmp"
+        "img": "reinforcement_learning.jpg"
       },
       {
         "title": "Transformer",
-        "img": "transformer.png"
+        "img": "transformer.jpg"
       }
     ]
   },
@@ -484,7 +484,7 @@
       },
       {
         "title": "Applications Programming",
-        "img": "swift.png",
+        "img": "swift.jpg",
         "description": "CMPSC 475, Fall 2020"
       },
       {
@@ -500,7 +500,7 @@
       },
       {
         "title": "Database Management Systems",
-        "img": "database.png",
+        "img": "database.jpg",
         "description": "CMPSC 431W, Spring 2020"
       },
       {
@@ -515,37 +515,37 @@
       },
       {
         "title": "Numerical Computations",
-        "img": "trapezoid.png",
+        "img": "trapezoid.jpg",
         "description": "MATH 451, Spring 2020"
       },
       {
         "title": "Computer Design",
-        "img": "computer_design.png",
+        "img": "computer_design.jpg",
         "description": "CMPEN 331, Fall 2019"
       },
       {
         "title": "Programming Language Concepts",
-        "img": "lambda.png",
+        "img": "lambda.jpg",
         "description": "CMPSC 461, Fall 2019"
       },
       {
         "title": "Operating Systems",
-        "img": "os.png",
+        "img": "os.jpg",
         "description": "CMPSC 473, Fall 2019"
       },
       {
         "title": "Matrix Algebra",
-        "img": "matrix.png",
+        "img": "matrix.jpg",
         "description": "MATH 441, Fall 2019"
       },
       {
         "title": "Mathematical Statistics",
-        "img": "stat.png",
+        "img": "stat.jpg",
         "description": "STAT 415, Fall 2019"
       },
       {
         "title": "Data Structures & Algorithms",
-        "img": "data_structures.png",
+        "img": "data_structures.jpg",
         "description": "CMPSC 465, Spring 2019"
       },
       {
@@ -555,7 +555,7 @@
       },
       {
         "title": "Probability Theory",
-        "img": "probability.png",
+        "img": "probability.jpg",
         "description": "STAT 414, Spring 2019"
       },
       {
@@ -625,7 +625,7 @@
       },
       {
         "title": "Space Exploration",
-        "img": "jwst.png"
+        "img": "jwst.jpg"
       },
       {
         "title": "Trains",
