@@ -204,10 +204,6 @@
         "img": "rust.svg"
       },
       {
-        "title": "SQL",
-        "img": "sql.svg"
-      },
-      {
         "title": "Swift",
         "img": "swift.jpg"
       }
@@ -330,12 +326,16 @@
         "img": "github.svg"
       },
       {
-        "title": "Linux",
+        "title": "Linux / Unix",
         "img": "linux.svg"
       },
       {
         "title": "RESTful API",
         "img": "rest_api.svg"
+      },
+      {
+        "title": "SQL",
+        "img": "sql.svg"
       },
       {
         "title": "Unit Testing",
