@@ -41,10 +41,8 @@ export class HeaderComponent {
     const header = document.getElementById('header');
     if (header !== null) {
       if (window.pageYOffset <= 0) {
-        console.log('true');
         header.classList.remove('header-scroll');
       } else {
-        console.log('false');
         header.classList.add('header-scroll');
       }
     }
