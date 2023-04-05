@@ -45,6 +45,21 @@
     "imgDir": "projects",
     "content": [
       {
+        "title": "PennOS",
+        "img": "pennos.svg",
+        "description": "CIS 5480 Final Project (Private Repo)<br>March 2023 - Present"
+      },
+      {
+        "title": "Mini Minecraft",
+        "img": "mini_minecraft.jpg",
+        "description": "CIS 5600 Final Project (Private Repo)<br>November - December 2022"
+      },
+      {
+        "title": "PennCloud",
+        "img": "penncloud.jpg",
+        "description": "CIS 5050 Final Project (Private Repo)<br>November - December 2022"
+      },
+      {
         "title": "Language Translation with Transformers",
         "img": "translation.jpg",
         "description": "August 2022",
@@ -423,7 +438,7 @@
     "content": [
       {
         "title": "Advanced Computer Graphics",
-        "img": "cornellbox.jpg",
+        "img": "cornell_box.jpg",
         "description": "CIS 5610, Spring 2023"
       },
       {
