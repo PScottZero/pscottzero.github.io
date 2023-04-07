@@ -2,7 +2,6 @@
   {
     "groupName": "Education",
     "imgDir": "education",
-    "columnCount": 3,
     "content": [
       {
         "title": "University of Pennsylvania",
@@ -20,7 +19,6 @@
   {
     "groupName": "Work Experience",
     "imgDir": "work-experience",
-    "columnCount": 3,
     "content": [
       {
         "title": "ShopRunner",
@@ -36,7 +34,7 @@
       {
         "title": "Lockheed Martin",
         "img": "orion.jpg",
-        "description": "Software Engineer Intern (Space) <br> Summer 2019/2020"
+        "description": "Software Engineer Intern (Space Division) <br> Summer 2019/2020"
       }
     ]
   },
@@ -202,10 +200,13 @@
         "img": "csharp.svg"
       },
       {
+        "title": "Go",
+        "img": "go.svg"
+      },
+      {
         "title": "Julia",
         "img": "julia.svg"
       },
-
       {
         "title": "MATLAB",
         "img": "matlab.svg"
@@ -620,7 +621,7 @@
       },
       {
         "title": "Movies",
-        "img": "mulholland_drive.jpg"
+        "img": "2001.jpg"
       },
       {
         "title": "Piano",
