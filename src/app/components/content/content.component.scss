@@ -7,7 +7,9 @@
   }
 
   @include largerThanPhone {
-    padding: 0.5vw;
+    padding: 0.5rem;
+    max-width: 100rem;
+    margin: auto;
   }
 }
 
@@ -29,15 +31,9 @@ app-item {
   box-shadow: $box-shadow;
 
   @include largerThanPhone {
-    flex: calc(1% * var(--flex-large));
-    max-width: calc(1% * var(--flex-large) - ($item-margin * 2));
-    height: calc(1vw * var(--flex-large) / $item-aspect-ratio);
-  }
-
-  @include tablet {
-    flex: calc(1% * var(--flex-small));
-    max-width: calc(1% * var(--flex-small) - ($item-margin * 2));
-    height: calc(1vw * var(--flex-small) / $item-aspect-ratio);
+    flex: 33%;
+    max-width: calc(33% - ($item-margin * 2));
+    height: calc(min(33rem, 33vw) / $item-aspect-ratio);
   }
 
   @include phone {
