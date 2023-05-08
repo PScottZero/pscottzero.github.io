@@ -21,6 +21,12 @@
     "imgDir": "work-experience",
     "content": [
       {
+        "title": "Merly",
+        "img": "merly.svg",
+        "description": "Full-Stack Software Engineer <br> Starting June 2023",
+        "link": "https://www.merly.ai/"
+      },
+      {
         "title": "ShopRunner",
         "img": "shoprunner.jpg",
         "description": "Software Engineer Intern, MBX+MAX Teams <br> Summer 2021/2022"
@@ -43,9 +49,15 @@
     "imgDir": "projects",
     "content": [
       {
+        "title": "Dot Matrix",
+        "img": "dotmatrix.png",
+        "description": "Game Boy Emulator<br>February - May 2020<br>April 2023 - Preset",
+        "link": "https://github.com/PScottZero/DotMatrix"
+      },
+      {
         "title": "PennOS",
         "img": "pennos.svg",
-        "description": "CIS 5480 Final Project (Private Repo)<br>March 2023 - Present"
+        "description": "CIS 5480 Final Project (Private Repo)<br>March - April 2023"
       },
       {
         "title": "Mini Minecraft",
@@ -152,12 +164,6 @@
         "img": "charcoal.jpg",
         "description": "April 2020",
         "link": "https://github.com/PScottZero/Charcoal"
-      },
-      {
-        "title": "Dot Matrix (Game Boy Emulator)",
-        "img": "dotmatrix.jpg",
-        "description": "February - May 2020",
-        "link": "https://github.com/PScottZero/DotMatrix"
       }
     ]
   },
@@ -610,6 +616,10 @@
       {
         "title": "Coin Collecting",
         "img": "coins.jpg"
+      },
+      {
+        "title": "Crosswords",
+        "img": "crossword.png"
       },
       {
         "title": "Guitar",

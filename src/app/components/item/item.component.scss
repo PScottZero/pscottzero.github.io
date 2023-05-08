@@ -25,9 +25,9 @@ iframe {
   bottom: 1rem;
   left: 1rem;
   width: calc(100% - 2rem);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2.5rem;
   background: $primary-color-transparent;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
   text-align: center;
   color: $text-color;
   font-size: $font-small;
@@ -35,8 +35,8 @@ iframe {
 
 .link-icon {
   position: absolute;
-  height: 1.5rem;
-  right: 1.5rem;
+  height: 1.2rem;
+  right: 1rem;
   top: 50%;
   transform: translateY(-50%);
 }
