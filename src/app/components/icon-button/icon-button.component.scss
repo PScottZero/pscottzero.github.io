@@ -10,6 +10,10 @@ button {
   transition: 0.2s;
   margin: 0 0.75rem;
 
+  @include phone {
+    margin: 0 0.5rem;
+  }
+
   img {
     float: top;
     height: 100%;
@@ -27,6 +31,5 @@ button {
 
   @include phone {
     height: $header-height;
-    padding: 0.7rem;
   }
 }
