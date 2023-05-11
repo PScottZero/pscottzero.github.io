@@ -37,8 +37,12 @@
 
   #about {
     margin: 0.5rem;
-    font-size: $font-banner;
+    font-size: $font-medium;
     color: $text-color;
     text-shadow: 0 0 5px black;
+
+    @include phone {
+      font-size: $font-banner-mobile;
+    }
   }
 }
