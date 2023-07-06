@@ -23,7 +23,7 @@
       {
         "title": "Merly",
         "img": "merly.svg",
-        "description": "Full-Stack Software Engineer <br> Starting June 2023",
+        "description": "Full-Stack Software Engineer <br> July 2023 - Present",
         "link": "https://www.merly.ai/"
       },
       {
@@ -631,7 +631,7 @@
       },
       {
         "title": "Movies",
-        "img": "2001.jpg"
+        "img": "akira.jpg"
       },
       {
         "title": "Piano",
@@ -648,6 +648,10 @@
       {
         "title": "Roller Coasters",
         "img": "roller_coaster.jpg"
+      },
+      {
+        "title": "Scooters",
+        "img": "metropolitan.jpg"
       },
       {
         "title": "Space Exploration",
