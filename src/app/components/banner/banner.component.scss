@@ -5,9 +5,10 @@
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  border-radius: 0 0 3rem 3rem;
+  border-radius: 0 0 1rem 1rem;
   padding: calc(10vh + 2rem) 0 10vh 0;
-  background: url('../../../assets/images/banner.jpg');
+  background: $primary-color-transparent
+    url('../../../assets/imgs/banner/banner.jpg');
   background-size: cover;
   margin-bottom: 0.5rem;
   box-shadow: $box-shadow;
