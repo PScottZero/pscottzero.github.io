@@ -6,7 +6,8 @@
       {
         "title": "University of Pennsylvania",
         "img": "upenn.jpg",
-        "description": "MSE Computer and Information Science <br> GPA 3.83/4.00 <br> August 2021 - May 2023"
+        "description": "MSE Computer and Information Science <br> GPA 3.83/4.00 <br> August 2021 - May 2023",
+        "link": "https://drive.google.com/file/d/10EQ92oqXIuAQZTZPGrHU9BBE1P3Ile8p/view?usp=sharing"
       },
       {
         "title": "Penn State",
@@ -17,8 +18,8 @@
     ]
   },
   {
-    "groupName": "Work Experience",
-    "imgDir": "work-experience",
+    "groupName": "Experience",
+    "imgDir": "experience",
     "content": [
       {
         "title": "Merly",
@@ -36,11 +37,6 @@
         "img": "research.jpg",
         "description": "<i>Automated Analysis of Information Flow Enforcement in PHP Program</i> <br> With Professor Danfeng Zhang and Peixuan Li <br> Fall 2020 - Spring 2021",
         "link": "https://honors.libraries.psu.edu/catalog/7131pjs5684"
-      },
-      {
-        "title": "Lockheed Martin",
-        "img": "orion.jpg",
-        "description": "Software Engineer Intern (Space Division) <br> Summer 2019/2020"
       }
     ]
   },
@@ -329,7 +325,7 @@
   },
   {
     "groupName": "Software Skills",
-    "imgDir": "skills-sw",
+    "imgDir": "skills/sw",
     "content": [
       {
         "title": "AWS",
@@ -371,7 +367,7 @@
   },
   {
     "groupName": "ML / AI Skills",
-    "imgDir": "skills-ml-ai",
+    "imgDir": "skills/ml-ai",
     "content": [
       {
         "title": "Autoencoder",
@@ -441,7 +437,7 @@
   },
   {
     "groupName": "Graduate Courses @ UPenn",
-    "imgDir": "courses-grad",
+    "imgDir": "courses/grad",
     "content": [
       {
         "title": "Advanced Computer Graphics",
@@ -497,7 +493,7 @@
   },
   {
     "groupName": "Undergraduate Courses @ Penn State",
-    "imgDir": "courses-undergrad",
+    "imgDir": "courses/undergrad",
     "content": [
       {
         "title": "Mathematical Logic",
