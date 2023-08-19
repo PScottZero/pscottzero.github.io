@@ -1,6 +1,29 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
+:host {
+  position: relative;
+  box-sizing: border-box;
+  line-height: 1.5;
+  margin: $item-margin;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: $box-shadow;
+
+  @include largerThanPhone {
+    flex: 33%;
+    max-width: calc(33% - ($item-margin * 2));
+    height: calc(min(33rem, 33vw) / $item-aspect-ratio);
+  }
+
+  @include phone {
+    flex: 100%;
+    max-width: 100%;
+    height: calc(100vw / $item-aspect-ratio-mobile);
+    margin: 0.5rem 0;
+  }
+}
+
 h1 {
   font-size: $font-medium;
   font-weight: normal;
