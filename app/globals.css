@@ -1,0 +1,30 @@
+:root {
+  --primary-color: #00a2a2;
+  --font-color: white;
+  --link-color: #00ffff;
+  --background-color: #283139;
+  --card-label-color: #00a2a2cc;
+  --spacing: 1rem;
+  --border-radius: 0.5rem;
+  --card-height: 20rem;
+  --min-width: 60rem;
+  --box-shadow: 4px 4px 4px #00000055;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
