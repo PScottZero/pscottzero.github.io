@@ -1,8 +1,7 @@
 [
   {
-    "sectionTitle": "Experience",
-    "imageFolder": "experience",
-    "navId": "experience",
+    "sectionId": "experience",
+    "title": "Experience",
     "columns": 3,
     "content": [
       {
@@ -34,162 +33,8 @@
     ]
   },
   {
-    "sectionTitle": "Programming Languages",
-    "imageFolder": "languages",
-    "navId": "skills",
-    "columns": 3,
-    "content": [
-      {
-        "title": "C / C++",
-        "image": "clang.svg",
-        "description": "Proficient"
-      },
-      {
-        "title": "Dart",
-        "image": "dart.svg",
-        "description": "Proficient"
-      },
-      {
-        "title": "HTML / CSS",
-        "image": "html.svg",
-        "description": "Proficient"
-      },
-      {
-        "title": "Java / Kotlin",
-        "image": "java.svg",
-        "description": "Proficient"
-      },
-      {
-        "title": "Python",
-        "image": "python.svg",
-        "description": "Proficient"
-      },
-      {
-        "title": "JavaScript / TypeScript",
-        "image": "javascript.svg",
-        "description": "Proficient"
-      },
-      {
-        "title": "C#",
-        "image": "csharp.svg"
-      },
-      {
-        "title": "Go",
-        "image": "go.svg"
-      },
-      {
-        "title": "Julia",
-        "image": "julia.svg"
-      },
-      {
-        "title": "MATLAB",
-        "image": "matlab.svg"
-      },
-      {
-        "title": "PHP",
-        "image": "php.svg"
-      },
-      {
-        "title": "Rust",
-        "image": "rust.svg"
-      },
-      {
-        "title": "Swift",
-        "image": "swift.jpg"
-      }
-    ]
-  },
-  {
-    "sectionTitle": "Software Skills",
-    "imageFolder": "sw-skills",
-    "columns": 3,
-    "content": [
-      {
-        "title": "Angular",
-        "image": "angular.svg",
-        "description": "HTML / CSS / TS"
-      },
-      {
-        "title": "AWS",
-        "image": "aws.svg"
-      },
-      {
-        "title": "Data Visualization",
-        "image": "data_visualization.jpg"
-      },
-      {
-        "title": "Docker",
-        "image": "docker.svg"
-      },
-      {
-        "title": "Flutter",
-        "image": "flutter.svg",
-        "description": "Dart"
-      },
-      {
-        "title": "Git",
-        "image": "git.svg"
-      },
-      {
-        "title": "GitHub",
-        "image": "github.svg"
-      },
-      {
-        "title": "gRPC",
-        "image": "grpc.svg",
-        "description": "C++"
-      },
-      {
-        "title": "Jupyter Notebook",
-        "image": "jupyter.svg"
-      },
-      {
-        "title": "Linux",
-        "image": "linux.svg"
-      },
-      {
-        "title": "OpenGL",
-        "image": "opengl.svg",
-        "description": "C++"
-      },
-      {
-        "title": "PyTorch",
-        "image": "pytorch.svg",
-        "description": "Python"
-      },
-      {
-        "title": "QT",
-        "image": "qt.svg",
-        "description": "C++"
-      },
-      {
-        "title": "React",
-        "image": "react.svg",
-        "description": "HTML / CSS / TS"
-      },
-      {
-        "title": "RESTful API",
-        "image": "rest_api.svg"
-      },
-      {
-        "title": "SQL",
-        "image": "sql.svg"
-      },
-      {
-        "title": "TensorFlow",
-        "image": "tensorflow.svg",
-        "description": "Python"
-      },
-      {
-        "title": "Unit Testing",
-        "image": "unit_testing.svg"
-      }
-    ]
-  },
-  {
-    "sectionTitle": "Education",
-    "imageFolder": "education",
-    "navId": "education",
+    "sectionId": "education",
+    "title": "Education",
     "columns": 2,
     "content": [
       {
@@ -216,169 +61,8 @@
     ]
   },
   {
-    "sectionTitle": "Graduate Courses @ UPenn",
-    "imageFolder": "courses/grad",
-    "columns": 3,
-    "content": [
-      {
-        "title": "Advanced Computer Graphics",
-        "image": "cornell_box.jpg",
-        "description": "CIS 5610, Spring 2023"
-      },
-      {
-        "title": "Operating Systems",
-        "image": "operating_systems.svg",
-        "description": "CIS 5480, Spring 2023"
-      },
-      {
-        "title": "Interactive Computer Graphics",
-        "image": "computer_graphics.svg",
-        "description": "CIS 5600, Fall 2022"
-      },
-      {
-        "title": "Software Systems",
-        "image": "software_systems.svg",
-        "description": "CIS 5050, Fall 2022"
-      },
-      {
-        "title": "Deep Learning",
-        "image": "cnn.svg",
-        "description": "CIS 5220, Spring 2022"
-      },
-      {
-        "title": "Big Data Analytics",
-        "image": "big_data.svg",
-        "description": "CIS 5450, Spring 2022"
-      },
-      {
-        "title": "Interactive Fiction and Text Generation",
-        "image": "interactive_fiction.svg",
-        "description": "CIS 7000, Spring 2022"
-      },
-      {
-        "title": "Theory of Computation",
-        "image": "theory_of_computation.svg",
-        "description": "CIS 5110, Fall 2021"
-      },
-      {
-        "title": "Machine Learning",
-        "image": "machine_learning.svg",
-        "description": "CIS 5200, Fall 2021"
-      },
-      {
-        "title": "Artificial Intelligence",
-        "image": "ai.svg",
-        "description": "CIS 5210, Fall 2021"
-      }
-    ]
-  },
-  {
-    "sectionTitle": "Undergraduate Courses @ Penn State",
-    "imageFolder": "courses/undergrad",
-    "columns": 3,
-    "content": [
-      {
-        "title": "Mathematical Logic",
-        "image": "lnt.svg",
-        "description": "MATH 457, Spring 2021"
-      },
-      {
-        "title": "Applications Programming",
-        "image": "swift.jpg",
-        "description": "CMPSC 475, Fall 2020"
-      },
-      {
-        "title": "Quantum Computation",
-        "image": "quantum_computer.jpg",
-        "description": "CS-191x (BerkeleyX), Summer 2020",
-        "link": "https://courses.edx.org/certificates/a7a842fb46834ea4b9459b44583f3e23"
-      },
-      {
-        "title": "Computer Vision",
-        "image": "computer_vision.jpg",
-        "description": "CMPEN 454, Spring 2020"
-      },
-      {
-        "title": "Database Management Systems",
-        "image": "database.jpg",
-        "description": "CMPSC 431W, Spring 2020"
-      },
-      {
-        "title": "Machine Learning & AI",
-        "image": "robot.jpg",
-        "description": "CMPSC 448, Spring 2020"
-      },
-      {
-        "title": "Theory of Computation",
-        "image": "turing_machine.jpg",
-        "description": "CMPSC 464, Spring 2020"
-      },
-      {
-        "title": "Numerical Computations",
-        "image": "trapezoid.jpg",
-        "description": "MATH 451, Spring 2020"
-      },
-      {
-        "title": "Computer Design",
-        "image": "computer_design.jpg",
-        "description": "CMPEN 331, Fall 2019"
-      },
-      {
-        "title": "Programming Language Concepts",
-        "image": "lambda.jpg",
-        "description": "CMPSC 461, Fall 2019"
-      },
-      {
-        "title": "Operating Systems",
-        "image": "os.jpg",
-        "description": "CMPSC 473, Fall 2019"
-      },
-      {
-        "title": "Matrix Algebra",
-        "image": "matrix.jpg",
-        "description": "MATH 441, Fall 2019"
-      },
-      {
-        "title": "Mathematical Statistics",
-        "image": "stat.jpg",
-        "description": "STAT 415, Fall 2019"
-      },
-      {
-        "title": "Data Structures & Algorithms",
-        "image": "data_structures.jpg",
-        "description": "CMPSC 465, Spring 2019"
-      },
-      {
-        "title": "Technical Writing",
-        "image": "writing.jpg",
-        "description": "ENGL 202C, Spring 2019"
-      },
-      {
-        "title": "Probability Theory",
-        "image": "probability.jpg",
-        "description": "STAT 414, Spring 2019"
-      },
-      {
-        "title": "Systems Programming",
-        "image": "clang.svg",
-        "description": "CMPSC 311, Fall 2018"
-      },
-      {
-        "title": "Object-Oriented Programming",
-        "image": "oop.jpg",
-        "description": "CMPSC 221, Spring 2018"
-      },
-      {
-        "title": "Multivariable Calculus",
-        "image": "calculus.jpg",
-        "description": "MATH 230, Fall 2017"
-      }
-    ]
-  },
-  {
-    "sectionTitle": "Projects",
-    "imageFolder": "projects",
-    "navId": "projects",
+    "sectionId": "projects",
+    "title": "Projects",
     "columns": 3,
     "content": [
       {
@@ -523,10 +207,320 @@
     ]
   },
   {
-    "sectionTitle": "Hobbies",
-    "imageFolder": "hobbies",
-    "navId": "hobbies",
-    "columns": 3,
+    "sectionId": "languages",
+    "title": "Programming Languages",
+    "columns": 4,
+    "content": [
+      {
+        "title": "C/C++",
+        "image": "clang.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "C#",
+        "image": "csharp.svg",
+        "description": "Familiar"
+      },
+      {
+        "title": "Dart",
+        "image": "dart.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "Go",
+        "image": "go.svg",
+        "description": "Familiar"
+      },
+      {
+        "title": "HTML/CSS",
+        "image": "html.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "Java/Kotlin",
+        "image": "java.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "JavaScript/TypeScript",
+        "image": "javascript.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "Python",
+        "image": "python.svg",
+        "description": "Proficient"
+      },
+      {
+        "title": "Julia",
+        "image": "julia.svg"
+      },
+      {
+        "title": "PHP",
+        "image": "php.svg"
+      },
+      {
+        "title": "Rust",
+        "image": "rust.svg"
+      },
+      {
+        "title": "Swift",
+        "image": "swift.jpg"
+      }
+    ]
+  },
+  {
+    "sectionId": "sw-skills",
+    "title": "Software Skills",
+    "columns": 4,
+    "content": [
+      {
+        "title": "Angular",
+        "image": "angular.svg",
+        "description": "HTML/CSS/TS"
+      },
+      {
+        "title": "AWS",
+        "image": "aws.svg"
+      },
+      {
+        "title": "Data Visualization",
+        "image": "data_visualization.jpg"
+      },
+      {
+        "title": "Docker",
+        "image": "docker.svg"
+      },
+      {
+        "title": "Flutter",
+        "image": "flutter.svg",
+        "description": "Dart"
+      },
+      {
+        "title": "Git",
+        "image": "git.svg"
+      },
+      {
+        "title": "GitHub",
+        "image": "github.svg"
+      },
+      {
+        "title": "gRPC",
+        "image": "grpc.svg",
+        "description": "C++"
+      },
+      {
+        "title": "Jupyter Notebook",
+        "image": "jupyter.svg"
+      },
+      {
+        "title": "Linux",
+        "image": "linux.svg"
+      },
+      {
+        "title": "OpenGL",
+        "image": "opengl.svg",
+        "description": "C++"
+      },
+      {
+        "title": "PyTorch",
+        "image": "pytorch.svg",
+        "description": "Python"
+      },
+      {
+        "title": "QT",
+        "image": "qt.svg",
+        "description": "C++"
+      },
+      {
+        "title": "React",
+        "image": "react.svg",
+        "description": "HTML/CSS/TS"
+      },
+      {
+        "title": "RESTful API",
+        "image": "rest_api.svg"
+      },
+      {
+        "title": "SQL",
+        "image": "sql.svg"
+      },
+      {
+        "title": "TensorFlow",
+        "image": "tensorflow.svg",
+        "description": "Python"
+      },
+      {
+        "title": "Unit Testing",
+        "image": "unit_testing.svg"
+      }
+    ]
+  },
+  
+  {
+    "sectionId": "grad-courses",
+    "title": "Graduate Courses @ UPenn",
+    "columns": 4,
+    "content": [
+      {
+        "title": "Advanced Computer Graphics",
+        "image": "cornell_box.jpg",
+        "description": "CIS 5610, Spring 2023"
+      },
+      {
+        "title": "Operating Systems",
+        "image": "operating_systems.svg",
+        "description": "CIS 5480, Spring 2023"
+      },
+      {
+        "title": "Interactive Computer Graphics",
+        "image": "computer_graphics.svg",
+        "description": "CIS 5600, Fall 2022"
+      },
+      {
+        "title": "Software Systems",
+        "image": "software_systems.svg",
+        "description": "CIS 5050, Fall 2022"
+      },
+      {
+        "title": "Deep Learning",
+        "image": "cnn.svg",
+        "description": "CIS 5220, Spring 2022"
+      },
+      {
+        "title": "Big Data Analytics",
+        "image": "big_data.svg",
+        "description": "CIS 5450, Spring 2022"
+      },
+      {
+        "title": "Interactive Fiction and Text Generation",
+        "image": "interactive_fiction.svg",
+        "description": "CIS 7000, Spring 2022"
+      },
+      {
+        "title": "Theory of Computation",
+        "image": "theory_of_computation.svg",
+        "description": "CIS 5110, Fall 2021"
+      },
+      {
+        "title": "Machine Learning",
+        "image": "machine_learning.svg",
+        "description": "CIS 5200, Fall 2021"
+      },
+      {
+        "title": "Artificial Intelligence",
+        "image": "ai.svg",
+        "description": "CIS 5210, Fall 2021"
+      }
+    ]
+  },
+  {
+    "sectionId": "ugrad-courses",
+    "title": "Undergraduate Courses @ Penn State",
+    "columns": 4,
+    "content": [
+      {
+        "title": "Mathematical Logic",
+        "image": "lnt.svg",
+        "description": "MATH 457, Spring 2021"
+      },
+      {
+        "title": "Applications Programming",
+        "image": "swift.jpg",
+        "description": "CMPSC 475, Fall 2020"
+      },
+      {
+        "title": "Quantum Computation",
+        "image": "quantum_computer.jpg",
+        "description": "CS-191x (BerkeleyX), Summer 2020",
+        "link": "https://courses.edx.org/certificates/a7a842fb46834ea4b9459b44583f3e23"
+      },
+      {
+        "title": "Computer Vision",
+        "image": "computer_vision.jpg",
+        "description": "CMPEN 454, Spring 2020"
+      },
+      {
+        "title": "Database Management Systems",
+        "image": "database.jpg",
+        "description": "CMPSC 431W, Spring 2020"
+      },
+      {
+        "title": "Machine Learning & AI",
+        "image": "robot.jpg",
+        "description": "CMPSC 448, Spring 2020"
+      },
+      {
+        "title": "Theory of Computation",
+        "image": "turing_machine.jpg",
+        "description": "CMPSC 464, Spring 2020"
+      },
+      {
+        "title": "Numerical Computations",
+        "image": "trapezoid.jpg",
+        "description": "MATH 451, Spring 2020"
+      },
+      {
+        "title": "Computer Design",
+        "image": "computer_design.jpg",
+        "description": "CMPEN 331, Fall 2019"
+      },
+      {
+        "title": "Programming Language Concepts",
+        "image": "lambda.jpg",
+        "description": "CMPSC 461, Fall 2019"
+      },
+      {
+        "title": "Operating Systems",
+        "image": "os.jpg",
+        "description": "CMPSC 473, Fall 2019"
+      },
+      {
+        "title": "Matrix Algebra",
+        "image": "matrix.jpg",
+        "description": "MATH 441, Fall 2019"
+      },
+      {
+        "title": "Mathematical Statistics",
+        "image": "stat.jpg",
+        "description": "STAT 415, Fall 2019"
+      },
+      {
+        "title": "Data Structures & Algorithms",
+        "image": "data_structures.jpg",
+        "description": "CMPSC 465, Spring 2019"
+      },
+      {
+        "title": "Technical Writing",
+        "image": "writing.jpg",
+        "description": "ENGL 202C, Spring 2019"
+      },
+      {
+        "title": "Probability Theory",
+        "image": "probability.jpg",
+        "description": "STAT 414, Spring 2019"
+      },
+      {
+        "title": "Systems Programming",
+        "image": "clang.svg",
+        "description": "CMPSC 311, Fall 2018"
+      },
+      {
+        "title": "Object-Oriented Programming",
+        "image": "oop.jpg",
+        "description": "CMPSC 221, Spring 2018"
+      },
+      {
+        "title": "Multivariable Calculus",
+        "image": "calculus.jpg",
+        "description": "MATH 230, Fall 2017"
+      }
+    ]
+  },
+  {
+    "sectionId": "hobbies",
+    "title": "Hobbies",
+    "columns": 4,
     "content": [
       {
         "title": "Aviation",

@@ -18,11 +18,12 @@
 }
 
 .title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .description {
+  position: relative;
   font-size: 16px;
 }
 
@@ -36,9 +37,25 @@
   filter: brightness(75%);
 }
 
-@media screen and (max-width: 768px) {
+.linkIcon {
+  position: absolute;
+  width: 1.2rem;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    flex: calc(50% - var(--spacing)) !important;
+    max-width: calc(50% - var(--spacing) / 2) !important;
+    height: 18rem !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
   .card {
     margin-top: var(--spacing);
     max-width: 100% !important;
+    height: 70vmin !important;
   }
 }

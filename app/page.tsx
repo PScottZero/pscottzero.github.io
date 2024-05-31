@@ -8,10 +8,8 @@ export default function Home() {
   content.forEach((section: SectionProps) => {
     sections.push(
       <Section
-        key={sections.length}
-        sectionTitle={section.sectionTitle}
-        imageFolder={section.imageFolder}
-        navId={section.navId}
+        sectionId={section.sectionId}
+        title={section.title}
         columns={section.columns}
         content={section.content}
       />
