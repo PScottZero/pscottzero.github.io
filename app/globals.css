@@ -7,9 +7,14 @@
   --spacing: 1rem;
   --border-radius: 0.5rem;
   --card-height: 20rem;
+  --medium-card-height: 17.5rem;
   --small-card-height: 15rem;
+  --mobile-card-height: 70vmin;
+  --mobile-small-card-height: calc(70vmin / 2);
   --min-width: 60rem;
   --box-shadow: 4px 4px 4px #00000055;
+  --card-title-font-size: 20px;
+  --card-description-font-fize: 16px;
 }
 
 * {

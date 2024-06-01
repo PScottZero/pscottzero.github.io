@@ -2,48 +2,87 @@
 
 import styles from "./card.module.css";
 
-export type CardProps = {
+export type CardData = {
   title: string,
   description?: string | string[],
   image: string,
   link?: string,
-  flex?: number
+}
+
+export type CardProps = {
+  data: CardData,
+  imageFolder: string,
+  flex: number,
+  flexShrink: number,
 };
 
-export default function Card({ title, description, image, link, flex }: CardProps) {
+function adjustFlex(flex: number, flexShrink: number): number {
+  let flexAdjusted = flex - flexShrink;
+  if (flexAdjusted < 2 && flexShrink === 1) flexAdjusted = 2;
+  if (flexAdjusted === 0) flexAdjusted = 1;
+  return flexAdjusted;
+}
+
+function getCardMaxWidth(flexAdjusted: number): string {
+  const flexWidth = (100 / flexAdjusted) + "%";
+  const widthCorrection = (flexAdjusted - 1) + " * var(--spacing) / " + flexAdjusted;
+  return "calc(" + flexWidth + " - " + widthCorrection + ")";
+}
+
+function getCardHeight(flexAdjusted: number, flexShrink: number): string {
+  if (flexAdjusted === 4) {
+    return "var(--small-card-height)";
+  } else if (flexAdjusted === 2 && flexShrink === 2) {
+    return "var(--mobile-small-card-height)";
+  } else if (flexAdjusted < 2 && flexShrink === 2) {
+    return "var(--mobile-card-height)";
+  } else if (flexShrink === 1) {
+    return "var(--medium-card-height)";
+  } else {
+    return "var(--card-height)";
+  }
+}
+
+function getCardFontSizes(flexAdjusted: number, flexShrink: number): string[] {
+  return flexAdjusted == 2 && flexShrink === 2 ?
+    ["16px", "12px", "calc(var(--spacing) / 2)"] :
+    ["var(--card-title-font-size)", "var(--card-description-font-size)", "var(--spacing)"];
+}
+
+export default function Card({ data, imageFolder, flex, flexShrink }: CardProps) {
   let descriptionLines = [];
-  if (description !== undefined) {
-    if (Array.isArray(description)) {
-      for (let i = 0; i < description.length; i++) {
-        descriptionLines.push(<p key={i}>{description[i]}</p>);
+  if (data.description !== undefined) {
+    if (Array.isArray(data.description)) {
+      for (let i = 0; i < data.description.length; i++) {
+        descriptionLines.push(<p key={i}>{data.description[i]}</p>);
       }
     } else {
-      descriptionLines.push(<p key={0}>{description}</p>);
+      descriptionLines.push(<p key={0}>{data.description}</p>);
     }
   }
   
-  const flex_ = flex ?? 3;
-  const cardStyles = styles.card + (link !== undefined ? " " + styles.link : "");
-  const flexWidth = (100 / flex_) + "%";
-  const widthCorrection = (flex_ - 1) + " * var(--spacing) / " + flex_;
-  const maxWidth = "calc(" + flexWidth + " - " + widthCorrection + ")";
-  const height = flex_ ===  4 ? "var(--small-card-height)" : "var(--card-height)";
+  const flexAdjusted = adjustFlex(flex, flexShrink);
+  const maxCardWidth = getCardMaxWidth(flexAdjusted);
+  const height = getCardHeight(flexAdjusted, flexShrink);
+  const [titleSize, descriptionSize, labelPadding] = getCardFontSizes(flexAdjusted, flexShrink);
+  
+  const cardStyles = styles.card + (data.link !== undefined ? " " + styles.link : "");
 
-  const linkFn = link !== undefined ? () => window.open(link) : undefined;
-  const linkIcon = link !== undefined ? <img className={styles.linkIcon} src="imgs/link.svg"/> : undefined;
+  const linkFn = data.link !== undefined ? () => window.open(data.link) : undefined;
+  const linkIcon = data.link !== undefined ? <img className={styles.linkIcon} src="imgs/link.svg"/> : undefined;
 
   return (
-    <div style={{flex: maxWidth, maxWidth: maxWidth, height: height}} className={cardStyles} onClick={linkFn}>
-      <div className={styles.label}>
-        <div className={styles.title}>
-          {title}
+    <div style={{flex: maxCardWidth, maxWidth: maxCardWidth, height: height}} className={cardStyles} onClick={linkFn}>
+      <div className={styles.label} style={{padding: labelPadding}}>
+        <div className={styles.title} style={{fontSize: titleSize}}>
+          {data.title}
         </div>
-        <div className={styles.description}>
+        <div className={styles.description}  style={{fontSize: descriptionSize}}>
           {descriptionLines}
           {linkIcon}
         </div>
       </div>
-      <img className={styles.image} src={image}/>
+      <img className={styles.image} src={"imgs/content/" + imageFolder + "/" + data.image}/>
     </div>
   );
 }

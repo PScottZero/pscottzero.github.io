@@ -1,31 +1,36 @@
-import Card, { CardProps } from "../card/card";
+import Card, { CardData } from "../card/card";
 import styles from "./section.module.css";
 
-export type SectionProps = {
+export type SectionData = {
   sectionId: string,
   title: string,
   columns: number,
-  content: CardProps[]
+  content: CardData[]
 }
 
-export default function Section({ sectionId, title, columns, content }: SectionProps) {
+export type SectionProps = {
+  data: SectionData,
+  flexShrink: number
+}
+
+export default function Section({ data, flexShrink }: SectionProps) {
   let cards: JSX.Element[] = [];
-  for (const card of content) {
+  for (let cardData of data.content) {
     cards.push(
       <Card
-        title={card.title}
-        description={card.description}
-        image={"imgs/content/" + sectionId + "/" + card.image}
-        link={card.link}
-        flex={columns}
+        key={cards.length}
+        data={cardData}
+        imageFolder={data.sectionId}
+        flex={data.columns}
+        flexShrink={flexShrink}
       />
     );
   }
 
   return (
-    <div id={sectionId} className={styles.section}>
+    <div id={data.sectionId} className={styles.section}>
       <div className={styles.title}>
-        {title}
+        {data.title}
       </div>
       <div className={styles.cards}>
         {cards}

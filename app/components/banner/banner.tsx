@@ -7,7 +7,7 @@ export default function Banner() {
         <img src="imgs/banner/profile.jpg"></img>
       </div>
       <div className={styles.description}>
-        Hello! My name is Paul Scott. I am a full-stack software engineer at Merly.
+        Hello! My name is Paul Scott. I am a software engineer at Vistar Media.
         I obtained my master&apos;s in computer and information science from the University of Pennsylvania,
         and I obtained my bachelor&apos;s degree in computer science from Penn State.
         My areas of interest are computer graphics, distributed systems, emulation,

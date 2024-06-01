@@ -9,8 +9,8 @@ const inter = Ubuntu({
 });
 
 export const metadata: Metadata = {
-  title: "Paul J. Scott IV",
-  description: "Personal Website",
+  title: "Paul Scott",
+  description: "My Personal Website",
 };
 
 export default function RootLayout({

@@ -4,8 +4,9 @@
   border-radius: var(--border-radius);
   width: 100%;
   min-height: var(--card-height);
-  background: url("/imgs/banner/banner.jpg");
+  background: url("/imgs/banner/banner2.jpg");
   background-size: cover;
+  background-position: 50%;
   box-shadow: var(--box-shadow);
 }
 
