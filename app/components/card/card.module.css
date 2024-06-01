@@ -18,13 +18,13 @@
 }
 
 .title {
-  font-size: var(--card-title-font-size);
+  font-size: var(--medium-font-size);
   font-weight: bold;
 }
 
 .description {
   position: relative;
-  font-size: var(--card-description-font-size);
+  font-size: var(--regular-font-size);
 }
 
 .image {

@@ -1,20 +1,32 @@
 :root {
+  /* colors */
   --primary-color: #00a2a2;
   --font-color: white;
   --link-color: #00ffff;
   --background-color: #283139;
   --card-label-color: #00a2a2cc;
-  --spacing: 1rem;
-  --border-radius: 0.5rem;
+  --shadow-color: #00000055;
+
+  /* card heights */
   --card-height: 20rem;
   --medium-card-height: 17.5rem;
   --small-card-height: 15rem;
   --mobile-card-height: 70vmin;
   --mobile-small-card-height: calc(70vmin / 2);
+
+  /* font sizes */
+  --small-font-size: 12px;
+  --regular-font-size: 16px;
+  --medium-font-size: 20px;
+  --large-font-size: 24px;
+
+  /* sizing */
+  --spacing: 1rem;
+  --border-radius: 0.5rem;
   --min-width: 60rem;
-  --box-shadow: 4px 4px 4px #00000055;
-  --card-title-font-size: 20px;
-  --card-description-font-fize: 16px;
+  --profile-size: 20rem;
+  --small-profile-size: 16rem;
+  --box-shadow: 4px 4px 4px var(--shadow-color);
 }
 
 * {

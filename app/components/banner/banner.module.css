@@ -1,10 +1,10 @@
 .banner {
   display: grid;
-  grid-template-columns: 20rem 1fr;
+  grid-template-columns: var(--profile-size) 1fr;
   border-radius: var(--border-radius);
   width: 100%;
   min-height: var(--card-height);
-  background: url("/imgs/banner/banner2.jpg");
+  background: url("/images/banner.jpg");
   background-size: cover;
   background-position: 50%;
   box-shadow: var(--box-shadow);
@@ -19,7 +19,7 @@
 }
 
 .profile img {
-  width: 16rem;
+  width: calc(var(--profile-size) - 4rem);
   border-radius: var(--border-radius);
   border: 4px solid var(--font-color);
 }
@@ -38,6 +38,7 @@
   .banner {
     grid-template-rows: 14rem 1fr;
     grid-template-columns: 1fr;
+    font-size: 16px;
   }
 
   .profile {

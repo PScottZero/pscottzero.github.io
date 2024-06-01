@@ -4,7 +4,7 @@ export default function Banner() {
   return (
     <div className={styles.banner}>
       <div className={styles.profile}>
-        <img src="imgs/banner/profile.jpg"></img>
+        <img src="images/profile.jpg"></img>
       </div>
       <div className={styles.description}>
         Hello! My name is Paul Scott. I am a software engineer at Vistar Media.

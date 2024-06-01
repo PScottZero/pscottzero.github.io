@@ -45,8 +45,8 @@ function getCardHeight(flexAdjusted: number, flexShrink: number): string {
 
 function getCardFontSizes(flexAdjusted: number, flexShrink: number): string[] {
   return flexAdjusted == 2 && flexShrink === 2 ?
-    ["16px", "12px", "calc(var(--spacing) / 2)"] :
-    ["var(--card-title-font-size)", "var(--card-description-font-size)", "var(--spacing)"];
+    ["var(--regular-font-size)", "var(--small-font-size)", "calc(var(--spacing) / 2)"] :
+    ["var(--medium-font-size)", "var(--regular-font-size)", "var(--spacing)"];
 }
 
 export default function Card({ data, imageFolder, flex, flexShrink }: CardProps) {
@@ -69,7 +69,7 @@ export default function Card({ data, imageFolder, flex, flexShrink }: CardProps)
   const cardStyles = styles.card + (data.link !== undefined ? " " + styles.link : "");
 
   const linkFn = data.link !== undefined ? () => window.open(data.link) : undefined;
-  const linkIcon = data.link !== undefined ? <img className={styles.linkIcon} src="imgs/link.svg"/> : undefined;
+  const linkIcon = data.link !== undefined ? <img className={styles.linkIcon} src="icons/link.svg"/> : undefined;
 
   return (
     <div style={{flex: maxCardWidth, maxWidth: maxCardWidth, height: height}} className={cardStyles} onClick={linkFn}>
@@ -82,7 +82,7 @@ export default function Card({ data, imageFolder, flex, flexShrink }: CardProps)
           {linkIcon}
         </div>
       </div>
-      <img className={styles.image} src={"imgs/content/" + imageFolder + "/" + data.image}/>
+      <img className={styles.image} src={"images/" + imageFolder + "/" + data.image}/>
     </div>
   );
 }
