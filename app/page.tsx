@@ -1,19 +1,13 @@
 "use client";
 
 import Banner from "./components/banner/banner";
-import Section, { SectionData, SectionProps } from "./components/section/section";
+import Section, { SectionData } from "./components/section/section";
 import content from "../public/content.json";
 import styles from "./page.module.css";
 import { useEffect, useState } from "react";
 
 function getFlexShrink(window: Window): number {
-  if (window.innerWidth <= 640) {
-    return 2;
-  } else if (window.innerWidth <= 1024) {
-    return 1;
-  } else {
-    return 0;
-  }
+  return window.innerWidth <= 640 ? 2 : window.innerWidth <= 1024 ? 1 : 0;
 }
 
 export default function Home() {
@@ -26,12 +20,14 @@ export default function Home() {
         key={sections.length}
         data={sectionData}
         flexShrink={flexShrink}
-      />
+      />,
     );
   });
 
   useEffect(() => {
-    window.addEventListener('resize', () => setFlexShrink(getFlexShrink(window)));
+    window.addEventListener("resize", () =>
+      setFlexShrink(getFlexShrink(window)),
+    );
     setFlexShrink(getFlexShrink(window));
   }, []);
 
@@ -40,9 +36,11 @@ export default function Home() {
       <Banner></Banner>
       {sections}
       <footer className={styles.footer}>
-        Email at <a href="mailto:pauljscott8@gmail.com">pauljscott8@gmail.com</a> or call at (215) 880-9592
-        <br/>
-        Updated May 31<sup>st</sup>, 2024
+        Email at{" "}
+        <a href="mailto:pauljscott8@gmail.com">pauljscott8@gmail.com</a> or call
+        at (215) 880-9592
+        <br />
+        Updated June 30<sup>th</sup>, 2024
       </footer>
     </main>
   );

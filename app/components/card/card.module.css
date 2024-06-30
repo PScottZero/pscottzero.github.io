@@ -1,7 +1,7 @@
 .card {
   position: relative;
   transition: 0.1s;
-  height: var(--card-height);
+  aspect-ratio: 4/3;
   background-color: var(--primary-color);
   border-radius: var(--border-radius);
   overflow: hidden;
@@ -40,6 +40,7 @@
 .linkIcon {
   position: absolute;
   width: 1.2rem;
+  height: auto;
   right: 0;
   bottom: 0;
 }

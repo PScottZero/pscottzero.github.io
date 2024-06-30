@@ -8,7 +8,7 @@
         "title": "Vistar Media",
         "image": "vistar.jpg",
         "description": [
-          "Full-Stack Software Engineer",
+          "Software Engineer",
           "June 2024 - Present"
         ],
         "link": "https://www.vistarmedia.com/"
@@ -35,7 +35,7 @@
   {
     "sectionId": "education",
     "title": "Education",
-    "columns": 2,
+    "columns": 3,
     "content": [
       {
         "title": "University of Pennsylvania",
@@ -356,7 +356,6 @@
       }
     ]
   },
-  
   {
     "sectionId": "grad-courses",
     "title": "Graduate Courses @ UPenn",
