@@ -67,7 +67,7 @@
     "content": [
       {
         "title": "Dot Matrix",
-        "image": "dotmatrix.png",
+        "image": "dotmatrix.jpg",
         "description": [
           "Game Boy Emulator",
           "February - May 2020",
@@ -143,7 +143,7 @@
       },
       {
         "title": "WGAN-GP",
-        "image": "wgan-gp.jpg",
+        "image": "wgan_gp.jpg",
         "description": "February 2022 - March 2022",
         "link": "https://github.com/PScottZero/wgan-gp"
       },
@@ -518,9 +518,17 @@
   },
   {
     "sectionId": "hobbies",
-    "title": "Hobbies",
+    "title": "Hobbies + Interests",
     "columns": 4,
     "content": [
+      {
+        "title": "Art / Paintings",
+        "image": "kupka.jpg"
+      },
+      {
+        "title": "Architecure",
+        "image": "hotel_del_coronado.jpg"
+      },
       {
         "title": "Aviation",
         "image": "a380.jpg"
@@ -539,7 +547,7 @@
       },
       {
         "title": "Crosswords",
-        "image": "crossword.png"
+        "image": "crossword.jpg"
       },
       {
         "title": "Guitar",
