@@ -4,7 +4,7 @@ import styles from "./header.module.css";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <Image src="/images/logo1.svg" alt="Logo" width={2526} height={1024} />
+      <Image src="/images/logo.svg" alt="Logo" width={2526} height={1024} />
       <nav className={styles.nav}>
         <span className={styles.pageLinks}>
           <a href="#experience">Experience</a>

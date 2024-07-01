@@ -229,7 +229,7 @@
       {
         "title": "Go",
         "image": "go.svg",
-        "description": "Familiar"
+        "description": "Proficient"
       },
       {
         "title": "HTML/CSS",
@@ -546,20 +546,16 @@
         "image": "martin_guitar.jpg"
       },
       {
-        "title": "Model Trains",
-        "image": "model_trains.jpg"
+        "title": "Movies",
+        "image": "noth.jpg"
       },
       {
-        "title": "Movies",
-        "image": "akira.jpg"
+        "title": "Music / Records",
+        "image": "neil_young.jpg"
       },
       {
         "title": "Piano",
         "image": "piano.jpg"
-      },
-      {
-        "title": "Records",
-        "image": "remaininlight.jpg"
       },
       {
         "title": "Retro Tech",
@@ -574,12 +570,12 @@
         "image": "metropolitan.jpg"
       },
       {
-        "title": "Space Exploration",
+        "title": "Space",
         "image": "jwst.jpg"
       },
       {
-        "title": "Trains",
-        "image": "trains.jpg"
+        "title": "Trains / Model Trains",
+        "image": "model_trains.jpg"
       }
     ]
   }
