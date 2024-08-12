@@ -20,13 +20,13 @@ export default function Home() {
         key={sections.length}
         data={sectionData}
         flexShrink={flexShrink}
-      />,
+      />
     );
   });
 
   useEffect(() => {
     window.addEventListener("resize", () =>
-      setFlexShrink(getFlexShrink(window)),
+      setFlexShrink(getFlexShrink(window))
     );
     setFlexShrink(getFlexShrink(window));
   }, []);
@@ -40,7 +40,7 @@ export default function Home() {
         <a href="mailto:pauljscott8@gmail.com">pauljscott8@gmail.com</a> or call
         at (215) 880-9592
         <br />
-        Updated June 30<sup>th</sup>, 2024
+        Updated August 12<sup>th</sup>, 2024
       </footer>
     </main>
   );

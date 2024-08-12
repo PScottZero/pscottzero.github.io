@@ -4,8 +4,8 @@ import json
 from PIL import Image
 
 # constants
-max_image_size = 500000
-image_exts = ["jpg", "jpeg", "png", "svg"]
+max_image_size = 256000
+image_exts = ["jpg", "jpeg", "png", "svg", "webp"]
 public_dir = "public"
 public_backup_dir = "public_backup"
 content_json = open(f"{public_dir}/content.json").read()
@@ -48,14 +48,15 @@ def remove_unused_images(images):
         images.remove(unused_image)
 
 
-def convert_pngs_to_jpgs(images):
+def convert_images_to_jpgs(images):
     global content_json
-    print("Converting PNGs to JPGs...")
+    print("Converting images to JPGs...")
     replacements = []
     for image in images:
-        if image.endswith(".png"):
+        if image.endswith(".png") or image.endswith(".webp"):
             basename = os.path.basename(image)
             new_image = image.replace(".png", ".jpg")
+            new_image = new_image.replace(".webp", ".jpg")
             new_basename = os.path.basename(new_image)
             content_json = content_json.replace(basename, new_basename)
             image_data = Image.open(image)
@@ -63,7 +64,7 @@ def convert_pngs_to_jpgs(images):
             image_data.save(new_image, format="JPEG", quality=100)
             os.remove(image)
             replacements.append((image, new_image))
-            print(f"- PNG to JPG: {image} -> {new_image}")
+            print(f"- Image to JPG: {image} -> {new_image}")
     for replacement in replacements:
         images.remove(replacement[0])
         images.append(replacement[1])
@@ -125,12 +126,15 @@ def compress_large_images(images):
                 )
 
 
+def minify_svgs(images):
+    print("Minifying SVGs...")
+    for image in images:
+        if image.endswith(".svg"):
+            os.system(f"npx svgo {image}")
+
+
 def backup_public():
     shutil.copytree(public_dir, public_backup_dir)
-
-
-def load_content():
-    return
 
 
 def save_content():
@@ -142,9 +146,10 @@ def clean_images():
     images = get_images()
     backup_public()
     remove_unused_images(images)
-    convert_pngs_to_jpgs(images)
+    convert_images_to_jpgs(images)
     normalize_names(images)
     compress_large_images(images)
+    minify_svgs(images)
     save_content()
 
 

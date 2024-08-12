@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <path d="M640,1024L960.002,1024C995.324,1024 1024,995.323 1024,960L1024,64C1024,28.677 995.324,-0 960.002,-0L128,-0L128,1024L256,1024L256,-0L320,-0L320,1024L576,1024L576,-0L640,-0L640,1024ZM64,0L64.002,-0L64,-0C28.679,0 0.002,28.677 0.002,64L0.002,960C0.002,995.323 28.679,1024 64,1024L64.002,1024L64,1024L64,0Z" style="fill:rgb(0,162,162);"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" viewBox="0 0 1024 1024"><path d="M640 1024h320.002c35.322 0 63.998-28.677 63.998-64V64c0-35.323-28.676-64-63.998-64H128v1024h128V0h64v1024h256V0h64zM64 0h.002zC28.679 0 .002 28.677.002 64v896c0 35.323 28.677 64 63.998 64h.002H64z" style="fill:#00a2a2"/></svg>

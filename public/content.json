@@ -52,7 +52,7 @@
         "image": "psu.jpg",
         "description": [
           "BS Computer Science, Math Minor",
-          "GPA 3.98/4.00, Summa Cumme Laude",
+          "GPA 3.98/4.00, Summa Cum Laude",
           "Schreyer Honors Scholar",
           "August 2017 - May 2021"
         ],
@@ -229,7 +229,7 @@
       {
         "title": "Go",
         "image": "go.svg",
-        "description": "Proficient"
+        "description": "Familiar"
       },
       {
         "title": "HTML/CSS",
@@ -522,12 +522,12 @@
     "columns": 4,
     "content": [
       {
-        "title": "Art / Paintings",
-        "image": "kupka.jpg"
+        "title": "Art",
+        "image": "at_moulin_rouge.jpg"
       },
       {
-        "title": "Architecure",
-        "image": "hotel_del_coronado.jpg"
+        "title": "Architecture",
+        "image": "fuji_broadcasting_center.jpg"
       },
       {
         "title": "Aviation",
@@ -555,7 +555,7 @@
       },
       {
         "title": "Movies",
-        "image": "noth.jpg"
+        "image": "night_of_the_hunter.jpg"
       },
       {
         "title": "Music / Records",
