@@ -78,7 +78,7 @@
         "title": "CHIP-8",
         "image": "chip8.jpg",
         "description": [
-          "CHIP-8/SUPER-CHIP Interpreter",
+          "CHIP-8 / SUPER-CHIP Interpreter",
           "July - August 2024"
         ],
         "link": "https://pjs4.com/chip8"
@@ -87,9 +87,9 @@
         "title": "Dot Matrix",
         "image": "dotmatrix.jpg",
         "description": [
-          "Game Boy Emulator",
+          "Game Boy / Game Boy Color Emulator",
           "February - May 2020",
-          "April 2023 - Preset"
+          "April - June 2023"
         ],
         "link": "https://github.com/PScottZero/DotMatrix"
       },
