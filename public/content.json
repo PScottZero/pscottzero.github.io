@@ -66,6 +66,24 @@
     "columns": 3,
     "content": [
       {
+        "title": "Esolangs",
+        "image": "esolangs.jpg",
+        "description": [
+          "Esoteric Programming Language Interpreter Collection",
+          "August 2024 - Preset"
+        ],
+        "link": "https://pjs4.com/esolangs"
+      },
+      {
+        "title": "CHIP-8",
+        "image": "chip8.jpg",
+        "description": [
+          "CHIP-8/SUPER-CHIP Interpreter",
+          "July - August 2024"
+        ],
+        "link": "https://pjs4.com/chip8"
+      },
+      {
         "title": "Dot Matrix",
         "image": "dotmatrix.jpg",
         "description": [

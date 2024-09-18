@@ -9,7 +9,7 @@ image_exts = ["jpg", "jpeg", "png", "svg", "webp"]
 public_dir = "public"
 public_backup_dir = "public_backup"
 content_json = open(f"{public_dir}/content.json").read()
-unused_whitelist = [
+whitelist = [
     "banner.jpg",
     "profile.jpg",
     "favicon.svg",
@@ -40,7 +40,7 @@ def remove_unused_images(images):
     unused_images = []
     for image in images:
         basename = os.path.basename(image)
-        if basename not in content_json and basename not in unused_whitelist:
+        if basename not in content_json and basename not in whitelist:
             unused_images.append(image)
             os.remove(image)
             print(f"- Removed: {image}")
@@ -115,7 +115,8 @@ def compress_image(image):
 def compress_large_images(images):
     print("Compressing Large Images...")
     for image in images:
-        if not image.endswith(".svg"):
+        basename = os.path.basename(image)
+        if not image.endswith(".svg") and basename not in whitelist:
             image_size = os.path.getsize(image)
             if image_size > max_image_size:
                 new_image_size, resize_factor, quality = compress_image(image)

@@ -1,10 +1,10 @@
 :root {
   /* colors */
-  --primary-color: #00a2a2;
+  --primary-color: #26768b;
   --font-color: white;
-  --link-color: #00ffff;
-  --background-color: #283139;
-  --card-label-color: #00a2a2cc;
+  --link-color: #46daff;
+  --background-color: #0e2f37;
+  --card-label-color: #26768bcc;
   --shadow-color: #00000055;
 
   /* card heights */
