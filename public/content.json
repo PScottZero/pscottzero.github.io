@@ -61,6 +61,158 @@
     ]
   },
   {
+    "sectionId": "top-languages",
+    "imageFolder": "skills",
+    "title": "Top Programming Languages",
+    "columns": 4,
+    "content": [
+      {
+        "title": "C/C++",
+        "image": "clang.svg"
+      },
+      {
+        "title": "C#",
+        "image": "csharp.svg"
+      },
+      {
+        "title": "Dart",
+        "image": "dart.svg"
+      },
+      {
+        "title": "Go",
+        "image": "go.svg"
+      },
+      {
+        "title": "HTML/CSS",
+        "image": "html.svg"
+      },
+      {
+        "title": "Java/Kotlin",
+        "image": "java.svg"
+      },
+      {
+        "title": "JavaScript/TypeScript",
+        "image": "javascript.svg"
+      },
+      {
+        "title": "Python",
+        "image": "python.svg"
+      }
+    ]
+  },
+  {
+    "sectionId": "other-languages",
+    "imageFolder": "skills",
+    "title": "Other Programming Languages",
+    "columns": 4,
+    "content": [
+      {
+        "title": "Julia",
+        "image": "julia.svg"
+      },
+      {
+        "title": "PHP",
+        "image": "php.svg"
+      },
+      {
+        "title": "Rust",
+        "image": "rust.svg"
+      },
+      {
+        "title": "Swift",
+        "image": "swift.jpg"
+      }
+    ]
+  },
+  {
+    "sectionId": "sw-skills",
+    "imageFolder": "skills",
+    "title": "Software Skills",
+    "columns": 4,
+    "content": [
+      {
+        "title": "Angular",
+        "image": "angular.svg"
+      },
+      {
+        "title": "AWS",
+        "image": "aws.svg"
+      },
+      {
+        "title": "Bazel",
+        "image": "bazel.svg"
+      },
+      {
+        "title": "Data Visualization",
+        "image": "data-visualization.jpg"
+      },
+      {
+        "title": "Docker",
+        "image": "docker.svg"
+      },
+      {
+        "title": "Flutter",
+        "image": "flutter.svg"
+      },
+      {
+        "title": "Git",
+        "image": "git.svg"
+      },
+      {
+        "title": "GitHub",
+        "image": "github.svg"
+      },
+      {
+        "title": "gRPC",
+        "image": "grpc.svg"
+      },
+      {
+        "title": "Jira",
+        "image": "jira.svg"
+      },
+      {
+        "title": "Jupyter Notebook",
+        "image": "jupyter.svg"
+      },
+      {
+        "title": "Linux",
+        "image": "ubuntu.svg"
+      },
+      {
+        "title": "OpenGL",
+        "image": "opengl.svg"
+      },
+      {
+        "title": "PyTorch",
+        "image": "pytorch.svg"
+      },
+      {
+        "title": "QT",
+        "image": "qt.svg"
+      },
+      {
+        "title": "React",
+        "image": "react.svg"
+      },
+      {
+        "title": "RESTful API",
+        "image": "rest-api.svg"
+      },
+      {
+        "title": "SQL / Postgres",
+        "image": "postgres.svg"
+      },
+      {
+        "title": "TensorFlow",
+        "image": "tensorflow.svg"
+      },
+      {
+        "title": "Unit Testing",
+        "image": "unit-testing.svg"
+      }
+    ]
+  },
+  {
     "sectionId": "projects",
     "title": "Projects",
     "columns": 3,
@@ -70,7 +222,7 @@
         "image": "esolangs.jpg",
         "description": [
           "Esoteric Programming Language Interpreter Collection",
-          "August 2024 - Preset"
+          "August 2024 - Present"
         ],
         "link": "https://pjs4.com/esolangs"
       },
@@ -103,7 +255,7 @@
       },
       {
         "title": "Mini Minecraft",
-        "image": "mini_minecraft.jpg",
+        "image": "mini-minecraft.jpg",
         "description": [
           "CIS 5600 Final Project (Private Repo)",
           "November - December 2022"
@@ -124,26 +276,8 @@
         "link": "https://github.com/PScottZero/transformer_translation"
       },
       {
-        "title": "CycleGAN TensorFlow Implementation",
-        "image": "cycle_gan.jpg",
-        "description": "July - August 2022",
-        "link": "https://github.com/PScottZero/cycle_gan"
-      },
-      {
-        "title": "Flutter Cookbook",
-        "image": "cookbook.jpg",
-        "description": "July 2022",
-        "link": "https://github.com/PScottZero/flutter-cookbook"
-      },
-      {
-        "title": "DQN Reinforcement Learning for Atari Games",
-        "image": "atari.jpg",
-        "description": "April - May 2022",
-        "link": "https://github.com/PScottZero/Atari-Reinforcement-Learning"
-      },
-      {
         "title": "Piano Music Sentiment Classifier",
-        "image": "canon_in_d.jpg",
+        "image": "canon-in-d.jpg",
         "description": [
           "CIS 522 Final Project",
           "March - April 2022"
@@ -151,46 +285,10 @@
         "link": "https://colab.research.google.com/drive/1FPAd_H1OSF8BVLAmxVc_x5X6ZtMrItyR?usp=sharing"
       },
       {
-        "title": "US Car Accident Analysis and Severity Classification",
-        "image": "car_accidents.jpg",
-        "description": [
-          "CIS 545 Final Project",
-          "March - April 2022"
-        ],
-        "link": "https://colab.research.google.com/drive/1qLpFrDaYhRxwQEgqsOrPQJq9zMOIlgt5?usp=sharing"
-      },
-      {
-        "title": "WGAN-GP",
-        "image": "wgan_gp.jpg",
-        "description": "February 2022 - March 2022",
-        "link": "https://github.com/PScottZero/wgan-gp"
-      },
-      {
-        "title": "N-Gram Tweet Generator",
-        "image": "ngram.jpg",
-        "description": "January - February 2022",
-        "link": "https://github.com/PScottZero/ngram-tweets"
-      },
-      {
-        "title": "LSTM Stock Movement Predictor",
-        "image": "lstm.jpg",
-        "description": [
-          "CIS 520 Final Project",
-          "November - December 2021"
-        ],
-        "link": "https://colab.research.google.com/drive/1uyr2Rugf2EjVsR0Q-xhPuaZpJt0XmWiQ?usp=sharing"
-      },
-      {
         "title": "US Coin Classifier",
-        "image": "coin_classifier.jpg",
+        "image": "coin-classifier.jpg",
         "description": "October 2021 - February 2022",
         "link": "https://github.com/PScottZero/US-Coin-Classifier"
-      },
-      {
-        "title": "Numismatic Coin Collecting App",
-        "image": "numismatic.jpg",
-        "description": "August 2021 - January 2022",
-        "link": "https://github.com/PScottZero/Numismatic"
       },
       {
         "title": "PDP-1 Emulator",
@@ -200,7 +298,7 @@
       },
       {
         "title": "En Passant",
-        "image": "en_passant.jpg",
+        "image": "en-passant.jpg",
         "description": "November 2020 - June 2021",
         "link": "https://github.com/PScottZero/EnPassant"
       },
@@ -209,168 +307,6 @@
         "image": "mnist.jpg",
         "description": "September - October 2020",
         "link": "https://pjs4.com/MNISTPlayground"
-      },
-      {
-        "title": "Qubit Playground",
-        "image": "qubit_playground.jpg",
-        "description": "July - August 2020",
-        "link": "https://pjs4.com/QubitPlayground"
-      },
-      {
-        "title": "Charcoal",
-        "image": "charcoal.jpg",
-        "description": "April 2020",
-        "link": "https://github.com/PScottZero/Charcoal"
-      }
-    ]
-  },
-  {
-    "sectionId": "languages",
-    "title": "Programming Languages",
-    "columns": 4,
-    "content": [
-      {
-        "title": "C/C++",
-        "image": "clang.svg",
-        "description": "Proficient"
-      },
-      {
-        "title": "C#",
-        "image": "csharp.svg",
-        "description": "Familiar"
-      },
-      {
-        "title": "Dart",
-        "image": "dart.svg",
-        "description": "Proficient"
-      },
-      {
-        "title": "Go",
-        "image": "go.svg",
-        "description": "Familiar"
-      },
-      {
-        "title": "HTML/CSS",
-        "image": "html.svg",
-        "description": "Proficient"
-      },
-      {
-        "title": "Java/Kotlin",
-        "image": "java.svg",
-        "description": "Proficient"
-      },
-      {
-        "title": "JavaScript/TypeScript",
-        "image": "javascript.svg",
-        "description": "Proficient"
-      },
-      {
-        "title": "Python",
-        "image": "python.svg",
-        "description": "Proficient"
-      },
-      {
-        "title": "Julia",
-        "image": "julia.svg"
-      },
-      {
-        "title": "PHP",
-        "image": "php.svg"
-      },
-      {
-        "title": "Rust",
-        "image": "rust.svg"
-      },
-      {
-        "title": "Swift",
-        "image": "swift.jpg"
-      }
-    ]
-  },
-  {
-    "sectionId": "sw-skills",
-    "title": "Software Skills",
-    "columns": 4,
-    "content": [
-      {
-        "title": "Angular",
-        "image": "angular.svg",
-        "description": "HTML/CSS/TS"
-      },
-      {
-        "title": "AWS",
-        "image": "aws.svg"
-      },
-      {
-        "title": "Data Visualization",
-        "image": "data_visualization.jpg"
-      },
-      {
-        "title": "Docker",
-        "image": "docker.svg"
-      },
-      {
-        "title": "Flutter",
-        "image": "flutter.svg",
-        "description": "Dart"
-      },
-      {
-        "title": "Git",
-        "image": "git.svg"
-      },
-      {
-        "title": "GitHub",
-        "image": "github.svg"
-      },
-      {
-        "title": "gRPC",
-        "image": "grpc.svg",
-        "description": "C++"
-      },
-      {
-        "title": "Jupyter Notebook",
-        "image": "jupyter.svg"
-      },
-      {
-        "title": "Linux",
-        "image": "linux.svg"
-      },
-      {
-        "title": "OpenGL",
-        "image": "opengl.svg",
-        "description": "C++"
-      },
-      {
-        "title": "PyTorch",
-        "image": "pytorch.svg",
-        "description": "Python"
-      },
-      {
-        "title": "QT",
-        "image": "qt.svg",
-        "description": "C++"
-      },
-      {
-        "title": "React",
-        "image": "react.svg",
-        "description": "HTML/CSS/TS"
-      },
-      {
-        "title": "RESTful API",
-        "image": "rest_api.svg"
-      },
-      {
-        "title": "SQL",
-        "image": "sql.svg"
-      },
-      {
-        "title": "TensorFlow",
-        "image": "tensorflow.svg",
-        "description": "Python"
-      },
-      {
-        "title": "Unit Testing",
-        "image": "unit_testing.svg"
       }
     ]
   },
@@ -381,22 +317,22 @@
     "content": [
       {
         "title": "Advanced Computer Graphics",
-        "image": "cornell_box.jpg",
+        "image": "cornell-box.jpg",
         "description": "CIS 5610, Spring 2023"
       },
       {
         "title": "Operating Systems",
-        "image": "operating_systems.svg",
+        "image": "operating-systems.svg",
         "description": "CIS 5480, Spring 2023"
       },
       {
         "title": "Interactive Computer Graphics",
-        "image": "computer_graphics.svg",
+        "image": "computer-graphics.svg",
         "description": "CIS 5600, Fall 2022"
       },
       {
         "title": "Software Systems",
-        "image": "software_systems.svg",
+        "image": "software-systems.svg",
         "description": "CIS 5050, Fall 2022"
       },
       {
@@ -406,22 +342,22 @@
       },
       {
         "title": "Big Data Analytics",
-        "image": "big_data.svg",
+        "image": "big-data.svg",
         "description": "CIS 5450, Spring 2022"
       },
       {
         "title": "Interactive Fiction and Text Generation",
-        "image": "interactive_fiction.svg",
+        "image": "interactive-fiction.svg",
         "description": "CIS 7000, Spring 2022"
       },
       {
         "title": "Theory of Computation",
-        "image": "theory_of_computation.svg",
+        "image": "theory-of-computation.svg",
         "description": "CIS 5110, Fall 2021"
       },
       {
         "title": "Machine Learning",
-        "image": "machine_learning.svg",
+        "image": "machine-learning.svg",
         "description": "CIS 5200, Fall 2021"
       },
       {
@@ -448,13 +384,13 @@
       },
       {
         "title": "Quantum Computation",
-        "image": "quantum_computer.jpg",
+        "image": "quantum-computer.jpg",
         "description": "CS-191x (BerkeleyX), Summer 2020",
         "link": "https://courses.edx.org/certificates/a7a842fb46834ea4b9459b44583f3e23"
       },
       {
         "title": "Computer Vision",
-        "image": "computer_vision.jpg",
+        "image": "computer-vision.jpg",
         "description": "CMPEN 454, Spring 2020"
       },
       {
@@ -469,7 +405,7 @@
       },
       {
         "title": "Theory of Computation",
-        "image": "turing_machine.jpg",
+        "image": "turing-machine.jpg",
         "description": "CMPSC 464, Spring 2020"
       },
       {
@@ -479,7 +415,7 @@
       },
       {
         "title": "Computer Design",
-        "image": "computer_design.jpg",
+        "image": "computer-design.jpg",
         "description": "CMPEN 331, Fall 2019"
       },
       {
@@ -504,7 +440,7 @@
       },
       {
         "title": "Data Structures & Algorithms",
-        "image": "data_structures.jpg",
+        "image": "data-structures.jpg",
         "description": "CMPSC 465, Spring 2019"
       },
       {
@@ -541,11 +477,11 @@
     "content": [
       {
         "title": "Art",
-        "image": "at_moulin_rouge.jpg"
+        "image": "at-moulin-rouge.jpg"
       },
       {
         "title": "Architecture",
-        "image": "fuji_broadcasting_center.jpg"
+        "image": "fuji-broadcasting-center.jpg"
       },
       {
         "title": "Aviation",
@@ -569,15 +505,15 @@
       },
       {
         "title": "Guitar",
-        "image": "martin_guitar.jpg"
+        "image": "martin-guitar.jpg"
       },
       {
         "title": "Movies",
-        "image": "night_of_the_hunter.jpg"
+        "image": "night-of-the-hunter.jpg"
       },
       {
         "title": "Music / Records",
-        "image": "neil_young.jpg"
+        "image": "neil-young.jpg"
       },
       {
         "title": "Piano",
@@ -585,11 +521,11 @@
       },
       {
         "title": "Retro Tech",
-        "image": "apple_iie.jpg"
+        "image": "apple-iie.jpg"
       },
       {
         "title": "Roller Coasters",
-        "image": "roller_coaster.jpg"
+        "image": "roller-coaster.jpg"
       },
       {
         "title": "Scooters",
@@ -601,7 +537,7 @@
       },
       {
         "title": "Trains / Model Trains",
-        "image": "model_trains.jpg"
+        "image": "model-trains.jpg"
       }
     ]
   }

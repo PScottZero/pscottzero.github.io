@@ -3,6 +3,7 @@ import styles from "./section.module.css";
 
 export type SectionData = {
   sectionId: string;
+  imageFolder?: string;
   title: string;
   columns: number;
   content: CardData[];
@@ -20,7 +21,7 @@ export default function Section({ data, flexShrink }: SectionProps) {
       <Card
         key={cards.length}
         data={cardData}
-        imageFolder={data.sectionId}
+        imageFolder={data.imageFolder ?? data.sectionId}
         flex={data.columns}
         flexShrink={flexShrink}
       />,

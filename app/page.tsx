@@ -40,7 +40,7 @@ export default function Home() {
         <a href="mailto:pauljscott8@gmail.com">pauljscott8@gmail.com</a> or call
         at (215) 880-9592
         <br />
-        Updated September 18<sup>th</sup>, 2024
+        Updated September 20<sup>th</sup>, 2024
       </footer>
     </main>
   );
