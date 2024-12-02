@@ -1,4 +1,5 @@
 import Card, { CardData } from "../card/card";
+import Window from "../window/window";
 import styles from "./section.module.scss";
 
 export type SectionData = {
@@ -30,8 +31,9 @@ export default function Section({ data, flexShrink }: SectionProps) {
 
   return (
     <div id={data.sectionId} className={styles.section}>
-      <div className={styles.title}>{data.title}</div>
-      <div className={styles.cards}>{cards}</div>
+      <Window title={data.title}>
+        <div className={styles.cards}>{cards}</div>
+      </Window>
     </div>
   );
 }

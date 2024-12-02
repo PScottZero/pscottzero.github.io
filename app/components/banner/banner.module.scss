@@ -3,13 +3,11 @@
 .banner {
   display: grid;
   grid-template-columns: $profile-size 1fr;
-  border-radius: $border-radius;
   width: 100%;
   min-height: $card-height;
   background: url("/images/banner.jpg");
   background-size: cover;
   background-position: 50%;
-  box-shadow: $box-shadow;
 }
 
 .profile {
@@ -23,8 +21,7 @@
 .profile img {
   width: calc($profile-size) - 4rem;
   height: auto;
-  border-radius: $border-radius;
-  border: 4px solid $font-color;
+  border: 6px ridge $font-color;
 }
 
 .description {
@@ -35,6 +32,7 @@
   line-height: 2;
   padding: 1rem;
   text-shadow: 0 0 4px black;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 640px) {

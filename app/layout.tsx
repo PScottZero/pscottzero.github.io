@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Ubuntu } from "next/font/google";
+import { PT_Mono } from "next/font/google";
 import "./globals.scss";
 import Header from "./components/header/header";
 
-const inter = Ubuntu({
+const inter = PT_Mono({
   weight: "400",
   subsets: ["latin"],
 });

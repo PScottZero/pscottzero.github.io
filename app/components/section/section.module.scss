@@ -1,8 +1,8 @@
 @import "../../constants.module.scss";
 
 .section {
-  margin-top: -4rem;
-  padding-top: calc(4rem + $spacing);
+  // margin-top: -4rem;
+  // padding-top: calc(4rem + $spacing);
 }
 
 .title {
@@ -16,9 +16,12 @@
   height: 4rem;
   padding: 0 1rem;
   margin-bottom: $spacing;
-  background-color: $primary-color;
+  background-color: #4992A7;
   border-radius: $border-radius;
-  box-shadow: $box-shadow;
+}
+
+.titleBar {
+  background: #EDA870;
 }
 
 .cards {

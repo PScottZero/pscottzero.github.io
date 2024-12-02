@@ -1,0 +1,77 @@
+@import "../../constants.module.scss";
+
+@mixin double-border($width, $color1, $color2) {
+  border-top: $width solid $color1;
+  border-left: $width solid $color1;
+  border-bottom: $width solid $color2;
+  border-right: $width solid $color2;
+}
+
+.outerWindow {
+  @include double-border(3.5px, #f7d9c0, #7d593b);
+  margin-top: $spacing;
+  background: #eda870;
+  padding: 4px;
+}
+
+.innerWindow {
+  @include double-border(1.75px, #7d593b, #f7d9c0);
+}
+
+.windowContent {
+  background: #c6b2a8;
+}
+
+.titleBar {
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  font-size: 18px;
+}
+
+.menu {
+  @include double-border(1.75px, #adced7, #244953);
+  background-color: #4992A7;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 20px;
+
+  span {
+    margin-left: 1rem;
+  }
+}
+
+.button {
+  @include double-border(1.75px, #f7d9c0, #7d593b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.close {
+  float: left;
+
+  div {
+    @include double-border(1.75px, #f7d9c0, #7d593b);
+    width: 1.2rem;
+    height: 0.4rem;
+  }
+}
+
+.minimize, .maximize {
+  float: right;
+}
+
+.minimize div {
+  @include double-border(1.75px, #f7d9c0, #7d593b);
+  width: 0.4rem;
+  height: 0.4rem;
+}
+
+.maximize div {
+  @include double-border(1.75px, #f7d9c0, #7d593b);
+  width: 1.2rem;
+  height: 1.2rem;
+}

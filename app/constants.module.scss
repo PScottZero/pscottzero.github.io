@@ -1,8 +1,8 @@
 /* colors */
 $primary-color: #26768b;
 $font-color: white;
-$link-color: #46daff;
-$background-color: #0e2f37;
+$link-color: #4992A7;
+$background-color: #4992a7;
 $card-label-color: #26768bcc;
 $shadow-color: #00000055;
 
@@ -20,7 +20,7 @@ $medium-font-size: 20px;
 $large-font-size: 24px;
 
 /* sizing */
-$spacing: 1rem;
+$spacing: 1.5rem;
 $border-radius: 0.5rem;
 $min-width: 60rem;
 $profile-size: 20rem;
@@ -31,7 +31,9 @@ $box-shadow: 4px 4px 4px $shadow-color;
   spacing: $spacing;
 }
 
-@mixin primary-style {
-  background-color: $primary-color;
-  border-radius: $border-radius;
+@mixin double-border($width, $color1, $color2) {
+  border-top: $width solid $color1;
+  border-left: $width solid $color1;
+  border-bottom: $width solid $color2;
+  border-right: $width solid $color2;
 }
