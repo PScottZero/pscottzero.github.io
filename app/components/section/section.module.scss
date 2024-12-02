@@ -1,32 +1,18 @@
 @import "../../constants.module.scss";
 
 .section {
-  // margin-top: -4rem;
-  // padding-top: calc(4rem + $spacing);
-}
-
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  width: 100%;
-  height: 4rem;
-  padding: 0 1rem;
-  margin-bottom: $spacing;
-  background-color: #4992A7;
-  border-radius: $border-radius;
+  margin-top: calc(-1 * ($window-spacing + 3.25rem));
+  padding-top: calc($window-spacing + 3.25rem);
 }
 
 .titleBar {
-  background: #EDA870;
+  background: #eda870;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: $spacing;
+  gap: $card-spacing;
+  padding: $card-spacing;
 }

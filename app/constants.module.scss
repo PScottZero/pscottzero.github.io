@@ -1,17 +1,15 @@
 /* colors */
-$primary-color: #26768b;
-$font-color: white;
-$link-color: #4992A7;
-$background-color: #4992a7;
-$card-label-color: #26768bcc;
-$shadow-color: #00000055;
-
-/* card heights */
-$card-height: 20rem;
-$medium-card-height: 17.5rem;
-$small-card-height: 15rem;
-$mobile-card-height: 70vmin;
-$mobile-small-card-height: calc(70vmin / 2);
+$header-color: #999999;
+$header-border-color1: #d1d1d2;
+$header-border-color2: #4e4e4e;
+$window-color: #eda870;
+$window-border-color1: #f7d9c0;
+$window-border-color2: #7d593b;
+$menu-color: #4992a7;
+$menu-border-color1: #adced7;
+$menu-border-color2: #244953;
+$content-color: #c6b2a8;
+$content-color-dark: #a8988f;
 
 /* font sizes */
 $small-font-size: 12px;
@@ -19,16 +17,25 @@ $regular-font-size: 16px;
 $medium-font-size: 20px;
 $large-font-size: 24px;
 
-/* sizing */
-$spacing: 1.5rem;
-$border-radius: 0.5rem;
+/* dimensions */
+$window-spacing: 1.5rem;
+$card-spacing: 0.75rem;
+$small-border: 1.75px;
+$large-border: $small-border * 2;
 $min-width: 60rem;
 $profile-size: 20rem;
 $small-profile-size: 16rem;
-$box-shadow: 4px 4px 4px $shadow-color;
+$card-height: 20rem;
+$medium-card-height: 17.5rem;
+$small-card-height: 15rem;
+$mobile-card-height: 70vmin;
+$mobile-small-card-height: calc(70vmin / 2);
 
 :export {
-  spacing: $spacing;
+  cardSpacing: $card-spacing;
+  smallFontSize: $small-font-size;
+  regularFontSize: $regular-font-size;
+  mediumFontSize: $medium-font-size;
 }
 
 @mixin double-border($width, $color1, $color2) {
@@ -36,4 +43,32 @@ $box-shadow: 4px 4px 4px $shadow-color;
   border-left: $width solid $color1;
   border-bottom: $width solid $color2;
   border-right: $width solid $color2;
+}
+
+@mixin header-border {
+  @include double-border(
+    $large-border,
+    $header-border-color1,
+    $header-border-color2
+  );
+}
+
+@mixin window-border($width) {
+  @include double-border($width, $window-border-color1, $window-border-color2);
+}
+
+@mixin content-border {
+  @include double-border(
+    $small-border,
+    $window-border-color2,
+    $window-border-color1
+  );
+}
+
+@mixin menu-border {
+  @include double-border(
+    $small-border,
+    $menu-border-color1,
+    $menu-border-color2
+  );
 }

@@ -1,17 +1,23 @@
 @import "../../constants.module.scss";
 
-.header {
-  @include double-border(3px, #d1d1d2, #4e4e4e);
+.outerHeader {
+  @include header-border;
   z-index: 1;
   position: sticky;
   top: 0;
   width: 100%;
-  height: 4rem;
-  background: #c6b2a8;
-  padding: 0.75rem;
+  padding: $large-border;
+  background: $header-color;
 }
 
-.header img {
+.innerHeader {
+  @include menu-border;
+  background: $content-color;
+  padding: 0.75rem;
+  height: 4rem;
+}
+
+.innerHeader img {
   width: auto;
   height: 100%;
 }
@@ -28,7 +34,8 @@
   color: white;
   text-decoration: none;
   font-size: 18px;
-  margin-left: $spacing;
+  font-weight: bold;
+  margin-left: $window-spacing;
   padding: 0;
   line-height: 0;
 }
@@ -40,7 +47,11 @@
 
 .nav img {
   width: auto;
-  height: 2rem;
+  height: 3rem;
+
+  @media screen and (max-width: 640px) {
+    height: 2rem;
+  }
 }
 
 .verticalSeparator {
@@ -48,7 +59,7 @@
   width: 1px;
   height: 2rem;
   background-color: white;
-  margin-left: $spacing;
+  margin-left: $window-spacing;
 }
 
 @media screen and (max-width: 1024px) {

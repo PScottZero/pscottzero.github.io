@@ -11,32 +11,20 @@ export type CardData = {
   link?: string;
 };
 
-export type CardProps = {
-  data: CardData;
-  imageFolder: string;
-  flex: number;
-  flexShrink: number;
-};
-
-const mediumFontSize = "$medium-font-size";
-const regularFontSize = "$regular-font-size";
-const smallFontSize = "$small-font-size";
-const regularSpacing = "$spacing";
-const smallSpacing = "calc($spacing / 2)";
-
-function getCardWidth(flexAdjusted: number): string {
-  const flexWidth = 100 / flexAdjusted + "%";
-  const widthCorrection =
-    flexAdjusted - 1 + " * " + variables.spacing + " / " + flexAdjusted;
-  return "calc(" + flexWidth + " - " + widthCorrection + ")";
+export class CardDims {
+  width: string = "";
+  titleSize: string = "";
+  descriptionSize: string = "";
+  labelPadding: string = "";
 }
 
-export default function Card({
-  data,
-  imageFolder,
-  flex,
-  flexShrink,
-}: CardProps) {
+export type CardProps = {
+  data: CardData;
+  dims: CardDims;
+  imageFolder: string;
+};
+
+export default function Card({ data, dims, imageFolder }: CardProps) {
   let descriptionLines = [];
   if (data.description !== undefined) {
     if (Array.isArray(data.description)) {
@@ -47,14 +35,6 @@ export default function Card({
       descriptionLines.push(<p key={0}>{data.description}</p>);
     }
   }
-
-  const flexAdjusted = Math.max(flex - flexShrink, 1);
-  const cardWidth = getCardWidth(flexAdjusted);
-
-  const useSmallCardSpecs = flexAdjusted == 2 && flexShrink == 2;
-  const titleSize = useSmallCardSpecs ? regularFontSize : mediumFontSize;
-  const descriptionSize = useSmallCardSpecs ? smallFontSize : regularFontSize;
-  const labelPadding = useSmallCardSpecs ? smallSpacing : regularSpacing;
 
   const hasLink = data.link !== undefined;
   const linkStyles = hasLink ? styles.link : "";
@@ -72,17 +52,17 @@ export default function Card({
   const cardStyles = `${styles.card} ${linkStyles}`;
   return (
     <div
-      style={{ flex: cardWidth, maxWidth: cardWidth }}
+      style={{ flex: dims.width, maxWidth: dims.width }}
       className={cardStyles}
       onClick={linkFn}
     >
-      <div className={styles.label} style={{ padding: labelPadding }}>
-        <div className={styles.title} style={{ fontSize: titleSize }}>
+      <div className={styles.label} style={{ padding: dims.labelPadding }}>
+        <div className={styles.title} style={{ fontSize: dims.titleSize }}>
           {data.title}
         </div>
         <div
           className={styles.description}
-          style={{ fontSize: descriptionSize }}
+          style={{ fontSize: dims.descriptionSize }}
         >
           {descriptionLines}
           {linkIcon}

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { PT_Mono } from "next/font/google";
+import { Imprima } from "next/font/google";
 import "./globals.scss";
 import Header from "./components/header/header";
 
-const inter = PT_Mono({
+const inter = Imprima({
   weight: "400",
   subsets: ["latin"],
 });
