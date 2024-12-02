@@ -1,13 +1,15 @@
+@import "../../constants.module.scss";
+
 .banner {
   display: grid;
-  grid-template-columns: var(--profile-size) 1fr;
-  border-radius: var(--border-radius);
+  grid-template-columns: $profile-size 1fr;
+  border-radius: $border-radius;
   width: 100%;
-  min-height: var(--card-height);
+  min-height: $card-height;
   background: url("/images/banner.jpg");
   background-size: cover;
   background-position: 50%;
-  box-shadow: var(--box-shadow);
+  box-shadow: $box-shadow;
 }
 
 .profile {
@@ -19,10 +21,10 @@
 }
 
 .profile img {
-  width: calc(var(--profile-size) - 4rem);
+  width: calc($profile-size) - 4rem;
   height: auto;
-  border-radius: var(--border-radius);
-  border: 4px solid var(--font-color);
+  border-radius: $border-radius;
+  border: 4px solid $font-color;
 }
 
 .description {

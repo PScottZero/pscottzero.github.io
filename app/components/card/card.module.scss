@@ -1,11 +1,13 @@
+@import "../../constants.module.scss";
+
 .card {
   position: relative;
   transition: 0.1s;
   aspect-ratio: 4/3;
-  background-color: var(--primary-color);
-  border-radius: var(--border-radius);
+  background-color: $primary-color;
+  border-radius: $border-radius;
   overflow: hidden;
-  box-shadow: var(--box-shadow);
+  box-shadow: $box-shadow;
 }
 
 .label {
@@ -14,17 +16,17 @@
   left: 0;
   width: 100%;
   padding: 1rem;
-  background-color: var(--card-label-color);
+  background-color: $card-label-color;
 }
 
 .title {
-  font-size: var(--medium-font-size);
+  font-size: $medium-font-size;
   font-weight: bold;
 }
 
 .description {
   position: relative;
-  font-size: var(--regular-font-size);
+  font-size: $regular-font-size;
 }
 
 .image {

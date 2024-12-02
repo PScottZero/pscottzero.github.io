@@ -1,5 +1,5 @@
 import Card, { CardData } from "../card/card";
-import styles from "./section.module.css";
+import styles from "./section.module.scss";
 
 export type SectionData = {
   sectionId: string;
@@ -24,7 +24,7 @@ export default function Section({ data, flexShrink }: SectionProps) {
         imageFolder={data.imageFolder ?? data.sectionId}
         flex={data.columns}
         flexShrink={flexShrink}
-      />,
+      />
     );
   }
 

@@ -1,0 +1,37 @@
+/* colors */
+$primary-color: #26768b;
+$font-color: white;
+$link-color: #46daff;
+$background-color: #0e2f37;
+$card-label-color: #26768bcc;
+$shadow-color: #00000055;
+
+/* card heights */
+$card-height: 20rem;
+$medium-card-height: 17.5rem;
+$small-card-height: 15rem;
+$mobile-card-height: 70vmin;
+$mobile-small-card-height: calc(70vmin / 2);
+
+/* font sizes */
+$small-font-size: 12px;
+$regular-font-size: 16px;
+$medium-font-size: 20px;
+$large-font-size: 24px;
+
+/* sizing */
+$spacing: 1rem;
+$border-radius: 0.5rem;
+$min-width: 60rem;
+$profile-size: 20rem;
+$small-profile-size: 16rem;
+$box-shadow: 4px 4px 4px $shadow-color;
+
+:export {
+  spacing: $spacing;
+}
+
+@mixin primary-style {
+  background-color: $primary-color;
+  border-radius: $border-radius;
+}

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./banner.module.css";
+import styles from "./banner.module.scss";
 
 export default function Banner() {
   return (

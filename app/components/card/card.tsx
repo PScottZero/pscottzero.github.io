@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import styles from "./card.module.css";
+import styles from "./card.module.scss";
+import variables from "../../constants.module.scss";
 
 export type CardData = {
   title: string;
@@ -17,16 +18,16 @@ export type CardProps = {
   flexShrink: number;
 };
 
-const mediumFontSize = "var(--medium-font-size)";
-const regularFontSize = "var(--regular-font-size)";
-const smallFontSize = "var(--small-font-size)";
-const regularSpacing = "var(--spacing)";
-const smallSpacing = "calc(var(--spacing) / 2)";
+const mediumFontSize = "$medium-font-size";
+const regularFontSize = "$regular-font-size";
+const smallFontSize = "$small-font-size";
+const regularSpacing = "$spacing";
+const smallSpacing = "calc($spacing / 2)";
 
 function getCardWidth(flexAdjusted: number): string {
   const flexWidth = 100 / flexAdjusted + "%";
   const widthCorrection =
-    flexAdjusted - 1 + " * var(--spacing) / " + flexAdjusted;
+    flexAdjusted - 1 + " * " + variables.spacing + " / " + flexAdjusted;
   return "calc(" + flexWidth + " - " + widthCorrection + ")";
 }
 

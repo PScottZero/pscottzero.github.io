@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 import Header from "./components/header/header";
 
 const inter = Ubuntu({
