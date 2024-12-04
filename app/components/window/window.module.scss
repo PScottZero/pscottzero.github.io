@@ -1,9 +1,9 @@
 @import "../../constants.module.scss";
 
 .outerWindow {
-  @include window-border($large-border);
+  @include outer-window-border($large-border);
   margin-top: $window-spacing;
-  background: #eda870;
+  background: $window-color;
   padding: 4px;
 
   @media screen and (max-width: 640px) {
@@ -12,24 +12,42 @@
 }
 
 .innerWindow {
-  @include content-border;
+  @include double-border(
+    $small-border,
+    $window-border-color2,
+    $window-border-color1
+  );
 }
 
-.windowContent {
+.content {
+  @include content-border;
   background: $content-color;
 }
 
 .titleBar {
-  height: 2rem;
-  line-height: 2rem;
+  display: grid;
+  grid-template-columns: 2rem 1fr 2rem 2rem;
+  grid-template-rows: 2rem;
   text-align: center;
   font-size: $medium-font-size;
 }
 
+.title {
+  @include outer-window-border($small-border);
+  @include flex-center;
+  color: white;
+  overflow: hidden;
+}
+
 .menu {
-  @include menu-border;
+  @include double-border(
+    $small-border,
+    $menu-border-color1,
+    $menu-border-color2
+  );
+  display: flex;
+  align-items: center;
   height: 2.5rem;
-  line-height: 2.5rem;
   background-color: $menu-color;
   font-size: $medium-font-size;
 
@@ -39,15 +57,11 @@
 }
 
 .button {
-  @include window-border($small-border);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 2rem;
-  height: 2rem;
+  @include outer-window-border($small-border);
+  @include flex-center;
 
   div {
-    @include window-border($small-border);
+    @include outer-window-border($small-border);
   }
 }
 

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Imprima } from "next/font/google";
+import { Jura } from "next/font/google";
 import "./globals.scss";
 import Header from "./components/header/header";
 
-const inter = Imprima({
+const inter = Jura({
   weight: "400",
   subsets: ["latin"],
 });

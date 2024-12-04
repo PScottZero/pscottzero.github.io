@@ -9,11 +9,13 @@
 html,
 body {
   max-width: 100vw;
-  background-color: $menu-color;
-  color: white;
+  // background-image: url("../public/images/background.png");
+  // background-repeat: repeat;
+  // background-size: 10rem;
+  background-color: $background-color;
+  color: black;
 }
 
 a {
-  color: $menu-color;
   text-decoration: none;
 }

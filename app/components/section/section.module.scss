@@ -1,12 +1,12 @@
 @import "../../constants.module.scss";
 
 .section {
-  margin-top: calc(-1 * ($window-spacing + 3.25rem));
-  padding-top: calc($window-spacing + 3.25rem);
+  margin-top: -1 * ($window-spacing + 3.25rem);
+  padding-top: $window-spacing + 3.25rem;
 }
 
 .titleBar {
-  background: #eda870;
+  background: $window-color;
 }
 
 .cards {

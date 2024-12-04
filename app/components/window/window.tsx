@@ -14,10 +14,10 @@ export default function Window({ title, children }: WindowProps) {
             <div />
           </div>
           <span className={styles.title}>{title}</span>
-          <div className={styles.button + " " + styles.maximize}>
+          <div className={styles.button + " " + styles.minimize}>
             <div />
           </div>
-          <div className={styles.button + " " + styles.minimize}>
+          <div className={styles.button + " " + styles.maximize}>
             <div />
           </div>
         </div>
@@ -32,7 +32,7 @@ export default function Window({ title, children }: WindowProps) {
             <u>V</u>iew
           </span>
         </div>
-        <div className={styles.windowContent}>{children}</div>
+        <div className={styles.content}>{children}</div>
       </div>
     </div>
   );

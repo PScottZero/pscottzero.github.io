@@ -1,15 +1,32 @@
-/* colors */
-$header-color: #999999;
-$header-border-color1: #d1d1d2;
-$header-border-color2: #4e4e4e;
-$window-color: #eda870;
-$window-border-color1: #f7d9c0;
-$window-border-color2: #7d593b;
-$menu-color: #4992a7;
-$menu-border-color1: #adced7;
-$menu-border-color2: #244953;
-$content-color: #c6b2a8;
-$content-color-dark: #a8988f;
+/* cde colors */
+// $header-color: #999999;
+// $header-border-color1: #d1d1d2;
+// $header-border-color2: #4e4e4e;
+// $window-color: #eda870;
+// $window-border-color1: #f7d9c0;
+// $window-border-color2: #7d593b;
+// $menu-color: #4992a7;
+// $menu-border-color1: #adced7;
+// $menu-border-color2: #244953;
+// $content-color: #c6b2a8;
+// $content-border-color1: #dedee7;
+// $content-border-color2: #5c6373;
+// $background-color: #524a8c;
+
+/* solaris colors */
+$header-color: #adb5c6;
+$header-border-color1: #dedee7;
+$header-border-color2: #5c6373;
+$window-color: #b54a7b;
+$window-border-color1: #deadc6;
+$window-border-color2: #522139;
+$menu-color: #adb5c6;
+$menu-border-color1: #dedee7;
+$menu-border-color2: #5c6373;
+$content-color: #adb5c6;
+$content-border-color1: #dedee7;
+$content-border-color2: #5c6373;
+$background-color: #524a8c;
 
 /* font sizes */
 $small-font-size: 12px;
@@ -19,7 +36,7 @@ $large-font-size: 24px;
 
 /* dimensions */
 $window-spacing: 1.5rem;
-$card-spacing: 0.75rem;
+$card-spacing: 0.5rem;
 $small-border: 1.75px;
 $large-border: $small-border * 2;
 $min-width: 60rem;
@@ -29,13 +46,19 @@ $card-height: 20rem;
 $medium-card-height: 17.5rem;
 $small-card-height: 15rem;
 $mobile-card-height: 70vmin;
-$mobile-small-card-height: calc(70vmin / 2);
+$mobile-small-card-height: 70vmin / 2;
 
 :export {
   cardSpacing: $card-spacing;
   smallFontSize: $small-font-size;
   regularFontSize: $regular-font-size;
   mediumFontSize: $medium-font-size;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin double-border($width, $color1, $color2) {
@@ -53,22 +76,14 @@ $mobile-small-card-height: calc(70vmin / 2);
   );
 }
 
-@mixin window-border($width) {
+@mixin outer-window-border($width) {
   @include double-border($width, $window-border-color1, $window-border-color2);
 }
 
 @mixin content-border {
   @include double-border(
     $small-border,
-    $window-border-color2,
-    $window-border-color1
-  );
-}
-
-@mixin menu-border {
-  @include double-border(
-    $small-border,
-    $menu-border-color1,
-    $menu-border-color2
+    $content-border-color1,
+    $content-border-color2
   );
 }

@@ -1,7 +1,7 @@
 @import "../../constants.module.scss";
 
 .card {
-  @include window-border($large-border);
+  @include content-border;
   position: relative;
   transition: 0.1s;
   aspect-ratio: 4/3;
@@ -15,7 +15,7 @@
   left: 0;
   width: 100%;
   padding: 1rem;
-  background-color: rgba($menu-color, 0.75);
+  background-color: rgba($content-color, 0.75);
 }
 
 .title {

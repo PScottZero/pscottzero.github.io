@@ -11,7 +11,7 @@
 }
 
 .innerHeader {
-  @include menu-border;
+  @include content-border;
   background: $content-color;
   padding: 0.75rem;
   height: 4rem;
@@ -31,13 +31,13 @@
 
 .nav a {
   transition: 0.1s;
-  color: white;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
-  margin-left: $window-spacing;
+  margin-left: $window-spacing / 2;
   padding: 0;
   line-height: 0;
+  color: black;
 }
 
 .nav a:hover {
@@ -58,8 +58,9 @@
   display: inline-block;
   width: 1px;
   height: 2rem;
-  background-color: white;
+  background-color: black;
   margin-left: $window-spacing;
+  margin-right: $window-spacing / 2;
 }
 
 @media screen and (max-width: 1024px) {
