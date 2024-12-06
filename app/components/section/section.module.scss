@@ -10,9 +10,8 @@
 }
 
 .cards {
-  display: flex;
+  @include flex-center;
   flex-wrap: wrap;
-  justify-content: center;
   gap: $card-spacing;
   padding: $card-spacing;
 }

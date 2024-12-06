@@ -11,26 +11,26 @@
 }
 
 .innerHeader {
-  @include content-border;
+  @include menu-border;
   background: $content-color;
-  padding: 0.75rem;
+  padding: 0.5rem;
   height: 4rem;
-}
 
-.innerHeader img {
-  width: auto;
-  height: 100%;
+  img {
+    float: left;
+    width: auto;
+    height: 100%;
+    padding: 0.25rem;
+  }
 }
 
 .nav {
-  display: flex;
-  align-items: center;
+  @include flex-vertical-center;
   float: right;
   height: 100%;
 }
 
 .nav a {
-  transition: 0.1s;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -41,7 +41,7 @@
 }
 
 .nav a:hover {
-  filter: brightness(90%);
+  color: $header-border-color2;
   cursor: pointer;
 }
 
@@ -57,10 +57,9 @@
 .verticalSeparator {
   display: inline-block;
   width: 1px;
-  height: 2rem;
-  background-color: black;
-  margin-left: $window-spacing;
-  margin-right: $window-spacing / 2;
+  height: 2.5rem;
+  background-color: $header-border-color2;
+  margin-left: $window-spacing / 2;
 }
 
 @media screen and (max-width: 1024px) {

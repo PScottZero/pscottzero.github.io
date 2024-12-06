@@ -6,12 +6,13 @@
 // $window-border-color1: #f7d9c0;
 // $window-border-color2: #7d593b;
 // $menu-color: #4992a7;
+// $menu-font-color: white;
 // $menu-border-color1: #adced7;
 // $menu-border-color2: #244953;
 // $content-color: #c6b2a8;
-// $content-border-color1: #dedee7;
-// $content-border-color2: #5c6373;
-// $background-color: #524a8c;
+// $content-border-color1: #e7deda;
+// $content-border-color2: #6a605a;
+// $background-color: #4992a7;
 
 /* solaris colors */
 $header-color: #adb5c6;
@@ -21,6 +22,7 @@ $window-color: #b54a7b;
 $window-border-color1: #deadc6;
 $window-border-color2: #522139;
 $menu-color: #adb5c6;
+$menu-font-color: black;
 $menu-border-color1: #dedee7;
 $menu-border-color2: #5c6373;
 $content-color: #adb5c6;
@@ -56,8 +58,12 @@ $mobile-small-card-height: 70vmin / 2;
 }
 
 @mixin flex-center {
-  display: flex;
+  @include flex-vertical-center;
   justify-content: center;
+}
+
+@mixin flex-vertical-center {
+  display: flex;
   align-items: center;
 }
 
@@ -76,8 +82,16 @@ $mobile-small-card-height: 70vmin / 2;
   );
 }
 
-@mixin outer-window-border($width) {
+@mixin window-border($width) {
   @include double-border($width, $window-border-color1, $window-border-color2);
+}
+
+@mixin menu-border {
+  @include double-border(
+    $small-border,
+    $menu-border-color1,
+    $menu-border-color2
+  );
 }
 
 @mixin content-border {

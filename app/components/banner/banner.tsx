@@ -4,7 +4,7 @@ import Window from "../window/window";
 
 export default function Banner() {
   return (
-    <Window title="About Me">
+    <Window title="Bio">
       <div className={styles.banner}>
         <div className={styles.profile}>
           <Image

@@ -1,7 +1,7 @@
 @import "../../constants.module.scss";
 
 .outerWindow {
-  @include outer-window-border($large-border);
+  @include window-border($large-border);
   margin-top: $window-spacing;
   background: $window-color;
   padding: 4px;
@@ -33,21 +33,17 @@
 }
 
 .title {
-  @include outer-window-border($small-border);
+  @include window-border($small-border);
   @include flex-center;
   color: white;
   overflow: hidden;
 }
 
 .menu {
-  @include double-border(
-    $small-border,
-    $menu-border-color1,
-    $menu-border-color2
-  );
-  display: flex;
-  align-items: center;
+  @include flex-vertical-center;
+  @include menu-border;
   height: 2.5rem;
+  color: $menu-font-color;
   background-color: $menu-color;
   font-size: $medium-font-size;
 
@@ -57,11 +53,11 @@
 }
 
 .button {
-  @include outer-window-border($small-border);
   @include flex-center;
+  @include window-border($small-border);
 
   div {
-    @include outer-window-border($small-border);
+    @include window-border($small-border);
   }
 }
 
@@ -87,4 +83,13 @@
 .maximize div {
   width: 1.2rem;
   height: 1.2rem;
+}
+
+.itemCount {
+  @include flex-vertical-center;
+  @include content-border;
+  background: $content-color;
+  height: 2rem;
+  font-size: 20px;
+  padding-left: $card-spacing;
 }

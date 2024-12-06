@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className={styles.outerHeader}>
       <div className={styles.innerHeader}>
-        <Image src="/images/logo.svg" alt="Logo" width={2526} height={1024} />
+        <Image src="/images/logo.svg" alt="Logo" width={48} height={48} />
         <nav className={styles.nav}>
           <span className={styles.pageLinks}>
             <a href="#experience">Experience</a>

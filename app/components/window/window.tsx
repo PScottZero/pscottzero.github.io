@@ -2,10 +2,11 @@ import styles from "./window.module.scss";
 
 type WindowProps = {
   title: string;
+  itemCount?: number;
   children?: React.ReactNode;
 };
 
-export default function Window({ title, children }: WindowProps) {
+export default function Window({ title, itemCount, children }: WindowProps) {
   return (
     <div className={styles.outerWindow}>
       <div className={styles.innerWindow}>
@@ -33,6 +34,18 @@ export default function Window({ title, children }: WindowProps) {
           </span>
         </div>
         <div className={styles.content}>{children}</div>
+        {itemCount && <div className={styles.itemCount}>{itemCount} Items</div>}
+      </div>
+      <div className={styles.corners}>
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
       </div>
     </div>
   );

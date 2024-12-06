@@ -5,9 +5,15 @@
   font-size: $medium-font-size;
   line-height: 1.5;
   text-align: center;
-  padding: 4rem 2rem;
+  padding-top: $window-spacing * 2;
+  padding-bottom: $window-spacing;
+  color: white;
 
   a {
-    color: blue;
+    color: $window-border-color1;
+
+    &:hover {
+      color: $window-color;
+    }
   }
 }

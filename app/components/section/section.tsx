@@ -56,7 +56,7 @@ export default function Section({ data, flexShrink }: SectionProps) {
 
   return (
     <div id={data.sectionId} className={styles.section}>
-      <Window title={data.title}>
+      <Window title={data.title} itemCount={cards.length}>
         <div className={styles.cards}>{cards}</div>
       </Window>
     </div>
