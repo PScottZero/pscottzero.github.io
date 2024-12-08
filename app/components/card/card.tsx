@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import styles from "./card.module.scss";
-import variables from "../../constants.module.scss";
 
 export type CardData = {
   title: string;

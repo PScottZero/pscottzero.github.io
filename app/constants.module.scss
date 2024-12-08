@@ -12,6 +12,9 @@
 // $content-color: #c6b2a8;
 // $content-border-color1: #e7deda;
 // $content-border-color2: #6a605a;
+// $page-links-color: #4992a7;
+// $page-links-border-color1: #adced7;
+// $page-links-border-color2: #244953;
 // $background-color: #4992a7;
 
 /* solaris colors */
@@ -28,6 +31,9 @@ $menu-border-color2: #5c6373;
 $content-color: #adb5c6;
 $content-border-color1: #dedee7;
 $content-border-color2: #5c6373;
+$page-links-color: #63639c;
+$page-links-border-color1: #b5b5d6;
+$page-links-border-color2: #29294a;
 $background-color: #524a8c;
 
 /* font sizes */
@@ -39,8 +45,8 @@ $large-font-size: 24px;
 /* dimensions */
 $window-spacing: 1.5rem;
 $card-spacing: 0.5rem;
-$small-border: 1.75px;
-$large-border: $small-border * 2;
+$border-size: 1.75px;
+$large-border: $border-size * 2;
 $min-width: 60rem;
 $profile-size: 20rem;
 $small-profile-size: 16rem;
@@ -49,12 +55,21 @@ $medium-card-height: 17.5rem;
 $small-card-height: 15rem;
 $mobile-card-height: 70vmin;
 $mobile-small-card-height: 70vmin / 2;
+$title-bar-height: 2rem;
+$corner-size: calc($title-bar-height + $border-size * 3);
+$mobile-cutoff: 640px;
 
 :export {
   cardSpacing: $card-spacing;
   smallFontSize: $small-font-size;
   regularFontSize: $regular-font-size;
   mediumFontSize: $medium-font-size;
+}
+
+@mixin mobile {
+  @media screen and (max-width: $mobile-cutoff) {
+    @content;
+  }
 }
 
 @mixin flex-center {
@@ -67,37 +82,25 @@ $mobile-small-card-height: 70vmin / 2;
   align-items: center;
 }
 
-@mixin double-border($width, $color1, $color2) {
-  border-top: $width solid $color1;
-  border-left: $width solid $color1;
-  border-bottom: $width solid $color2;
-  border-right: $width solid $color2;
+@mixin double-border($color1, $color2) {
+  border-top: $border-size solid $color1;
+  border-left: $border-size solid $color1;
+  border-bottom: $border-size solid $color2;
+  border-right: $border-size solid $color2;
 }
 
 @mixin header-border {
-  @include double-border(
-    $large-border,
-    $header-border-color1,
-    $header-border-color2
-  );
+  @include double-border($header-border-color1, $header-border-color2);
 }
 
-@mixin window-border($width) {
-  @include double-border($width, $window-border-color1, $window-border-color2);
+@mixin window-border {
+  @include double-border($window-border-color1, $window-border-color2);
 }
 
 @mixin menu-border {
-  @include double-border(
-    $small-border,
-    $menu-border-color1,
-    $menu-border-color2
-  );
+  @include double-border($menu-border-color1, $menu-border-color2);
 }
 
 @mixin content-border {
-  @include double-border(
-    $small-border,
-    $content-border-color1,
-    $content-border-color2
-  );
+  @include double-border($content-border-color1, $content-border-color2);
 }

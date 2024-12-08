@@ -1,66 +1,62 @@
 import Image from "next/image";
 import styles from "./header.module.scss";
 
+type IconLinkProps = {
+  title: string;
+  url: string;
+  icon: string;
+};
+
+function IconLink({ title, url, icon }: IconLinkProps) {
+  return (
+    <a
+      className={styles.iconLink}
+      href={url}
+      target={url === "/" ? "" : "_blank"}
+      title={title}
+    >
+      <Image src={`/icons/${icon}`} alt={title} width={192} height={192} />
+    </a>
+  );
+}
+
 export default function Header() {
   return (
     <header className={styles.outerHeader}>
       <div className={styles.innerHeader}>
-        <Image src="/images/logo.svg" alt="Logo" width={48} height={48} />
-        <nav className={styles.nav}>
-          <span className={styles.pageLinks}>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#top-languages">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#grad-courses">Courses</a>
-            <a href="#hobbies">Hobbies</a>
-          </span>
-          <div className={styles.verticalSeparator}></div>
-          <a href="mailto:pauljscott8@gmail.com" target="_blank" title="Email">
-            <Image
-              src="/icons/org.xfce.mailreader.png"
-              alt="Email"
-              width={48}
-              height={48}
-            />
-          </a>
-          <a
-            href="https://drive.google.com/file/d/181m4g11n53sekOgt40T1ZhLruRoqN56X/view?usp=sharing"
-            target="_blank"
+        <div className={styles.logo}>
+          <IconLink title="Logo" url="/" icon="logo.png" />
+        </div>
+        <div className={styles.pageLinks}>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#top-languages">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#grad-courses">Courses</a>
+          <a href="#hobbies">Hobbies</a>
+        </div>
+        <div className={styles.externalLinks}>
+          <IconLink
+            title="Email"
+            url="mailto:pauljscott8@gmail.com"
+            icon="org.xfce.mailreader.png"
+          />
+          <IconLink
             title="Resume"
-          >
-            <Image
-              src="/icons/org.xfce.about.png"
-              alt="Resume"
-              width={128}
-              height={128}
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/paul-scott-047858140/"
-            target="_blank"
+            url="https://drive.google.com/file/d/181m4g11n53sekOgt40T1ZhLruRoqN56X/view?usp=sharing"
+            icon="org.xfce.about.png"
+          />
+          <IconLink
             title="LinkedIn"
-          >
-            <Image
-              src="/icons/org.xfce.webbrowser.png"
-              alt="Linkedin"
-              width={128}
-              height={128}
-            />
-          </a>
-          <a
-            href="https://github.com/PScottZero"
-            target="_blank"
+            url="https://www.linkedin.com/in/paul-scott-047858140/"
+            icon="org.xfce.webbrowser.png"
+          />
+          <IconLink
             title="GitHub"
-          >
-            <Image
-              src="/icons/org.xfce.terminal.png"
-              alt="GitHub"
-              width={128}
-              height={128}
-            />
-          </a>
-        </nav>
+            url="https://github.com/PScottZero"
+            icon="org.xfce.terminal.png"
+          />
+        </div>
       </div>
     </header>
   );
