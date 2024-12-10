@@ -30,7 +30,7 @@ export default function Header() {
         <div className={styles.pageLinks}>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
-          <a href="#top-languages">Skills</a>
+          <a href="#languages">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#grad-courses">Courses</a>
           <a href="#hobbies">Hobbies</a>

@@ -29,12 +29,12 @@ function getCardDims(columns: number, lessColumns: number): CardDims {
   dims.width = getCardWidth(columnsAdjusted);
 
   if (columnsAdjusted == 2 && lessColumns == 2) {
-    dims.titleSize = variables.regularFontSize;
+    dims.titleSize = variables.mediumFontSize;
     dims.descriptionSize = variables.smallFontSize;
     dims.labelPadding = `calc(${variables.cardSpacing} / 2)`;
   } else {
-    dims.titleSize = variables.mediumFontSize;
-    dims.descriptionSize = variables.regularFontSize;
+    dims.titleSize = variables.largeFontSize;
+    dims.descriptionSize = variables.mediumFontSize;
     dims.labelPadding = variables.cardSpacing;
   }
 

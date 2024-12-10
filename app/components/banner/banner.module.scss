@@ -2,17 +2,16 @@
 
 .banner {
   display: grid;
-  grid-template-columns: $profile-size 1fr;
-  width: 100%;
-  min-height: $card-height;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto 1fr;
   background: url("/images/banner.jpg");
   background-size: cover;
   background-position: 50%;
 
   @include mobile {
-    grid-template-rows: 14rem 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-columns: 1fr;
-    font-size: 16px;
+    font-size: $medium-font-size;
   }
 }
 
@@ -23,31 +22,33 @@
 
   img {
     @include content-border;
-    border-width: 4px;
-    width: $profile-size - 4rem;
+    border-width: $border-size * 2;
+    width: $profile-size;
     height: auto;
+    margin: $banner-margin;
   }
 
   @include mobile {
-    font-size: 16px;
-
     img {
-      width: 11rem;
+      width: $profile-size-mobile;
+      margin: $banner-margin-mobile;
     }
   }
 }
 
 .description {
   @include flex-center;
-  font-size: 20px;
-  line-height: 2;
-  padding: 1rem;
-  text-shadow: 0 0 4px black;
+  margin: $banner-margin;
+  margin-left: 0;
+  font-size: $large-font-size;
   font-weight: bold;
+  line-height: 2;
   color: white;
+  text-shadow: $description-shadow;
 
   @include mobile {
-    line-height: 1.5;
-    padding-top: 0;
+    margin: $banner-margin-mobile;
+    margin-top: 0;
+    font-size: $medium-font-size;
   }
 }

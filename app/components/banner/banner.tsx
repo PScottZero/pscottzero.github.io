@@ -17,10 +17,10 @@ export default function Banner() {
         </div>
         <div className={styles.description}>
           Howdy! My name is Paul Scott, and I am a software engineer at Vistar
-          Media. I obtained my MSE in Computer & Information Science from the
-          University of Pennsylvania, and obtained my BS in Computer Science
-          from Penn State. My areas of interest are computer graphics,
-          distributed systems, emulation, machine learning, and web development.
+          Media. I received my MSE in Computer & Information Science from the
+          University of Pennsylvania, and my BS in Computer Science from Penn
+          State. My areas of interest are computer graphics, distributed
+          systems, emulation, machine learning, and web development.
         </div>
       </div>
     </Window>

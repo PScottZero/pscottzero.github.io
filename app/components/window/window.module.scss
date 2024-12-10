@@ -28,7 +28,7 @@
   grid-template-columns: $title-bar-height 1fr $title-bar-height $title-bar-height;
   grid-template-rows: $title-bar-height;
   text-align: center;
-  font-size: $medium-font-size;
+  font-size: $large-font-size;
 }
 
 .title {
@@ -45,7 +45,7 @@
   height: 2.5rem;
   color: $menu-font-color;
   background-color: $menu-color;
-  font-size: $medium-font-size;
+  font-size: $large-font-size;
 
   span {
     margin-left: 1rem;
@@ -90,7 +90,7 @@
   @include content-border;
   background: $content-color;
   height: $title-bar-height;
-  font-size: 20px;
+  font-size: $large-font-size;
   padding-left: $card-spacing;
 }
 

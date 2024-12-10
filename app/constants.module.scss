@@ -12,9 +12,9 @@
 // $content-color: #c6b2a8;
 // $content-border-color1: #e7deda;
 // $content-border-color2: #6a605a;
-// $page-links-color: #4992a7;
-// $page-links-border-color1: #adced7;
-// $page-links-border-color2: #244953;
+// $page-links-color: #8998aa;
+// $page-links-border-color1: #cad1d9;
+// $page-links-border-color2: #464d56;
 // $background-color: #4992a7;
 
 /* solaris colors */
@@ -38,23 +38,19 @@ $background-color: #524a8c;
 
 /* font sizes */
 $small-font-size: 12px;
-$regular-font-size: 16px;
-$medium-font-size: 20px;
-$large-font-size: 24px;
+$medium-font-size: 16px;
+$large-font-size: 20px;
 
 /* dimensions */
 $window-spacing: 1.5rem;
 $card-spacing: 0.5rem;
 $border-size: 1.75px;
-$large-border: $border-size * 2;
-$min-width: 60rem;
-$profile-size: 20rem;
-$small-profile-size: 16rem;
-$card-height: 20rem;
-$medium-card-height: 17.5rem;
-$small-card-height: 15rem;
-$mobile-card-height: 70vmin;
-$mobile-small-card-height: 70vmin / 2;
+$banner-margin: 2rem;
+$banner-margin-mobile: 1rem;
+$profile-size: 16rem;
+$profile-size-mobile: 12rem;
+$description-padding: 1rem;
+$description-shadow: 0 0 4px black;
 $title-bar-height: 2rem;
 $corner-size: calc($title-bar-height + $border-size * 3);
 $mobile-cutoff: 640px;
@@ -62,8 +58,8 @@ $mobile-cutoff: 640px;
 :export {
   cardSpacing: $card-spacing;
   smallFontSize: $small-font-size;
-  regularFontSize: $regular-font-size;
   mediumFontSize: $medium-font-size;
+  largeFontSize: $large-font-size;
 }
 
 @mixin mobile {
