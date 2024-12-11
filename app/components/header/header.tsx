@@ -15,7 +15,7 @@ function IconLink({ title, url, icon }: IconLinkProps) {
       target={url === "/" ? "" : "_blank"}
       title={title}
     >
-      <Image src={`/icons/${icon}`} alt={title} width={192} height={192} />
+      <Image src={`/images/${icon}`} alt={title} width={192} height={192} />
     </a>
   );
 }

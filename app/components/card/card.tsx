@@ -41,7 +41,7 @@ export default function Card({ data, dims, imageFolder }: CardProps) {
   const linkIcon = hasLink ? (
     <Image
       className={styles.linkIcon}
-      src="icons/link.svg"
+      src="images/link.svg"
       alt="link"
       width={64}
       height={64}
