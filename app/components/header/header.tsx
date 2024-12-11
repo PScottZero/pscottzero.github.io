@@ -39,22 +39,22 @@ export default function Header() {
           <IconLink
             title="Email"
             url="mailto:pauljscott8@gmail.com"
-            icon="org.xfce.mailreader.png"
+            icon="email.png"
           />
           <IconLink
             title="Resume"
             url="https://drive.google.com/file/d/181m4g11n53sekOgt40T1ZhLruRoqN56X/view?usp=sharing"
-            icon="org.xfce.about.png"
+            icon="resume.png"
           />
           <IconLink
             title="LinkedIn"
             url="https://www.linkedin.com/in/paul-scott-047858140/"
-            icon="org.xfce.webbrowser.png"
+            icon="linkedin.png"
           />
           <IconLink
             title="GitHub"
             url="https://github.com/PScottZero"
-            icon="org.xfce.terminal.png"
+            icon="github.png"
           />
         </div>
       </div>
