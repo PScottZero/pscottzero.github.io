@@ -78,6 +78,6 @@
   margin: 0 0.5rem;
 
   &:hover {
-    filter: brightness(75%);
+    outline: $border-size dotted black;
   }
 }

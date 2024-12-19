@@ -13,7 +13,7 @@ export type SectionData = {
 
 export type SectionProps = {
   data: SectionData;
-  flexShrink: number;
+  fewerColumns: number;
 };
 
 function getCardWidth(columns: number): string {
@@ -23,12 +23,12 @@ function getCardWidth(columns: number): string {
   return "calc(" + width + " - " + lessWidth + ")";
 }
 
-function getCardDims(columns: number, lessColumns: number): CardDims {
+function getCardDims(columns: number, fewerColumns: number): CardDims {
   const dims = new CardDims();
-  const columnsAdjusted = Math.max(columns - lessColumns, 1);
+  const columnsAdjusted = Math.max(columns - fewerColumns, 1);
   dims.width = getCardWidth(columnsAdjusted);
 
-  if (columnsAdjusted == 2 && lessColumns == 2) {
+  if (columnsAdjusted == 2 && fewerColumns == 2) {
     dims.titleSize = variables.mediumFontSize;
     dims.descriptionSize = variables.smallFontSize;
     dims.labelPadding = `calc(${variables.cardSpacing} / 2)`;
@@ -41,14 +41,14 @@ function getCardDims(columns: number, lessColumns: number): CardDims {
   return dims;
 }
 
-export default function Section({ data, flexShrink }: SectionProps) {
+export default function Section({ data, fewerColumns }: SectionProps) {
   let cards: JSX.Element[] = [];
   for (let cardData of data.content) {
     cards.push(
       <Card
         key={cards.length}
         data={cardData}
-        dims={getCardDims(data.columns, flexShrink)}
+        dims={getCardDims(data.columns, fewerColumns)}
         imageFolder={data.imageFolder ?? data.sectionId}
       />
     );

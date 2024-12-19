@@ -3,7 +3,6 @@
 .card {
   @include content-border;
   position: relative;
-  transition: 0.1s;
   aspect-ratio: 4/3;
   background-color: $menu-color;
   overflow: hidden;
@@ -15,7 +14,8 @@
   left: 0;
   width: 100%;
   padding: 1rem;
-  background-color: rgba($content-color, 0.75);
+  background-color: rgba($content-color, 0.85);
+  border-top: $border-size solid $content-border-color1;
 }
 
 .title {
@@ -35,7 +35,8 @@
 }
 
 .link:hover {
-  filter: brightness(75%);
+  @include double-border($content-border-color2, $content-border-color1);
+  cursor: pointer;
 }
 
 .linkIcon {
