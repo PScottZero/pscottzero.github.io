@@ -16,14 +16,15 @@ const TABLET_COLUMN_ADJUST = 1;
 export default function Home() {
   const [fewerColumns, setFewerColumns] = useState<number>(0);
 
-  const refreshFewerColumns = () =>
-    setFewerColumns(
-      window.innerWidth <= MOBILE_CUTOFF
-        ? MOBILE_COLUMN_ADJUST
-        : window.innerWidth <= TABLET_CUTOFF
-        ? TABLET_COLUMN_ADJUST
-        : 0
-    );
+  const refreshFewerColumns = () => {
+    if (window.innerWidth <= MOBILE_CUTOFF) {
+      setFewerColumns(MOBILE_COLUMN_ADJUST);
+    } else if (window.innerWidth <= TABLET_CUTOFF) {
+      setFewerColumns(TABLET_COLUMN_ADJUST);
+    } else {
+      setFewerColumns(0);
+    }
+  };
 
   useEffect(() => {
     window.addEventListener("resize", refreshFewerColumns);

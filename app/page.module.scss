@@ -1,14 +1,13 @@
 @import "./constants.module.scss";
 
 .main {
-  max-width: 80rem;
+  max-width: $max-width;
   width: 100%;
   padding: 0 $window-spacing;
-  margin: $window-spacing auto;
+  margin: auto;
 
-  @media screen and (max-width: $mobile-cutoff) {
-    max-width: 100%;
-    padding: 0 0.5rem;
-    margin: 0.5rem auto $window-spacing auto;
+  @include mobile {
+    padding: 0 $window-spacing-mobile;
+    margin: auto;
   }
 }

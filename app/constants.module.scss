@@ -60,19 +60,40 @@ $small-font-size: 12px;
 $medium-font-size: 16px;
 $large-font-size: 20px;
 
-/* dimensions */
-$window-spacing: 1.5rem;
-$card-spacing: 0.5rem;
+/* page dimensions */
+$min-width: 352px;
+$max-width: 80rem;
+$mobile-cutoff: 640px;
 $border-size: 1.75px;
+
+/* window dimensions */
+$window-spacing: 1.5rem;
+$window-spacing-mobile: 0.75rem;
+$window-icon-large-dim: 1.2rem;
+$window-icon-small-dim: 0.4rem;
+$title-bar-height: 2rem;
+$menu-bar-height: 2.5rem;
+$card-spacing: 0.5rem;
+$card-link-icon-size: 1rem;
+$menu-spacing: 1rem;
+$corner-size: calc($title-bar-height + $border-size * 3);
+
+/* header dimensions */
+$header-height: 4.5rem;
+$header-padding: 0.75rem;
+$header-icon-spacing: 1rem;
+$header-icon-border: $border-size dotted black;
+$page-links-width: 24rem;
+$page-links-spacing: 0.25rem;
+$page-links-anchor-offset: 5rem;
+
+/* banner dimensions */
 $banner-margin: 2rem;
 $banner-margin-mobile: 1rem;
 $profile-size: 16rem;
 $profile-size-mobile: 12rem;
 $description-padding: 1rem;
 $description-shadow: 0 0 4px black;
-$title-bar-height: 2rem;
-$corner-size: calc($title-bar-height + $border-size * 3);
-$mobile-cutoff: 640px;
 
 :export {
   cardSpacing: $card-spacing;

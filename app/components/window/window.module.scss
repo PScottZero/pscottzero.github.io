@@ -5,10 +5,10 @@
   position: relative;
   margin-top: $window-spacing;
   background: $window-color;
-  padding: 4px;
+  padding: $border-size * 2;
 
   @include mobile {
-    margin-top: 0.5rem;
+    margin-top: $window-spacing-mobile;
   }
 }
 
@@ -42,13 +42,13 @@
 .menu {
   @include flex-vertical-center;
   @include menu-border;
-  height: 2.5rem;
+  height: $menu-bar-height;
   color: $menu-font-color;
   background-color: $menu-color;
   font-size: $large-font-size;
 
   span {
-    margin-left: 1rem;
+    margin-left: $menu-spacing;
   }
 }
 
@@ -65,8 +65,8 @@
   float: left;
 
   div {
-    width: 1.2rem;
-    height: 0.4rem;
+    width: $window-icon-large-dim;
+    height: $window-icon-small-dim;
   }
 }
 
@@ -76,13 +76,13 @@
 }
 
 .minimize div {
-  width: 0.4rem;
-  height: 0.4rem;
+  width: $window-icon-small-dim;
+  height: $window-icon-small-dim;
 }
 
 .maximize div {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: $window-icon-large-dim;
+  height: $window-icon-large-dim;
 }
 
 .itemCount {

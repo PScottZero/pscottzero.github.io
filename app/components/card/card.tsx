@@ -24,7 +24,7 @@ export type CardProps = {
 };
 
 export default function Card({ data, dims, imageFolder }: CardProps) {
-  let descriptionLines = [];
+  const descriptionLines: JSX.Element[] = [];
   if (data.description !== undefined) {
     if (Array.isArray(data.description)) {
       for (let i = 0; i < data.description.length; i++) {
