@@ -5,7 +5,7 @@
   position: relative;
   margin-top: $window-spacing;
   background: $window-color;
-  padding: $border-size * 2;
+  padding: $outer-window-padding;
 
   @include mobile {
     margin-top: $window-spacing-mobile;
