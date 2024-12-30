@@ -3,26 +3,25 @@ import shutil
 import json
 from PIL import Image
 
-# constants
+public_dir = "public"
+images_dir = os.path.join(public_dir, "images")
+images_backup_dir = "images-backup"
+content_dir = os.path.join(public_dir, "content.json")
+
 max_image_size = 256000
 image_exts = ["jpg", "jpeg", "png", "svg", "webp"]
-public_dir = "public"
-public_backup_dir = "public_backup"
-content_json = open(f"{public_dir}/content.json").read()
-whitelist = ["banner.jpg", "profile.jpg", "favicon.png"]
+
+content_json = open(content_dir).read()
 
 
 def get_images():
     images = []
-    dir_queue = [public_dir]
-    while len(dir_queue) > 0:
-        curr_dir = dir_queue.pop()
-        for path in os.listdir(curr_dir):
-            full_path = os.path.join(curr_dir, path)
-            if os.path.isdir(full_path):
-                dir_queue.append(full_path)
-            elif full_path.split(".")[-1] in image_exts:
-                images.append(full_path)
+    for subfolder in os.listdir(images_dir):
+        subfolder_path = os.path.join(images_dir, subfolder)
+        if os.path.isdir(subfolder_path):
+            for image in os.listdir(subfolder_path):
+                image_path = os.path.join(subfolder_path, image)
+                images.append(image_path)
     return images
 
 
@@ -31,11 +30,7 @@ def remove_unused_images(images):
     unused_images = []
     for image in images:
         basename = os.path.basename(image)
-        if (
-            basename not in content_json
-            and basename not in whitelist
-            and "icons" not in image
-        ):
+        if basename not in content_json:
             unused_images.append(image)
             os.remove(image)
             print(f"- Removed: {image}")
@@ -48,8 +43,6 @@ def convert_images_to_jpegs(images):
     print("Converting images to JPEGs...")
     replacements = []
     for image in images:
-        if "icons" in image or "favicon.png" in image:
-            continue
         if image.endswith(".png") or image.endswith(".webp"):
             basename = os.path.basename(image)
             new_image = image.replace(".png", ".jpg")
@@ -112,8 +105,7 @@ def compress_image(image):
 def compress_large_images(images):
     print("Compressing Large Images...")
     for image in images:
-        basename = os.path.basename(image)
-        if not image.endswith(".svg") and basename not in whitelist:
+        if not image.endswith(".svg"):
             image_size = os.path.getsize(image)
             if image_size > max_image_size:
                 new_image_size, resize_factor, quality = compress_image(image)
@@ -132,12 +124,12 @@ def minify_svgs(images):
 
 
 def backup_public():
-    shutil.copytree(public_dir, public_backup_dir)
+    shutil.copytree(images_dir, images_backup_dir)
 
 
 def save_content():
     j = json.loads(content_json)
-    open(f"{public_dir}/content.json", "w").write(json.dumps(j, indent=2))
+    open(content_dir, "w").write(json.dumps(j, indent=2))
 
 
 def clean_images():

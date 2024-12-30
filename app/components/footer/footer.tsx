@@ -6,7 +6,7 @@ export default function Footer() {
       Email at <a href="mailto:pauljscott8@gmail.com">pauljscott8@gmail.com</a>{" "}
       or call at (215) 880-9592
       <br />
-      Updated December 19<sup>th</sup>, 2024
+      Updated December 30<sup>th</sup>, 2024
     </footer>
   );
 }
