@@ -6,9 +6,9 @@
     "content": [
       {
         "title": "Vistar Media",
-        "image": "vistar.jpg",
+        "image": "vistar.svg",
         "description": [
-          "Software Engineer",
+          "Software Engineer II",
           "June 2024 - Present"
         ],
         "link": "https://www.vistarmedia.com/"
@@ -67,7 +67,7 @@
     "columns": 4,
     "content": [
       {
-        "title": "C/C++",
+        "title": "C / C++",
         "image": "clang.svg"
       },
       {
@@ -83,15 +83,15 @@
         "image": "go.svg"
       },
       {
-        "title": "HTML/CSS",
+        "title": "HTML / CSS",
         "image": "html.svg"
       },
       {
-        "title": "Java/Kotlin",
+        "title": "Java / Kotlin",
         "image": "java.svg"
       },
       {
-        "title": "JavaScript/TypeScript",
+        "title": "JavaScript / TypeScript",
         "image": "javascript.svg"
       },
       {
@@ -461,7 +461,7 @@
     "content": [
       {
         "title": "Art",
-        "image": "electric-prisms.jpg"
+        "image": "matisse-goldfish.jpg"
       },
       {
         "title": "Architecture",
