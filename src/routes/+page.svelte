@@ -1,46 +1,71 @@
 <script lang="ts">
-	import Card from '$lib/components/card.svelte';
 	import IconLink from '$lib/components/icon-link.svelte';
+	import Section from '$lib/components/section.svelte';
 	import Window from '$lib/components/window.svelte';
 	import content from '$lib/content.json';
+	import { onMount } from 'svelte';
+
+	const MOBILE_CUTOFF = 640;
+	const TABLET_CUTOFF = 1024;
+
+	const MOBILE_COLUMN_ADJUST = 2;
+	const TABLET_COLUMN_ADJUST = 1;
+
+	let fewerColumns = $state(0);
+
+	function refreshFewerColumns() {
+		if (window.innerWidth <= MOBILE_CUTOFF) {
+			fewerColumns = MOBILE_COLUMN_ADJUST;
+		} else if (window.innerWidth <= TABLET_CUTOFF) {
+			fewerColumns = TABLET_COLUMN_ADJUST;
+		} else {
+			fewerColumns = 0;
+		}
+	}
+
+	onMount(() => {
+		refreshFewerColumns();
+		window.addEventListener('resize', refreshFewerColumns);
+		return () => {
+			window.removeEventListener('resize', refreshFewerColumns);
+		};
+	});
 </script>
 
 <header>
-	<div class="outer-header">
-		<div class="inner-header">
-			<div class="logo">
-				<IconLink title="Logo" href="/" src="images/logo.png" />
-			</div>
-			<div class="page-links">
-				<a href="#experience">Experience</a>
-				<a href="#education">Education</a>
-				<a href="#languages">Skills</a>
-				<a href="#projects">Projects</a>
-				<a href="#grad-courses">Courses</a>
-				<a href="#hobbies">Hobbies</a>
-			</div>
-			<div class="external-links">
-				<IconLink
-					title="Email"
-					href="mailto:pauljscott8@gmail.com"
-					src="images/email.png"
-				/>
-				<IconLink
-					title="Resume"
-					href="https://drive.google.com/file/d/181m4g11n53sekOgt40T1ZhLruRoqN56X/view?usp=sharing"
-					src="images/resume.png"
-				/>
-				<IconLink
-					title="LinkedIn"
-					href="https://www.linkedin.com/in/paul-scott-047858140/"
-					src="images/linkedin.png"
-				/>
-				<IconLink
-					title="GitHub"
-					href="https://github.com/PScottZero"
-					src="images/github.png"
-				/>
-			</div>
+	<div class="inner-header">
+		<div class="logo">
+			<IconLink title="Logo" href="/" src="images/logo.png" />
+		</div>
+		<div class="page-links">
+			<a href="#experience">Experience</a>
+			<a href="#education">Education</a>
+			<a href="#languages">Skills</a>
+			<a href="#projects">Projects</a>
+			<a href="#grad-courses">Courses</a>
+			<a href="#hobbies">Hobbies</a>
+		</div>
+		<div class="external-links">
+			<IconLink
+				title="Email"
+				href="mailto:pauljscott8@gmail.com"
+				src="images/email.png"
+			/>
+			<IconLink
+				title="Resume"
+				href="https://drive.google.com/file/d/181m4g11n53sekOgt40T1ZhLruRoqN56X/view?usp=sharing"
+				src="images/resume.png"
+			/>
+			<IconLink
+				title="LinkedIn"
+				href="https://www.linkedin.com/in/paul-scott-047858140/"
+				src="images/linkedin.png"
+			/>
+			<IconLink
+				title="GitHub"
+				href="https://github.com/PScottZero"
+				src="images/github.png"
+			/>
 		</div>
 	</div>
 </header>
@@ -62,15 +87,7 @@
 	</Window>
 
 	{#each content as section}
-		<div id={section.sectionId}>
-			<Window title={section.title} itemCount={section.content.length}>
-				<!-- <div class="cards">
-					{#each section.content as card, i (i)}
-						<Card data={card} dims={card.}></Card>
-					{/each}
-				</div> -->
-			</Window>
-		</div>
+		<Section data={section} {fewerColumns} />
 	{/each}
 
 	<footer>
@@ -78,7 +95,7 @@
 		<a href="mailto:pauljscott8@gmail.com">pauljscott8@gmail.com</a>
 		or call at (215) 880-9592
 		<br />
-		Updated April 15<sup>th</sup>, 2025
+		Updated July 16<sup>th</sup>, 2025
 	</footer>
 </main>
 
@@ -87,8 +104,6 @@
 	@use '$lib/scss/variables.scss' as v;
 
 	:global {
-		@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
-
 		* {
 			box-sizing: border-box;
 			padding: 0;
@@ -120,7 +135,7 @@
 		}
 	}
 
-	.outer-header {
+	header {
 		@include m.header-border;
 		z-index: 3;
 		position: sticky;

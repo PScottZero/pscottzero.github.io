@@ -1,24 +1,26 @@
-<script lang="ts">
-	type CardData = {
+<script module lang="ts">
+	export type CardData = {
 		title: string;
 		description?: string | string[];
 		image: string;
 		link?: string;
 	};
 
-	type CardDims = {
-		width: string;
-		titleSize: string;
-		descriptionSize: string;
-		labelPadding: string;
-	};
+	export class CardDims {
+		width: string = '';
+		titleSize: string = '';
+		descriptionSize: string = '';
+		labelPadding: string = '';
+	}
 
 	type CardProps = {
 		data: CardData;
 		dims: CardDims;
 		imageFolder: string;
 	};
+</script>
 
+<script lang="ts">
 	let { data, dims, imageFolder }: CardProps = $props();
 
 	const hasLink = data.link !== undefined;
@@ -71,6 +73,7 @@
 		aspect-ratio: 4/3;
 		background-color: v.$menu-color;
 		overflow: hidden;
+		font-family: inherit;
 	}
 
 	.label {
