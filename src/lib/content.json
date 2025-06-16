@@ -1,0 +1,519 @@
+[
+	{
+		"id": "experience",
+		"title": "Experience",
+		"columns": 3,
+		"content": [
+			{
+				"title": "Vistar Media",
+				"image": "vistar.svg",
+				"description": ["Software Engineer II", "June 2024 - Present"],
+				"link": "https://www.vistarmedia.com/"
+			},
+			{
+				"title": "Merly",
+				"image": "merly.svg",
+				"description": ["Full-Stack Software Engineer", "July 2023 - May 2024"],
+				"link": "https://www.merly.ai/"
+			},
+			{
+				"title": "ShopRunner",
+				"image": "shoprunner.jpg",
+				"description": [
+					"Software Engineer Intern, MBX+MAX Teams",
+					"Summer 2021+2022"
+				]
+			}
+		]
+	},
+	{
+		"id": "education",
+		"title": "Education",
+		"columns": 3,
+		"content": [
+			{
+				"title": "University of Pennsylvania",
+				"image": "upenn.jpg",
+				"description": [
+					"MSE Computer and Information Science",
+					"GPA 3.83/4.00",
+					"August 2021 - May 2023"
+				],
+				"link": "https://drive.google.com/file/d/10EQ92oqXIuAQZTZPGrHU9BBE1P3Ile8p/view?usp=sharing"
+			},
+			{
+				"title": "Penn State",
+				"image": "psu.jpg",
+				"description": [
+					"BS Computer Science, Math Minor",
+					"GPA 3.98/4.00, Summa Cum Laude",
+					"Schreyer Honors Scholar",
+					"August 2017 - May 2021"
+				],
+				"link": "https://drive.google.com/file/d/1dIxfRqGWENmOSOC6zmntMHqLMxq6WNmk/view?usp=sharing"
+			}
+		]
+	},
+	{
+		"id": "languages",
+		"imageFolder": "skills",
+		"title": "Programming Languages",
+		"columns": 4,
+		"content": [
+			{
+				"title": "C / C++",
+				"image": "clang.svg"
+			},
+			{
+				"title": "C#",
+				"image": "csharp.svg"
+			},
+			{
+				"title": "Dart",
+				"image": "dart.svg"
+			},
+			{
+				"title": "Go",
+				"image": "go.svg"
+			},
+			{
+				"title": "HTML / CSS",
+				"image": "html.svg"
+			},
+			{
+				"title": "Java / Kotlin",
+				"image": "java.svg"
+			},
+			{
+				"title": "JavaScript / TypeScript",
+				"image": "javascript.svg"
+			},
+			{
+				"title": "Python",
+				"image": "python.svg"
+			},
+			{
+				"title": "PHP",
+				"image": "php.svg"
+			},
+			{
+				"title": "Swift",
+				"image": "swift.jpg"
+			}
+		]
+	},
+	{
+		"id": "sw-skills",
+		"imageFolder": "skills",
+		"title": "Software Skills",
+		"columns": 4,
+		"content": [
+			{
+				"title": "Angular",
+				"image": "angular.svg"
+			},
+			{
+				"title": "AWS",
+				"image": "aws.svg"
+			},
+			{
+				"title": "Bazel",
+				"image": "bazel.svg"
+			},
+			{
+				"title": "Data Visualization",
+				"image": "data-visualization.jpg"
+			},
+			{
+				"title": "Docker",
+				"image": "docker.svg"
+			},
+			{
+				"title": "Flutter",
+				"image": "flutter.svg"
+			},
+			{
+				"title": "Git",
+				"image": "git.svg"
+			},
+			{
+				"title": "GitHub",
+				"image": "github.svg"
+			},
+			{
+				"title": "gRPC",
+				"image": "grpc.svg"
+			},
+			{
+				"title": "Jira",
+				"image": "jira.svg"
+			},
+			{
+				"title": "Jupyter Notebook",
+				"image": "jupyter.svg"
+			},
+			{
+				"title": "Linux",
+				"image": "ubuntu.svg"
+			},
+			{
+				"title": "OpenGL",
+				"image": "opengl.svg"
+			},
+			{
+				"title": "PyTorch",
+				"image": "pytorch.svg"
+			},
+			{
+				"title": "QT",
+				"image": "qt.svg"
+			},
+			{
+				"title": "React",
+				"image": "react.svg"
+			},
+			{
+				"title": "RESTful API",
+				"image": "rest-api.svg"
+			},
+			{
+				"title": "SQL / Postgres",
+				"image": "postgres.svg"
+			},
+			{
+				"title": "TensorFlow",
+				"image": "tensorflow.svg"
+			},
+			{
+				"title": "Unit Testing",
+				"image": "unit-testing.svg"
+			}
+		]
+	},
+	{
+		"id": "projects",
+		"title": "Projects",
+		"columns": 3,
+		"content": [
+			{
+				"title": "Esolangs",
+				"image": "esolangs.jpg",
+				"description": [
+					"Esoteric Programming Language Interpreter Collection",
+					"August 2024 - Present"
+				],
+				"link": "https://pjs4.com/esolangs"
+			},
+			{
+				"title": "CHIP-8",
+				"image": "chip8.jpg",
+				"description": [
+					"CHIP-8 / SUPER-CHIP Interpreter",
+					"July - August 2024"
+				],
+				"link": "https://pjs4.com/chip8"
+			},
+			{
+				"title": "Dot Matrix",
+				"image": "dotmatrix.jpg",
+				"description": [
+					"Game Boy / Game Boy Color Emulator",
+					"February - May 2020",
+					"April - June 2023"
+				],
+				"link": "https://github.com/PScottZero/DotMatrix"
+			},
+			{
+				"title": "PennOS",
+				"image": "pennos.svg",
+				"description": [
+					"CIS 5480 Final Project (Private Repo)",
+					"March - April 2023"
+				]
+			},
+			{
+				"title": "Mini Minecraft",
+				"image": "mini-minecraft.jpg",
+				"description": [
+					"CIS 5600 Final Project (Private Repo)",
+					"November - December 2022"
+				]
+			},
+			{
+				"title": "PennCloud",
+				"image": "penncloud.jpg",
+				"description": [
+					"CIS 5050 Final Project (Private Repo)",
+					"November - December 2022"
+				]
+			},
+			{
+				"title": "Language Translation with Transformers",
+				"image": "translation.jpg",
+				"description": "August 2022",
+				"link": "https://github.com/PScottZero/transformer_translation"
+			},
+			{
+				"title": "Piano Music Sentiment Classifier",
+				"image": "canon-in-d.jpg",
+				"description": ["CIS 522 Final Project", "March - April 2022"],
+				"link": "https://colab.research.google.com/drive/1FPAd_H1OSF8BVLAmxVc_x5X6ZtMrItyR?usp=sharing"
+			},
+			{
+				"title": "US Coin Classifier",
+				"image": "coin-classifier.jpg",
+				"description": "October 2021 - February 2022",
+				"link": "https://github.com/PScottZero/US-Coin-Classifier"
+			},
+			{
+				"title": "PDP-1 Emulator",
+				"image": "pdp1.jpg",
+				"description": "February - March 2021",
+				"link": "https://pjs4.com/pdp1"
+			},
+			{
+				"title": "En Passant",
+				"image": "en-passant.jpg",
+				"description": "November 2020 - June 2021",
+				"link": "https://github.com/PScottZero/EnPassant"
+			},
+			{
+				"title": "MNIST Playground",
+				"image": "mnist.jpg",
+				"description": "September - October 2020",
+				"link": "https://pjs4.com/MNISTPlayground"
+			}
+		]
+	},
+	{
+		"id": "grad-courses",
+		"title": "Graduate Courses",
+		"columns": 4,
+		"content": [
+			{
+				"title": "Advanced Computer Graphics",
+				"image": "cornell-box.jpg",
+				"description": "CIS 5610, Spring 2023"
+			},
+			{
+				"title": "Operating Systems",
+				"image": "operating-systems.svg",
+				"description": "CIS 5480, Spring 2023"
+			},
+			{
+				"title": "Interactive Computer Graphics",
+				"image": "computer-graphics.svg",
+				"description": "CIS 5600, Fall 2022"
+			},
+			{
+				"title": "Software Systems",
+				"image": "software-systems.svg",
+				"description": "CIS 5050, Fall 2022"
+			},
+			{
+				"title": "Deep Learning",
+				"image": "cnn.svg",
+				"description": "CIS 5220, Spring 2022"
+			},
+			{
+				"title": "Big Data Analytics",
+				"image": "big-data.svg",
+				"description": "CIS 5450, Spring 2022"
+			},
+			{
+				"title": "Interactive Fiction and Text Generation",
+				"image": "interactive-fiction.svg",
+				"description": "CIS 7000, Spring 2022"
+			},
+			{
+				"title": "Theory of Computation",
+				"image": "theory-of-computation.svg",
+				"description": "CIS 5110, Fall 2021"
+			},
+			{
+				"title": "Machine Learning",
+				"image": "machine-learning.svg",
+				"description": "CIS 5200, Fall 2021"
+			},
+			{
+				"title": "Artificial Intelligence",
+				"image": "ai.svg",
+				"description": "CIS 5210, Fall 2021"
+			}
+		]
+	},
+	{
+		"id": "ugrad-courses",
+		"title": "Undergraduate Courses",
+		"columns": 4,
+		"content": [
+			{
+				"title": "Mathematical Logic",
+				"image": "lnt.svg",
+				"description": "MATH 457, Spring 2021"
+			},
+			{
+				"title": "Applications Programming",
+				"image": "swift.jpg",
+				"description": "CMPSC 475, Fall 2020"
+			},
+			{
+				"title": "Quantum Computation",
+				"image": "quantum-computer.jpg",
+				"description": "CS-191x (BerkeleyX), Summer 2020",
+				"link": "https://courses.edx.org/certificates/a7a842fb46834ea4b9459b44583f3e23"
+			},
+			{
+				"title": "Computer Vision",
+				"image": "computer-vision.jpg",
+				"description": "CMPEN 454, Spring 2020"
+			},
+			{
+				"title": "Database Management Systems",
+				"image": "database.jpg",
+				"description": "CMPSC 431W, Spring 2020"
+			},
+			{
+				"title": "Machine Learning & AI",
+				"image": "robot.jpg",
+				"description": "CMPSC 448, Spring 2020"
+			},
+			{
+				"title": "Theory of Computation",
+				"image": "turing-machine.jpg",
+				"description": "CMPSC 464, Spring 2020"
+			},
+			{
+				"title": "Numerical Computations",
+				"image": "trapezoid.jpg",
+				"description": "MATH 451, Spring 2020"
+			},
+			{
+				"title": "Computer Design",
+				"image": "computer-design.jpg",
+				"description": "CMPEN 331, Fall 2019"
+			},
+			{
+				"title": "Programming Language Concepts",
+				"image": "lambda.jpg",
+				"description": "CMPSC 461, Fall 2019"
+			},
+			{
+				"title": "Operating Systems",
+				"image": "os.jpg",
+				"description": "CMPSC 473, Fall 2019"
+			},
+			{
+				"title": "Matrix Algebra",
+				"image": "matrix.jpg",
+				"description": "MATH 441, Fall 2019"
+			},
+			{
+				"title": "Mathematical Statistics",
+				"image": "stat.jpg",
+				"description": "STAT 415, Fall 2019"
+			},
+			{
+				"title": "Data Structures & Algorithms",
+				"image": "data-structures.jpg",
+				"description": "CMPSC 465, Spring 2019"
+			},
+			{
+				"title": "Technical Writing",
+				"image": "writing.jpg",
+				"description": "ENGL 202C, Spring 2019"
+			},
+			{
+				"title": "Probability Theory",
+				"image": "probability.jpg",
+				"description": "STAT 414, Spring 2019"
+			},
+			{
+				"title": "Systems Programming",
+				"image": "clang.svg",
+				"description": "CMPSC 311, Fall 2018"
+			},
+			{
+				"title": "Object-Oriented Programming",
+				"image": "oop.jpg",
+				"description": "CMPSC 221, Spring 2018"
+			},
+			{
+				"title": "Multivariable Calculus",
+				"image": "calculus.jpg",
+				"description": "MATH 230, Fall 2017"
+			}
+		]
+	},
+	{
+		"id": "hobbies",
+		"title": "Hobbies & Interests",
+		"columns": 4,
+		"content": [
+			{
+				"title": "Art",
+				"image": "matisse-goldfish.jpg"
+			},
+			{
+				"title": "Architecture",
+				"image": "guggenheim.jpg"
+			},
+			{
+				"title": "Aviation",
+				"image": "b787.jpg"
+			},
+			{
+				"title": "Baking / Cooking",
+				"image": "bread.jpg"
+			},
+			{
+				"title": "Bass",
+				"image": "bass.jpg"
+			},
+			{
+				"title": "Coin Collecting",
+				"image": "coins.jpg"
+			},
+			{
+				"title": "Crosswords",
+				"image": "crossword.jpg"
+			},
+			{
+				"title": "Guitar",
+				"image": "martin-guitar.jpg"
+			},
+			{
+				"title": "Movies",
+				"image": "night-of-the-hunter.jpg"
+			},
+			{
+				"title": "Music / Records",
+				"image": "neil-young.jpg"
+			},
+			{
+				"title": "Piano",
+				"image": "piano.jpg"
+			},
+			{
+				"title": "Retro Tech",
+				"image": "apple-iie.jpg"
+			},
+			{
+				"title": "Roller Coasters",
+				"image": "roller-coaster.jpg"
+			},
+			{
+				"title": "Scooters",
+				"image": "metropolitan.jpg"
+			},
+			{
+				"title": "Space",
+				"image": "jwst.jpg"
+			},
+			{
+				"title": "Trains / Model Trains",
+				"image": "model-trains.jpg"
+			}
+		]
+	}
+]

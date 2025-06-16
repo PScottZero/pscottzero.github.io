@@ -1,0 +1,100 @@
+@use 'sass:color';
+
+/* font sizes */
+$small-font-size: 12px;
+$medium-font-size: 16px;
+$large-font-size: 20px;
+
+/* page dimensions */
+$min-width: 352px;
+$max-width: 80rem;
+$mobile-cutoff: 640px;
+$border-size: 1.75px;
+
+/* window dimensions */
+$window-spacing: 1.5rem;
+$window-spacing-mobile: 0.75rem;
+$window-icon-large-dim: 1.2rem;
+$window-icon-small-dim: 0.4rem;
+$outer-window-padding: $border-size * 2 + 0.5px;
+$title-bar-height: 2rem;
+$menu-bar-height: 2.5rem;
+$card-spacing: 0.5rem;
+$card-link-icon-size: 1rem;
+$menu-spacing: 1rem;
+$corner-size: calc($title-bar-height + $border-size * 3);
+
+/* header dimensions */
+$header-height: 4.5rem;
+$header-padding: 0.75rem;
+$header-icon-spacing: 1rem;
+$header-icon-border: $border-size dotted black;
+$page-links-width: 24rem;
+$page-links-spacing: 0.25rem;
+$page-links-anchor-offset: 5rem;
+
+/* banner dimensions */
+$banner-margin: 2rem;
+$banner-margin-mobile: 1rem;
+$profile-size: 16rem;
+$profile-size-mobile: 12rem;
+$description-padding: 1rem;
+$description-shadow: 0 0 4px black;
+
+/* colors */
+$header-color: #8ca3b1;
+$header-border-color1: color.adjust($header-color, $lightness: 20%);
+$header-border-color2: color.adjust($header-color, $lightness: -20%);
+$window-color: #2c7063;
+$window-border-color1: color.adjust($window-color, $lightness: 20%);
+$window-border-color2: color.adjust($window-color, $lightness: -20%);
+$menu-color: #8ca3b1;
+$menu-font-color: black;
+$menu-border-color1: color.adjust($menu-color, $lightness: 20%);
+$menu-border-color2: color.adjust($menu-color, $lightness: -20%);
+$content-color: #8ca3b1;
+$content-border-color1: color.adjust($content-color, $lightness: 20%);
+$content-border-color2: color.adjust($content-color, $lightness: -20%);
+$page-links-color: #2c6f8f;
+$page-links-border-color1: color.adjust($page-links-color, $lightness: 30%);
+$page-links-border-color2: color.adjust($page-links-color, $lightness: -20%);
+$background-color: #173855;
+
+@mixin mobile {
+	@media screen and (max-width: $mobile-cutoff) {
+		@content;
+	}
+}
+
+@mixin flex-center {
+	@include flex-vertical-center;
+	justify-content: center;
+}
+
+@mixin flex-vertical-center {
+	display: flex;
+	align-items: center;
+}
+
+@mixin double-border($color1, $color2) {
+	border-top: $border-size solid $color1;
+	border-left: $border-size solid $color1;
+	border-bottom: $border-size solid $color2;
+	border-right: $border-size solid $color2;
+}
+
+@mixin header-border {
+	@include double-border($header-border-color1, $header-border-color2);
+}
+
+@mixin window-border {
+	@include double-border($window-border-color1, $window-border-color2);
+}
+
+@mixin menu-border {
+	@include double-border($menu-border-color1, $menu-border-color2);
+}
+
+@mixin content-border {
+	@include double-border($content-border-color1, $content-border-color2);
+}
