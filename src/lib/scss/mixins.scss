@@ -1,0 +1,40 @@
+@use '$lib/scss/variables.scss' as v;
+
+@mixin mobile {
+	@media screen and (max-width: v.$mobile-cutoff) {
+		@content;
+	}
+}
+
+@mixin flex-center {
+	@include flex-vertical-center;
+	justify-content: center;
+}
+
+@mixin flex-vertical-center {
+	display: flex;
+	align-items: center;
+}
+
+@mixin double-border($color1, $color2) {
+	border-top: v.$border-size solid $color1;
+	border-left: v.$border-size solid $color1;
+	border-bottom: v.$border-size solid $color2;
+	border-right: v.$border-size solid $color2;
+}
+
+@mixin header-border {
+	@include double-border(v.$header-border-color1, v.$header-border-color2);
+}
+
+@mixin window-border {
+	@include double-border(v.$window-border-color1, v.$window-border-color2);
+}
+
+@mixin menu-border {
+	@include double-border(v.$menu-border-color1, v.$menu-border-color2);
+}
+
+@mixin content-border {
+	@include double-border(v.$content-border-color1, v.$content-border-color2);
+}
