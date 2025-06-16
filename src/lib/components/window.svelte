@@ -1,15 +1,13 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 
-	let {
-		title,
-		itemCount,
-		children
-	}: {
+	type WindowProps = {
 		title: string;
 		itemCount?: number;
 		children?: Snippet;
-	} = $props();
+	};
+
+	let { title, itemCount, children }: WindowProps = $props();
 </script>
 
 <div class="outer-window">
@@ -52,67 +50,66 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/scss/mixins.scss' as m;
-	@use '$lib/scss/variables.scss' as v;
+	@use '$lib/globals.scss' as g;
 
 	.outer-window {
-		@include m.window-border;
+		@include g.window-border;
 		position: relative;
-		margin-top: v.$window-spacing;
-		background: v.$window-color;
-		padding: v.$outer-window-padding;
+		margin-top: g.$window-spacing;
+		background: g.$window-color;
+		padding: g.$outer-window-padding;
 
-		@include m.mobile {
-			margin-top: v.$window-spacing-mobile;
+		@include g.mobile {
+			margin-top: g.$window-spacing-mobile;
 		}
 	}
 
 	.inner-window {
-		@include m.double-border(v.$window-border-color2, v.$window-border-color1);
+		@include g.double-border(g.$window-border-color2, g.$window-border-color1);
 		z-index: 2;
 		position: relative;
 	}
 
 	.content {
-		@include m.content-border;
-		background: v.$content-color;
+		@include g.content-border;
+		background: g.$content-color;
 	}
 
 	.titleBar {
 		display: grid;
-		grid-template-columns: v.$title-bar-height 1fr v.$title-bar-height v.$title-bar-height;
-		grid-template-rows: v.$title-bar-height;
+		grid-template-columns: g.$title-bar-height 1fr g.$title-bar-height g.$title-bar-height;
+		grid-template-rows: g.$title-bar-height;
 		text-align: center;
-		font-size: v.$large-font-size;
+		font-size: g.$large-font-size;
 	}
 
 	.title {
-		@include m.window-border;
-		@include m.flex-center;
+		@include g.window-border;
+		@include g.flex-center;
 		color: white;
 		overflow: hidden;
 		white-space: nowrap;
 	}
 
 	.menu {
-		@include m.flex-vertical-center;
-		@include m.menu-border;
-		height: v.$menu-bar-height;
-		color: v.$menu-font-color;
-		background-color: v.$menu-color;
-		font-size: v.$large-font-size;
+		@include g.flex-vertical-center;
+		@include g.menu-border;
+		height: g.$menu-bar-height;
+		color: g.$menu-font-color;
+		background-color: g.$menu-color;
+		font-size: g.$large-font-size;
 
 		span {
-			margin-left: v.$menu-spacing;
+			margin-left: g.$menu-spacing;
 		}
 	}
 
 	.button {
-		@include m.flex-center;
-		@include m.window-border;
+		@include g.flex-center;
+		@include g.window-border;
 
 		div {
-			@include m.window-border;
+			@include g.window-border;
 		}
 	}
 
@@ -120,8 +117,8 @@
 		float: left;
 
 		div {
-			width: v.$window-icon-large-dim;
-			height: v.$window-icon-small-dim;
+			width: g.$window-icon-large-dim;
+			height: g.$window-icon-small-dim;
 		}
 	}
 
@@ -131,28 +128,28 @@
 	}
 
 	.minimize div {
-		width: v.$window-icon-small-dim;
-		height: v.$window-icon-small-dim;
+		width: g.$window-icon-small-dim;
+		height: g.$window-icon-small-dim;
 	}
 
 	.maximize div {
-		width: v.$window-icon-large-dim;
-		height: v.$window-icon-large-dim;
+		width: g.$window-icon-large-dim;
+		height: g.$window-icon-large-dim;
 	}
 
 	.itemCount {
-		@include m.flex-vertical-center;
-		@include m.content-border;
-		background: v.$content-color;
-		height: v.$title-bar-height;
-		font-size: v.$large-font-size;
-		padding-left: v.$card-spacing;
+		@include g.flex-vertical-center;
+		@include g.content-border;
+		background: g.$content-color;
+		height: g.$title-bar-height;
+		font-size: g.$large-font-size;
+		padding-left: g.$card-spacing;
 	}
 
 	.corners {
 		display: grid;
-		grid-template-columns: v.$corner-size 1fr v.$corner-size;
-		grid-template-rows: v.$corner-size 1fr v.$corner-size;
+		grid-template-columns: g.$corner-size 1fr g.$corner-size;
+		grid-template-rows: g.$corner-size 1fr g.$corner-size;
 		z-index: 1;
 		position: absolute;
 		top: 0;
@@ -161,7 +158,7 @@
 		height: 100%;
 
 		div {
-			@include m.window-border;
+			@include g.window-border;
 		}
 	}
 </style>

@@ -63,18 +63,17 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/scss/mixins.scss' as m;
-	@use '$lib/scss/variables.scss' as v;
+	@use '$lib/globals.scss' as g;
 
 	.section {
-		margin-top: calc(-1 * v.$page-links-anchor-offset);
-		padding-top: v.$page-links-anchor-offset;
+		margin-top: calc(-1 * g.$page-links-anchor-offset);
+		padding-top: g.$page-links-anchor-offset;
 	}
 
 	.cards {
-		@include m.flex-center;
+		@include g.flex-center;
 		flex-wrap: wrap;
-		gap: v.$card-spacing;
-		padding: v.$card-spacing;
+		gap: g.$card-spacing;
+		padding: g.$card-spacing;
 	}
 </style>

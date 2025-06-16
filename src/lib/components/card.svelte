@@ -64,14 +64,13 @@
 </button>
 
 <style lang="scss">
-	@use '$lib/scss/mixins.scss' as m;
-	@use '$lib/scss/variables.scss' as v;
+	@use '$lib/globals.scss' as g;
 
 	.card {
-		@include m.content-border;
+		@include g.content-border;
 		position: relative;
 		aspect-ratio: 4/3;
-		background-color: v.$menu-color;
+		background-color: g.$menu-color;
 		overflow: hidden;
 		font-family: inherit;
 	}
@@ -82,18 +81,18 @@
 		left: 0;
 		width: 100%;
 		padding: 1rem;
-		background-color: rgba(v.$content-color, 0.85);
-		border-top: v.$border-size solid v.$content-border-color1;
+		background-color: rgba(g.$content-color, 0.85);
+		border-top: g.$border-size solid g.$content-border-color1;
 	}
 
 	.title {
-		font-size: v.$large-font-size;
+		font-size: g.$large-font-size;
 		font-weight: bold;
 	}
 
 	.description {
 		position: relative;
-		font-size: v.$medium-font-size;
+		font-size: g.$medium-font-size;
 	}
 
 	.image {
@@ -103,16 +102,16 @@
 	}
 
 	.link:hover {
-		@include m.double-border(
-			v.$content-border-color2,
-			v.$content-border-color1
+		@include g.double-border(
+			g.$content-border-color2,
+			g.$content-border-color1
 		);
 		cursor: pointer;
 	}
 
 	.linkIcon {
 		position: absolute;
-		width: v.$card-link-icon-size;
+		width: g.$card-link-icon-size;
 		height: auto;
 		right: 0;
 		bottom: 0;

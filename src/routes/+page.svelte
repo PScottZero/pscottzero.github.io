@@ -100,8 +100,7 @@
 </main>
 
 <style lang="scss">
-	@use '$lib/scss/mixins.scss' as m;
-	@use '$lib/scss/variables.scss' as v;
+	@use '$lib/globals.scss' as g;
 
 	:global {
 		* {
@@ -112,8 +111,8 @@
 
 		html,
 		body {
-			min-width: v.$min-width;
-			background-color: v.$background-color;
+			min-width: g.$min-width;
+			background-color: g.$background-color;
 			color: black;
 			font-family: 'Jura', Arial, Helvetica, sans-serif;
 		}
@@ -124,85 +123,85 @@
 	}
 
 	main {
-		max-width: v.$max-width;
+		max-width: g.$max-width;
 		width: 100%;
-		padding: 0 v.$window-spacing;
+		padding: 0 g.$window-spacing;
 		margin: auto;
 
-		@include m.mobile {
-			padding: 0 v.$window-spacing-mobile;
+		@include g.mobile {
+			padding: 0 g.$window-spacing-mobile;
 			margin: auto;
 		}
 	}
 
 	header {
-		@include m.header-border;
+		@include g.header-border;
 		z-index: 3;
 		position: sticky;
 		top: 0;
 		width: 100%;
-		padding: v.$border-size * 2;
-		background: v.$header-color;
+		padding: g.$border-size * 2;
+		background: g.$header-color;
 	}
 
 	.inner-header {
 		display: grid;
-		grid-template-columns: 1fr minmax(auto, v.$page-links-width) 1fr;
-		grid-template-rows: v.$header-height;
-		background: v.$content-color;
+		grid-template-columns: 1fr minmax(auto, g.$page-links-width) 1fr;
+		grid-template-rows: g.$header-height;
+		background: g.$content-color;
 
-		@include m.mobile {
+		@include g.mobile {
 			grid-template-columns: 1fr auto;
 		}
 	}
 
 	.logo,
 	.external-links {
-		@include m.flex-vertical-center;
-		@include m.menu-border;
-		padding: v.$header-padding;
+		@include g.flex-vertical-center;
+		@include g.menu-border;
+		padding: g.$header-padding;
 	}
 
 	.logo {
-		@include m.mobile {
-			@include m.flex-center;
+		@include g.mobile {
+			@include g.flex-center;
 		}
 	}
 
 	.page-links {
-		@include m.menu-border;
+		@include g.menu-border;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(2, 1fr);
-		gap: v.$page-links-spacing;
-		padding: v.$page-links-spacing;
-		background: v.$menu-color;
+		gap: g.$page-links-spacing;
+		padding: g.$page-links-spacing;
+		background: g.$menu-color;
 
 		a {
-			@include m.flex-center;
-			@include m.double-border(
-				v.$page-links-border-color1,
-				v.$page-links-border-color2
+			@include g.flex-center;
+			@include g.double-border(
+				g.$page-links-border-color1,
+				g.$page-links-border-color2
 			);
-			background-color: v.$page-links-color;
+			background-color: g.$page-links-color;
 			color: white;
 		}
 
 		a:hover {
-			@include m.double-border(
-				v.$page-links-border-color2,
-				v.$page-links-border-color1
+			@include g.double-border(
+				g.$page-links-border-color2,
+				g.$page-links-border-color1
 			);
 		}
 
-		@include m.mobile {
+		@include g.mobile {
 			display: none;
 		}
 	}
 
 	.external-links {
 		display: flex;
-		gap: v.$header-icon-spacing;
+		gap: g.$header-icon-spacing;
 		justify-content: right;
 	}
 
@@ -214,63 +213,63 @@
 		background-size: cover;
 		background-position: 50%;
 
-		@include m.mobile {
+		@include g.mobile {
 			grid-template-rows: auto 1fr;
 			grid-template-columns: 1fr;
-			font-size: v.$medium-font-size;
+			font-size: g.$medium-font-size;
 		}
 
 		p {
-			@include m.flex-center;
-			margin: v.$banner-margin;
+			@include g.flex-center;
+			margin: g.$banner-margin;
 			margin-left: 0;
-			font-size: v.$large-font-size;
+			font-size: g.$large-font-size;
 			font-weight: bold;
 			line-height: 2;
 			color: white;
-			text-shadow: v.$description-shadow;
+			text-shadow: g.$description-shadow;
 
-			@include m.mobile {
-				margin: v.$banner-margin-mobile;
+			@include g.mobile {
+				margin: g.$banner-margin-mobile;
 				margin-top: 0;
-				font-size: v.$medium-font-size;
+				font-size: g.$medium-font-size;
 			}
 		}
 	}
 
 	.profile {
-		@include m.flex-center;
+		@include g.flex-center;
 		width: 100%;
 		height: 100%;
 
 		img {
-			@include m.content-border;
-			border-width: v.$border-size * 2;
-			width: v.$profile-size;
+			@include g.content-border;
+			border-width: g.$border-size * 2;
+			width: g.$profile-size;
 			height: auto;
-			margin: v.$banner-margin;
+			margin: g.$banner-margin;
 		}
 
-		@include m.mobile {
+		@include g.mobile {
 			img {
-				width: v.$profile-size-mobile;
-				margin: v.$banner-margin-mobile;
+				width: g.$profile-size-mobile;
+				margin: g.$banner-margin-mobile;
 			}
 		}
 	}
 
 	footer {
-		padding: v.$window-spacing * 2 0;
-		font-size: v.$large-font-size;
+		padding: g.$window-spacing * 2 0;
+		font-size: g.$large-font-size;
 		line-height: 1.5;
 		text-align: center;
 		color: white;
 
 		a {
-			color: v.$window-border-color1;
+			color: g.$window-border-color1;
 
 			&:hover {
-				color: v.$window-color;
+				color: g.$window-color;
 			}
 		}
 	}

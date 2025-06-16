@@ -59,3 +59,42 @@ $page-links-color: #2c6f8f;
 $page-links-border-color1: color.adjust($page-links-color, $lightness: 30%);
 $page-links-border-color2: color.adjust($page-links-color, $lightness: -20%);
 $background-color: #173855;
+
+@mixin mobile {
+	@media screen and (max-width: $mobile-cutoff) {
+		@content;
+	}
+}
+
+@mixin flex-center {
+	@include flex-vertical-center;
+	justify-content: center;
+}
+
+@mixin flex-vertical-center {
+	display: flex;
+	align-items: center;
+}
+
+@mixin double-border($color1, $color2) {
+	border-top: $border-size solid $color1;
+	border-left: $border-size solid $color1;
+	border-bottom: $border-size solid $color2;
+	border-right: $border-size solid $color2;
+}
+
+@mixin header-border {
+	@include double-border($header-border-color1, $header-border-color2);
+}
+
+@mixin window-border {
+	@include double-border($window-border-color1, $window-border-color2);
+}
+
+@mixin menu-border {
+	@include double-border($menu-border-color1, $menu-border-color2);
+}
+
+@mixin content-border {
+	@include double-border($content-border-color1, $content-border-color2);
+}
