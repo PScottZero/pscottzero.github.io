@@ -209,7 +209,7 @@
 		display: grid;
 		grid-template-rows: 1fr;
 		grid-template-columns: auto 1fr;
-		background: url('images/banner.jpg');
+		background: url('/images/banner.jpg');
 		background-size: cover;
 		background-position: 50%;
 
