@@ -10,27 +10,48 @@ CONTENT_PATH = "src/lib/content.json"
 
 MAX_IMAGE_PXS = 256000
 IMAGE_EXTS = ["jpg", "jpeg", "png", "svg", "webp"]
+UNUSED_WHITELIST = [
+  "static/images/banner/profile.jpg",
+  "static/images/banner/background.jpg",
+]
 
 content_json = open(CONTENT_PATH, "r").read()
 
 
-def get_images():
-  images = []
+def clean_images() -> None:
+  backup_public()
+  images = get_images()
+  remove_unused_images(images)
+  convert_images_to_jpegs(images)
+  normalize_names(images)
+  compress_large_images(images)
+  minify_svgs(images)
+  save_content()
+
+
+def backup_public() -> None:
+  if os.path.exists(IMAGES_BACKUP_PATH):
+    shutil.rmtree(IMAGES_BACKUP_PATH)
+  shutil.copytree(IMAGES_PATH, IMAGES_BACKUP_PATH)
+
+
+def get_images() -> list[str]:
+  images: list[str] = []
   for subfolder in os.listdir(IMAGES_PATH):
-    subfolder_path = os.path.join(IMAGES_PATH, subfolder)
-    if os.path.isdir(subfolder_path):
-      for image in os.listdir(subfolder_path):
-        image_path = os.path.join(subfolder_path, image)
-        images.append(image_path)
+    subfolder_path = f"{IMAGES_PATH}/{subfolder}"
+    for image in os.listdir(subfolder_path):
+      image_path = f"{subfolder_path}/{image}"
+      images.append(image_path)
   return images
 
 
-def remove_unused_images(images):
+def remove_unused_images(images: list[str]) -> None:
+  global content_json
   print("Removing Unused Images...")
-  unused_images = []
+  unused_images: list[str] = []
   for image in images:
     basename = os.path.basename(image)
-    if basename not in content_json:
+    if image not in UNUSED_WHITELIST and basename not in content_json:
       unused_images.append(image)
       os.remove(image)
       print(f"- Removed: {image}")
@@ -38,7 +59,7 @@ def remove_unused_images(images):
     images.remove(unused_image)
 
 
-def convert_images_to_jpegs(images):
+def convert_images_to_jpegs(images) -> None:
   global content_json
   print("Converting images to JPEGs...")
   replacements = []
@@ -60,7 +81,7 @@ def convert_images_to_jpegs(images):
     images.append(replacement[1])
 
 
-def normalize_names(images):
+def normalize_names(images) -> None:
   global content_json
   print("Normalizing Image Names...")
   replacements = []
@@ -82,7 +103,21 @@ def normalize_names(images):
     images.append(replacement[1])
 
 
-def compress_image(image):
+def compress_large_images(images) -> None:
+  print("Compressing Large Images...")
+  for image in images:
+    if not image.endswith(".svg"):
+      image_size = os.path.getsize(image)
+      if image_size > MAX_IMAGE_PXS:
+        new_image_size, resize_factor, quality = compress_image(image)
+        change = (image_size - new_image_size) / image_size * 100
+        print(
+          f"- Compressed: {image} Resize=1/{resize_factor} "
+          f"Quality={quality} Change={change:.2f}%"
+        )
+
+
+def compress_image(image) -> tuple[int, int, int]:
   quality = 95
   resize_factor = 1
   image_data = Image.open(image)
@@ -97,49 +132,19 @@ def compress_image(image):
       resize_factor *= 2
       image_data = image_data.resize(
         (int(image_data.width / 2), int(image_data.height / 2)),
-        Image.BILINEAR,
+        Image.Resampling.BILINEAR,
       )
   return image_size, resize_factor, quality
 
 
-def compress_large_images(images):
-  print("Compressing Large Images...")
-  for image in images:
-    if not image.endswith(".svg"):
-      image_size = os.path.getsize(image)
-      if image_size > MAX_IMAGE_PXS:
-        new_image_size, resize_factor, quality = compress_image(image)
-        change = (image_size - new_image_size) / image_size * 100
-        print(
-          f"- Compressed: {image} Resize=1/{resize_factor} "
-          f"Quality={quality} Change={change:.2f}%"
-        )
-
-
-def minify_svgs(images):
+def minify_svgs(images) -> None:
   print("Minifying SVGs...")
   for image in images:
     if image.endswith(".svg"):
       os.system(f"npx svgo {image}")
 
 
-def backup_public():
-  if os.path.exists(IMAGES_BACKUP_PATH):
-    shutil.rmtree(IMAGES_BACKUP_PATH)
-  shutil.copytree(IMAGES_PATH, IMAGES_BACKUP_PATH)
-
-
-def save_content():
+def save_content() -> None:
+  global content_json
   j = json.loads(content_json)
   open(CONTENT_PATH, "w").write(json.dumps(j, indent=2))
-
-
-def clean_images():
-  images = get_images()
-  backup_public()
-  remove_unused_images(images)
-  convert_images_to_jpegs(images)
-  normalize_names(images)
-  compress_large_images(images)
-  minify_svgs(images)
-  save_content()

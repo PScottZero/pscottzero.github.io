@@ -52,7 +52,7 @@
 				<p>{line}</p>
 			{/each}
 			{#if hasLink}
-				<img class="link-icon" src="images/link.svg" alt="link" />
+				<img class="link-icon" src="icons/link.svg" alt="link" />
 			{/if}
 		</div>
 	</div>

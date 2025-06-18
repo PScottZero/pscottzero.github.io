@@ -35,7 +35,7 @@
 <header>
 	<div class="inner-header">
 		<div class="logo">
-			<IconLink title="Logo" href="/" src="images/logo.png" />
+			<IconLink title="Logo" href="/" src="icons/logo.png" />
 		</div>
 		<div class="page-links">
 			<a href="#experience">Experience</a>
@@ -49,22 +49,22 @@
 			<IconLink
 				title="Email"
 				href="mailto:pauljscott8@gmail.com"
-				src="images/email.png"
+				src="icons/email.png"
 			/>
 			<IconLink
 				title="Resume"
 				href="https://drive.google.com/file/d/181m4g11n53sekOgt40T1ZhLruRoqN56X/view?usp=sharing"
-				src="images/resume.png"
+				src="icons/resume.png"
 			/>
 			<IconLink
 				title="LinkedIn"
 				href="https://www.linkedin.com/in/paul-scott-047858140/"
-				src="images/linkedin.png"
+				src="icons/linkedin.png"
 			/>
 			<IconLink
 				title="GitHub"
 				href="https://github.com/PScottZero"
-				src="images/github.png"
+				src="icons/github.png"
 			/>
 		</div>
 	</div>
@@ -74,7 +74,7 @@
 	<Window title="Bio">
 		<div class="banner">
 			<div class="profile">
-				<img src="images/profile.jpg" alt="Myself" />
+				<img src="images/banner/profile.jpg" alt="Myself" />
 			</div>
 			<p>
 				Howdy! My name is Paul Scott, and I am a software engineer at Vistar
@@ -96,7 +96,7 @@
 	<a href="mailto:pauljscott8@gmail.com">pauljscott8@gmail.com</a>
 	or call at (215) 880-9592
 	<br />
-	Updated June 17<sup>th</sup>, 2025
+	Updated June 18<sup>th</sup>, 2025
 </footer>
 
 <style lang="scss">
@@ -218,7 +218,7 @@
 		display: grid;
 		grid-template-rows: 1fr;
 		grid-template-columns: auto 1fr;
-		background: url('/images/banner.jpg');
+		background: url('/images/banner/background.jpg');
 		background-size: cover;
 		background-position: 50%;
 
