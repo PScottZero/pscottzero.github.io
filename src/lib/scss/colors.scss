@@ -1,0 +1,19 @@
+@use 'sass:color';
+
+$header-color: #8ca3b1;
+$header-border-color1: color.adjust($header-color, $lightness: 20%);
+$header-border-color2: color.adjust($header-color, $lightness: -20%);
+$window-color: #2c7063;
+$window-border-color1: color.adjust($window-color, $lightness: 20%);
+$window-border-color2: color.adjust($window-color, $lightness: -20%);
+$menu-color: #8ca3b1;
+$menu-font-color: black;
+$menu-border-color1: color.adjust($menu-color, $lightness: 20%);
+$menu-border-color2: color.adjust($menu-color, $lightness: -20%);
+$content-color: #8ca3b1;
+$content-border-color1: color.adjust($content-color, $lightness: 20%);
+$content-border-color2: color.adjust($content-color, $lightness: -20%);
+$page-links-color: #2c6f8f;
+$page-links-border-color1: color.adjust($page-links-color, $lightness: 30%);
+$page-links-border-color2: color.adjust($page-links-color, $lightness: -20%);
+$background-color: #173855;

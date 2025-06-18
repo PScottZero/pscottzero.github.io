@@ -7,15 +7,15 @@
 </a>
 
 <style lang="scss">
-	@use '$lib/globals.scss' as g;
+	@use '$lib/scss/mixins.scss' as m;
+	@use '$lib/scss/variables.scss' as v;
 
 	a img {
-		@include g.flex-center;
-		width: auto;
-		height: g.$header-height - g.$header-padding * 2;
+		@include m.flex-center;
+		height: v.$header-height - v.$header-padding * 2;
 
 		&:hover {
-			outline: g.$header-icon-border;
+			outline: v.$border-size dotted black;
 		}
 	}
 </style>

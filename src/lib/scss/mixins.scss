@@ -1,0 +1,33 @@
+@use './colors.scss' as c;
+@use './variables.scss' as v;
+
+@mixin mobile {
+	@media screen and (max-width: 640px) {
+		@content;
+	}
+}
+
+@mixin flex-center {
+	@include flex-vertical-center;
+	justify-content: center;
+}
+
+@mixin flex-vertical-center {
+	display: flex;
+	align-items: center;
+}
+
+@mixin double-border($color1, $color2) {
+	border-top: v.$border-size solid $color1;
+	border-left: v.$border-size solid $color1;
+	border-bottom: v.$border-size solid $color2;
+	border-right: v.$border-size solid $color2;
+}
+
+@mixin menu-border {
+	@include double-border(c.$menu-border-color1, c.$menu-border-color2);
+}
+
+@mixin content-border {
+	@include double-border(c.$content-border-color1, c.$content-border-color2);
+}

@@ -25,14 +25,14 @@
 
 	const hasLink = data.link !== undefined;
 
-	const descLines: string[] = [];
+	const descriptionLines: string[] = [];
 	if (data.description !== undefined) {
 		if (Array.isArray(data.description)) {
 			for (const line of data.description) {
-				descLines.push(line);
+				descriptionLines.push(line);
 			}
 		} else {
-			descLines.push(data.description);
+			descriptionLines.push(data.description);
 		}
 	}
 </script>
@@ -48,51 +48,52 @@
 			{data.title}
 		</div>
 		<div class="description" style:font-size={dims.descriptionSize}>
-			{#each descLines as line, i (i)}
+			{#each descriptionLines as line, i (i)}
 				<p>{line}</p>
 			{/each}
 			{#if hasLink}
-				<img class="linkIcon" src="images/link.svg" alt="link" />
+				<img class="link-icon" src="images/link.svg" alt="link" />
 			{/if}
 		</div>
 	</div>
 	<img
 		class="image"
-		src={'/images/' + imageFolder + '/' + data.image}
+		src="/images/{imageFolder}/{data.image}"
 		alt={data.title}
 	/>
 </button>
 
 <style lang="scss">
-	@use '$lib/globals.scss' as g;
+	@use '$lib/scss/colors.scss' as c;
+	@use '$lib/scss/mixins.scss' as m;
+	@use '$lib/scss/variables.scss' as v;
 
 	.card {
-		@include g.content-border;
+		@include m.content-border;
 		position: relative;
 		aspect-ratio: 4/3;
-		background-color: g.$menu-color;
 		overflow: hidden;
 		font-family: inherit;
+		background-color: c.$menu-color;
 	}
 
 	.label {
 		position: absolute;
 		bottom: 0;
-		left: 0;
 		width: 100%;
 		padding: 1rem;
-		background-color: rgba(g.$content-color, 0.85);
-		border-top: g.$border-size solid g.$content-border-color1;
+		background-color: rgba(c.$content-color, 0.85);
+		border-top: v.$border-size solid c.$content-border-color1;
 	}
 
 	.title {
-		font-size: g.$large-font-size;
+		font-size: v.$large-font-size;
 		font-weight: bold;
 	}
 
 	.description {
 		position: relative;
-		font-size: g.$medium-font-size;
+		font-size: v.$medium-font-size;
 	}
 
 	.image {
@@ -102,17 +103,16 @@
 	}
 
 	.link:hover {
-		@include g.double-border(
-			g.$content-border-color2,
-			g.$content-border-color1
+		@include m.double-border(
+			c.$content-border-color2,
+			c.$content-border-color1
 		);
 		cursor: pointer;
 	}
 
-	.linkIcon {
+	.link-icon {
 		position: absolute;
-		width: g.$card-link-icon-size;
-		height: auto;
+		width: 1rem;
 		right: 0;
 		bottom: 0;
 	}

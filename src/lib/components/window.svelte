@@ -12,7 +12,7 @@
 
 <div class="outer-window">
 	<div class="inner-window">
-		<div class="titleBar">
+		<div class="title-bar">
 			<div class="button close">
 				<div></div>
 			</div>
@@ -39,7 +39,7 @@
 			{@render children?.()}
 		</div>
 		{#if itemCount}
-			<div class="itemCount">{itemCount} Items</div>
+			<div class="item-count">{itemCount} Items</div>
 		{/if}
 	</div>
 	<div class="corners">
@@ -50,107 +50,109 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/globals.scss' as g;
+	@use '$lib/scss/colors.scss' as c;
+	@use '$lib/scss/mixins.scss' as m;
+	@use '$lib/scss/variables.scss' as v;
+
+	$title-bar-height: 2rem;
+	$corner-size: calc($title-bar-height + v.$border-size * 3);
+	$window-icon-large-dim: 1.2rem;
+	$window-icon-small-dim: 0.4rem;
+
+	@mixin window-border {
+		@include m.double-border(c.$window-border-color1, c.$window-border-color2);
+	}
 
 	.outer-window {
-		@include g.window-border;
+		@include window-border;
 		position: relative;
-		margin-top: g.$window-spacing;
-		background: g.$window-color;
-		padding: g.$outer-window-padding;
+		margin-top: v.$window-spacing;
+		background: c.$window-color;
+		padding: v.$border-size * 2 + 0.5px;
 
-		@include g.mobile {
-			margin-top: g.$window-spacing-mobile;
+		@include m.mobile {
+			margin-top: v.$window-spacing-mobile;
 		}
 	}
 
 	.inner-window {
-		@include g.double-border(g.$window-border-color2, g.$window-border-color1);
+		@include m.double-border(c.$window-border-color2, c.$window-border-color1);
 		z-index: 2;
 		position: relative;
 	}
 
 	.content {
-		@include g.content-border;
-		background: g.$content-color;
+		@include m.content-border;
+		background: c.$content-color;
 	}
 
-	.titleBar {
+	.title-bar {
 		display: grid;
-		grid-template-columns: g.$title-bar-height 1fr g.$title-bar-height g.$title-bar-height;
-		grid-template-rows: g.$title-bar-height;
+		grid-template-columns: $title-bar-height 1fr $title-bar-height $title-bar-height;
+		grid-template-rows: $title-bar-height;
 		text-align: center;
-		font-size: g.$large-font-size;
+		font-size: v.$large-font-size;
 	}
 
 	.title {
-		@include g.window-border;
-		@include g.flex-center;
+		@include window-border;
+		@include m.flex-center;
 		color: white;
 		overflow: hidden;
 		white-space: nowrap;
 	}
 
 	.menu {
-		@include g.flex-vertical-center;
-		@include g.menu-border;
-		height: g.$menu-bar-height;
-		color: g.$menu-font-color;
-		background-color: g.$menu-color;
-		font-size: g.$large-font-size;
+		@include m.flex-vertical-center;
+		@include m.menu-border;
+		height: 2.5rem;
+		color: c.$menu-font-color;
+		background-color: c.$menu-color;
+		font-size: v.$large-font-size;
 
 		span {
-			margin-left: g.$menu-spacing;
+			margin-left: 1rem;
 		}
 	}
 
 	.button {
-		@include g.flex-center;
-		@include g.window-border;
+		@include m.flex-center;
+		@include window-border;
 
 		div {
-			@include g.window-border;
+			@include window-border;
 		}
 	}
 
-	.close {
-		float: left;
-
-		div {
-			width: g.$window-icon-large-dim;
-			height: g.$window-icon-small-dim;
-		}
-	}
-
-	.minimize,
-	.maximize {
-		float: right;
+	.close div {
+		width: $window-icon-large-dim;
+		height: $window-icon-small-dim;
 	}
 
 	.minimize div {
-		width: g.$window-icon-small-dim;
-		height: g.$window-icon-small-dim;
+		width: $window-icon-small-dim;
+		height: $window-icon-small-dim;
 	}
 
 	.maximize div {
-		width: g.$window-icon-large-dim;
-		height: g.$window-icon-large-dim;
+		width: $window-icon-large-dim;
+		height: $window-icon-large-dim;
 	}
 
-	.itemCount {
-		@include g.flex-vertical-center;
-		@include g.content-border;
-		background: g.$content-color;
-		height: g.$title-bar-height;
-		font-size: g.$large-font-size;
-		padding-left: g.$card-spacing;
+	.item-count {
+		@include m.flex-vertical-center;
+		@include m.content-border;
+		background: c.$content-color;
+		height: $title-bar-height;
+		font-size: v.$large-font-size;
+		padding-left: v.$card-spacing;
 	}
 
 	.corners {
-		display: grid;
-		grid-template-columns: g.$corner-size 1fr g.$corner-size;
-		grid-template-rows: g.$corner-size 1fr g.$corner-size;
 		z-index: 1;
+		display: grid;
+		grid-template-columns: $corner-size 1fr $corner-size;
+		grid-template-rows: $corner-size 1fr $corner-size;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -158,7 +160,7 @@
 		height: 100%;
 
 		div {
-			@include g.window-border;
+			@include window-border;
 		}
 	}
 </style>
