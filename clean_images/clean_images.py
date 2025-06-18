@@ -59,7 +59,7 @@ def remove_unused_images(images: list[str]) -> None:
     images.remove(unused_image)
 
 
-def convert_images_to_jpegs(images) -> None:
+def convert_images_to_jpegs(images: list[str]) -> None:
   global content_json
   print("Converting images to JPEGs...")
   replacements = []
@@ -81,7 +81,7 @@ def convert_images_to_jpegs(images) -> None:
     images.append(replacement[1])
 
 
-def normalize_names(images) -> None:
+def normalize_names(images: list[str]) -> None:
   global content_json
   print("Normalizing Image Names...")
   replacements = []
@@ -103,7 +103,7 @@ def normalize_names(images) -> None:
     images.append(replacement[1])
 
 
-def compress_large_images(images) -> None:
+def compress_large_images(images: list[str]) -> None:
   print("Compressing Large Images...")
   for image in images:
     if not image.endswith(".svg"):
@@ -117,7 +117,7 @@ def compress_large_images(images) -> None:
         )
 
 
-def compress_image(image) -> tuple[int, int, int]:
+def compress_image(image: str) -> tuple[int, int, int]:
   quality = 95
   resize_factor = 1
   image_data = Image.open(image)
@@ -137,7 +137,7 @@ def compress_image(image) -> tuple[int, int, int]:
   return image_size, resize_factor, quality
 
 
-def minify_svgs(images) -> None:
+def minify_svgs(images: list[str]) -> None:
   print("Minifying SVGs...")
   for image in images:
     if image.endswith(".svg"):
