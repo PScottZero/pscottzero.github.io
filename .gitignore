@@ -1,4 +1,6 @@
 node_modules
+clean_images/images_backup
+**/__pycache__/
 
 # Output
 .output

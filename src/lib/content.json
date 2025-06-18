@@ -7,14 +7,12 @@
 			{
 				"title": "Vistar Media",
 				"image": "vistar.svg",
-				"description": ["Software Engineer II", "June 2024 - Present"],
-				"link": "https://www.vistarmedia.com/"
+				"description": ["Software Engineer II", "June 2024 - Present"]
 			},
 			{
 				"title": "Merly",
 				"image": "merly.svg",
-				"description": ["Full-Stack Software Engineer", "July 2023 - May 2024"],
-				"link": "https://www.merly.ai/"
+				"description": ["Full-Stack Software Engineer", "July 2023 - May 2024"]
 			},
 			{
 				"title": "ShopRunner",

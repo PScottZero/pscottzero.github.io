@@ -4,21 +4,20 @@ import shutil
 
 from PIL import Image
 
-public_dir = "public"
-images_dir = os.path.join(public_dir, "images")
-images_backup_dir = "images-backup"
-content_dir = os.path.join(public_dir, "content.json")
+IMAGES_PATH = "static/images"
+IMAGES_BACKUP_PATH = "clean_images/images_backup"
+CONTENT_PATH = "src/lib/content.json"
 
-max_image_size = 256000
-image_exts = ["jpg", "jpeg", "png", "svg", "webp"]
+MAX_IMAGE_PXS = 256000
+IMAGE_EXTS = ["jpg", "jpeg", "png", "svg", "webp"]
 
-content_json = open(content_dir).read()
+content_json = open(CONTENT_PATH, "r").read()
 
 
 def get_images():
   images = []
-  for subfolder in os.listdir(images_dir):
-    subfolder_path = os.path.join(images_dir, subfolder)
+  for subfolder in os.listdir(IMAGES_PATH):
+    subfolder_path = os.path.join(IMAGES_PATH, subfolder)
     if os.path.isdir(subfolder_path):
       for image in os.listdir(subfolder_path):
         image_path = os.path.join(subfolder_path, image)
@@ -90,7 +89,7 @@ def compress_image(image):
   while True:
     image_data.save(image, format="JPEG", quality=quality)
     image_size = os.path.getsize(image)
-    if image_size <= max_image_size:
+    if image_size <= MAX_IMAGE_PXS:
       break
     quality -= 5
     if quality < 70:
@@ -108,7 +107,7 @@ def compress_large_images(images):
   for image in images:
     if not image.endswith(".svg"):
       image_size = os.path.getsize(image)
-      if image_size > max_image_size:
+      if image_size > MAX_IMAGE_PXS:
         new_image_size, resize_factor, quality = compress_image(image)
         change = (image_size - new_image_size) / image_size * 100
         print(
@@ -125,12 +124,14 @@ def minify_svgs(images):
 
 
 def backup_public():
-  shutil.copytree(images_dir, images_backup_dir)
+  if os.path.exists(IMAGES_BACKUP_PATH):
+    shutil.rmtree(IMAGES_BACKUP_PATH)
+  shutil.copytree(IMAGES_PATH, IMAGES_BACKUP_PATH)
 
 
 def save_content():
   j = json.loads(content_json)
-  open(content_dir, "w").write(json.dumps(j, indent=2))
+  open(CONTENT_PATH, "w").write(json.dumps(j, indent=2))
 
 
 def clean_images():
@@ -142,6 +143,3 @@ def clean_images():
   compress_large_images(images)
   minify_svgs(images)
   save_content()
-
-
-clean_images()
