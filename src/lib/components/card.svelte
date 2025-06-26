@@ -74,6 +74,7 @@
 		aspect-ratio: 4/3;
 		overflow: hidden;
 		font-family: inherit;
+		color: black;
 		background-color: c.$menu-color;
 	}
 
