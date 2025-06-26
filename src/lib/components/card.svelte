@@ -22,19 +22,11 @@
 
 <script lang="ts">
 	let { data, dims, imageFolder }: CardProps = $props();
-
 	const hasLink = data.link !== undefined;
-
-	const descriptionLines: string[] = [];
-	if (data.description !== undefined) {
-		if (Array.isArray(data.description)) {
-			for (const line of data.description) {
-				descriptionLines.push(line);
-			}
-		} else {
-			descriptionLines.push(data.description);
-		}
-	}
+	const description =
+		typeof data.description === 'string'
+			? [data.description]
+			: (data.description ?? []);
 </script>
 
 <button
@@ -48,7 +40,7 @@
 			{data.title}
 		</div>
 		<div class="description" style:font-size={dims.descriptionSize}>
-			{#each descriptionLines as line, i (i)}
+			{#each description as line, i (i)}
 				<p>{line}</p>
 			{/each}
 			{#if hasLink}

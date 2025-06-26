@@ -96,7 +96,7 @@
 	<a href="mailto:pauljscott8@gmail.com">pauljscott8@gmail.com</a>
 	or call at (215) 880-9592
 	<br />
-	Updated June 18<sup>th</sup>, 2025
+	Updated June 25<sup>th</sup>, 2025
 </footer>
 
 <style lang="scss">
