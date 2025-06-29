@@ -7,6 +7,12 @@
 	}
 }
 
+@mixin tablet {
+	@media screen and (max-width: 1024px) {
+		@content;
+	}
+}
+
 @mixin flex-center {
 	@include flex-vertical-center;
 	justify-content: center;

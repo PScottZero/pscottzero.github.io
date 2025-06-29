@@ -63,6 +63,10 @@
 		@include m.double-border(c.$window-border-color1, c.$window-border-color2);
 	}
 
+	@mixin window-border-inverted {
+		@include m.double-border(c.$window-border-color2, c.$window-border-color1);
+	}
+
 	.outer-window {
 		@include window-border;
 		position: relative;
@@ -111,7 +115,13 @@
 		font-size: v.$large-font-size;
 
 		span {
-			margin-left: 1rem;
+			margin-left: 0.5rem;
+			padding: 0 0.5rem;
+			background-color: inherit;
+
+			&:active {
+				filter: brightness(80%);
+			}
 		}
 	}
 
@@ -121,6 +131,10 @@
 
 		div {
 			@include window-border;
+		}
+
+		&:active {
+			@include window-border-inverted;
 		}
 	}
 

@@ -1,62 +1,30 @@
 <script lang="ts">
-	import type { CardData } from './card.svelte';
-	import Card, { CardDims } from './card.svelte';
+	import Card from './card.svelte';
 	import Window from './window.svelte';
 
-	const CARD_SPACING = '0.5rem';
-	const SMALL_FONT_SIZE = '12px';
-	const MEDIUM_FONT_SIZE = '16px';
-	const LARGE_FONT_SIZE = '20px';
-
-	type SectionData = {
-		id: string;
-		imageFolder?: string;
+	type CardData = {
 		title: string;
-		columns: number;
-		content: CardData[];
+		description?: string | string[];
+		image: string;
+		link?: string;
 	};
 
 	type SectionProps = {
-		data: SectionData;
-		fewerColumns: number;
+		id: string;
+		folder?: string;
+		title: string;
+		large: boolean;
+		content: CardData[];
 	};
 
-	let { data, fewerColumns }: SectionProps = $props();
-
-	function getCardWidth(columns: number): string {
-		const width = 100 / columns + '%';
-		const lessWidth = columns - 1 + ' * ' + CARD_SPACING + ' / ' + columns;
-		return 'calc(' + width + ' - ' + lessWidth + ')';
-	}
-
-	function getCardDims(columns: number, fewerColumns: number): CardDims {
-		const dims = new CardDims();
-		const columnsAdjusted = Math.max(columns - fewerColumns, 1);
-		dims.width = getCardWidth(columnsAdjusted);
-
-		if (columnsAdjusted == 2 && fewerColumns == 2) {
-			dims.titleSize = MEDIUM_FONT_SIZE;
-			dims.descriptionSize = SMALL_FONT_SIZE;
-			dims.labelPadding = `calc(${CARD_SPACING} / 2)`;
-		} else {
-			dims.titleSize = LARGE_FONT_SIZE;
-			dims.descriptionSize = MEDIUM_FONT_SIZE;
-			dims.labelPadding = CARD_SPACING;
-		}
-
-		return dims;
-	}
+	let { id, folder, title, large, content }: SectionProps = $props();
 </script>
 
-<div id={data.id} class="section">
-	<Window title={data.title} itemCount={data.content.length}>
-		<div class="cards">
-			{#each data.content as card, i (i)}
-				<Card
-					data={card}
-					dims={getCardDims(data.columns, fewerColumns)}
-					imageFolder={data.imageFolder ?? data.id}
-				/>
+<div {id} class="section">
+	<Window {title} itemCount={content.length}>
+		<div class="cards {large ? 'cards-large' : 'cards-small'}">
+			{#each content as card, i (i)}
+				<Card {...card} {large} folder={folder ?? id} />
 			{/each}
 		</div>
 	</Window>
@@ -74,9 +42,32 @@
 	}
 
 	.cards {
-		@include m.flex-center;
-		flex-wrap: wrap;
+		display: grid;
 		gap: v.$card-spacing;
 		padding: v.$card-spacing;
+	}
+
+	.cards-large {
+		grid-template-columns: repeat(3, 1fr);
+
+		@include m.tablet {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include m.mobile {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.cards-small {
+		grid-template-columns: repeat(4, 1fr);
+
+		@include m.tablet {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include m.mobile {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 </style>

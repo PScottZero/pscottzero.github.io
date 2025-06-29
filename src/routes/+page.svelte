@@ -3,33 +3,6 @@
 	import Section from '$lib/components/section.svelte';
 	import Window from '$lib/components/window.svelte';
 	import content from '$lib/content.json';
-	import { onMount } from 'svelte';
-
-	const MOBILE_CUTOFF = 640;
-	const TABLET_CUTOFF = 1024;
-
-	const MOBILE_FEWER_COLUMNS = 2;
-	const TABLET_FEWER_COLUMNS = 1;
-
-	let fewerColumns = $state(0);
-
-	function refreshFewerColumns() {
-		if (window.innerWidth <= MOBILE_CUTOFF) {
-			fewerColumns = MOBILE_FEWER_COLUMNS;
-		} else if (window.innerWidth <= TABLET_CUTOFF) {
-			fewerColumns = TABLET_FEWER_COLUMNS;
-		} else {
-			fewerColumns = 0;
-		}
-	}
-
-	onMount(() => {
-		refreshFewerColumns();
-		window.addEventListener('resize', refreshFewerColumns);
-		return () => {
-			window.removeEventListener('resize', refreshFewerColumns);
-		};
-	});
 </script>
 
 <header>
@@ -87,7 +60,7 @@
 	</Window>
 
 	{#each content as section}
-		<Section data={section} {fewerColumns} />
+		<Section {...section} />
 	{/each}
 </main>
 
@@ -96,7 +69,7 @@
 	<a href="mailto:pauljscott8@gmail.com">pauljscott8@gmail.com</a>
 	or call at (215) 880-9592
 	<br />
-	Updated June 25<sup>th</sup>, 2025
+	Updated June 29<sup>th</sup>, 2025
 </footer>
 
 <style lang="scss">
@@ -218,6 +191,7 @@
 		display: grid;
 		grid-template-rows: 1fr;
 		grid-template-columns: auto 1fr;
+		align-items: center;
 		background: url('/images/banner/background.jpg');
 		background-size: cover;
 		background-position: 50%;
@@ -266,10 +240,14 @@
 	/* footer styles */
 
 	footer {
-		padding: v.$window-spacing * 2 0;
+		padding: v.$window-spacing * 2 v.$window-spacing;
 		font-size: v.$large-font-size;
 		text-align: center;
 		color: white;
+
+		@include m.mobile {
+			padding: v.$window-spacing-mobile * 2 v.$window-spacing-mobile;
+		}
 
 		a {
 			color: c.$window-border-color1;

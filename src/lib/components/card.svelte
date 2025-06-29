@@ -1,45 +1,28 @@
 <script module lang="ts">
-	export type CardData = {
+	type CardProps = {
 		title: string;
 		description?: string | string[];
 		image: string;
 		link?: string;
-	};
-
-	export class CardDims {
-		width: string = '';
-		titleSize: string = '';
-		descriptionSize: string = '';
-		labelPadding: string = '';
-	}
-
-	type CardProps = {
-		data: CardData;
-		dims: CardDims;
-		imageFolder: string;
+		large: boolean;
+		folder: string;
 	};
 </script>
 
 <script lang="ts">
-	let { data, dims, imageFolder }: CardProps = $props();
-	const hasLink = data.link !== undefined;
-	const description =
-		typeof data.description === 'string'
-			? [data.description]
-			: (data.description ?? []);
+	let { title, description, image, link, folder, large }: CardProps = $props();
+	const hasLink = link !== undefined;
+	description =
+		typeof description === 'string' ? [description] : (description ?? []);
 </script>
 
 <button
-	class="card {hasLink ? 'link' : ''}"
-	style:flex={dims.width}
-	style:max-width={dims.width}
-	onclick={hasLink ? () => window.open(data.link) : undefined}
+	class="card {large ? '' : 'card-small'} {hasLink ? 'link' : ''}"
+	onclick={hasLink ? () => window.open(link) : undefined}
 >
-	<div class="label" style:padding={dims.labelPadding}>
-		<div class="title" style:font-size={dims.titleSize}>
-			{data.title}
-		</div>
-		<div class="description" style:font-size={dims.descriptionSize}>
+	<div class="label">
+		<h1 class="title">{title}</h1>
+		<div class="description">
 			{#each description as line, i (i)}
 				<p>{line}</p>
 			{/each}
@@ -48,11 +31,7 @@
 			{/if}
 		</div>
 	</div>
-	<img
-		class="image"
-		src="/images/{imageFolder}/{data.image}"
-		alt={data.title}
-	/>
+	<img class="image" src="/images/{folder}/{image}" alt={title} />
 </button>
 
 <style lang="scss">
@@ -74,19 +53,36 @@
 		position: absolute;
 		bottom: 0;
 		width: 100%;
-		padding: 1rem;
+		padding: 0.5rem;
 		background-color: rgba(c.$content-color, 0.85);
 		border-top: v.$border-size solid c.$content-border-color1;
 	}
 
+	.card-small .label {
+		@include m.mobile {
+			padding: 0.25rem;
+		}
+	}
+
 	.title {
 		font-size: v.$large-font-size;
-		font-weight: bold;
+	}
+
+	.card-small .title {
+		@include m.mobile {
+			font-size: v.$medium-font-size;
+		}
 	}
 
 	.description {
 		position: relative;
 		font-size: v.$medium-font-size;
+	}
+
+	.card-small .description {
+		@include m.mobile {
+			font-size: v.$small-font-size;
+		}
 	}
 
 	.image {
