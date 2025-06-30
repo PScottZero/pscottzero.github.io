@@ -8,13 +8,13 @@
 }
 
 @mixin tablet {
-	@media screen and (min-width: v.$mobile-cutoff) and (max-width: v.$tablet-cutoff) {
+	@media screen and (min-width: (v.$mobile-cutoff + 1)) and (max-width: v.$tablet-cutoff) {
 		@content;
 	}
 }
 
 @mixin desktop {
-	@media screen and (min-width: v.$tablet-cutoff) {
+	@media screen and (min-width: (v.$tablet-cutoff + 1)) {
 		@content;
 	}
 }
