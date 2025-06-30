@@ -2,19 +2,17 @@
 	import Card from './card.svelte';
 	import Window from './window.svelte';
 
-	type CardData = {
-		title: string;
-		description?: string | string[];
-		image: string;
-		link?: string;
-	};
-
 	type SectionProps = {
 		id: string;
 		folder?: string;
 		title: string;
 		large: boolean;
-		content: CardData[];
+		content: {
+			title: string;
+			description?: string | string[];
+			image: string;
+			link?: string;
+		}[];
 	};
 
 	let { id, folder, title, large, content }: SectionProps = $props();
@@ -36,6 +34,18 @@
 
 	$page-links-anchor-offset: 5rem;
 
+	@mixin columns($count) {
+		grid-template-columns: repeat($count * 2, 1fr);
+
+		@include m.tablet {
+			grid-template-columns: repeat(($count - 1) * 2, 1fr);
+		}
+
+		@include m.mobile {
+			grid-template-columns: repeat(($count - 2) * 2, 1fr);
+		}
+	}
+
 	.section {
 		margin-top: calc(-1 * $page-links-anchor-offset);
 		padding-top: $page-links-anchor-offset;
@@ -48,26 +58,10 @@
 	}
 
 	.cards-large {
-		grid-template-columns: repeat(3, 1fr);
-
-		@include m.tablet {
-			grid-template-columns: repeat(2, 1fr);
-		}
-
-		@include m.mobile {
-			grid-template-columns: 1fr;
-		}
+		@include columns(3);
 	}
 
 	.cards-small {
-		grid-template-columns: repeat(4, 1fr);
-
-		@include m.tablet {
-			grid-template-columns: repeat(3, 1fr);
-		}
-
-		@include m.mobile {
-			grid-template-columns: repeat(2, 1fr);
-		}
+		@include columns(4);
 	}
 </style>

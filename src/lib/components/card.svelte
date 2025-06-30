@@ -1,4 +1,4 @@
-<script module lang="ts">
+<script lang="ts">
 	type CardProps = {
 		title: string;
 		description?: string | string[];
@@ -7,9 +7,7 @@
 		large: boolean;
 		folder: string;
 	};
-</script>
 
-<script lang="ts">
 	let { title, description, image, link, folder, large }: CardProps = $props();
 	const hasLink = link !== undefined;
 	description =
@@ -17,7 +15,7 @@
 </script>
 
 <button
-	class="card {large ? '' : 'card-small'} {hasLink ? 'link' : ''}"
+	class="card {large ? 'card-large' : 'card-small'} {hasLink ? 'link' : ''}"
 	onclick={hasLink ? () => window.open(link) : undefined}
 >
 	<div class="label">
@@ -39,14 +37,43 @@
 	@use '$lib/scss/mixins.scss' as m;
 	@use '$lib/scss/variables.scss' as v;
 
+	@mixin center-last-row($class, $columns) {
+		@for $i from 1 through $columns - 1 {
+			&:nth-last-child(#{$i}):nth-child(#{$columns}n - #{$i}).#{$class} {
+				grid-column-end: ($columns * 2) - (($i - 1) * 2);
+			}
+
+			@for $j from 1 to $columns - $i {
+				&:nth-last-child(#{$i}):nth-child(#{$columns}n - #{$i + $j}).#{$class} {
+					grid-column-end: ($columns * 2) - (($i - 1) * 2) - $j;
+				}
+			}
+		}
+	}
+
 	.card {
 		@include m.content-border;
+		grid-column: span 2;
 		position: relative;
 		aspect-ratio: 4/3;
 		overflow: hidden;
 		font-family: inherit;
 		color: black;
 		background-color: c.$menu-color;
+
+		@include m.desktop {
+			@include center-last-row('card-large', 3);
+			@include center-last-row('card-small', 4);
+		}
+
+		@include m.tablet {
+			@include center-last-row('card-large', 2);
+			@include center-last-row('card-small', 3);
+		}
+
+		@include m.mobile {
+			@include center-last-row('card-small', 2);
+		}
 	}
 
 	.label {

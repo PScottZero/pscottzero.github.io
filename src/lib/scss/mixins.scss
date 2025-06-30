@@ -13,6 +13,12 @@
 	}
 }
 
+@mixin desktop {
+	@media screen and (min-width: 1024px) {
+		@content;
+	}
+}
+
 @mixin flex-center {
 	@include flex-vertical-center;
 	justify-content: center;
