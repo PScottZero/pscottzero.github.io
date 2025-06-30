@@ -185,6 +185,10 @@
         "image": "postgres.svg"
       },
       {
+        "title": "Svelte",
+        "image": "svelte.svg"
+      },
+      {
         "title": "TensorFlow",
         "image": "tensorflow.svg"
       },
@@ -294,6 +298,7 @@
   },
   {
     "id": "grad-courses",
+    "folder": "courses",
     "title": "Graduate Courses",
     "large": false,
     "content": [
@@ -351,6 +356,7 @@
   },
   {
     "id": "ugrad-courses",
+    "folder": "courses",
     "title": "Undergraduate Courses",
     "large": false,
     "content": [
@@ -458,7 +464,7 @@
     "large": false,
     "content": [
       {
-        "title": "Art",
+        "title": "Art / Art History",
         "image": "bathers-by-a-river.jpg"
       },
       {
@@ -484,6 +490,10 @@
       {
         "title": "Crosswords",
         "image": "crossword.jpg"
+      },
+      {
+        "title": "Drawing / Painting",
+        "image": "painting.jpg"
       },
       {
         "title": "Guitar",
