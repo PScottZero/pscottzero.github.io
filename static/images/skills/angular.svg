@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 1200 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <rect x="0" y="0" width="1200" height="900" style="fill:rgb(255,124,155);"/>
-    <g transform="matrix(5.85924,0,0,5.85924,225.009,60.0057)">
-        <path d="M64,15.359L16.332,32.359L23.602,95.387L64,117.762L104.398,95.387L111.668,32.359L64,15.359Z" style="fill:rgb(221,0,48);fill-rule:nonzero;"/>
-    </g>
-    <g transform="matrix(5.85924,0,0,5.85924,225.009,60.0057)">
-        <path d="M64,15.359L64,26.727L64,26.676L64,117.762L104.398,95.387L111.668,32.359L64,15.359Z" style="fill:rgb(194,0,47);fill-rule:nonzero;"/>
-    </g>
-    <g transform="matrix(5.85924,0,0,5.85924,225.009,60.0057)">
-        <path d="M64,26.676L34.203,93.492L45.313,93.492L51.301,78.539L76.594,78.539L82.586,93.492L93.695,93.492L64,26.676ZM72.703,69.324L55.297,69.324L64,48.383L72.703,69.324Z" style="fill:rgb(254,254,254);fill-rule:nonzero;"/>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" viewBox="0 0 1200 900"><path d="M0 0h1200v900H0z" style="fill:#ff7c9b"/><path d="m64 15.359-47.668 17 7.27 63.028L64 117.762l40.398-22.375 7.27-63.028z" style="fill:#dd0030;fill-rule:nonzero" transform="translate(225.009 60.006)scale(5.85924)"/><path d="M64 15.359v11.368-.051 91.086l40.398-22.375 7.27-63.028z" style="fill:#c2002f;fill-rule:nonzero" transform="translate(225.009 60.006)scale(5.85924)"/><path d="M64 26.676 34.203 93.492h11.11l5.988-14.953h25.293l5.992 14.953h11.109zm8.703 42.648H55.297L64 48.383z" style="fill:#fefefe;fill-rule:nonzero" transform="translate(225.009 60.006)scale(5.85924)"/></svg>
