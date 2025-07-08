@@ -60,7 +60,7 @@
 		"content": [
 			{
 				"title": "C / C++",
-				"image": "clang.svg"
+				"image": "cpp.svg"
 			},
 			{
 				"title": "C#",
@@ -84,19 +84,19 @@
 			},
 			{
 				"title": "JavaScript / TypeScript",
-				"image": "javascript.svg"
-			},
-			{
-				"title": "Python",
-				"image": "python.svg"
+				"image": "typescript.svg"
 			},
 			{
 				"title": "PHP",
 				"image": "php.svg"
 			},
 			{
+				"title": "Python",
+				"image": "python.svg"
+			},
+			{
 				"title": "Swift",
-				"image": "swift.jpg"
+				"image": "swift.svg"
 			}
 		]
 	},
@@ -117,10 +117,6 @@
 			{
 				"title": "Bazel",
 				"image": "bazel.svg"
-			},
-			{
-				"title": "Data Visualization",
-				"image": "data-visualization.jpg"
 			},
 			{
 				"title": "Docker",
@@ -151,8 +147,12 @@
 				"image": "jupyter.svg"
 			},
 			{
+				"title": "LaTeX",
+				"image": "latex.svg"
+			},
+			{
 				"title": "Linux",
-				"image": "ubuntu.svg"
+				"image": "linux.svg"
 			},
 			{
 				"title": "OpenGL",
@@ -171,10 +171,6 @@
 				"image": "react.svg"
 			},
 			{
-				"title": "RESTful API",
-				"image": "rest-api.svg"
-			},
-			{
 				"title": "SQL / Postgres",
 				"image": "postgres.svg"
 			},
@@ -185,10 +181,6 @@
 			{
 				"title": "TensorFlow",
 				"image": "tensorflow.svg"
-			},
-			{
-				"title": "Unit Testing",
-				"image": "unit-testing.svg"
 			}
 		]
 	},
