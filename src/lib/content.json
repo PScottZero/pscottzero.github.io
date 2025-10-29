@@ -470,16 +470,16 @@
     "large": false,
     "content": [
       {
-        "title": "Astronomy",
-        "image": "jwst.jpg"
-      },
-      {
         "title": "Architecture",
         "image": "guggenheim.jpg"
       },
       {
         "title": "Art & Art History",
         "image": "rothko-tate-modern.jpg"
+      },
+      {
+        "title": "Astronomy",
+        "image": "jwst.jpg"
       },
       {
         "title": "Aviation",
