@@ -9,7 +9,9 @@
 	};
 
 	let { title, description, image, link, folder, large }: CardProps = $props();
+	// svelte-ignore state_referenced_locally
 	const hasLink = link !== undefined;
+	// svelte-ignore state_referenced_locally
 	description =
 		typeof description === 'string' ? [description] : (description ?? []);
 </script>
