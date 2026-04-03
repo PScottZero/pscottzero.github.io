@@ -69,7 +69,7 @@
 	<a href="mailto:pauljscott8@gmail.com">pauljscott8@gmail.com</a>
 	or call at (215) 880-9592
 	<br />
-	Updated February 21<sup>st</sup>, 2026
+	Updated April 2<sup>nd</sup>, 2026
 </footer>
 
 <style lang="scss">

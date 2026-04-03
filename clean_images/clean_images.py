@@ -8,7 +8,8 @@ IMAGES_PATH = "static/images"
 IMAGES_BACKUP_PATH = "clean_images/images_backup"
 CONTENT_PATH = "src/lib/content.json"
 
-MAX_IMAGE_PXS = 256000
+MAX_BANNER_IMAGE_SIZE = 128000
+MAX_IMAGE_SIZE = 64000
 IMAGE_EXTS = ["jpg", "jpeg", "png", "svg", "webp"]
 UNUSED_WHITELIST = [
   "static/images/banner/profile.jpg",
@@ -112,32 +113,43 @@ def compress_large_images(images: list[str]) -> None:
   for image in images:
     if not image.endswith(".svg"):
       image_size = os.path.getsize(image)
-      if image_size > MAX_IMAGE_PXS:
-        new_image_size, resize_factor, quality = compress_image(image)
+      max_size = (
+        MAX_BANNER_IMAGE_SIZE if "/banner/" in image else MAX_IMAGE_SIZE
+      )
+      if image_size > max_size:
+        new_image_size, resize_factor, quality = compress_image(image, max_size)
         change = (image_size - new_image_size) / image_size * 100
         print(
-          f"- Compressed: {image} Resize=1/{resize_factor} "
+          f"- Compressed: {image} Resize=1/{resize_factor:.1f} "
           f"Quality={quality} Change={change:.2f}%"
         )
 
 
-def compress_image(image: str) -> tuple[int, int, int]:
+def compress_image(image: str, max_image_size: int) -> tuple[int, float, int]:
   quality = 95
-  resize_factor = 1
-  image_data = Image.open(image)
+  resize_factor = 1.0
+
+  og_image_data = Image.open(image)
+  image_data = og_image_data
+
   while True:
     image_data.save(image, format="JPEG", quality=quality)
     image_size = os.path.getsize(image)
-    if image_size <= MAX_IMAGE_PXS:
+    if image_size <= max_image_size:
       break
+
     quality -= 5
     if quality < 70:
       quality = 95
-      resize_factor *= 2
-      image_data = image_data.resize(
-        (int(image_data.width / 2), int(image_data.height / 2)),
+      resize_factor += 0.5
+      image_data = og_image_data.resize(
+        (
+          int(image_data.width / resize_factor),
+          int(image_data.height / resize_factor),
+        ),
         Image.Resampling.BILINEAR,
       )
+
   return image_size, resize_factor, quality
 
 
