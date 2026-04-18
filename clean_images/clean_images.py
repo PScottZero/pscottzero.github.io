@@ -19,14 +19,15 @@ UNUSED_WHITELIST = [
 content_json = open(CONTENT_PATH, "r").read()
 
 
-def clean_images() -> None:
+def clean_images(minify: bool = False) -> None:
   backup_public()
   images = get_images()
   remove_unused_images(images)
   convert_images_to_jpegs(images)
   normalize_names(images)
   compress_large_images(images)
-  minify_svgs(images)
+  if minify:
+    minify_svgs(images)
   save_content()
 
 
